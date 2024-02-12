@@ -16,26 +16,23 @@ class Solution {
         while (!queue.isEmpty()) {
             List<Integer> wl = new ArrayList<>();
             
-            // if there is idel time, we also need to finish the current loop which contains n times
+            // Try to schedule up to n + 1 tasks within one interval
             for (int i = 0; i <= n; i++) {
-                // has task
+                // 这里如果到了最后一个task，那么做完以后，即使这个loop还没有结束，因为wl是空的，queue也是空的，直接退出就好了
+                // Break if no more tasks
+                if (queue.isEmpty() && wl.isEmpty()) break;
+                
                 if (!queue.isEmpty()) {
-                    int task = queue.poll();
-                    timeUsed++;
-                    
+                    int task = queue.poll();   
+                    // Add to waiting list if still remaining
                     if (task - 1 > 0) {
                         wl.add(task - 1);
                     }
-                // idle until the next loop if we still have next round
-                // otherwise queue & wl is empty, we don't need to idle the last task
-                } else if (queue.isEmpty() && !wl.isEmpty()) {
-                    timeUsed += n - i + 1;
-                    break;
-                }    
+                } 
+                timeUsed++;
             }
             
-            // after n times... 
-            // we can also declare wl outside the loop as queue, and poll to empty it at each loop
+            // Add waiting tasks back to queue
             for (int task: wl) {
                 queue.add(task);
             }
