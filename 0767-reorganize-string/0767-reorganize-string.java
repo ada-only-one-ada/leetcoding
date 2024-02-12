@@ -19,11 +19,11 @@ class Solution {
                 if (!queue.isEmpty()) {
                     Pair<Character, Integer> curr = queue.poll();
                     char task = curr.getKey();
-                    int freq = curr.getValue();
                     
                     if (res.length() > 0 && task == res.charAt(res.length() - 1)) return "";
                     res.append(task);
                     
+                    int freq = curr.getValue();
                     if (freq - 1 > 0) {
                         wl.add(new Pair(task, freq - 1));
                     }
