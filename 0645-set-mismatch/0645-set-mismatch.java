@@ -6,15 +6,16 @@ class Solution {
             freq[num]++;
         }
         
-        int[] res = new int[2];
+        int duplicate = -1;
+        int missing = -1;
         for (int i = 1; i < freq.length; i++) {
             if (freq[i] == 2) {
-                res[0] = i;
+                duplicate = i;
             } else if (freq[i] == 0) {
-                res[1] = i;
+               missing = i;
             }
         }
         
-        return res;
+        return new int[]{duplicate, missing};
     }
 }
