@@ -1,41 +1,46 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        Map<Character, Integer> map = new HashMap<>();
-        for (char task : tasks) {
-            map.put(task, map.getOrDefault(task, 0 ) + 1);
+        int[] freq = new int[26];
+        for (char task: tasks) {
+            freq[task - 'A']++;
         }
-        
-        Queue<Pair<Character, Integer>> queue = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
-        for (char task : map.keySet()) {
-            queue.add(new Pair(task, map.get(task)));
+
+        Queue<Integer> queue = new PriorityQueue<>((a, b) -> (b - a));
+        for (int count: freq) {
+            if (count != 0) {
+                queue.add(count);
+            }
         }
         
         int timeUsed = 0;
-        Queue<Pair<Character, Integer>> wl = new LinkedList<>();
-        int idle = 0;
-        
         while (!queue.isEmpty()) {
-            idle = 0;
-            for (int i = 0; i <= n; i++) { 
-                timeUsed++;
+            List<Integer> wl = new ArrayList<>();
+            
+            // if there is idel time, we also need to finish the current loop which contains n times
+            for (int i = 0; i <= n; i++) {
+                // has task
                 if (!queue.isEmpty()) {
-                    Pair<Character, Integer> curr = queue.poll();
-                    char task = curr.getKey();
-                    int freq = curr.getValue();
+                    int task = queue.poll();
+                    timeUsed++;
                     
-                    if (freq - 1 > 0) {
-                        wl.add(new Pair(task, freq - 1));
+                    if (task - 1 > 0) {
+                        wl.add(task - 1);
                     }
-                } else {
-                    idle++;
-                }
+                // idle until the next loop if we still have next round
+                // otherwise queue & wl is empty, we don't need to idle the last task
+                } else if (queue.isEmpty() && !wl.isEmpty()) {
+                    timeUsed += n - i + 1;
+                    break;
+                }    
             }
             
-            while (!wl.isEmpty()) {
-                queue.add(wl.poll());
+            // after n times... 
+            // we can also declare wl outside the loop as queue, and poll to empty it at each loop
+            for (int task: wl) {
+                queue.add(task);
             }
         }
-        
-        return timeUsed - idle;
+
+        return timeUsed;
     }
 }
