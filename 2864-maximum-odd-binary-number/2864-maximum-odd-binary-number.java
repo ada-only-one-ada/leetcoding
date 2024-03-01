@@ -28,7 +28,6 @@ class Solution {
             ones--;
         }
         
-        
         return sb.reverse().toString();
     }
 }
