@@ -54,8 +54,8 @@ class Solution {
         String lcs = commonSequence.reverse().toString();
 
         // 根据lcs和原字符串构建最短公共超序列
-        // 这段代码的核心是在构建scs时不仅添加lcs中的字符，而且要添加在达到下一个lcs字符之前的 str1 和 str2 中的所有字符。
-        // 这确保了任何一个输入字符串的所有字符都被保留在结果中，并且结果字符串尽可能短。
+        // 这段代码的核心是在构建scs时不仅添加lcs中的字符，而且要添加在达到下一个lcs字符之前的 str1 和 str2 中的所有字符
+        // 这确保了任何一个输入字符串的所有字符都被保留在结果中，并且结果字符串尽可能短
         StringBuilder res = new StringBuilder();
 
         i1 = 0;
@@ -71,8 +71,8 @@ class Solution {
                 i1++;
             }
 
-            // 对于str2，str2[0]是c，不匹配lcs当前字符，所以加入c, 更新i2
-            // 对于str2，str2[1]是a，匹配lcs当前字符，所以不加任何到res中, 停止
+            // 对于str2，str2[0]是c，不匹配lcs当前字符，所以加入c，更新i2
+            // 对于str2，str2[1]是a，匹配lcs当前字符，所以不加任何到res中，停止
             while (str2.charAt(i2) != c) {
                 res.append(str2.charAt(i2));
                 i2++;
