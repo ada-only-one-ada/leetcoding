@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # String Matching
 |  |
 | ------- |
+| [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
 | [0686-repeated-string-match](https://github.com/Adagggggg/leetcoding/tree/master/0686-repeated-string-match) |
 # Array
 |  |
@@ -35,3 +36,19 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0673-number-of-longest-increasing-subsequence) |
+# Hash Table
+|  |
+| ------- |
+| [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
+# Depth-First Search
+|  |
+| ------- |
+| [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
+# Design
+|  |
+| ------- |
+| [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
+# Trie
+|  |
+| ------- |
+| [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
