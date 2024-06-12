@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -51,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0635-design-log-storage-system](https://github.com/Adagggggg/leetcoding/tree/master/0635-design-log-storage-system) |
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
+| [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
 # Trie
 |  |
 | ------- |
@@ -59,3 +61,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0635-design-log-storage-system](https://github.com/Adagggggg/leetcoding/tree/master/0635-design-log-storage-system) |
+# Linked List
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
+# Queue
+|  |
+| ------- |
+| [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
