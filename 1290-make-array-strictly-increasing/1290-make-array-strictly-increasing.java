@@ -1,57 +1,56 @@
-import java.util.Arrays;
-
-public class Solution {
+class Solution {
     public int makeArrayIncreasing(int[] arr1, int[] arr2) {
-        int n = arr1.length;  // arr1的长度
-        Arrays.sort(arr2);   // 排序arr2以便后续操作
-        int m = arr2.length;  // arr2的长度
-        int maxOps = n;  // 最大操作次数，理论上每个元素都可能需要替换
-        int[][] dp = new int[n][maxOps + 1];  // 动态规划数组
+        // 最坏的情况下，arr1中的每个数字都被替换
+        int maxOps = arr1.length;
 
-        // 初始化动态规划数组，用最大值填充表示无法到达的状态
-        for (int[] row : dp) {
+        // arr2排序，便于取最小的值（进一步优化: 去重）
+        Arrays.sort(arr2);
+
+        // dp[i][ops] = min: 替换ops次，使得前i个元素递增的最小结尾值
+        int[][] dp = new int[arr1.length][maxOps + 1];
+        // 初始化数组，不可到达的状态
+        for (int[] row: dp) {
             Arrays.fill(row, Integer.MAX_VALUE);
         }
-        dp[0][0] = arr1[0];  // 第一个元素不替换的情况
-        for (int j = 1; j <= maxOps; j++) {
-            dp[0][j] = arr2[0];  // 第一个元素替换成arr2中的最小元素
+
+        //第一个元素不做替换的最小值
+        dp[0][0] = arr1[0];
+        //第一个元素做1, 2, 3, 4, 5...次替换，替换成arr2中的最小值，即第一个元素
+        for (int ops = 1; ops <= maxOps; ops++) {
+            dp[0][ops] = arr2[0];
         }
 
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j <= maxOps; j++) {
-                if (dp[i-1][j] != Integer.MAX_VALUE) {
-                    // 如果当前元素大于前一个元素，无需替换
-                    if (arr1[i] > dp[i-1][j]) {
-                        dp[i][j] = Math.min(dp[i][j], arr1[i]);
+        for (int i = 1; i < arr1.length; i++) {
+            for (int ops = 0; ops <= maxOps; ops++) {
+                if (dp[i - 1][ops] != Integer.MAX_VALUE) {
+                    // 不做替换（注意这里要跟 dp[i][ops] 比较取小值，因为inner loop替换当前这个可能会获得更小的值）
+                    if (arr1[i] > dp[i - 1][ops]) {
+                        dp[i][ops] = Math.min(dp[i][ops], arr1[i]);
                     }
-                    // 尝试替换当前元素为arr2中合适的元素
-                    if (j + 1 <= maxOps) {
-                        int pos = upperBound(arr2, dp[i-1][j]);
-                        if (pos < m) {
-                            dp[i][j + 1] = Math.min(dp[i][j + 1], arr2[pos]);
+
+                    // 可替换
+                    if (ops + 1 <= maxOps) {
+                        // 找第一个比dp[i-1][ops]大的值
+                        int index = 0;
+                        while (index < arr2.length && arr2[index] <= dp[i - 1][ops]) {
+                            index++;
+                        }
+                        
+                        // 如果找到了, 就更新dp值
+                        if (index < arr2.length) {
+                            dp[i][ops + 1] = Math.min(dp[i][ops + 1], arr2[index]);
                         }
                     }
                 }
             }
         }
 
-        // 遍历最后一行，找到最小的可以形成递增序列的替换次数
-        for (int j = 0; j <= maxOps; j++) {
-            if (dp[n-1][j] != Integer.MAX_VALUE) {
-                return j;
+        for (int ops = 0; ops <= maxOps; ops++) {
+            if (dp[arr1.length - 1][ops] != Integer.MAX_VALUE) {
+                return ops;
             }
         }
-        return -1; // 如果没有可能的替换方案
-    }
 
-    // 辅助函数，用于找到arr2中大于给定值val的最小元素的位置
-    private int upperBound(int[] arr, int val) {
-        int low = 0, high = arr.length - 1;
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            if (arr[mid] <= val) low = mid + 1;
-            else high = mid - 1;
-        }
-        return low;
+        return -1;
     }
 }
