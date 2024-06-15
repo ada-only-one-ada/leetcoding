@@ -28,10 +28,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0648-replace-words](https://github.com/Adagggggg/leetcoding/tree/master/0648-replace-words) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
+| [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
 # Dynamic Programming
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
 # Binary Indexed Tree
 |  |
 | ------- |
@@ -73,3 +75,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
+# Binary Search
+|  |
+| ------- |
+| [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
+# Sorting
+|  |
+| ------- |
+| [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
