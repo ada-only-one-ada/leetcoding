@@ -53,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Depth-First Search
 |  |
 | ------- |
+| [0437-path-sum-iii](https://github.com/Adagggggg/leetcoding/tree/master/0437-path-sum-iii) |
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
 # Design
 |  |
@@ -93,3 +94,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0966-binary-subarrays-with-sum](https://github.com/Adagggggg/leetcoding/tree/master/0966-binary-subarrays-with-sum) |
+# Tree
+|  |
+| ------- |
+| [0437-path-sum-iii](https://github.com/Adagggggg/leetcoding/tree/master/0437-path-sum-iii) |
+# Binary Tree
+|  |
+| ------- |
+| [0437-path-sum-iii](https://github.com/Adagggggg/leetcoding/tree/master/0437-path-sum-iii) |
