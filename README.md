@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0648-replace-words](https://github.com/Adagggggg/leetcoding/tree/master/0648-replace-words) |
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
 | [0686-repeated-string-match](https://github.com/Adagggggg/leetcoding/tree/master/0686-repeated-string-match) |
+| [0952-word-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0952-word-subsets) |
 # Array
 |  |
 | ------- |
@@ -29,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
 | [0901-advantage-shuffle](https://github.com/Adagggggg/leetcoding/tree/master/0901-advantage-shuffle) |
+| [0952-word-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0952-word-subsets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Adagggggg/leetcoding/tree/master/0966-binary-subarrays-with-sum) |
 | [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
 # Dynamic Programming
@@ -50,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0635-design-log-storage-system](https://github.com/Adagggggg/leetcoding/tree/master/0635-design-log-storage-system) |
 | [0648-replace-words](https://github.com/Adagggggg/leetcoding/tree/master/0648-replace-words) |
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
+| [0952-word-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0952-word-subsets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Adagggggg/leetcoding/tree/master/0966-binary-subarrays-with-sum) |
 # Depth-First Search
 |  |
