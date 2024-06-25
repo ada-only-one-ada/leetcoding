@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0901-advantage-shuffle](https://github.com/Adagggggg/leetcoding/tree/master/0901-advantage-shuffle) |
 | [0952-word-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0952-word-subsets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Adagggggg/leetcoding/tree/master/0966-binary-subarrays-with-sum) |
+| [1249-snapshot-array](https://github.com/Adagggggg/leetcoding/tree/master/1249-snapshot-array) |
 | [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
 # Dynamic Programming
 |  |
@@ -54,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
 | [0952-word-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0952-word-subsets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Adagggggg/leetcoding/tree/master/0966-binary-subarrays-with-sum) |
+| [1249-snapshot-array](https://github.com/Adagggggg/leetcoding/tree/master/1249-snapshot-array) |
 # Depth-First Search
 |  |
 | ------- |
@@ -65,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0635-design-log-storage-system](https://github.com/Adagggggg/leetcoding/tree/master/0635-design-log-storage-system) |
 | [0676-implement-magic-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/0676-implement-magic-dictionary) |
 | [0859-design-circular-deque](https://github.com/Adagggggg/leetcoding/tree/master/0859-design-circular-deque) |
+| [1249-snapshot-array](https://github.com/Adagggggg/leetcoding/tree/master/1249-snapshot-array) |
 # Trie
 |  |
 | ------- |
@@ -85,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Binary Search
 |  |
 | ------- |
+| [1249-snapshot-array](https://github.com/Adagggggg/leetcoding/tree/master/1249-snapshot-array) |
 | [1290-make-array-strictly-increasing](https://github.com/Adagggggg/leetcoding/tree/master/1290-make-array-strictly-increasing) |
 # Sorting
 |  |
