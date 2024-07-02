@@ -119,3 +119,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0901-advantage-shuffle](https://github.com/Adagggggg/leetcoding/tree/master/0901-advantage-shuffle) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+## Binary Search
+|  |
+| ------- |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+<!---LeetCode Topics End-->
