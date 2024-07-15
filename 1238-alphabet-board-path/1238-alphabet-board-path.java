@@ -18,6 +18,9 @@ class Solution {
             int targetRow = value / 5;
             int targetCol = value % 5;
 
+            // 注意4个while loop的顺序matters：左、上、右、下
+            // 左上放在前面，这样就可以保证别的点去z点不会越界（往左再下），z点去别的点（往上再右）也不会越界
+
             while (currCol > targetCol) {
                 currCol--;
                 res.append('L');
