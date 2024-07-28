@@ -20,6 +20,7 @@ class Solution {
             intervals[i] = prev;
             prev = temp;
         }
+
         if (i < intervals.length) {
             prev[0] = Math.min(prev[0], intervals[i][0]);
         }
