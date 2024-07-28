@@ -6,6 +6,7 @@ class Solution {
             if (set.contains(num)) {
                 return true;
             }
+            
             set.add(num);
         }
 
