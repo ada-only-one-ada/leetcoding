@@ -124,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Adagggggg/leetcoding/tree/master/0001-two-sum) |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 ## Binary Search
@@ -161,6 +162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Adagggggg/leetcoding/tree/master/0001-two-sum) |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 ## String
