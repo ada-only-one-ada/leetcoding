@@ -13,7 +13,9 @@ class Solution {
             list.add(intervals[i]);
             i++;
         }
-        if (i < intervals.length) start = Math.min(intervals[i][0], start);
+        if (i < intervals.length) {
+            start = Math.min(intervals[i][0], start);
+        }
         
         while (i < intervals.length && intervals[i][0] <= end) {
             end = Math.max(intervals[i][1], end);
