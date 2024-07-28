@@ -30,7 +30,7 @@ class Solution {
                 res.add(prev);
                 prev = curr;
             } else {
-                //prev[0] = Math.min(prev[0], curr[0]);
+                // prev[0] = Math.min(prev[0], curr[0]);
                 prev[1] = Math.max(prev[1], curr[1]);
             }
         }
