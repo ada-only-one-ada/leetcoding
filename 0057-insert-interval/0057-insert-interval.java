@@ -39,11 +39,13 @@ class Solution {
             i++;
         }
         
+        return list.toArray(new int[list.size()][2]);
+        /*
         int[][] res = new int[list.size()][2];
         for (int index = 0; index < list.size(); index++) {
             res[index] = list.get(index);
         }
-
         return res;
+        */
     }
 }
