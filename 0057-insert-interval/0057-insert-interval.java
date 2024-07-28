@@ -16,7 +16,7 @@ class Solution {
        // 有可能newIntervals的起点先，或者a的起点先，把先的那个设置成prev
         int[] prev = newInterval;
         if (i < intervals.length && prev[0] < newStart){
-            int[] temp = intervals[i];
+            int[] temp = prev;
             intervals[i] = prev;
             prev = temp;
         }
