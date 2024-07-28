@@ -1,9 +1,7 @@
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> list = new ArrayList<>();
-        if (intervals.length == 0) {
-            return new int[][]{newInterval};
-        }
+      
         
         int start = newInterval[0];
         int end = newInterval[1];
