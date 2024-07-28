@@ -20,14 +20,17 @@ class Solution {
             intervals[i] = prev;
             prev = temp;
         }
-
+        if (i < intervals.length) {
+            prev[0] = Math.min(prev[0], intervals[i][0]);
+        }
+        
         for (int j = i; j < intervals.length; j++) {
             int[] curr = intervals[j]; 
             if (curr[0] > prev[1]) {
                 res.add(prev);
                 prev = curr;
             } else {
-                prev[0] = Math.min(prev[0], curr[0]);
+                //prev[0] = Math.min(prev[0], curr[0]);
                 prev[1] = Math.max(prev[1], curr[1]);
             }
         }
