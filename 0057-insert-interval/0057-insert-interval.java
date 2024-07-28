@@ -12,11 +12,10 @@ class Solution {
             i++;
         }
 
-       //pre，【a，b，c，d....】
-       //有可能newintervals的起点先，或者a的起点先，把先的那个设置成prev
-
+       // pre，【a，b，c，d....】
+       // 有可能newIntervals的起点先，或者a的起点先，把先的那个设置成prev
         int[] prev = newInterval;
-        if (i < intervals.length && intervals[i][0] < newInterval[0]){
+        if (i < intervals.length && prev[0] < newStart){
             int[] temp = intervals[i];
             intervals[i] = prev;
             prev = temp;
