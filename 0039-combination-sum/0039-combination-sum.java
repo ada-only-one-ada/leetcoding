@@ -14,7 +14,6 @@ class Solution {
         }
 
         for (int i = index; i < candidates.length; i++) {
-           // if (currRes.size() == 0 && i > 0 && candidates[i] == candidates[i - 1]) continue;
             currRes.add(candidates[i]);
             sum += candidates[i];
             backtracking(candidates, target, res, currRes, sum, i);
