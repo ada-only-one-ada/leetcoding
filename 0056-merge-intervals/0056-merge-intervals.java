@@ -19,6 +19,6 @@ class Solution {
         }
 
         list.add(new int[]{intervals[intervals.length - 1][0], intervals[intervals.length - 1][1]});
-        return list.toArray(new int[list.size()][]);
+        return list.toArray(new int[list.size()][2]);
     }
 }
