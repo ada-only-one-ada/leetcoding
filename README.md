@@ -125,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Adagggggg/leetcoding/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
@@ -224,4 +226,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
