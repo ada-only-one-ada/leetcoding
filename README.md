@@ -136,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
+| [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
 | [0252-meeting-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0252-meeting-rooms) |
@@ -219,6 +220,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
+| [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 ## Prefix Sum
@@ -238,4 +240,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
+## Math
+|  |
+| ------- |
+| [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
