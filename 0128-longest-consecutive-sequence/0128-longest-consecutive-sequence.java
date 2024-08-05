@@ -4,10 +4,10 @@ class Solution {
         for (int num: nums) {
             set.add(num);
         }
-        
+
         int longestLen = 0;
 
-        for (int num: nums) {
+        for (int num: set) { // use set not nums
             if (!set.contains(num - 1)) {
                 int currLen = 0;
                 while (set.contains(num)) {
