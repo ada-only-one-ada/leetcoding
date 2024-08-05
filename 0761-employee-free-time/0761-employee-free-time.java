@@ -32,11 +32,11 @@ class Solution {
         startQueue.poll();
         while (!startQueue.isEmpty()) {
             if (endQueue.peek() < startQueue.peek()) {
-                res.add(new Interval(endQueue.poll(), startQueue.poll()));
-            } else {
-                startQueue.poll();
-                endQueue.poll();
-            }
+                res.add(new Interval(endQueue.peek(), startQueue.peek()));
+            } 
+            
+            startQueue.poll();
+            endQueue.poll();
         }
 
         return res;
