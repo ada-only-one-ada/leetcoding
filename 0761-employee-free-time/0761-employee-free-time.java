@@ -20,11 +20,8 @@ class Solution {
 
         for (List<Interval> s: schedule) {
             for (Interval i: s) {
-                int start = i.start;
-                int end = i.end;
-
-                startQueue.add(start);
-                endQueue.add(end);
+                startQueue.add(i.start);
+                endQueue.add(i.end);
             }   
         }
 
