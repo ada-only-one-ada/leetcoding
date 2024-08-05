@@ -30,14 +30,14 @@ class Solution {
 
         List<Interval> res = new ArrayList<>();
         startQueue.poll();
-        
-        while (!startQueue.isEmpty() && !endQueue.isEmpty()) {
-            if (endQueue.peek() < startQueue.peek()) {
-                res.add(new Interval(endQueue.peek(), startQueue.peek()));
-            } 
 
-            startQueue.poll();
-            endQueue.poll();
+        while (!startQueue.isEmpty() && !endQueue.isEmpty()) {
+            int preEnd = endQueue.poll();
+            int currStart = startQueue.poll();
+
+            if (currStart > preEnd) {
+                res.add(new Interval(preEnd, currStart));
+            } 
         }
 
         return res;
