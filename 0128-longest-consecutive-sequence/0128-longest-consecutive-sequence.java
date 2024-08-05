@@ -7,7 +7,7 @@ class Solution {
 
         int longestLen = 0;
 
-        for (int num: set) { // use set not nums
+        for (int num: set) { // iterate over the set not the nums is faster
             if (!set.contains(num - 1)) {
                 int currLen = 0;
                 while (set.contains(num)) {
