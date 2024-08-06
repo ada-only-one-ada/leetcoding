@@ -12,7 +12,6 @@ class Solution {
             }
 
             freq[s.charAt(right)]++;
-
             res = Math.max(res, right-left+1);
         }
 
