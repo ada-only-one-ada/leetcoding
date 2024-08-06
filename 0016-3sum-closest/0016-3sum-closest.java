@@ -2,7 +2,6 @@ class Solution {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int res = Integer.MAX_VALUE;
-        int minDiff = Integer.MAX_VALUE;
 
         int i1 = 0;
         while (i1 <= nums.length - 3) {
@@ -13,9 +12,7 @@ class Solution {
                 if (sum == target) {
                     return sum;
                 } else {
-                    int diff = Math.abs(sum - target);
-                    if (diff < minDiff) {
-                        minDiff = diff;
+                    if (Math.abs(sum - target) < Math.abs(res - target)) {
                         res = sum;
                     }
 
