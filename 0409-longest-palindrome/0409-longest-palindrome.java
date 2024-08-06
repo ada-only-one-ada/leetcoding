@@ -6,22 +6,17 @@ class Solution {
         }
 
         int res = 0;
-        boolean single = false;
+        int single = 0;
+        
         for (int val: map.values()) {
             if (val % 2 == 0) {
                 res += val;
             } else {
-                if (single == false) {
-                    res++;
-                    single = true;
-                }
-
-                if (val >= 2) {
-                    res += val / 2 * 2;
-                }
+                if (single == 0) single++;
+                res += (val / 2) * 2;
             }
         }
 
-        return res;
+        return res + single;
     }
 }
