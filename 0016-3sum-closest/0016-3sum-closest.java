@@ -7,8 +7,10 @@ class Solution {
         while (i1 <= nums.length - 3) {
             int i2 = i1 + 1;
             int i3 = nums.length - 1;
+
             while (i2 <= nums.length - 2 && i2 < i3) {
                 int sum = nums[i1] + nums[i2] + nums[i3];
+                
                 if (sum == target) {
                     return sum;
                 } else {
