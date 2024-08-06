@@ -5,7 +5,7 @@ class Solution {
 
         Queue<int[]> queue = new PriorityQueue<>((a, b) -> (b[1] - a[1]));
         for (int i = 0; i < nums.length; i++) {
-            while (!queue.isEmpty() && queue.peek()[0] + k <= i) {
+            while (!queue.isEmpty() && i - queue.peek()[0] >= k) {
                 queue.poll();
             }
 
