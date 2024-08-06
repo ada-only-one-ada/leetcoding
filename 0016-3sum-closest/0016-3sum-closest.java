@@ -26,7 +26,6 @@ class Solution {
                         i3--;
                         while (i2 < i3 && nums[i3] == nums[i3 + 1]) i3--;
                     }
-
                 }
             }
 
