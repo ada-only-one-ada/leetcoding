@@ -8,7 +8,7 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             // 根据题意，i为nums下标，是要在[i - k + 1, i] 中选到最大值
             // 队列头结点需要在[i - k + 1, i]范围内，不符合则要弹出
-            if (!queue.isEmpty() && i - queue.peekFirst() == k){
+            while (!queue.isEmpty() && i - queue.peekFirst() == k){
                 queue.pollFirst();
             }
             
