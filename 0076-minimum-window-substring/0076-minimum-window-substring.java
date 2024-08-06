@@ -35,11 +35,9 @@ class Solution {
                         toFind++;
                     }
 
-                    map.put(s.charAt(left), map.get(s.charAt(left)) + 1);
-                    left++;
-                } else {
-                    left++;
+                    map.put(s.charAt(left), map.get(s.charAt(left)) + 1);    
                 }
+                left++;
             }
         }
 
