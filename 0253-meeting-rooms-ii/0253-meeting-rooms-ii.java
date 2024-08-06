@@ -7,12 +7,11 @@ class Solution {
             int start = interval[0];
             int end = interval[1];
 
-            if (queue.isEmpty() || start < queue.peek()) {
-                queue.add(end);
-            } else {
+            if (!queue.isEmpty() && start >= queue.peek()) {
                 queue.poll();
-                queue.add(end);
-            }
+            }  
+                   
+            queue.add(end);     
         }
 
         return queue.size();
