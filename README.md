@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
 | [0252-meeting-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0252-meeting-rooms) |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
@@ -214,6 +215,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
 | [0252-meeting-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0252-meeting-rooms) |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 ## Counting
@@ -227,12 +229,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
 ## Backtracking
@@ -244,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 ## Union Find
 |  |
 | ------- |
@@ -255,5 +260,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 <!---LeetCode Topics End-->
