@@ -1,28 +1,22 @@
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
+        Deque<int[]> queue = new ArrayDeque<>();
         int[] res = new int[nums.length - k + 1];
-        Deque<Integer> queue = new LinkedList<>();
-
         int index = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            // 根据题意，i为nums下标，是要在[i - k + 1, i] 中选到最大值
-            // 队列头结点需要在[i - k + 1, i]范围内，不符合则要弹出
-            while (!queue.isEmpty() && i - queue.peekFirst() == k){
-                queue.pollFirst();
-            }
-            
-            // 既然是单调，就要保证每次放进去的数字要比末尾(curr window res)的大，否则也弹出
-            //  if (!queue.isEmpty() && queue.peekFirst() < i - k + 1)
-            while (!queue.isEmpty() && nums[i] >= nums[queue.peekLast()]){
-                 queue.pollLast();
+            while (!queue.isEmpty() && i - queue.peek()[0] >= k) {
+                queue.poll();
             }
 
-            queue.offer(i);
+            while (!queue.isEmpty() && nums[i] > queue.getLast()[1]) {
+                queue.removeLast();
+            }  
 
-            if (i >= k - 1) {
-                res[index] = nums[queue.peekFirst()];
-                index++;
+            int[] curr = new int[]{i, nums[i]};
+            queue.add(curr);
+            if (i >= k-1) {
+                res[index++] = queue.getFirst()[1];
             }
         }
         
