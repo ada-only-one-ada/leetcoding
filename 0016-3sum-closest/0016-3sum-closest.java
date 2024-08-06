@@ -12,22 +12,21 @@ class Solution {
                 int sum = nums[i1] + nums[i2] + nums[i3];
                 if (sum == target) {
                     return sum;
-                } else if (sum < target) {
+                } else {
                     int diff = Math.abs(sum - target);
                     if (diff < minDiff) {
                         minDiff = diff;
                         res = sum;
                     }
-                    i2++;
-                    while (i2 < i3 && nums[i2] == nums[i2 - 1]) i2++;
-                } else if (sum > target) {
-                    int diff = Math.abs(sum - target);
-                    if (diff < minDiff) {
-                        minDiff = diff;
-                        res = sum;
+
+                    if (sum < target) {
+                        i2++;
+                        while (i2 < i3 && nums[i2] == nums[i2 - 1]) i2++;   
+                    } else {
+                        i3--;
+                        while (i2 < i3 && nums[i3] == nums[i3 + 1]) i3--;
                     }
-                    i3--;
-                    while (i2 < i3 && nums[i3] == nums[i3 + 1]) i3--;
+
                 }
             }
 
