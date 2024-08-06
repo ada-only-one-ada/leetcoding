@@ -4,11 +4,11 @@ class Solution {
         int right = s.length() - 1;
 
         while (left < right) {
-            while (left < right && (!Character.isLetter(s.charAt(left)) && !Character.isDigit(s.charAt(left)))) {
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
                 left++;
             }
 
-            while (left < right && (!Character.isLetter(s.charAt(right)) && !Character.isDigit(s.charAt(right)))) {
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
                 right--;
             }
 
