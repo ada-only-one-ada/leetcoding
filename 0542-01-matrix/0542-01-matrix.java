@@ -27,11 +27,9 @@ class Solution {
                 if (row < rowNum - 1) minDis = Math.min(minDis, mat[row + 1][col]);
                 if (col < colNum - 1) minDis = Math.min(minDis, mat[row][col + 1]);
 
-                if (minDis != Integer.MAX_VALUE) {
+                
                     mat[row][col] = Math.min(1 + minDis, mat[row][col]);
-                } else {
-                    mat[row][col] = Integer.MAX_VALUE;
-                }
+                
             }
         }
 
