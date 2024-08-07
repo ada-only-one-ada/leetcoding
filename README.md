@@ -139,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
+| [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
@@ -183,6 +184,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
+| [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
@@ -235,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
+| [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 ## Dynamic Programming
@@ -308,6 +311,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
+| [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 ## Math
 |  |
 | ------- |
@@ -341,6 +345,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
