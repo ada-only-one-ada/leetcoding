@@ -1,19 +1,19 @@
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         int left = 1;
-        // n could be 2147483647, if (n+1) error
-        int right = Integer.MAX_VALUE; 
+        int right = n;
 
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-
-            if (isBadVersion(mid)) {
+        while (left + 1 < right){
+            int mid = left + (right-left) / 2;
+          
+            if (isBadVersion(mid)){
                 right = mid;
-            } else {
-                left = mid + 1;
+            }else {
+                left = mid;
             }
         }
 
-        return left;
+        if (isBadVersion(left)) return left;
+        return right;
     }
 }
