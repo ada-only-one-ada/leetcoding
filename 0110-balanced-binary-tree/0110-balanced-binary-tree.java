@@ -13,6 +13,7 @@ class Solution {
         if (Math.abs(left - right) > 1) return -1;
         if (left == -1 || right == -1) return -1; // 任何一个不balanced就不是
 
+        // 这里用 max 不是 min
         return Math.max(left, right) + 1;
     }
 }
