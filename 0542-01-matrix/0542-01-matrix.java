@@ -2,15 +2,20 @@ class Solution {
     public int[][] updateMatrix(int[][] mat) {
         int rowNum = mat.length;
         int colNum = mat[0].length;
-        
-        for (int row = 0; row < rowNum; row++) {
-            for (int col = 0; col < colNum; col++) {
-                if (mat[row][col] == 0) continue;
 
-                int distance = Integer.MAX_VALUE - 1;
-                if (row > 0) distance = Math.min(distance, mat[row - 1][col]);
-                if (col > 0) distance = Math.min(distance, mat[row][col - 1]);
-                mat[row][col] = distance + 1;
+        for (int row = 0; row < mat.length; row++) {
+            for (int col = 0; col < mat[0].length; col++) {
+                if (mat[row][col] == 0) continue;
+  
+                int minDis = Integer.MAX_VALUE;
+                if (row > 0) minDis = Math.min(minDis, mat[row - 1][col]);
+                if (col > 0) minDis = Math.min(minDis, mat[row][col - 1]);
+
+                if (minDis != Integer.MAX_VALUE) {
+                    mat[row][col] = 1 + minDis;
+                } else {
+                    mat[row][col] = Integer.MAX_VALUE;
+                }
             }
         }
 
@@ -18,12 +23,17 @@ class Solution {
             for (int col = colNum - 1; col >= 0; col--) {
                 if (mat[row][col] == 0) continue;
 
-                int distance = mat[row][col];
-                if (row < rowNum - 1) distance = Math.min(distance, mat[row + 1][col]);
-                if (col < colNum - 1) distance = Math.min(distance, mat[row][col + 1]);
-                mat[row][col] = Math.min(mat[row][col], distance + 1);
+                int minDis = mat[row][col];
+                if (row < rowNum - 1) minDis = Math.min(minDis, mat[row + 1][col]);
+                if (col < colNum - 1) minDis = Math.min(minDis, mat[row][col + 1]);
+
+                if (minDis != Integer.MAX_VALUE) {
+                    mat[row][col] = Math.min(1 + minDis, mat[row][col]);
+                } else {
+                    mat[row][col] = Integer.MAX_VALUE;
+                }
             }
-        }        
+        }
 
         return mat;
     }
