@@ -12,6 +12,7 @@ class Solution {
         int right = getHeight(root.right);
 
         if (Math.abs(left - right) > 1) return -1;
+        if (left == -1 || right == -1) return -1;
 
         return Math.max(left, right) + 1;
     }
