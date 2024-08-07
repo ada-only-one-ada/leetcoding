@@ -1,7 +1,8 @@
 class Solution {
     boolean res = true;
+    
     public boolean isBalanced(TreeNode root) {
-        if (root == null) return true;
+       // if (root == null) return true;
      
         getHeight(root);
         if (res == false) return false;
@@ -10,6 +11,7 @@ class Solution {
 
     public int getHeight(TreeNode root) {
         if (root == null) return 0;
+        
         int left = getHeight(root.left);
         int right = getHeight(root.right);
 
