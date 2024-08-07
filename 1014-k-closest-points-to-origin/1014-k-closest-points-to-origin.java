@@ -17,10 +17,8 @@ class Solution {
         int[][] res = new int[k][2];
         int index = res.length - 1;
         while (!queue.isEmpty()) {
-            int[] point = queue.poll();
-            res[index][0] = point[0];
-            res[index][1] = point[1];
-            index--; 
+            
+            res[index--] = queue.poll();
         }
 
         return res;
