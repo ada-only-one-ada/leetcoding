@@ -13,9 +13,9 @@ class Solution {
         }
 
         int[][] res = new int[k][2];
-        int index = res.length - 1;
+        int index = 0;
         while (!queue.isEmpty()) {        
-            res[index--] = queue.poll();
+            res[index++] = queue.poll();
         }
 
         return res;
