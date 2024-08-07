@@ -1,25 +1,14 @@
 class Solution {
-    boolean res = true;
-    
     public boolean isBalanced(TreeNode root) {
-       // if (root == null) return true;
-     
-        getHeight(root);
-        if (res == false) return false;
-        return true;
+        if (root == null) return true;
+ 
+        int left = getHeight(root.left);   //recursion to the leftmost child 
+        int right = getHeight(root.right); // and rightmost
+        return Math.abs(left-right) <= 1 && isBalanced(root.left) && isBalanced(root.right);
     }
 
-    public int getHeight(TreeNode root) {
-        if (root == null) return 0;
-        
-        int left = getHeight(root.left);
-        int right = getHeight(root.right);
-
-        if (Math.abs(left - right) > 1) {
-            res = false;
-            return -1; // return -1 is just one answer for current call
-        }
-
-        return Math.max(left, right) + 1;
+    public int getHeight(TreeNode root){
+        if (root == null) return 0;        
+        return 1 + Math.max(getHeight(root.left), getHeight(root.right));
     }
 }
