@@ -152,6 +152,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0792-binary-search](https://github.com/Adagggggg/leetcoding/tree/master/0792-binary-search) |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 ## Binary Search
@@ -243,6 +244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 ## Sorting
 |  |
 | ------- |
@@ -257,6 +259,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 ## Counting
 |  |
@@ -302,12 +305,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 ## Queue
 |  |
 | ------- |
@@ -332,4 +337,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
+## Geometry
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
