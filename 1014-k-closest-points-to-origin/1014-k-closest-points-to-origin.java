@@ -5,9 +5,7 @@ class Solution {
         });
 
         for (int[] point: points) {
-            int x = point[0];
-            int y = point[1];
-            queue.add(new int[]{x, y});
+            queue.add(new int[]{point[0], point[1]});
 
             while (queue.size() > k) {
                 queue.poll();
@@ -16,8 +14,7 @@ class Solution {
 
         int[][] res = new int[k][2];
         int index = res.length - 1;
-        while (!queue.isEmpty()) {
-            
+        while (!queue.isEmpty()) {        
             res[index--] = queue.poll();
         }
 
