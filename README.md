@@ -246,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/Adagggggg/leetcoding/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/Adagggggg/leetcoding/tree/master/0008-string-to-integer-atoi) |
 | [0013-roman-to-integer](https://github.com/Adagggggg/leetcoding/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
@@ -408,4 +409,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0136-single-number](https://github.com/Adagggggg/leetcoding/tree/master/0136-single-number) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
