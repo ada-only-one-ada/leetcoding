@@ -11,7 +11,7 @@ class Solution {
         }
 
         ListNode secondHalf = slow.next;
-        slow.next = null;
+        //slow.next = null;
         return secondHalf;
     }
 }
