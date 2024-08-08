@@ -10,8 +10,6 @@ class Solution {
             fast = fast.next.next;
         }
 
-        ListNode secondHalf = slow.next;
-        //slow.next = null;
-        return secondHalf;
+        return slow.next;
     }
 }
