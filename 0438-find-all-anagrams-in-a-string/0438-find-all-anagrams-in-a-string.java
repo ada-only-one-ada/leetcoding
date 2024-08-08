@@ -6,7 +6,6 @@ class Solution {
         for (char c: p.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        int pCharNum = map.size();
         int toFind = map.size();
 
         int left = 0;
