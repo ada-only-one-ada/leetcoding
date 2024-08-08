@@ -173,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 ## Tree
 |  |
 | ------- |
@@ -234,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
+| [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 ## Matrix
 |  |
@@ -290,6 +292,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
+| [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 ## Prefix Sum
 |  |
@@ -364,4 +367,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/Adagggggg/leetcoding/tree/master/0278-first-bad-version) |
+## Simulation
+|  |
+| ------- |
+| [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 <!---LeetCode Topics End-->
