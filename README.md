@@ -135,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/Adagggggg/leetcoding/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Adagggggg/leetcoding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
@@ -350,6 +351,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
+| [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 ## Greedy
 |  |
 | ------- |
@@ -436,6 +438,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Adagggggg/leetcoding/tree/master/0136-single-number) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 ## Trie
