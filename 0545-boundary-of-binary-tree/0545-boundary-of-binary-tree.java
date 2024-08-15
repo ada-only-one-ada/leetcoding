@@ -4,7 +4,6 @@ class Solution {
         if (root == null) return res;
 
         if (!isLeafNode(root)) res.add(root.val);
-
         addLeftBoundary(root.left, res);
         addLeafBoundary(root, res);
         addRightBoundary(root.right, res);
