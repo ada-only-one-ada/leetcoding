@@ -3,32 +3,21 @@ class Solution {
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;
 
-        if (!isLeafNode(root)) res.add(root.val);
+        if (!isLeaf(root)) res.add(root.val);
         addLeftBoundary(root.left, res);
-        addLeafBoundary(root, res);
+        addLeaf(root, res);
         addRightBoundary(root.right, res);
         return res;
     }
 
-    public boolean isLeafNode(TreeNode node) {
+    public boolean isLeaf(TreeNode node) {
         return node != null && node.left == null && node.right == null;
     }
 
     // pre-order traversal: root-left-right
-    public void addLeafBoundary(TreeNode node, List<Integer> res) {
-        if (node == null) return;
-
-        if (isLeafNode(node)) {
-            res.add(node.val);
-        }
-
-        addLeafBoundary(node.left, res);
-        addLeafBoundary(node.right, res);
-    }    
-
     public void addLeftBoundary(TreeNode node, List<Integer> res) {
         while (node != null) {
-            if (!isLeafNode(node)) {
+            if (!isLeaf(node)) {
                 res.add(node.val);
             }
 
@@ -40,10 +29,23 @@ class Solution {
         }
     }
 
+    // pre-order traversal: root-left-right
+    public void addLeaf(TreeNode node, List<Integer> res) {
+        if (node == null) return;
+
+        if (isLeaf(node)) {
+            res.add(node.val);
+        }
+
+        addLeaf(node.left, res);
+        addLeaf(node.right, res);
+    }    
+
+    // pre-order traversal: root-right-left
     public void addRightBoundary(TreeNode node, List<Integer> res) {
         List<Integer> temp = new ArrayList<>();
         while (node != null) {
-            if (!isLeafNode(node)) {
+            if (!isLeaf(node)) {
                 temp.add(node.val);
             }
 
@@ -54,6 +56,7 @@ class Solution {
             }
         }
 
+        // 先找到的后加入res，所以是reverse加。注意这里不是index 0的位置，可能res前面已经有了其他left，leaf元素了
         for (int i = temp.size() - 1; i >= 0; i--) {
             res.add(temp.get(i));
         }
