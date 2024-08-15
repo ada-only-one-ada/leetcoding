@@ -10,8 +10,8 @@ class Solution {
 
         int left = getHeight(root.left);
         int right = getHeight(root.right);
-        res = Math.max(res, left);
-        res = Math.max(res, right);
+       // res = Math.max(res, left);
+       // res = Math.max(res, right);
         res = Math.max(res, left + right);
 
         return 1 + Math.max(left, right);
