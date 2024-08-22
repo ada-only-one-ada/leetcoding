@@ -27,11 +27,11 @@ class Solution {
                         return false;
                     }
                     
-                    if ((node.left != null || node.right != null )&& prevSingle) {
+                    if ((node.left != null || node.right != null ) && prevSingle) {
                         return false;
                     }
 
-                    if ( i != size - 1 && (node.left == null || node.right == null)) {
+                    if ( i < size - 1 && (node.left == null || node.right == null)) {
                         prevSingle = true;
                     }
                 } 
