@@ -14,6 +14,7 @@ class Solution {
             
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
+                if (currHeight == height) continue; // 叶子节点，不需要检查
 
                 if (currHeight < height - 1) { // 小于叶子父母
                     if (node.left == null || node.right == null) {
@@ -25,7 +26,7 @@ class Solution {
                     if (node.left == null && node.right != null) {
                         return false;
                     }
-
+                    
                     if ((node.left != null || node.right != null )&& prevSingle) {
                         return false;
                     }
