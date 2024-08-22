@@ -27,20 +27,17 @@ class Solution {
 
                 // 等于叶子父母
                 if (currHeight == height - 1) { 
-                    // 有右孩子，没左孩子，不行
+                    // 情况1: 有右孩子，没左孩子，不行
                     if (node.left == null && node.right != null) {
                         return false; 
                     }
-                    
-                    // 之前出现过无右孩子的父母，现在又出现了左孩子，不行
+                    // 情况2: 之前出现过无右孩子的父母，现在又出现了左孩子，不行
                     if (node.left != null && prevSingle) {
                         return false;
                     }
 
                     // 当前层无右孩子标记
-                    if (node.right == null) {
-                        prevSingle = true;
-                    }
+                    if (node.right == null) prevSingle = true;
                 } 
                
                 if (node.left != null) queue.add(node.left);
