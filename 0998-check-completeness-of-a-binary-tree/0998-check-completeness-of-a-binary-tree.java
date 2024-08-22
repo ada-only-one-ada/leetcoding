@@ -32,13 +32,13 @@ class Solution {
                         return false; 
                     }
                     
-                    // 如果之前已经有只有左孩子，无右孩子的父母；现在又出现了左孩子但无右孩子，不行
+                    // 如果之前已经有只有左孩子，无右孩子的父母；现在又出现了左孩子，不行
                     if ((node.left != null ) && prevSingle) {
                         return false;
                     }
 
                     // 非最后一个节点，且无右孩子
-                    if ( i < size - 1 && node.right == null) {
+                    if ( node.right == null) {
                         prevSingle = true;
                     }
                 } 
