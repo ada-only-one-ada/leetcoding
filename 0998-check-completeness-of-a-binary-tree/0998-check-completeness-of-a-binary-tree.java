@@ -9,29 +9,35 @@ class Solution {
 
         while (!queue.isEmpty()) {
             int size = queue.size();
-            currHeight++;
-            boolean prevSingle = false;
+            currHeight++; // 拿到当前层数
+            boolean prevSingle = false; // 存当前层当前节点的前面是不是有父母生了独生孩子
             
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
+
                 if (currHeight == height) continue; // 叶子节点，不需要检查
 
-                if (currHeight < height - 1) { // 小于叶子父母
+                // 小于叶子父母
+                if (currHeight < height - 1) { 
+                    // 左右孩子缺一不可
                     if (node.left == null || node.right == null) {
                         return false;
                     }
                 }
 
-                if (currHeight == height - 1) { // 等于叶子父母
+                // 等于叶子父母
+                if (currHeight == height - 1) { 
+                    // 如果有右孩子，没左孩子，不行
                     if (node.left == null && node.right != null) {
-                        return false;
+                        return false; 
                     }
                     
+                    // 如果之前已经有
                     if ((node.left != null || node.right != null ) && prevSingle) {
                         return false;
                     }
 
-                    if ( i < size - 1 && (node.left == null || node.right == null)) {
+                    if ( i < size - 1 &&  node.right == null) {
                         prevSingle = true;
                     }
                 } 
