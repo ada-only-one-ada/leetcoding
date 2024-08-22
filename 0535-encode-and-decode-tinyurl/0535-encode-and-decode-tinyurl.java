@@ -7,8 +7,8 @@ public class Codec {
     private String idToShortURL(int n) {
         StringBuilder shortUrl = new StringBuilder();
         while (n > 0) {
-            shortUrl.append(ALPHABET.charAt(n % 60));
-            n /= 60;
+            shortUrl.append(ALPHABET.charAt(n % 62));
+            n /= 62;
         }
         return shortUrl.reverse().toString();
     }
