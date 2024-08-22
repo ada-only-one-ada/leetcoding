@@ -27,18 +27,18 @@ class Solution {
 
                 // 等于叶子父母
                 if (currHeight == height - 1) { 
-                    // 如果有右孩子，没左孩子，不行
+                    // 有右孩子，没左孩子，不行
                     if (node.left == null && node.right != null) {
                         return false; 
                     }
                     
-                    // 如果之前已经有只有左孩子，无右孩子的父母；现在又出现了左孩子，不行
-                    if ((node.left != null ) && prevSingle) {
+                    // 之前出现过无右孩子的父母，现在又出现了左孩子，不行
+                    if (node.left != null && prevSingle) {
                         return false;
                     }
 
-                    // 非最后一个节点，且无右孩子
-                    if ( node.right == null) {
+                    // 当前层无右孩子标记
+                    if (node.right == null) {
                         prevSingle = true;
                     }
                 } 
