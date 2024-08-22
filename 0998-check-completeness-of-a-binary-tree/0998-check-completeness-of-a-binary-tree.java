@@ -1,26 +1,26 @@
 class Solution {
     public boolean isCompleteTree(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
+        if (root == null) return true;
 
         boolean nullNodeFound = false;
-        Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
 
-        while (!q.isEmpty()) {
-            TreeNode node = q.poll();
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
 
             if (node == null) {
                 nullNodeFound = true;
-            } else {
-                if (nullNodeFound) {
+            } else if (node != null) {
+                if (nullNodeFound == true) {
                     return false;
                 }
-                q.offer(node.left);
-                q.offer(node.right);
+
+                queue.offer(node.left);
+                queue.offer(node.right);
             }
         }
+
         return true;
     }
 }
