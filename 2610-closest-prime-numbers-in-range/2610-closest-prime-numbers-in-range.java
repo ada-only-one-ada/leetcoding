@@ -18,18 +18,8 @@ class Solution {
         }
 
         int firstPrime = left;
-        while (firstPrime <= right && !isPrime[firstPrime]) {
-            firstPrime++;
-        }
 
         int lastPrime = right;
-        while (lastPrime >= left && !isPrime[lastPrime]) {
-            lastPrime--;
-        }
-
-        if (lastPrime <= firstPrime) {
-            return new int[]{-1, -1}; 
-        }
 
         int minGap = Integer.MAX_VALUE;
         int res1 = -1;
