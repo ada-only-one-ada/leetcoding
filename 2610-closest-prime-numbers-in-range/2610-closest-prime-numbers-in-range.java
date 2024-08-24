@@ -17,25 +17,20 @@ class Solution {
             }
         }
 
-        int firstPrime = left;
-        int lastPrime = right;
-
         int minGap = Integer.MAX_VALUE;
         int res1 = -1;
         int res2 = -1;
 
-        int start = firstPrime;
-        for (int end = firstPrime + 1; end <= lastPrime; end++) {
-            if (!isPrime[end]) continue;
+        int prevPrime = -1;
 
-            while (start < end) {
-                if (isPrime[start] && end - start < minGap) {
-                    minGap = end - start;
-                    res1 = start;
-                    res2 = end;
+        for (int num = left; num <= right; num++) {
+            if (isPrime[num]) {
+                if (prevPrime != -1 && num - prevPrime < minGap) {
+                    minGap = num - prevPrime;
+                    res1 = prevPrime;
+                    res2 = num;
                 }
-
-                start++;
+                prevPrime = num;
             }
         }
          
