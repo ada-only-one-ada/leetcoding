@@ -8,10 +8,10 @@ class Solution {
         isPrime[1] = false;
         
         // num = 2; num <= right; num++
-        for (int num = 2; num <= right; num++) {
+        for (int num = 2; num * num <= right; num++) {
             if (isPrime[num]) {
                 // multiple = 2; multiple * num <= right; multiple++
-                for (int multiple = 2; multiple * num <= right; multiple++) {
+                for (int multiple = num; multiple * num <= right; multiple++) {
                     isPrime[num * multiple] = false;
                 }
             }
