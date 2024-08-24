@@ -46,7 +46,6 @@ class Solution {
 
                 start++;
             }
-            
         }
          
         return new int[]{res1, res2};
