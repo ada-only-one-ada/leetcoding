@@ -29,6 +29,7 @@ class Solution {
                     res[0] = prevPrime;
                     res[1] = num;
                 }
+                
                 prevPrime = num;
             }
         }
