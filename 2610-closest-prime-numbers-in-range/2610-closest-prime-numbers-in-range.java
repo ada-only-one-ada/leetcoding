@@ -18,7 +18,6 @@ class Solution {
         }
 
         int firstPrime = left;
-
         int lastPrime = right;
 
         int minGap = Integer.MAX_VALUE;
