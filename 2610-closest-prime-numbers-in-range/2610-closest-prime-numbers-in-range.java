@@ -20,8 +20,8 @@ class Solution {
         int minGap = Integer.MAX_VALUE;
         int[] res = new int[]{-1, -1};
 
-        int prevPrime = -1;
 
+        int prevPrime = -1;
         for (int num = left; num <= right; num++) {
             if (isPrime[num]) {
                 if (prevPrime != -1 && num - prevPrime < minGap) {
