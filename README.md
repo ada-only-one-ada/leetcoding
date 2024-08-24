@@ -396,6 +396,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
+| [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -500,4 +501,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
+## Number Theory
+|  |
+| ------- |
+| [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
 <!---LeetCode Topics End-->
