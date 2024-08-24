@@ -18,8 +18,7 @@ class Solution {
         }
 
         int minGap = Integer.MAX_VALUE;
-        int res1 = -1;
-        int res2 = -1;
+        int[] res = new int[]{-1, -1};
 
         int prevPrime = -1;
 
@@ -27,13 +26,13 @@ class Solution {
             if (isPrime[num]) {
                 if (prevPrime != -1 && num - prevPrime < minGap) {
                     minGap = num - prevPrime;
-                    res1 = prevPrime;
-                    res2 = num;
+                    res[0] = prevPrime;
+                    res[1] = num;
                 }
                 prevPrime = num;
             }
         }
          
-        return new int[]{res1, res2};
+        return res;
     }
 }
