@@ -7,9 +7,10 @@ class Solution {
         isPrime[0] = false;
         isPrime[1] = false;
         
-        for (int num = 2; num * num <= right; num++) {
+        // num = 2; num <= right
+        for (int num = 2; num <= right; num++) {
             if (isPrime[num]) {
-                for (int multiple = num; multiple * num <= right; multiple++) {
+                for (int multiple = 2; multiple * num <= right; multiple++) {
                     isPrime[num * multiple] = false;
                 }
             }
