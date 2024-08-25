@@ -165,6 +165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Binary Search
 |  |
 | ------- |
@@ -272,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String
 |  |
 | ------- |
@@ -292,6 +294,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Matrix
 |  |
 | ------- |
@@ -475,6 +478,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/0014-longest-common-prefix) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
 |  |
 | ------- |
