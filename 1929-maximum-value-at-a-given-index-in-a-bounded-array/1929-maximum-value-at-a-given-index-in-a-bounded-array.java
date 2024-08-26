@@ -1,15 +1,16 @@
 class Solution {
     public int maxValue(int n, int index, int maxSum) {
         // 不超过 maxSum，数字越小越好
+        // 每个数字都要大于等于1，所以左边最小的数字不能减到0，如果到了1还有元素，那么剩下的都是1；右边同样
 
         long leftNum = index;
         long rightNum = n - leftNum - 1;
 
-        long start = 1;
-        long end = maxSum + 1;
-        long res = -1;
+        int start = 1;
+        int end = maxSum + 1;
+        int res = -1;
         while (start < end) {
-            long candidate = start + (end - start) / 2;
+            int candidate = start + (end - start) / 2;
 
             long leftPositiveNum = Math.min(leftNum, candidate - 1);
             long leftSum = leftPositiveNum * candidate - (((leftPositiveNum * (leftPositiveNum + 1))) / 2);
@@ -29,6 +30,6 @@ class Solution {
             }
         }
       
-        return (int)res;
+        return res;
     }
 }
