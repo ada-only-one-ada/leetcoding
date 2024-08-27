@@ -10,16 +10,17 @@ class Solution {
             int currWidth = book[0];
             int currHeight = book[1];
             
-            // 新建一个书架 
+            // 无脑新建一个书架 
             dp[i] = dp[i - 1] + currHeight;
 
             // 尝试放到之前 可行的 前 j 本书所需要的最小高度
+            // 从第 j 本书开始向前尝试将书放在当前层
             for (int j = i - 1; j >= 1; j--) {
                 currWidth += books[j - 1][0];
-                if (currWidth > shelfWidth) break;
+                if (currWidth > shelfWidth) break; // 第 j 本放不下，停止向前拿书
                 
                 currHeight = Math.max(currHeight, books[j - 1][1]);
-                dp[i] = Math.min(dp[i], dp[j - 1] + currHeight); //为什么这里改成j-1是对的？
+                dp[i] = Math.min(dp[i], dp[j - 1] + currHeight);  // j 本书以后新建书架
             }
         }
 
