@@ -62,7 +62,7 @@ class Solution {
             return new Node(topLeft.val, true); 
         }
 
-        Node root = new Node(false, false);
+        Node root = new Node(false, false);  // new Node(false, true);
         root.topLeft = topLeft;
         root.topRight = topRight;
         root.bottomLeft = bottomLeft;
