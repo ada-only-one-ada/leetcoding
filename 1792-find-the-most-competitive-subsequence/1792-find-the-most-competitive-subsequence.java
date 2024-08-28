@@ -7,6 +7,7 @@ class Solution {
             if (stack.isEmpty() || nums[i] >= nums[stack.peek()]) {
                 stack.push(i);
             } else {
+                // 确保当前stack的元素个数 + 剩余元素 >= k个
                 while (!stack.isEmpty() && nums[i] < nums[stack.peek()] && stack.size() - 1 + (nums.length - i) >= k) {
                     stack.pop();
                 }
@@ -23,6 +24,7 @@ class Solution {
         for (int i = res.length - 1; i >= 0 && !stack.isEmpty(); i--) {
             res[i] = nums[stack.pop()];
         }
+        
         return res;
     }
 }
