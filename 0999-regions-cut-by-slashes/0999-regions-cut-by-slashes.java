@@ -8,13 +8,13 @@ class Solution {
                 char curr = grid[row].charAt(col);
 
                 if (curr == '/') {
-                    region[row*3][col*3+2] = 1;
-                    region[row*3+1][col*3+1] = 1;
-                    region[row*3+2][col*3] = 1;
+                    region[row * 3][col * 3 + 2] = 1;
+                    region[row * 3 + 1][col * 3 + 1] = 1;
+                    region[row * 3 + 2][col * 3] = 1;
                 } else if (curr == '\\') {
-                    region[row*3][col*3] = 1;
-                    region[row*3+1][col*3+1] = 1;
-                    region[row*3+2][col*3+2] = 1;
+                    region[row * 3][col * 3] = 1;
+                    region[row * 3 + 1][col * 3 + 1] = 1;
+                    region[row * 3 + 2][col * 3 + 2] = 1;
                 }
             }
         }
