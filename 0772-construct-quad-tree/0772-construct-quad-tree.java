@@ -59,7 +59,8 @@ class Solution {
         // 四个一样的组成的大 leaf
         if (topLeft.isLeaf && topRight.isLeaf && bottomLeft.isLeaf && bottomRight.isLeaf &&
         topLeft.val == topRight.val && topLeft.val == bottomLeft.val && topLeft.val == bottomRight.val) {
-            return new Node(topLeft.val, true); 
+           // return new Node(topLeft.val, true);
+            return new Node(grid[i][j] == 1, true);  
         }
 
         // 不是 leaf，值为true 或者 false 都可以
