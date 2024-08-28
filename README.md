@@ -164,6 +164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
@@ -192,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
+| [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 ## Tree
 |  |
 | ------- |
@@ -393,6 +395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
+| [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -522,4 +525,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 <!---LeetCode Topics End-->
