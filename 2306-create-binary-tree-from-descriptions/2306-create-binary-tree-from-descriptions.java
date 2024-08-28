@@ -3,6 +3,7 @@ class Solution {
         Map<Integer, TreeNode> nodes = new HashMap();
         Set<Integer> children = new HashSet<>();
 
+        // Step 1: Create all nodes and record the children
         for (int[] desc: descriptions) {
             int parent = desc[0];
             int child = desc[1];
@@ -20,7 +21,8 @@ class Solution {
             children.add(child);
         }
 
-        TreeNode root = null;
+        // Step 2: Find the root (a node that is never a child)
+        TreeNode root;
         for (int val: nodes.keySet()) {
             if (!children.contains(val)) {
                 root = nodes.get(val);
