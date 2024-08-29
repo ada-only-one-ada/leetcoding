@@ -19,9 +19,8 @@ class Solution {
         }
 
         Set<Integer> set = new HashSet<>();
-        for (int[] stone : stones) {
-            set.add(find(stone[0] + rowOffset)); 
-            set.add(find(stone[1])); 
+        for (int stone : parent.keySet()) {
+            set.add(find(stone)); 
         }
 
         return stones.length - set.size();
