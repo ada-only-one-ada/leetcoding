@@ -2,56 +2,56 @@ class Solution {
     Map<Integer, Integer> parent = new HashMap<>();
     Map<Integer, Integer> rank = new HashMap<>();
 
-    // 主要的功能方法，用于移除石头
     public int removeStones(int[][] stones) {
-        int rowOffset = 10000; // 行偏移量，用于区分行和列
+        int rowOffset = 10000; // 最大的row和col是10^4
 
-        // 遍历所有石头，并进行合并操作
         for (int[] stone: stones) {
-            connect(stone[0] + rowOffset, stone[1]); // 将行与列连接起来
+            int rowKey = stone[0] + rowOffset;
+            int colKey = stone[1];
+            parent.putIfAbsent(rowKey, rowKey);
+            parent.putIfAbsent(colKey, colKey);
+            rank.putIfAbsent(rowKey, 0);
+            rank.putIfAbsent(colKey, 0);
         }
 
-        // 使用HashSet计算不同的根节点数量，代表不同的连通分量
-        Set<Integer> count = new HashSet<>();
+        for (int[] stone: stones) {
+            connect(stone[0] + rowOffset, stone[1]);
+        }
+
+        Set<Integer> set = new HashSet<>();
         for (int[] stone : stones) {
-            count.add(find(stone[0] + rowOffset)); // 找到行的根节点
-            count.add(find(stone[1])); // 找到列的根节点
+            set.add(find(stone[0] + rowOffset)); 
+            set.add(find(stone[1])); 
         }
 
-        // 最终结果为总石头数减去连通分量的数量
-        // 这表示能够被移除的石头的最大数量
-        return stones.length - count.size();
+        return stones.length - set.size();
     }
 
-    // 并查集查找方法，带路径压缩优化
-    public int find(int x) {
-        if (!parent.containsKey(x)) {
-            parent.put(x, x);
-            rank.put(x, 1);
+    public int find(int stone) {
+        int p = parent.get(stone);
+
+        if (parent.get(p) != p) {
+            return find(parent.get(p));
         }
 
-        if (x != parent.get(x)) {
-            parent.put(x, find(parent.get(x)));  // 路径压缩
-        }
-
-        return parent.get(x);
+        return p;
     }
 
-    // 并查集合并方法，带按秩合并优化
-    public void connect(int x, int y) {
-        int rootX = find(x);
-        int rootY = find(y);
+    public void connect(int i, int j) {
+        int pi = find(i);
+        int pj = find(j);
 
-        if (rootX != rootY) {
-            // 按秩合并，始终将较小的树合并到较大的树上
-            if (rank.get(rootX) > rank.get(rootY)) {
-                parent.put(rootY, rootX);
-            } else if (rank.get(rootX) < rank.get(rootY)) {
-                parent.put(rootX, rootY);
-            } else {
-                parent.put(rootY, rootX);
-                rank.put(rootX, rank.get(rootX) + 1); // 如果秩相同，合并后秩加一
-            }
+        if (pi == pj) return;
+
+        int ranki = rank.get(pi);
+        int rankj = rank.get(pj);
+
+        if (ranki >= rankj) {
+            rank.put(pi, rank.get(pi) + rank.get(pj));
+            parent.put(pj, pi);
+        } else {
+            rank.put(pj, rank.get(pj) + rank.get(pi));
+            parent.put(pi, pj);
         }
     }
 }
