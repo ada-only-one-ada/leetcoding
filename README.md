@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 ## Binary Search Tree
@@ -286,6 +287,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
@@ -422,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
+| [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 ## Math
@@ -537,6 +540,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
+| [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 ## Topological Sort
 |  |
 | ------- |
