@@ -17,13 +17,14 @@ class Solution {
             for (int j = i + 1; j < n; j++) {
                 if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {
                     if (connect(i, j)) {
-                        count--;
+                        count--; // 每连接一个，总集合少一个
                     };
                 }
             }
         }
 
-        return n - count;
+        // 可以移除的石头数量是总数 (n) 减去必须保留的集合数 (count)
+        return n - count; 
     }
 
     public int find(int node) {
