@@ -4,18 +4,17 @@ class Solution {
 
     public int removeStones(int[][] stones) {
         int rowOffset = 10000; // Offset for rows to differentiate from columns
-        int colOffset = 0; // Offset for columns to further ensure no overlap
 
         // Union on each stone's row and column with different offsets
         for (int[] stone: stones) {
-            connect(stone[0] + rowOffset, stone[1] + colOffset);
+            connect(stone[0] + rowOffset, stone[1]);
         }
 
         // Count unique roots in union-find structure
         Set<Integer> count = new HashSet<>();
         for (int[] stone : stones) {
             count.add(find(stone[0] + rowOffset));
-            count.add(find(stone[1] + colOffset));
+            count.add(find(stone[1]));
         }
 
         // 本来一共有10个石头，分成了三堆，那么每堆至少保留一个，总共保留三个
