@@ -30,6 +30,7 @@ class Solution {
         int p = parent.get(stone);
 
         if (parent.get(p) != p) {
+            parent.put(p, find(parent.get(p)));
             return find(parent.get(p));
         }
 
