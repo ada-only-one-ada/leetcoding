@@ -1,58 +1,55 @@
 class Solution {
-    int[] parent;
-    int[] rank;
-    int count;
+    Map<Integer, Integer> parent = new HashMap<>();
+    Map<Integer, Integer> rank = new HashMap<>();
 
     public int removeStones(int[][] stones) {
-        parent = new int[stones.length];
-        rank = new int[stones.length];
-        count = stones.length;
+        int rowOffset = 10000; // Offset for rows to differentiate from columns
+        int colOffset = 0; // Offset for columns to further ensure no overlap
 
-        for (int i = 0; i < stones.length; i++) {
-            parent[i] = i;
-            rank[i] = 1;
+        // Union on each stone's row and column with different offsets
+        for (int[] stone: stones) {
+            connect(stone[0] + rowOffset, stone[1] + colOffset);
         }
 
-        for (int i = 0; i < stones.length; i++) {
-            for (int j = i + 1; j < stones.length; j++) {
-                // 如果 石头i 和 石头j 在同一行/列，连通它们
-                if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {
-                    if (connect(i, j)) {
-                        // 单独自己的集合少了一个
-                        count--;
-                    };
-                }
-            }
+        // Count unique roots in union-find structure
+        Set<Integer> count = new HashSet<>();
+        for (int[] stone : stones) {
+            count.add(find(stone[0] + rowOffset));
+            count.add(find(stone[1] + colOffset));
         }
 
         // 本来一共有10个石头，分成了三堆，那么每堆至少保留一个，总共保留三个
         // 去掉的就是 10 - 3 = 7个，这里求的是去掉的个数
-        return stones.length - count;
+        return stones.length - count.size();
     }
 
-    public int find(int stone) {
-        int p = parent[stone];
-        if (parent[p] != p) {
-            return find(p);
+    public int find(int x) {
+        if (!parent.containsKey(x)) {
+            parent.put(x, x);
+            rank.put(x, 1);
         }
 
-        return p;
+        if (x != parent.get(x)) {
+            parent.put(x, find(parent.get(x))); 
+        }
+
+        return parent.get(x);
     }
 
-    public boolean connect(int i, int j) {
-        int pi = find(i);
-        int pj = find(j);
+    public void connect(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
 
-        if (pi == pj) return false;
-
-        if (rank[pi] >= rank[pj]) {
-            rank[pi] += rank[pj];
-            parent[pj] = pi;
-        } else {
-            rank[pj] += rank[pi];
-            parent[pi] = pj;
+        if (rootX != rootY) {
+            // Union by rank
+            if (rank.get(rootX) > rank.get(rootY)) {
+                parent.put(rootY, rootX);
+            } else if (rank.get(rootX) < rank.get(rootY)) {
+                parent.put(rootX, rootY);
+            } else {
+                parent.put(rootY, rootX);
+                rank.put(rootX, rank.get(rootX) + 1);
+            }
         }
-
-        return true;
     }
 }
