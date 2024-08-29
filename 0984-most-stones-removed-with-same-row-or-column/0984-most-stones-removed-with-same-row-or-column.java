@@ -4,49 +4,51 @@ class Solution {
     int count;
 
     public int removeStones(int[][] stones) {
-        int n = stones.length;
-        parent = new int[n];
-        rank = new int[n];
-        for (int i = 0; i < n; i++) {
+        parent = new int[stones.length];
+        rank = new int[stones.length];
+        count = stones.length;
+
+        for (int i = 0; i < stones.length; i++) {
             parent[i] = i;
             rank[i] = 1;
         }
-        count = n;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
+        for (int i = 0; i < stones.length; i++) {
+            for (int j = i + 1; j < stones.length; j++) {
+                // 如果 石头i 和 石头j 在同一行/列，连通它们
                 if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {
                     if (connect(i, j)) {
-                        count--; // 每连接一个，总集合少一个
+                        // 单独自己的集合少了一个
+                        count--;
                     };
                 }
             }
         }
 
-        // 可以移除的石头数量是总数 (n) 减去必须保留的集合数 (count)
-        return n - count; 
+        return stones.length - count;
     }
 
-    public int find(int node) {
-        if (node != parent[node]) {
-            parent[node] = find(parent[node]);
+    public int find(int stone) {
+        int p = parent[stone];
+        if (parent[p] != p) {
+            return find(p);
         }
 
-        return parent[node];
+        return p;
     }
 
-    public boolean connect(int x, int y) {
-        int parent1 = find(x);
-        int parent2 = find(y);
+    public boolean connect(int i, int j) {
+        int pi = find(i);
+        int pj = find(j);
 
-        if (parent1 == parent2) return false;
+        if (pi == pj) return false;
 
-        if (rank[parent1] >= rank[parent2]) {
-            parent[parent2] = parent1;
-            rank[parent1] += rank[parent2];
+        if (rank[pi] >= rank[pj]) {
+            rank[pi] += rank[pj];
+            parent[pj] = pi;
         } else {
-            parent[parent1] = parent2;
-            rank[parent2] += rank[parent1];
+            rank[pj] += rank[pi];
+            parent[pi] = pj;
         }
 
         return true;
