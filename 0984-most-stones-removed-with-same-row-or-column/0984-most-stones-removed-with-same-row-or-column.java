@@ -25,16 +25,17 @@ class Solution {
         // 使用HashSet计算不同的根节点数量，代表不同的连通分量
         
         Set<Integer> set = new HashSet<>();
+        /*
         for (int stone : parent.keySet()) {
             set.add(find(stone)); // 查找每个节点的根节点，row和col是分别的节点
         }
-
-        /*
+        */
+        
         for (int[] stone : stones) {
             set.add(find(stone[0] + rowOffset)); // 找到行的根节点
             set.add(find(stone[1])); // 找到列的根节点
         }
-        */
+        
 
         // 总石头数减去连通分量的数量，即为最大可移除石头数
         return stones.length - set.size();
