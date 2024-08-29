@@ -1,54 +1,63 @@
-public class Solution {
+class Solution {
+    int[] rank;
+    int[] parent;
+
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
-        int n = s.length();
-        List<Integer>[] graph = new ArrayList[n];
-        for (int i = 0; i < n; i++) {
-            graph[i] = new ArrayList<>();
-        }
-        
-        // Build the graph
-        for (List<Integer> pair : pairs) {
-            int x = pair.get(0);
-            int y = pair.get(1);
-            graph[x].add(y);
-            graph[y].add(x);
+        parent = new int[s.length()];
+        rank = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            parent[i] = i;
+            rank[i] = 1;
         }
 
-        // To keep track of visited nodes
-        boolean[] visited = new boolean[n];
-        char[] result = new char[n];
-        
-        // DFS to find all connected components
-        for (int i = 0; i < n; i++) {
-            if (!visited[i]) {
-                List<Integer> connectedNodes = new ArrayList<>();
-                dfs(graph, visited, connectedNodes, i);
-                
-                // Extract characters and sort them
-                List<Character> characters = new ArrayList<>();
-                for (int index : connectedNodes) {
-                    characters.add(s.charAt(index));
-                }
-                Collections.sort(characters);
-                
-                // Sort indices to place characters correctly
-                Collections.sort(connectedNodes);
-                for (int j = 0; j < connectedNodes.size(); j++) {
-                    result[connectedNodes.get(j)] = characters.get(j);
-                }
-            }
+        for (List<Integer> pair: pairs) {
+            connect(pair.get(0), pair.get(1));
         }
 
-        return new String(result);
+        // Group all characters by their root parent
+        Map<Integer, PriorityQueue<Character>> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            int root = find(i);
+            map.putIfAbsent(root, new PriorityQueue<>());
+            map.get(root).add(s.charAt(i));
+        }
+
+        // Build the result using the sorted characters in each component
+        // 要根据 s 去拿到每个 group 的顺序
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            int root = find(i);
+            res.append(map.get(root).poll());
+        }
+
+        return res.toString();
     }
 
-    private void dfs(List<Integer>[] graph, boolean[] visited, List<Integer> connectedNodes, int start) {
-        visited[start] = true;
-        connectedNodes.add(start);
-        for (int neighbor : graph[start]) {
-            if (!visited[neighbor]) {
-                dfs(graph, visited, connectedNodes, neighbor);
-            }
+    public int find(int i) {
+        int p = parent[i];
+
+        if (parent[p] != p) {
+            parent[p] = find(p);
+            return find(p);
         }
+
+        return p;
+    }
+
+    public boolean connect(int i1, int i2) {
+        int p1 = find(i1);
+        int p2 = find(i2);
+
+        if (p1 == p2) return false;
+
+        if (rank[p1] >= rank[p2]) {
+            parent[p2] = p1;
+            rank[p1] += rank[p2];
+        } else {
+            parent[p1] = p2;
+            rank[p2] += rank[p1];
+        }
+
+        return true;
     }
 }
