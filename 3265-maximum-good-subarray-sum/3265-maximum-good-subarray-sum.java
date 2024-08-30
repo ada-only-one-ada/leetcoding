@@ -28,7 +28,6 @@ class Solution {
             }
         }
 
-        if (res == Long.MIN_VALUE) return 0;
-        return res;
+        return res == Long.MIN_VALUE? 0: res;
     }
 }
