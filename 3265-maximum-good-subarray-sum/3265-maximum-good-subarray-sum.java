@@ -23,7 +23,8 @@ class Solution {
             if (!map.containsKey(nums[i])) {
                 map.put(nums[i], i);
             } else {
-                if (nums[i] >= prefixSum[i] - prefixSum[map.get(nums[i])] + nums[map.get(nums[i])]) {
+                long subarraySum = prefixSum[i] - prefixSum[map.get(nums[i])] + nums[map.get(nums[i])];
+                if (nums[i] > subarraySum) {
                     map.put(nums[i], i);
                 }
             }
