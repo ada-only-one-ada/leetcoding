@@ -3,11 +3,10 @@ class Solution {
         long res = Long.MIN_VALUE;
         Map<Integer, Integer> map = new HashMap<>();
         long[] prefixSum = new long[nums.length];
+        prefixSum[0] = nums[0];
 
         for (int i = 0; i < nums.length; i++) {
-            if (i == 0) {
-                prefixSum[i] = nums[0];
-            } else {
+            if (i > 0) {
                 prefixSum[i] = prefixSum[i - 1] + nums[i];
             }
             
