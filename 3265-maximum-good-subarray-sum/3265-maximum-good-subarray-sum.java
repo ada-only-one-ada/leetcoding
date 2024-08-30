@@ -11,11 +11,13 @@ class Solution {
             }
             
             if (map.containsKey(nums[i] - k)) {
-                res = Math.max(res, prefixSum[i] - prefixSum[map.get(nums[i] - k)] + nums[map.get(nums[i] - k)]);
+                long subarraySum = prefixSum[i] - prefixSum[map.get(nums[i] - k)] + nums[map.get(nums[i] - k)];
+                res = Math.max(res, subarraySum);
             } 
             
             if (map.containsKey(nums[i] + k)) {
-                res = Math.max(res, prefixSum[i] - prefixSum[map.get(nums[i] + k)] + nums[map.get(nums[i] + k)]);
+                long subarraySum = prefixSum[i] - prefixSum[map.get(nums[i] + k)] + nums[map.get(nums[i] + k)];
+                res = Math.max(res, subarraySum);
             }
 
             if (!map.containsKey(nums[i])) {
