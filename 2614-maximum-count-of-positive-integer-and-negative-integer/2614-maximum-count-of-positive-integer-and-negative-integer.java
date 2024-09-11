@@ -1,7 +1,7 @@
 class Solution {
     public int maximumCount(int[] nums) {
         int start = 0;
-        int end = nums.length;
+        int end = nums.length - 1;
         // 找第一个正数
         while (start < end) {
             int mid = start + (end - start) / 2;
