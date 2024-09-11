@@ -11,8 +11,6 @@ class Solution {
             count[i] += count[i - 1];
         }
 
-      
-     
         long sum = 0;
         for (int i = 0; i < count.length; i++) {
             sum += count[i];
