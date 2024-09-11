@@ -22,6 +22,7 @@ class Solution {
                 sum = 0;
             }
         }
+        
         if (sum != 0) res += sum;
 
         return res;
