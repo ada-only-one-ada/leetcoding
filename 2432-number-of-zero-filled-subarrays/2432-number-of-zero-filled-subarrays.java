@@ -1,28 +1,24 @@
 class Solution {
     public long zeroFilledSubarray(int[] nums) {
         long res = 0;
-        long[] count = new long[nums.length];
+        long currZeroCount = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 0) {
-                count[i] = 1;
+        for (int num: nums) {
+            if (num == 0) {
+                currZeroCount++;
+            } else {
+                currZeroCount = 0;
             }
-            if (i == 0 || count[i] == 0) continue;
-            count[i] += count[i - 1];
+            res += currZeroCount;
         }
-
-        long sum = 0;
-        for (int i = 0; i < count.length; i++) {
-            sum += count[i];
-
-            if (count[i] == 0) {
-                res += sum;
-                sum = 0;
-            }
-        }
-
-        if (sum != 0) res += sum;
 
         return res;
     }
 }
+
+/*
+[1,3,0,0,2,0,0,4]
+[0,0,1,1,0,1,1,0]
+[0,0,1,2,0,1,2,0]
+[0,0,1,3,0,1,3,0]
+*/
