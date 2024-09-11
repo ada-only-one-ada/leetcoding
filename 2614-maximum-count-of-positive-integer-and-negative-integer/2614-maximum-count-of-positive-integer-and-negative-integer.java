@@ -1,9 +1,7 @@
 class Solution {
     public int maximumCount(int[] nums) {
-        int n = nums.length;
-
         int start = 0;
-        int end = n;
+        int end = nums.length;
         // 找第一个正数
         while (start < end) {
             int mid = start + (end - start) / 2;
@@ -16,11 +14,11 @@ class Solution {
             }
         }
         
-        int pos = start >= 0 && start < n && nums[start] > 0? n - start : 0;
+        int pos = start >= 0 && start < nums.length && nums[start] > 0? nums.length - start : 0;
 
         // 找最后一个负数
         start = 0;
-        end = n - 1;
+        end = nums.length - 1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
             // 当前数字小于0，可能是最后一个负数，也可能之后还有
