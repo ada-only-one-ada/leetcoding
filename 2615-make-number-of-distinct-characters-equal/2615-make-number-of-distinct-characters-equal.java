@@ -8,6 +8,7 @@ class Solution {
         for (char key1: map1.keySet()) {
             for (char key2: map2.keySet()) {
                 if (key1 == key2) {
+                    // 注意了是互相换！两个一样的互相换，等于没换
                     if (map1.size() == map2.size()) return true;
                 } else if (key1 != key2) {
                     int newMap1Size = map1.size();
