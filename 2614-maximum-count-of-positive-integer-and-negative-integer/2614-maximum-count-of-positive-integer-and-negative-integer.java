@@ -20,28 +20,19 @@ class Solution {
 
         // 找最后一个负数
         start = 0;
-        end = n;
-        while (start + 1 < end) {
+        end = n - 1;
+        while (start <= end) {
             int mid = start + (end - start) / 2;
             // 当前数字小于0，可能是最后一个负数，也可能之后还有
             if (nums[mid] < 0) {
-                start = mid;
+                start = mid + 1;
             // 当前数字大于0等于0，说明最后一个负数肯定在之前
             } else {
                 end = mid - 1;
             }
         }
 
-        int neg = 0;
-        
-        if (start >= 0 && start < n && nums[start] < 0) {
-            neg = start + 1;
-        }
-
-        if (end >= 0 && end < n && nums[end] < 0) {
-            neg = end + 1;
-        } 
-        
+        int neg = start > 0 && nums[start - 1] < 0? start : 0;
         return Math.max(pos, neg);
     }
 }
