@@ -13,7 +13,8 @@ class Solution {
             int currBiggest = queue.poll();
             score += currBiggest;
 
-            int newCurr = (int)Math.ceil(currBiggest / 3);
+            // 注意比如10/3，我们想要的是4
+            int newCurr = (int)Math.ceil(currBiggest / 3); 
             if (currBiggest % 3 != 0) newCurr++;
 
             queue.add(newCurr);
