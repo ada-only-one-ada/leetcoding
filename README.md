@@ -173,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Adagggggg/leetcoding/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
+| [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
@@ -457,6 +458,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
 | [2619-categorize-box-according-to-criteria](https://github.com/Adagggggg/leetcoding/tree/master/2619-categorize-box-according-to-criteria) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
+| [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
