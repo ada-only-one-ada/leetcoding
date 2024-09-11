@@ -14,7 +14,7 @@ class Solution {
             }
         }
         
-        int pos = start >= 0 && start < nums.length && nums[start] > 0? nums.length - start : 0;
+        int pos = start >= 0 && nums[start] > 0? nums.length - start : 0;
 
         // 找最后一个负数
         start = 0;
