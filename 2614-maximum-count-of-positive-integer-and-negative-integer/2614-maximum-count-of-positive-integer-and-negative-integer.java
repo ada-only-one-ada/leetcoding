@@ -30,7 +30,7 @@ class Solution {
             }
         }
 
-        int neg = start - 1 >= 0 && nums[start - 1] < 0? start : 0;
+        int neg = start - 1 >= 0 && nums[start - 1] < 0? start: 0;
         return Math.max(pos, neg);
     }
 }
