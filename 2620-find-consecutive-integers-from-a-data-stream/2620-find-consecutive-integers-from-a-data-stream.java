@@ -9,6 +9,7 @@ class DataStream {
         map.put(value, 0);
     }
     
+    // 只把等于value的数字计入map，如果下次遇到了非value的值，清空map重新统计
     public boolean consec(int num) {
         if (num != value) {
             map.put(value, 0);
