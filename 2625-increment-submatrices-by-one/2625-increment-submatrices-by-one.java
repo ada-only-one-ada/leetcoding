@@ -11,12 +11,14 @@ class Solution {
             if (row2 + 1 < n && col2 + 1 < n) diff[row2 + 1][col2 + 1] += 1;
         }
 
+        // 计算row内前缀和
         for (int row = 0; row < n; row++) {
             for (int col = 1; col < n; col++) {
                 diff[row][col] += diff[row][col - 1];
             }
         }
 
+        // 计算col内前缀和
         for (int col = 0; col < n; col++) {
             for (int row = 1; row < n; row++) {
                 diff[row][col] += diff[row - 1][col];
