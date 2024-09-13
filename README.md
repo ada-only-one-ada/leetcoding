@@ -170,6 +170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Adagggggg/leetcoding/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
@@ -441,6 +442,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
+| [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -464,6 +466,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
 | [2619-categorize-box-according-to-criteria](https://github.com/Adagggggg/leetcoding/tree/master/2619-categorize-box-according-to-criteria) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
