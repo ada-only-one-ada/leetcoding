@@ -1,29 +1,40 @@
-class Solution {
+public class Solution {
     public long maxScore(int[] nums1, int[] nums2, int k) {
         int n = nums1.length;
-        Integer[] ids = new Integer[n];
+        // 创建一个数组来存储索引，以便于后续排序
+        Integer[] indices = new Integer[n];
         for (int i = 0; i < n; i++) {
-            ids[i] = i;
+            indices[i] = i;
         }
-        // 对下标排序，不影响原数组的顺序
-        Arrays.sort(ids, (i, j) -> nums2[j] - nums2[i]);
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        long sum = 0;
+        // 根据 nums2 的值降序排序 indices
+        Arrays.sort(indices, (i, j) -> nums2[j] - nums2[i]);
+
+        // 优先队列用来维护当前选取的 k 个最大的 nums1 中的元素
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        long currentSum = 0; // 当前选取的 nums1 元素之和
+
+        // 选取 nums2 最大的前 k 个元素对应的 nums1 中的元素
         for (int i = 0; i < k; i++) {
-            sum += nums1[ids[i]];
-            pq.offer(nums1[ids[i]]);
+            currentSum += nums1[indices[i]];
+            minHeap.offer(nums1[indices[i]]);
         }
 
-        long ans = sum * nums2[ids[k - 1]];
+        // 初始得分，是当前和乘以 nums2 中第 k 大的元素
+        long maxScore = currentSum * nums2[indices[k - 1]];
+
+        // 继续遍历剩余的元素，尝试更新最大得分
         for (int i = k; i < n; i++) {
-            int x = nums1[ids[i]];
-            if (x > pq.peek()) {
-                sum += x - pq.poll();
-                pq.offer(x);
-                ans = Math.max(ans, sum * nums2[ids[i]]);
+            int currentNum = nums1[indices[i]];
+            if (currentNum > minHeap.peek()) {
+                // 如果当前元素比堆中最小元素大，进行替换
+                currentSum += currentNum - minHeap.poll();
+                minHeap.offer(currentNum);
+                // 更新得分
+                maxScore = Math.max(maxScore, currentSum * nums2[indices[i]]);
             }
         }
-        return ans;
+
+        return maxScore;
     }
 }
