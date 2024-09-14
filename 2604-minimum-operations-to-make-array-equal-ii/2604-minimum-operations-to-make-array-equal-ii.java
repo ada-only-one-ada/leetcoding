@@ -24,7 +24,7 @@ class Solution {
 
         // 此外，由于「一个数 +k，另一个数 −k」这个操作不会影响整个 diff 的和，所以如果 增 和 减的 diff 的和不为 0，也无法满足要求
         // 无法通过等量的增加和减少来达到平衡
-        if (increSum + decreSum != 0) return -1; 
+        if (increSum != -decreSum) return -1; 
         // 统计其中一个转换成k需要多少即可
         return increSum / k;
     }
