@@ -178,6 +178,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
+| [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
@@ -388,6 +389,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
+| [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Counting
@@ -444,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Union Find
@@ -480,6 +483,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 ## Queue
 |  |
 | ------- |
