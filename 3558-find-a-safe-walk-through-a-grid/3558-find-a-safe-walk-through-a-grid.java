@@ -43,3 +43,11 @@ class Solution {
         return false;
     }
 }
+
+/*
+Repeated States: 
+Your current implementation does not prevent revisiting a state with a lower health 
+than previously visited, which can lead to unnecessary computations. 
+You can use a 2D array to track the maximum health with which each cell can be visited. 
+If a new path leads to a cell with less or equal health than previously recorded, it can be skipped.
+*/
