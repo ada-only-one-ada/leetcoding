@@ -8,6 +8,7 @@ class Solution {
                 set.add(i);
                 return distinctIntegers(i);
             }
+            if (n / i < 1) break;
         }
 
         return set.size();
