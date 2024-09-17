@@ -3,9 +3,7 @@ class Solution {
         int rowNum = grid.length;
         int colNum = grid[0].length;
 
-        int[] dpRow = new int[rowNum];
         int minRow = 0;
-
         for (int row = 0; row < rowNum; row++) {
             int change = 0;
             int leftCol = 0;
@@ -17,13 +15,10 @@ class Solution {
                 leftCol++;
                 rightCol--;
             }
-            dpRow[row]= change;
             minRow += change;
         }
 
-        int[] dpCol = new int[colNum];
         int minCol = 0;
-
         for (int col = 0; col < colNum; col++) {
             int change = 0;
             int upRow = 0;
@@ -35,7 +30,6 @@ class Solution {
                 upRow++;
                 downRow--;
             }
-            dpCol[col]= change;
             minCol += change;
         }
 
