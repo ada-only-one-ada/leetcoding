@@ -12,27 +12,17 @@ class Solution {
         // 按从小到大排序
         Arrays.sort(adjSum);
 
-        // 计算成本最小的 k-1 段，初始值加上了第一个和最后一个的成本
-        long minSum = weights[0] + weights[weights.length - 1];
+        // 因为求的是 diff，最大收益和最小收益都包括了开头结尾，抵消了
+        long minSum = 0;
         for (int i = 0; i < k - 1; i++) {
             minSum += adjSum[i];
         }
-
-        // 计算成本最大的 k-1 段，初始值加上了第一个和最后一个的成本
-        // 比如 最大收益：1 3 | 5 | 2，
-        //                      7 这里的 7 包括了最后一个2，我们再加一次2即可
-        //                  8 这里的 1 只需要加1次，因为结尾是3，8里面包括了
-
-        // 比如 最小收益：1 ｜ 3  5 | 2，
-        //                4 这里的4 包括了第一个1，我们再加一次1即可
         
-        long maxSum = weights[0] + weights[weights.length - 1];
+        long maxSum = 0;
         for (int i = adjSum.length - 1; i >= adjSum.length - (k - 1); i--) {
             maxSum += adjSum[i];
         }
 
-        System.out.println(minSum);
-        System.out.println(maxSum);
         return maxSum - minSum;
     }
 }
