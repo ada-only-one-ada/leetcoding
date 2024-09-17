@@ -187,6 +187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
+| [3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/Adagggggg/leetcoding/tree/master/3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 | [3528-reach-end-of-array-with-max-score](https://github.com/Adagggggg/leetcoding/tree/master/3528-reach-end-of-array-with-max-score) |
 ## Binary Search
 |  |
@@ -356,6 +357,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
+| [3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/Adagggggg/leetcoding/tree/master/3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -427,6 +429,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0908-middle-of-the-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0908-middle-of-the-linked-list) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
+| [3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/Adagggggg/leetcoding/tree/master/3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 ## Prefix Sum
 |  |
 | ------- |
