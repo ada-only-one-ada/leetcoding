@@ -185,6 +185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 | [3528-reach-end-of-array-with-max-score](https://github.com/Adagggggg/leetcoding/tree/master/3528-reach-end-of-array-with-max-score) |
 ## Binary Search
 |  |
@@ -315,6 +316,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## String
 |  |
 | ------- |
@@ -352,6 +354,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
+| [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -549,6 +552,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
+| [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Memoization
 |  |
 | ------- |
@@ -597,6 +601,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
+| [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Number Theory
 |  |
 | ------- |
