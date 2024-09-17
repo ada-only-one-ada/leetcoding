@@ -1,32 +1,28 @@
 class Solution {
     public long putMarbles(int[] weights, int k) {
-        // 一共有 k 个 袋子
-        // 没有袋子是空的
-        // 每个袋子必须放连续的marbles
-        // cost是 w[start] + w[end]
-        // 求最大cost 和 最小cost 之差
+        if (weights.length < k) return -1; // 检查输入是否有效
 
-        if (weights.length < k) return -1;
-
+        // 计算所有相邻元素对的和
         int[] adjSum = new int[weights.length - 1];
-
         for (int i = 0; i < weights.length - 1; i++) {
             adjSum[i] = weights[i] + weights[i + 1];
         }
 
+        // 对相邻元素对的和进行排序
         Arrays.sort(adjSum);
-       
-        long minSum = 0;
-        for (int i = 0; i < k - 1; i++) {
-            minSum += adjSum[i];
+
+        // 计算最大的 k-1 个相邻和的总和
+        long maxScore = weights[0] + weights[weights.length - 1]; // 初始化为首尾元素的和
+        for (int i = adjSum.length - 1; i >= adjSum.length - (k - 1); i--) {
+            maxScore += adjSum[i];
         }
 
-        long maxSum = 0;
-        for (int i = adjSum.length - 1; i >= 0 && k > 1; i--) {
-            maxSum += adjSum[i];
-            k--;
+        // 计算最小的 k-1 个相邻和的总和
+        long minScore = weights[0] + weights[weights.length - 1]; // 初始化为首尾元素的和
+        for (int i = 0; i < k - 1; i++) {
+            minScore += adjSum[i];
         }
-    
-       return maxSum - minSum;
+
+        return maxScore - minScore;
     }
 }
