@@ -14,6 +14,7 @@ class Solution {
                     index += Integer.valueOf(value.toString());
                     value.setLength(0);
                 } 
+                
                 if (index >= word.length()) {
                     return false;
                 }
