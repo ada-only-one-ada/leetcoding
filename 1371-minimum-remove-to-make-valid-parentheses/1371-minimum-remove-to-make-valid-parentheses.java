@@ -14,45 +14,37 @@ class Solution {
                     close++;
                 }
 
-                if (open == close) {
+                if (open == close || open > close) {
                     sb.append(c);
-                    continue;
                 } else if (open < close) {
                     close--;
-                    continue;
-                } else if (open > close) {
-                    sb.append(c);
-                }
+                } 
             } 
         }
         
-        int open2 = 0;
-        int close2 = 0;
-        StringBuilder sb2 = new StringBuilder();
+        open = 0;
+        close = 0;
+        StringBuilder res = new StringBuilder();
         for (int i = sb.length() - 1; i >= 0; i--) {
             char c = sb.charAt(i);
 
             if (c != '(' && c != ')') {
-                sb2.append(c);
+                res.insert(0, c);
             } else {
                 if (c == '(') {
-                    open2++;
+                    open++;
                 } else if (c == ')') {
-                    close2++;
+                    close++;
                 }
 
-                if (open2 == close2) {
-                    sb2.append(c);
-                    continue;
-                } else if (open2 > close2) {
-                    open2--;
-                    continue;
-                } else if (open2 < close2) {
-                    sb2.append(c);
-                }
+                if (open == close || open < close) {
+                    res.insert(0, c);       
+                } else if (open > close) {
+                    open--;
+                } 
             } 
         }
         
-        return sb2.reverse().toString();
+        return res.toString();
     }
 }
