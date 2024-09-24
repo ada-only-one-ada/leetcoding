@@ -3,48 +3,34 @@ class Solution {
         int open = 0;
         int close = 0;
         StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (c != '(' && c != ')') {
-                sb.append(c);
-            } else {
-                if (c == '(') {
-                    open++;
-                } else if (c == ')') {
-                    close++;
-                }
-
-                if (open == close || open > close) {
-                    sb.append(c);
-                } else if (open < close) {
-                    close--;
-                } 
-            } 
+            if (c == '(') {
+                open++;
+            } else if (c == ')') {
+                if (close + 1 > open) continue;
+                close++;
+            }
+            sb.append(c);
         }
+
+        if (open == close) return sb.toString();
         
         open = 0;
         close = 0;
         StringBuilder res = new StringBuilder();
         for (int i = sb.length() - 1; i >= 0; i--) {
             char c = sb.charAt(i);
-
-            if (c != '(' && c != ')') {
-                res.insert(0, c);
-            } else {
-                if (c == '(') {
-                    open++;
-                } else if (c == ')') {
-                    close++;
-                }
-
-                if (open == close || open < close) {
-                    res.insert(0, c);       
-                } else if (open > close) {
-                    open--;
-                } 
-            } 
+            if (c == ')') {
+                close++;
+            } else if (c == '(') {
+                if (open + 1 > close) continue;
+                open++;
+            }
+            res.append(c);
         }
-        
-        return res.toString();
+
+        return res.reverse().toString();
     }
 }
