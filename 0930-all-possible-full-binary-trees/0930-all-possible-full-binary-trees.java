@@ -7,11 +7,11 @@ class Solution {
             return res;
         }
 
-        for (int leftSubtreeChildrenNumber = 1; leftSubtreeChildrenNumber < n - 1; leftSubtreeChildrenNumber += 2) {
-            int rightSubtreeChildrenNumber = n - 1 - leftSubtreeChildrenNumber;
+        for (int leftSubtreeChildrenAmout = 1; leftSubtreeChildrenAmout < n - 1; leftSubtreeChildrenAmout += 2) {
+            int rightSubtreeChildrenAmout = n - 1 - leftSubtreeChildrenAmout;
 
-            List<TreeNode> leftChildren = allPossibleFBT(leftSubtreeChildrenNumber);
-            List<TreeNode> rightChildren = allPossibleFBT(rightSubtreeChildrenNumber);
+            List<TreeNode> leftChildren = allPossibleFBT(leftSubtreeChildrenAmout);
+            List<TreeNode> rightChildren = allPossibleFBT(rightSubtreeChildrenAmout);
 
             for (TreeNode leftChild: leftChildren) {
                 for (TreeNode rightChild: rightChildren) {
