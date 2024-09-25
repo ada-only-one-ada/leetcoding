@@ -1,31 +1,28 @@
 class Solution {
-    // Function to find the k-th largest element using quickselect
     public int findKthLargest(int[] nums, int k) {
-        return quickselect(nums, 0, nums.length - 1, nums.length - k);
+        return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
-    // Helper method for quickselect algorithm
-    private int quickselect(int[] nums, int left, int right, int k) {
-        // Using the first element as the pivot
-        int pivot = nums[left];
+    public int quickSelect(int[] nums, int left, int right, int kSmallest) {
         int i = left;
         int j = right;
-        // Partitioning the array
+        int pivot = nums[left];
+
         while (i <= j) {
             while (i <= j && nums[i] < pivot) i++;
             while (i <= j && nums[j] > pivot) j--;
+
             if (i <= j) {
-                // Swap elements at i and j
                 int temp = nums[i];
                 nums[i] = nums[j];
-                nums[j] = temp;
+                nums[j] = temp; 
                 i++;
                 j--;
-            }
+            }  
         }
-        // Determine which part to recursively call quickselect on
-        if (k <= j) return quickselect(nums, left, j, k);
-        if (k >= i) return quickselect(nums, i, right, k);
-        return nums[k];
+
+        if (kSmallest <= j) return quickSelect(nums, left, j, kSmallest);
+        if (kSmallest >= i) return quickSelect(nums, i, right, kSmallest);
+        return nums[kSmallest];
     }
 }
