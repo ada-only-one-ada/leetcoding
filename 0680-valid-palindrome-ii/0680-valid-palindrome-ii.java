@@ -7,11 +7,10 @@ class Solution {
         int used = 0;
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
-                if (used > 0) return false;
-                used++;
+                
                 return helper(s.substring(left, right)) || helper(s.substring(left + 1, right + 1));
             }
-             
+
             left++;
             right--;
             
