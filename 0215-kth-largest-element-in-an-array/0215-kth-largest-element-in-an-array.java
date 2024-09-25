@@ -1,8 +1,7 @@
 class Solution {
     // Function to find the k-th largest element using quickselect
     public int findKthLargest(int[] nums, int k) {
-        int n = nums.length;
-        return quickselect(nums, 0, n - 1, n - k);
+        return quickselect(nums, 0, nums.length - 1, nums.length - k);
     }
 
     // Helper method for quickselect algorithm
