@@ -8,16 +8,15 @@ class Solution {
         int used = 0;
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
-                if (used > 0) {
-                    return false;
-                } else {
-                    used++;
-                    if (helper(s.substring(left, right)) || helper(s.substring(left + 1, right + 1))) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                }
+                if (used > 0) return false;
+                
+                used++;
+                if (helper(s.substring(left, right)) || helper(s.substring(left + 1, right + 1))) {
+                    return true;
+                } 
+                return false;
+                    
+                
             } else {
                 left++;
                 right--;
