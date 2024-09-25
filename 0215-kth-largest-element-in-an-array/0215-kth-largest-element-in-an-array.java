@@ -8,7 +8,7 @@ class Solution {
     public int quickSelect(int[] nums, int left, int right, int kSmallest) {
         int i = left;
         int j = right;
-        int pivot = nums[left];
+        int pivot = nums[right];
 
         while (i <= j) {
             while (i <= j && nums[i] < pivot) i++;  // 这里不能是<=
