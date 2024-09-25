@@ -3,6 +3,8 @@ class Solution {
         return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
+    // [1,2,6,100,  200   ,300,400],k=3, 7-3 = 4
+
     public int quickSelect(int[] nums, int left, int right, int kSmallest) {
         int i = left;
         int j = right;
@@ -25,6 +27,7 @@ class Solution {
         // 在这里的时候，left没变，j也没变，造成stack overflow了
         if (kSmallest <= j) return quickSelect(nums, left, j, kSmallest);
         if (kSmallest >= i) return quickSelect(nums, i, right, kSmallest);
-        return nums[kSmallest];
+        if (kSmallest > j && kSmallest < i) return nums[kSmallest];
+        return -1;
     }
 }
