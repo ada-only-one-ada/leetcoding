@@ -4,23 +4,17 @@ class Solution {
 
         int left = 0;
         int right = s.length() - 1;
-
         int used = 0;
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
                 if (used > 0) return false;
-                
                 used++;
-                if (helper(s.substring(left, right)) || helper(s.substring(left + 1, right + 1))) {
-                    return true;
-                } 
-                return false;
-                    
-                
-            } else {
-                left++;
-                right--;
+                return helper(s.substring(left, right)) || helper(s.substring(left + 1, right + 1));
             }
+             
+            left++;
+            right--;
+            
         }
         return false;
     }
