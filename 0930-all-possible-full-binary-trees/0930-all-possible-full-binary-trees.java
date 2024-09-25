@@ -1,4 +1,6 @@
 class Solution {
+    Map<Integer, List<TreeNode>> paths = new HashMap<>();
+
     public List<TreeNode> allPossibleFBT(int n) {
         List<TreeNode> res = new ArrayList<>();
         // 偶数节点不可能构成满二叉树 (包含了零个节点的情况)
@@ -7,6 +9,10 @@ class Solution {
         if (n == 1) {
             res.add(new TreeNode(0));
             return res;
+        }
+
+        if (paths.containsKey(n)) {
+            return paths.get(n);
         }
 
         // 分给左子树的孩子数量必须是奇数：比如当前根节点的左孩子(1个)，当前根节点的左孙子们(2个)，当前根节点的左孙孙子们(4个)，无论怎么组合都是奇数个
@@ -31,6 +37,7 @@ class Solution {
             }
         }
 
+        paths.put(n, res);
         return res;
     }
 }
