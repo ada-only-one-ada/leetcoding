@@ -239,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
+| [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Depth-First Search
@@ -284,6 +285,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0545-boundary-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0545-boundary-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Doubly-Linked List
@@ -378,6 +380,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
+| [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
@@ -540,6 +543,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
+| [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -584,6 +588,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
+| [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Bit Manipulation
 |  |
 | ------- |
