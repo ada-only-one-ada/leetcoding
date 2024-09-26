@@ -1,24 +1,34 @@
 class Solution {
     public int countHillValley(int[] nums) {
-        // 0：初始
-        // 1: 上升
-        // -1: 下降
-        int prev = 0;
-        int res = 0;
-
-        for (int i = 1; i < nums.length ; i++) {
-            if (nums[i] > nums[i - 1]) {
-                if (prev == -1) {
-                    res++;
-                }
-                prev = 1;
-            } else if (nums[i] < nums[i - 1]) {
-                if (prev == 1) {
-                    res++;
-                }
-                prev = -1;
-            }
+        // Early return if the input array is too small to have any hills or valleys
+        if (nums.length < 3) {
+            return 0;
         }
-        return res;
+
+        int count = 0; // This will count the number of hills and valleys
+        int current = 1; // Start from the second element
+
+        // Loop through the array to find all hills and valleys
+        while (current < nums.length - 1) {
+            // Find the next index with a different value to determine a potential hill or valley
+            int nextDifferent = current;
+            while (nextDifferent < nums.length - 1 && nums[current] == nums[nextDifferent]) {
+                nextDifferent++;
+            }
+
+            // Check if the current index forms a hill
+            if (nums[current] > nums[current - 1] && nums[current] > nums[nextDifferent]) {
+                count++;
+            }
+            // Check if the current index forms a valley
+            else if (nums[current] < nums[current - 1] && nums[current] < nums[nextDifferent]) {
+                count++;
+            }
+
+            // Move to the next index where the value changes
+            current = nextDifferent;
+        }
+
+        return count;
     }
 }
