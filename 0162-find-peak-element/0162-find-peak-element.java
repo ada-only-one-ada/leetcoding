@@ -10,9 +10,9 @@ class Solution {
             if (nums[mid] > getValue(mid - 1, nums) && nums[mid] > getValue(mid + 1, nums)) {
                 return mid;
             } else if (nums[mid] < getValue(mid + 1, nums)) {
-                left = mid + 1;
+                left = mid;
             } else {
-                right = mid - 1;
+                right = mid;
             }
         }
 
