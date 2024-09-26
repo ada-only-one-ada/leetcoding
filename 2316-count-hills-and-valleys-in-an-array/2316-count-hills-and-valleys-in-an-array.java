@@ -1,5 +1,8 @@
 class Solution {
     public int countHillValley(int[] nums) {
+        // 0：初始
+        // 1: 上升
+        // -1: 下降
         int prev = 0;
         int res = 0;
 
@@ -13,7 +16,6 @@ class Solution {
                 if (prev == 1) {
                     res++;
                 }
-                
                 prev = -1;
             }
         }
