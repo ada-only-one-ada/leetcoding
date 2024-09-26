@@ -1,23 +1,12 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        if (x < 0) return false;
-        if (x != 0 && x % 10 == 0) return false;
-
-        int tens = 1;
-        int copyX = x / 10;
-        while (copyX > 0) {
-            tens *= 10;
-            copyX /= 10;
+        String s=Integer.toString(x);
+        int n=s.length();
+        for(int i=0;i<n/2;i++){
+            if(s.charAt(i)!=s.charAt(n-i-1)){
+                return false;
+            }
         }
-
-        int sum = 0;
-        copyX = x;
-        while (copyX > 0) {
-            sum += (copyX % 10) * tens;
-            tens /= 10;
-            copyX /= 10;
-        }
-
-        return sum == x;
+        return true;
     }
 }
