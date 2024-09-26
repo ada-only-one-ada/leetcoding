@@ -27,12 +27,8 @@ class Solution {
                     stack.push(num);
                 }
             } else {
-                if (c == ' ') {
-                    i++;
-                } else {
-                    prevSign = c;
-                    i++;
-                }
+                if (c != ' ') prevSign = c;
+                i++;
             }
         }
 
