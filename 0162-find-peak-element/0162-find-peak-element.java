@@ -16,7 +16,7 @@ class Solution {
             }
         }
 
-        return 0;
+        return left;
     }
 
     public int getValue(int index, int[] nums) {
