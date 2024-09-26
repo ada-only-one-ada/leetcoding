@@ -7,10 +7,10 @@ class Solution {
             int mid = left + (right - left) / 2;
             if (nums[mid-1] < nums[mid] && nums[mid] > nums[mid+1]) {
                 return mid;
-                // min 1 2 min,说明大数在右边
+                // min...1,2...min，说明大数在右边
             } else if (nums[mid+1] > nums[mid]) {
                 left = mid;
-                // min 8 5 min，说明大数在左边
+                // min...8,5...min，说明大数在左边
             } else if (nums[mid-1] > nums[mid]) {
                 right = mid;
             }
