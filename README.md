@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
+| [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
@@ -340,6 +341,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
+| [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
@@ -500,6 +502,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
+| [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
