@@ -378,6 +378,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Adagggggg/leetcoding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
@@ -464,6 +465,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 ## Greedy
 |  |
 | ------- |
@@ -499,6 +501,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
