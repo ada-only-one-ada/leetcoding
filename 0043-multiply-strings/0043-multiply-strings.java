@@ -6,19 +6,19 @@ class Solution {
         int numOfZeros = 0;
 
         for (int i = num2.length() - 1; i >= 0; i--, numOfZeros += 1) {
-            res = additionHelper(res, helper(num1, num2.charAt(i) - '0', numOfZeros));
+            res = additionHelper(res, DigitMultiplyhelper(num1, num2.charAt(i) - '0', numOfZeros));
         }
 
         return res;
     }
 
-    public String helper(String num1, int val, int numOfZeros) {
+    public String DigitMultiplyhelper(String num1, int multiplier, int numOfZeros) {
         StringBuilder sb = new StringBuilder();
         int carry = 0;
 
         for (int i = num1.length() - 1; i >= 0; i--) {
             int currDigit = num1.charAt(i) - '0';
-            int currSum = currDigit * val + carry;
+            int currSum = currDigit * multiplier + carry;
             
             sb.append(currSum % 10);
             carry = currSum / 10;
@@ -26,6 +26,7 @@ class Solution {
 
         // 这里不能用type casting to (char)prev, 用String.valueOf(prev), or append int
         if (carry!= 0) sb.append(carry);
+       
         sb.reverse();
         for (int i = 0; i < numOfZeros; i++) {
             sb.append('0');
