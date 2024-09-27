@@ -14,17 +14,18 @@ class Solution {
 
     public String helper(String num1, int val, int numOfZeros) {
         StringBuilder sb = new StringBuilder();
-        int prev = 0;
+        int carry = 0;
 
         for (int i = num1.length() - 1; i >= 0; i--) {
             int currDigit = num1.charAt(i) - '0';
-            int currSum = currDigit * val + prev;
+            int currSum = currDigit * val + carry;
             
             sb.append(currSum % 10);
-            prev = currSum / 10;
+            carry = currSum / 10;
         }  
 
-        if (prev != 0) sb.append(String.valueOf(prev)); // 这里不能用type casting to (char)prev
+        // 这里不能用type casting to (char)prev, 用String.valueOf(prev), or append int
+        if (carry!= 0) sb.append(carry);
         sb.reverse();
         for (int i = 0; i < numOfZeros; i++) {
             sb.append('0');
