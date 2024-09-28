@@ -14,28 +14,25 @@ class Solution {
 
         StringBuilder res = new StringBuilder();
         while (!queue.isEmpty()) {
-            // 只剩下一种字母了，且这个字母的个数超过一个：aaa
+            // 剩下一种字母，且数量超过一个，直接返回
             if (queue.size() == 1 && freq[queue.peek()] > 1) {
                 return "";
             }
 
-            // 加2个字母，就可以重复加第一个，比如：ab 接着又可以加 a 了
-            List<Integer> waitingList = new ArrayList<>();
-            for (int i = 1; i <= 2; i++) {
-                if (waitingList.isEmpty() && queue.isEmpty()) break;
-                if (!queue.isEmpty()) {
-                    int index = queue.poll();
-                    res.append((char)(index + 'a'));
-                    freq[index] -= 1;
+            if (queue.size() == 1) {
+                res.append((char)(queue.poll() + 'a'));
+                break;
+            } else if (queue.size() >= 2) {
+                int i1 = queue.poll();
+                int i2 = queue.poll();
 
-                    if (freq[index] > 0) {
-                        waitingList.add(index);
-                    }
-                }
-            }
-            
-            for (int index: waitingList) {
-                queue.add(index);
+                res.append((char)(i1 + 'a'));
+                res.append((char)(i2 + 'a'));
+
+                freq[i1]--;
+                freq[i2]--;
+                if (freq[i1] > 0) queue.add(i1);
+                if (freq[i2] > 0) queue.add(i2);
             }
         }
 
