@@ -3,6 +3,7 @@ class Solution {
         Stack<String> stack = new Stack<>();
         StringBuilder temp = new StringBuilder();
         int numOfDots = 0;
+        path += '/';
 
         for (int i = 0; i < path.length(); i++) {
             char curr = path.charAt(i);
@@ -27,11 +28,13 @@ class Solution {
             } 
         }
 
+        /*
         if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
             stack.pop();
         } else if (numOfDots >= 3 || numOfDots != temp.length()) {
             stack.push(temp.toString());
         }
+        */
 
         StringBuilder res = new StringBuilder();
         while (!stack.isEmpty()) {
