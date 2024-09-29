@@ -5,7 +5,7 @@ class Solution {
         if (n == -1) return 1 / x;
         
         double half = myPow(x, n / 2);
-        double odd = myPow(x, n % 2);
+        double odd = myPow(x, n % 2); // 每一次递归都有可能出现odd，不只是一次
         return half * half * odd;
     }
 }
