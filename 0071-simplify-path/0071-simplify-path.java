@@ -38,8 +38,7 @@ class Solution {
 
         StringBuilder res = new StringBuilder();
         while (!stack.isEmpty()) {
-            res.insert(0, stack.pop());
-            res.insert(0, "/");
+            res.insert(0, "/" + stack.pop());
         }
 
         return res.length() == 0? "/" : res.toString();
