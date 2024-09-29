@@ -22,7 +22,7 @@ class Solution {
 
                 temp.setLength(0);
                 numOfDots = 0;
-            } else if (curr != '/') {
+            } else {
                 temp.append(curr);
                 if (curr == '.') numOfDots++;
             } 
