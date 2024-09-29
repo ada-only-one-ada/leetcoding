@@ -25,11 +25,13 @@ class Solution {
             } 
         }
 
+        /*
         String res = "";
         for (String s: stack) {
             res += "/" + s;
         }
+        */
 
-        return res.length() == 0? "/" : res;
+        return "/" + String.join("/", stack);
     }
 }
