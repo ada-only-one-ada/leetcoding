@@ -29,7 +29,6 @@ class Solution {
             }
         }
 
-
         if (numOfDots == temp.length()) {
             if (numOfDots == 2 && !stack.isEmpty()) {
                 stack.pop();
