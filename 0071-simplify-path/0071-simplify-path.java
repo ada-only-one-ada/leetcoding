@@ -24,14 +24,14 @@ class Solution {
                 if (curr == '.') numOfDots++;
             } 
         }
+        
+        // return "/" + String.join("/", stack);
 
-        /*
         String res = "";
         for (String s: stack) {
             res += "/" + s;
         }
-        */
 
-        return "/" + String.join("/", stack);
+        return res.length() == 0? "/" : res;
     }
 }
