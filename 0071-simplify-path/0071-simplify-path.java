@@ -3,7 +3,7 @@ class Solution {
         Stack<String> stack = new Stack<>();
         StringBuilder temp = new StringBuilder();
         int numOfDots = 0;
-        path += '/';
+        path += '/'; // 这样可以确保最后一个 local path也可以被收获
 
         for (int i = 0; i < path.length(); i++) {
             char curr = path.charAt(i);
