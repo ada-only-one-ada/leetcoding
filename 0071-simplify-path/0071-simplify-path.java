@@ -11,17 +11,23 @@ class Solution {
                 temp.append(curr);
                 if (curr == '.') numOfDots++;
             } else if (curr == '/') {
-                if (i > 0 && path.charAt(i - 1) == '/') continue;
+                // 重复的 / 可以跳过
+                if (i > 0 && path.charAt(i - 1) == '/') continue; 
 
+                // 全是 dots 的情况
                 if (numOfDots == temp.length()) {
+                    // 两个 dots 要丢弃上一级的path
                     if (numOfDots == 2 && !stack.isEmpty()) {
                         stack.pop();
+                    // 三个以上的 dots 认为是独立的有效path
                     } else if (numOfDots >= 3) {
                         stack.push(temp.toString());
                     }
+                // 不全是 dots 的情况
                 } else {
                     stack.push(temp.toString());
                 }
+
                 temp.setLength(0);
                 numOfDots = 0;
             }
