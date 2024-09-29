@@ -3,16 +3,19 @@ class Solution {
         Stack<String> stack = new Stack<>();
         StringBuilder temp = new StringBuilder();
         int numOfDots = 0;
-        path += '/';
+        path += '/'; // 这样可以确保最后一个 local path也可以被收获
 
         for (int i = 0; i < path.length(); i++) {
             char curr = path.charAt(i);
 
             if (curr == '/') {
+                // 重复的 '/' 可以跳过
                 if (i > 0 && path.charAt(i - 1) == '/') continue; 
 
+                // 全是 dots 且只有两个 dots 且 stack 不为空，上一级path可以移除
                 if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
                     stack.pop();
+                // 全是 dots 且 dots 数量多于 3个，或者不全是 dots的情况，加入 stack
                 } else if (numOfDots >= 3 || numOfDots != temp.length()) {
                     stack.push(temp.toString());
                 }
@@ -24,14 +27,20 @@ class Solution {
                 if (curr == '.') numOfDots++;
             } 
         }
-        
-        // return "/" + String.join("/", stack);
 
-        String res = "";
-        for (String s: stack) {
-            res += "/" + s;
+        /*
+        if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
+            stack.pop();
+        } else if (numOfDots >= 3 || numOfDots != temp.length()) {
+            stack.push(temp.toString());
+        }
+        */
+
+        StringBuilder res = new StringBuilder();
+        while (!stack.isEmpty()) {
+            res.insert(0, "/" + stack.pop());
         }
 
-        return res.length() == 0? "/" : res;
+        return res.length() == 0? "/" : res.toString();
     }
 }
