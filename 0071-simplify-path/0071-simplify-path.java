@@ -25,11 +25,11 @@ class Solution {
             } 
         }
 
-        StringBuilder res = new StringBuilder();
+        String res = "";
         for (String s: stack) {
-            res.append("/" + s);
+            res += "/" + s;
         }
 
-        return res.length() == 0? "/" : res.toString();
+        return res.length() == 0? "/" : res;
     }
 }
