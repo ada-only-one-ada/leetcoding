@@ -1,29 +1,54 @@
 class Solution {
     public String minRemoveToMakeValid(String s) {
-        StringBuilder sb = new StringBuilder();
+        char[] parentheses = s.toCharArray();
+
         int open = 0;
+        int close = 0;
 
-        for (char c: s.toCharArray()) {
-            if (c == '(') {
-                open++;
-            } else if (c == ')') {
-                if (open == 0) continue;
-                open--;
+        int left = 0;
+        for (int right = 0; right < parentheses.length; right++) {
+            char curr = parentheses[right];
+            if (Character.isLetter(curr)) {
+                left++;
+            } else {
+                if (curr == '(') {
+                    open++;
+                    left++;
+                } else if (curr == ')') {
+                    if (close + 1 <= open) {
+                        left++;
+                        close++;
+                    } else {
+                        parentheses[right] = ' ';
+                    }
+                }
             }
-
-            sb.append(c);
         }
 
-        if (open == 0) return sb.toString();
-
-        for (int i = sb.length() - 1; i >= 0; i--) {
-            if (open <= 0) break;
-            if (sb.charAt(i) == '(' && open > 0) {
-                sb.deleteCharAt(i);
-                open--;
+        open = 0;
+        close = 0;
+        int right = parentheses.length - 1;
+        for (int i = right; i >= 0; i--) {
+            char curr = parentheses[i];
+            if (curr == ')') {
+                close++;       
+            } else if (curr == '(') {
+                if (open + 1 <= close) {
+                    open++;       
+                } else {
+                    parentheses[i] = ' ';
+                }
+            }
+        }
+        
+        int index = 0;
+        for (int i = 0; i < parentheses.length; i++) {
+            if (parentheses[i] != ' ') {
+                parentheses[index] = parentheses[i];
+                index++;
             } 
         }
 
-        return sb.toString();
+        return new String(parentheses, 0, index);
     }
 }
