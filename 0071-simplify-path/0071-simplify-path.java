@@ -8,6 +8,7 @@ class Solution {
         for (int i = 0; i < paths.length; i++) {
             String currPath = paths[i];
             // 比如连续的'//'，split以后会变成[]空的
+            // 妈的，string用双引号，草！
             if (currPath.length() == 0 || currPath.equals(".")) continue;
 
             if (currPath.equals("..") && !stack.isEmpty()) {
