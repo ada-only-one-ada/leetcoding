@@ -128,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/Adagggggg/leetcoding/tree/master/0016-3sum-closest) |
+| [0031-next-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0031-next-permutation) |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
@@ -451,6 +452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/Adagggggg/leetcoding/tree/master/0016-3sum-closest) |
+| [0031-next-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
