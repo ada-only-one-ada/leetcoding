@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
+| [0071-simplify-path](https://github.com/Adagggggg/leetcoding/tree/master/0071-simplify-path) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
@@ -343,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
 | [0043-multiply-strings](https://github.com/Adagggggg/leetcoding/tree/master/0043-multiply-strings) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
+| [0071-simplify-path](https://github.com/Adagggggg/leetcoding/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
