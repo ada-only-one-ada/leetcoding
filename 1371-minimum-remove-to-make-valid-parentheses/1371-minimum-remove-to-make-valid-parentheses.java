@@ -5,30 +5,23 @@ class Solution {
         int open = 0;
         int close = 0;
 
-        int left = 0;
-        for (int right = 0; right < parentheses.length; right++) {
-            char curr = parentheses[right];
-            if (Character.isLetter(curr)) {
-                left++;
-            } else {
-                if (curr == '(') {
-                    open++;
-                    left++;
-                } else if (curr == ')') {
-                    if (close + 1 <= open) {
-                        left++;
-                        close++;
-                    } else {
-                        parentheses[right] = ' ';
-                    }
+        for (int i = 0; i < parentheses.length; i++) {
+            char curr = parentheses[i];
+            
+            if (curr == '(') {
+                open++;
+            } else if (curr == ')') {
+                if (close + 1 <= open) {
+                    close++;
+                } else {
+                    parentheses[i] = ' ';
                 }
             }
         }
 
         open = 0;
         close = 0;
-        int right = parentheses.length - 1;
-        for (int i = right; i >= 0; i--) {
+        for (int i = parentheses.length - 1; i >= 0; i--) {
             char curr = parentheses[i];
             if (curr == ')') {
                 close++;       
