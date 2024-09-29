@@ -1,7 +1,5 @@
 class Solution {
     public String simplifyPath(String path) {
-        if (path.length() == 1 && path.charAt(0) == '/') return path;
-
         Stack<String> stack = new Stack<>();
         StringBuilder temp = new StringBuilder();
         int numOfDots = 0;
