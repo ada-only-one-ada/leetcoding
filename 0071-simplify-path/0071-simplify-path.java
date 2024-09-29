@@ -38,7 +38,6 @@ class Solution {
 
         StringBuilder res = new StringBuilder();
         while (!stack.isEmpty()) {
-            System.out.println(stack.peek() + " ");
             res.insert(0, stack.pop());
             res.insert(0, "/");
         }
