@@ -7,31 +7,29 @@ class Solution {
         for (int i = 0; i < path.length(); i++) {
             char curr = path.charAt(i);
 
-            if (curr != '/') {
-                temp.append(curr);
-                if (curr == '.') numOfDots++;
-            } else if (curr == '/') {
-                // 重复的 / 可以跳过
+            if (curr == '/') {
+                // 重复的 '/' 可以跳过
                 if (i > 0 && path.charAt(i - 1) == '/') continue; 
 
+                // 全是 dots 且只有两个 dots 且 stack 不为空，上一级path可以移除
                 if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
                     stack.pop();
+                // 全是 dots 且 dots 数量多于 3个，或者不全是 dots的情况，加入 stack
                 } else if (numOfDots >= 3 || numOfDots != temp.length()) {
                     stack.push(temp.toString());
                 }
 
                 temp.setLength(0);
                 numOfDots = 0;
-            }
+            } else if (curr != '/') {
+                temp.append(curr);
+                if (curr == '.') numOfDots++;
+            } 
         }
 
-        if (numOfDots == temp.length()) {
-            if (numOfDots == 2 && !stack.isEmpty()) {
-                stack.pop();
-            } else if (numOfDots == 3) {
-                stack.push("...");
-            }
-        } else {
+        if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
+            stack.pop();
+        } else if (numOfDots >= 3 || numOfDots != temp.length()) {
             stack.push(temp.toString());
         }
 
