@@ -2,19 +2,18 @@ class Solution {
     public String minRemoveToMakeValid(String s) {
         char[] parentheses = s.toCharArray();
 
+        // Track open and close parentheses
         int open = 0;
         int close = 0;
-
         for (int i = 0; i < parentheses.length; i++) {
             char curr = parentheses[i];
-            
             if (curr == '(') {
                 open++;
             } else if (curr == ')') {
                 if (close + 1 <= open) {
                     close++;
                 } else {
-                    parentheses[i] = ' ';
+                    parentheses[i] = ' '; // Invalidate this ')' as no matching '('
                 }
             }
         }
@@ -29,19 +28,19 @@ class Solution {
                 if (open + 1 <= close) {
                     open++;       
                 } else {
-                    parentheses[i] = ' ';
-                }
+                    parentheses[i] = ' '; // Invalidate this '(' as no matching ')'
+                } 
             }
         }
         
-        int index = 0;
-        for (int i = 0; i < parentheses.length; i++) {
-            if (parentheses[i] != ' ') {
-                parentheses[index] = parentheses[i];
-                index++;
+        int left = 0;
+        for (int right = 0; right < parentheses.length; right++) {
+            if (parentheses[right] != ' ') {
+                parentheses[left] = parentheses[right];
+                left++;
             } 
         }
 
-        return new String(parentheses, 0, index);
+        return new String(parentheses, 0, left);
     }
 }
