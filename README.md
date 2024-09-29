@@ -510,6 +510,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0009-palindrome-number](https://github.com/Adagggggg/leetcoding/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/Adagggggg/leetcoding/tree/master/0013-roman-to-integer) |
 | [0043-multiply-strings](https://github.com/Adagggggg/leetcoding/tree/master/0043-multiply-strings) |
+| [0050-powx-n](https://github.com/Adagggggg/leetcoding/tree/master/0050-powx-n) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
@@ -561,6 +562,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0021-merge-two-sorted-lists) |
+| [0050-powx-n](https://github.com/Adagggggg/leetcoding/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Breadth-First Search
