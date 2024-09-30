@@ -12,7 +12,9 @@ class Solution {
             // 递归处理 next 和 random 指针
             copyHead.next = copyRandomList(head.next);
             copyHead.random = copyRandomList(head.random);
- 
+
+            // 如果在这里才加入map是错的，因为递归需要寻找刚才复制的头节点
+
             return copyHead; // 返回复制的节点
         } else {
             // 如果当前节点已经被复制过，则直接从 map 中获取并返回对应的复制节点
