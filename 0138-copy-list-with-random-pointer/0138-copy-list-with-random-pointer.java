@@ -73,7 +73,7 @@ class Solution {
                 newHeadCurr.next = prevNext.next;
                 newHeadCurr = newHeadCurr.next;
             } else {
-                newHeadCurr.next = null;
+                newHeadCurr.next = null; // 避免最后一个节点要设置成null
             }
 
             // curr 跳到下一个非复制节点，使用原始链表的下一个节点继续
