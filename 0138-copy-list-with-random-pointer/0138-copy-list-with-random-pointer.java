@@ -27,8 +27,14 @@ class Solution {
 
         curr = head;
         while (curr != null) {
-            map.get(curr).next = map.get(curr.next);    
-            map.get(curr).random = map.get(curr.random);
+            if (curr.next != null) { // 这里也可以不用判断，因为是null的话，map.get(null) 或者map.get(不存在）会返回null
+                map.get(curr).next = map.get(curr.next);
+            }
+
+            if (curr.random != null) {
+                map.get(curr).random = map.get(curr.random);
+            }
+            
             curr = curr.next;
         }
 
