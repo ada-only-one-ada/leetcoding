@@ -56,6 +56,7 @@ class Solution {
         // curr 指针遍历：
         curr = head;
         while (curr != null) {
+            Node nextCurr = curr.next.next;
             // 拿到当前节点的复制节点
             Node copyNode = curr.next;
 
@@ -74,8 +75,9 @@ class Solution {
                 newHeadCurr.next = null;
             }
 
-            // curr 跳到下一个非复制节点
-            curr = prevNext;
+            // curr 跳到下一个非复制节点，使用原始链表的下一个节点继续
+            // 在一开始保存的，或者使用curr = prevNext（已被复原）
+            curr = nextCurr;
         }
 
         return newHead;
