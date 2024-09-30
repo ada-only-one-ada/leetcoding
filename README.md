@@ -213,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0021-merge-two-sorted-lists) |
+| [0138-copy-list-with-random-pointer](https://github.com/Adagggggg/leetcoding/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
@@ -311,6 +312,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
+| [0138-copy-list-with-random-pointer](https://github.com/Adagggggg/leetcoding/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
