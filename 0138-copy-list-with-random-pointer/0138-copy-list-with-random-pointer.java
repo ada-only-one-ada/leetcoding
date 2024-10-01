@@ -34,13 +34,14 @@ class Solution {
 
             Node copy = origin.next;
             Node originNext = copy.next; 
-            origin.next = originNext; // restore
+            
             if (originNext != null) {
                 newCopy.next = originNext.next;
                 newCopy = newCopy.next;
             } else {
                 newCopy.next = null; // the last node 
             }
+            origin.next = originNext; // restore
 
             origin = nextOrigin;
         }
