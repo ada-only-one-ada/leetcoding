@@ -170,6 +170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -387,6 +388,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
@@ -597,6 +599,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 ## Geometry
