@@ -35,7 +35,7 @@ class Solution {
                
                 if (nextRow < 0 || nextCol < 0 || nextRow >= grid.length || nextCol >= grid[0].length) continue;
                 if (grid[nextRow][nextCol] == 1) continue;
-                //if (usedCells + 1 > memo[nextRow][nextCol]) continue;
+                if (usedCells + 1 > memo[nextRow][nextCol]) continue;
 
                 queue.add(new int[]{nextRow, nextCol, usedCells + 1});
             }
