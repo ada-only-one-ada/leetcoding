@@ -22,22 +22,20 @@ class Solution {
         }
 
         left = 0;
-        right = nums.length;
-        int rightMost = -1;
+        right = nums.length - 1;
 
         while (left < right) {
-            int mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2 + 1;
             if (nums[mid] == target) {
-                rightMost = mid;
-                left = mid + 1;
+                left = mid;
             } else if (nums[mid] < target) {
                 left = mid + 1;
             } else if (nums[mid] > target) {
-                right = mid;
+                right = mid - 1;
             }
         }
 
-        res[1] = rightMost;
+        res[1] = left;
         return res;
     }
 }
