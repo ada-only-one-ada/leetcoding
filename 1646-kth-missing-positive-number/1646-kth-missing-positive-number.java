@@ -7,9 +7,9 @@ class Solution {
 
         while (start < end) {
             int mid = start + (end - start) / 2;
-            int totalFound = arr[mid] - mid - 1;
+            int foundUntilMid = arr[mid] - mid - 1;
 
-            if (totalFound >= k) {
+            if (foundUntilMid >= k) {
                 end = mid;
             } else {
                 start = mid + 1;
