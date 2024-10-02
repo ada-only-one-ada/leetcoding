@@ -9,10 +9,10 @@ class Solution {
             int mid = start + (end - start) / 2;
             int foundUntilMid = arr[mid] - mid - 1;
 
-            if (foundUntilMid >= k) {
-                end = mid;
-            } else {
+            if (foundUntilMid < k) {
                 start = mid + 1;
+            } else {
+                end = mid;
             } 
         }
 
