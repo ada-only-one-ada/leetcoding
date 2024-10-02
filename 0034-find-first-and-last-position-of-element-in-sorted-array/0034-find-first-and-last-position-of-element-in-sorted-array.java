@@ -1,17 +1,16 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int first = findFirstPos(nums, target);
-        int last = findLastPos(nums, target);
-        return new int[]{first, last};
+        return new int[]{findFirst(nums, target), findLast(nums, target)};
     }
 
-    public int findFirstPos(int[] nums, int target) {
+    public int findFirst(int[] nums, int target) {
         int candidate = -1;
 
         int start = 0;
         int end = nums.length;
         while (start < end) {
             int mid = start + (end - start) / 2;
+
             if (nums[mid] == target) {
                 candidate = mid;
                 end = mid;
@@ -21,11 +20,11 @@ class Solution {
                 end = mid;
             }
         }
-        
+
         return candidate;
     }
 
-    public int findLastPos(int[] nums, int target) {
+    public int findLast(int[] nums, int target) {
         int candidate = -1;
 
         int start = 0;
