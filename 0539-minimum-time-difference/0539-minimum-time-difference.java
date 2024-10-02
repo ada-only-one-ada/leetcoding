@@ -1,5 +1,7 @@
 class Solution {
     public int findMinDifference(List<String> timePoints) {
+        //根据题意，一共有 24×60=1440 种不同的时间。
+        // 由鸽巢原理可知，如果 timePoints 的长度超过 1440，那么必然会有两个相同的时间，此时可以直接返回 0
         if (timePoints.size() > 24 * 60) return 0;
         
         List<Integer> minutes = new ArrayList<>();
