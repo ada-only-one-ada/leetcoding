@@ -24,18 +24,24 @@ class Solution {
 
         left = 0;
         right = nums.length;
+        int rightMost = -1;
+
         while (left < right) {
             int mid = left + (right - left) / 2;
+            // 最后一个是mid，或者mid之后
             if (nums[mid] == target) {
-                left = mid;
+                rightMost = mid;
+                left = mid + 1;
+            // 最后一个肯定在mid之后
             } else if (nums[mid] < target) {
                 left = mid + 1;
+            // 最后一个肯定在mid之前
             } else if (nums[mid] > target) {
-                right = mid - 1;
+                right = mid;
             }
         }
 
-        res[1] = left;
+        res[1] = rightMost;
         return res;
     }
 }
