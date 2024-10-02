@@ -16,7 +16,7 @@ class Solution {
                 left = mid + 1;
             // 说明第一个target肯定在 mid之前
             } else if (nums[mid] > target) {
-                right = mid - 1;
+                right = mid;
             }
         }
         if (nums[left] != target) return res;
