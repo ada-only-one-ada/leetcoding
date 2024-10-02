@@ -1,41 +1,47 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int [] res = new int[]{-1, -1};
-        if (nums.length == 0) return res;
+        int first = findFirstPos(nums, target);
+        int last = findLastPos(nums, target);
+        return new int[]{first, last};
+    }
 
-        int left = 0;
-        int right = nums.length;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
+    public int findFirstPos(int[] nums, int target) {
+        int candidate = -1;
+
+        int start = 0;
+        int end = nums.length;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
-                right = mid;
+                candidate = mid;
+                end = mid;
             } else if (nums[mid] < target) {
-                left = mid + 1;
+                start = mid + 1;
             } else if (nums[mid] > target) {
-                right = mid - 1;
+                end = mid;
             }
         }
-        if (left >= 0 && left < nums.length && nums[left] == target) {
-            res[0] = left;
-        } else {
-            return res;
-        }
+        
+        return candidate;
+    }
 
-        left = 0;
-        right = nums.length - 1;
+    public int findLastPos(int[] nums, int target) {
+        int candidate = -1;
 
-        while (left < right) {
-            int mid = left + (right - left) / 2 + 1;
+        int start = 0;
+        int end = nums.length;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
-                left = mid;
+                candidate = mid;
+                start = mid + 1;
             } else if (nums[mid] < target) {
-                left = mid + 1;
+                start = mid + 1;
             } else if (nums[mid] > target) {
-                right = mid - 1;
+                end = mid;
             }
         }
 
-        res[1] = left;
-        return res;
+        return candidate;
     }
 }
