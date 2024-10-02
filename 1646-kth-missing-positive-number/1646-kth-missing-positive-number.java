@@ -16,10 +16,10 @@ class Solution {
             } 
         }
 
-        if (start == arr.length) {
-            return arr[start - 1] + (k - (arr[start - 1] - start));
-        } else {
-            return arr[start - 1] + (k - (arr[start - 1] - (start - 1))) + 1;
-        }
+        int foundUntilStart = arr[start - 1] - (start - 1) - 1;
+
+        
+            return arr[start - 1] + (k - foundUntilStart );
+        
     }
 }
