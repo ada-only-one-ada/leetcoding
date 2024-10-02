@@ -26,7 +26,6 @@ class Solution {
             for (int num: list) {
                 res[index--] = num;
                 k--;
-                if (k == 0) break;
             }
         }
 
