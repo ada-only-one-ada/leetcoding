@@ -4,16 +4,15 @@ class Solution {
     }
 
     public int findFirst(int[] nums, int target) {
-        int candidate = -1;
+        if (nums.length == 0) return -1;
 
         int start = 0;
         int end = nums.length - 1;
-        while (start <= end) {
+        while (start + 1 < end) {
             int mid = start + (end - start) / 2;
 
             if (nums[mid] == target) {
-                candidate = mid;
-                end = mid - 1;
+                end = mid;
             } else if (nums[mid] < target) {
                 start = mid + 1;
             } else if (nums[mid] > target) {
@@ -21,19 +20,21 @@ class Solution {
             }
         }
 
-        return candidate;
+        if (nums[start] == target) return start;
+        if (nums[end] == target) return end;
+        return -1;
     }
 
     public int findLast(int[] nums, int target) {
-        int candidate = -1;
+        if (nums.length == 0) return -1;
 
         int start = 0;
         int end = nums.length - 1;
-        while (start <= end) {
+        while (start + 1 < end) {
             int mid = start + (end - start) / 2;
+
             if (nums[mid] == target) {
-                candidate = mid;
-                start = mid + 1;
+                start = mid;
             } else if (nums[mid] < target) {
                 start = mid + 1;
             } else if (nums[mid] > target) {
@@ -41,6 +42,8 @@ class Solution {
             }
         }
 
-        return candidate;
+        if (nums[end] == target) return end;
+        if (nums[start] == target) return start;
+        return -1;
     }
 }
