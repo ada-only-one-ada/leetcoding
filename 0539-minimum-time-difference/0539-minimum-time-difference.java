@@ -16,14 +16,13 @@ class Solution {
             int lastMinute = minutes.get(i - 1);
             minDiff = Math.min(minDiff, Math.abs(currMinute - lastMinute));
 
-            // 最后一个要跟第0个比较，[00: 23,...., 23:59]
+            // 最后一个要跟第 0 个比较，[00: 23, ... , 23:59]
             if (i == minutes.size() - 1) {
                 currMinute -= 24 * 60;
                 minDiff = Math.min(minDiff, Math.abs(currMinute - minutes.get(0)));
             }
         }
-
-        
+  
         return minDiff;
     }
 }
