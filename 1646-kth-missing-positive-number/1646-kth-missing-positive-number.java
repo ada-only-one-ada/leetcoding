@@ -17,9 +17,6 @@ class Solution {
         }
 
         int foundUntilStart = arr[start - 1] - (start - 1) - 1;
-
-        
-            return arr[start - 1] + (k - foundUntilStart );
-        
+        return arr[start - 1] + (k - foundUntilStart);
     }
 }
