@@ -1,22 +1,16 @@
 class Solution {
-    int res = 0;
     public int numWaterBottles(int numBottles, int numExchange) {
-        return helper(0, numBottles, numExchange);
+        return helper(numBottles, 0, numExchange, 0);
     }
 
-    public int helper(int empty, int full, int numExchange) {
-        if ((empty + full) < numExchange && full < numExchange) {
-            res += full;
-            return res;
+    public int helper(int full, int empty, int numExchange, int totalDrank) {
+        if (full + empty < numExchange) {
+            return full + totalDrank;
         }
-        
-        res += full;
 
-        int exchangable = (empty + full) / numExchange;
-        empty = (empty + full) % numExchange;
+        int newFull = (full + empty) / numExchange;
+        int newEmpty = (full + empty) % numExchange;
 
-        helper(empty, exchangable, numExchange);
-
-        return res;
+        return helper(newFull, newEmpty, numExchange, totalDrank + full);
     }
 }
