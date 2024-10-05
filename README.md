@@ -563,6 +563,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
 | [2624-difference-between-element-sum-and-digit-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2624-difference-between-element-sum-and-digit-sum-of-an-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
+| [3336-water-bottles-ii](https://github.com/Adagggggg/leetcoding/tree/master/3336-water-bottles-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -644,6 +645,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
+| [3336-water-bottles-ii](https://github.com/Adagggggg/leetcoding/tree/master/3336-water-bottles-ii) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Memoization
 |  |
