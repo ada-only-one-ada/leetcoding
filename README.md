@@ -159,6 +159,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
+| [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
@@ -274,6 +275,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0543-diameter-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0543-diameter-of-binary-tree) |
 | [0545-boundary-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0545-boundary-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
@@ -374,6 +376,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
@@ -414,6 +417,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
+| [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
@@ -667,6 +671,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/0014-longest-common-prefix) |
+| [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
