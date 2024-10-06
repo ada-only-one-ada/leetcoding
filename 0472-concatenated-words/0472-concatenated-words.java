@@ -4,7 +4,7 @@ class Solution {
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         List<String> res = new ArrayList<>();
 
-       // 把短的先加入字典，这样可以一边遍历一边判断
+        // 把短的先加入字典，这样可以一边遍历一边判断
         Arrays.sort(words, (w1, w2) -> w1.length() - w2.length());
 
         for (String word: words) {
