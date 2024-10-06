@@ -24,7 +24,7 @@ class Solution {
     public boolean dfs(String word, int index, int numOfValidWords) {
         // 遍历完这个单词了
         // 有效单词大于2个
-        if (index == word.length() && numOfValidWords >= 1) {
+        if (index == word.length()) {
             return true;
         }
 
