@@ -3,16 +3,14 @@ class Solution {
         List<String> res = new ArrayList<>();
         Map<String, Integer> map = new HashMap<>();
 
-        for (String cpdomain: cpdomains) {
+        for (String cpdomain : cpdomains) {
             String[] s = cpdomain.split(" ");
-
             int count = Integer.valueOf(s[0]);
-
             String[] parts = s[1].split("\\.");
             String sub = "";
 
             for (int i = parts.length - 1; i >= 0; i--) {
-                String curr = "";
+                String curr;
                 if (sub.length() == 0) {
                     curr = parts[i];
                 } else {
@@ -20,15 +18,11 @@ class Solution {
                 }
 
                 map.put(curr, map.getOrDefault(curr, 0) + count);
-                if (i == parts.length - 1) {
-                    sub = parts[i];
-                } else {
-                    sub = parts[i] + "." + sub;
-                }
+                sub = parts[i] + (i != parts.length - 1? "." : "") + sub;  // 优化这里，只有当i>0时才添加点，避免最后多一个点
             }
         }
 
-        for (String key: map.keySet()) {
+        for (String key : map.keySet()) {
             res.add(map.get(key) + " " + key);
         }
 
