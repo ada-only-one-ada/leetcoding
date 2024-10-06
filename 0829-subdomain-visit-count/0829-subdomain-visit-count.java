@@ -18,7 +18,7 @@ class Solution {
                 }
 
                 map.put(curr, map.getOrDefault(curr, 0) + count);
-                sub = parts[i] + (i != parts.length - 1? "." : "") + sub;  // 优化这里，只有当i>0时才添加点，避免最后多一个点
+                sub = parts[i] + (i != parts.length - 1? "." : "") + sub;  
             }
         }
 
