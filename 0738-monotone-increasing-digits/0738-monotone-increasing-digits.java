@@ -3,7 +3,7 @@ class Solution {
         char[] digits = String.valueOf(n).toCharArray();
         int marker = digits.length; // 这将标记数字停止递增的位置。
 
-        // 从倒数第二个数字开始向数字的开头移动。
+        // 从倒数第一个数字开始向数字的开头移动。
         for (int i = digits.length - 1; i > 0; i--) {
             // 如果当前数字小于前一个数字，表明不再递增。
             if (digits[i] < digits[i - 1]) {
