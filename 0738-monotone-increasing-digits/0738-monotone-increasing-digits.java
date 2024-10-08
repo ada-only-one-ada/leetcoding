@@ -1,32 +1,28 @@
 class Solution {
     public int monotoneIncreasingDigits(int n) {
-        char[] digits = String.valueOf(n).toCharArray();
-        int marker = digits.length; // 这将标记数字停止递增的位置。
+        char[] arr = String.valueOf(n).toCharArray();
 
-        // 从倒数第一个数字开始向数字的开头移动。
-        for (int i = digits.length - 1; i > 0; i--) {
-            // 如果当前数字小于前一个数字，表明不再递增。
-            char curr = digits[i];
-            char prev = digits[i - 1];
-            if (curr < prev) {
-                marker = i; // 更新标记到当前位置。
-                digits[i - 1]--; // 将前一个数字减一。
+        // 15632
+        // 15522 
+        int marker = -1;
+        for (int i = arr.length - 1; i > 0; i--) {
+            if (arr[i] < arr[i - 1]) {
+                arr[i - 1]--;
+                marker = i;
             }
         }
-        //        i
-        // [3, 3, 2]
-        //     i
-        // [3, 2, 2]
-        //  i
-        // [2, 2, 2]
-        //  -> 9, 9 
-             
-        // 将标记之后的所有数字替换为'9'，使数字尽可能大。
-        for (int i = marker; i < digits.length; i++) {
-            digits[i] = '9';
+
+        if (marker == -1) return n;
+
+        String res = "";
+        for (int i = 0; i < arr.length; i++) {
+            if (i < marker) {
+                res += arr[i];
+            } else {
+                res += '9';
+            }
         }
 
-        // 将字符数组重新转换回字符串，然后转换为整数。
-        return Integer.parseInt(new String(digits));
+        return Integer.parseInt(res);
     }
 }
