@@ -2,8 +2,6 @@ class Solution {
     public int monotoneIncreasingDigits(int n) {
         char[] arr = String.valueOf(n).toCharArray();
 
-        // 15632
-        // 15522 
         int marker = -1;
         for (int i = arr.length - 1; i > 0; i--) {
             if (arr[i] < arr[i - 1]) {
