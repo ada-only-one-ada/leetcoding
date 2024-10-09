@@ -21,6 +21,9 @@ class Solution {
             }
         }
 
+        // startValue肯定是matrix中的一个数字
+        // 因为我们的目标是找到满足条件的最小值startValue
+        // 即矩阵中恰好有k个元素小于或等于 startValue
         return startValue;
     }
 
