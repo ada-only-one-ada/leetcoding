@@ -1,30 +1,19 @@
 class Solution {
     public int findPeakElement(int[] nums) {
         int left = 0;
-        int right = nums.length;
+        int right = nums.length - 1;
 
-        while (left < right) {
+        while (left + 1 < right) {
             int mid = left + (right - left) / 2;
-               
-            // [1, 2]
-            if (nums[mid] > getValue(mid - 1, nums) && nums[mid] > getValue(mid + 1, nums)) {
-                return mid;
-            } else if (nums[mid] < getValue(mid + 1, nums)) {
+
+            if (nums[mid] <= nums[mid + 1]) {
                 left = mid;
             } else {
                 right = mid;
             }
         }
 
-        // [-2147483648] expect 0
-        return left;
-    }
-
-    public int getValue(int index, int[] nums) {
-        if (index < 0 || index >= nums.length) {
-            return Integer.MIN_VALUE;
-        } else {
-            return nums[index];
-        }
+        if (nums[left] > nums[right]) return left;
+        return right;
     }
 }
