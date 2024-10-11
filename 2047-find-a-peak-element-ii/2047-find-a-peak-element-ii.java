@@ -15,15 +15,13 @@ class Solution {
             int rightCol = midCol + 1;
             int rightColMax = rightCol < mat[0].length? mat[findMaxRow(mat, rightCol)][rightCol] : Integer.MIN_VALUE;
 
-            if (rightColMax > midColMax) {
-                startCol = midCol + 1;
-            } else if (leftColMax > midColMax) {
-                endCol = midCol;
-            } else {
-                // 这个顺序不能改，这里return放在以后
-                // 确保不错过任何一个局部的峰值
+            if (midColMax >= leftColMax && midColMax >= rightColMax) {
                 return new int[]{maxRow, midCol};
-            }
+            } else if (rightColMax > midColMax) {
+                startCol = midCol + 1;
+            } else {
+                endCol = midCol;
+            } 
         }
 
         return new int[]{-1, -1};
@@ -43,3 +41,11 @@ class Solution {
         return maxRow;
     }
 }
+
+/*
+
+55   77    9
+56   21    59
+68   1     77
+
+*/
