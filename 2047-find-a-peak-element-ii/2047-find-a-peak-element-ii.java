@@ -21,6 +21,7 @@ class Solution {
                 endCol = midCol;
             } else {
                 // 这个顺序不能改，这里return放在以后
+                // 确保不错过任何一个局部的峰值
                 return new int[]{maxRow, midCol};
             }
         }
