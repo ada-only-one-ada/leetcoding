@@ -20,16 +20,25 @@ class Solution {
             // 拿到右边那一列的最大值
             int rightColMax = rightCol < mat[0].length? mat[findMaxRow(mat, rightCol)][rightCol] : Integer.MIN_VALUE;
 
+            // 当前 midCol 这一列比左右两边的都大了，直接返回
+            /*
+              55   77    9
+              56   21    59
+              68   1     77
+            */
+            // 这里先找到77，左边最大是68，右边最大是77，这种情况下第一个 if 不会返回
+            // if (midColMax > leftColMax && midColMax > rightColMax) 是错的
+          
+            // 加一个等号可以
+            if (midColMax >= leftColMax && midColMax >= rightColMax) {
+                return new int[]{maxRow, midCol};
             // 如果左边那一列的最大值更大，大值在左边，往左边找
-            if (leftColMax > midColMax) {
+            } else if (leftColMax > midColMax) {
                 endCol = midCol;
             // 如果右边那一列的最大值更大，大值在右边，往右边找
-            } else if (rightColMax > midColMax) {
-                startCol = midCol + 1;
-            // 这个时候应该是当前 midCol 这一列比左右两边的都大了，直接返回
             } else {
-                return new int[]{maxRow, midCol};
-            } 
+                startCol = midCol + 1;
+            }
         }
 
         return new int[]{-1, -1};
@@ -49,11 +58,3 @@ class Solution {
         return maxRow;
     }
 }
-
-/*
-
-55   77    9
-56   21    59
-68   1     77
-
-*/
