@@ -1,33 +1,40 @@
 class Solution {
-    public int[] findPeakGrid(int[][] mat) {int row = 0;
+    public int[] findPeakGrid(int[][] mat) {
         int startCol = 0;
-        int endCol = mat[0].length - 1;
-        while (startCol <= endCol) {
+        int endCol = mat[0].length;
+        
+        while (startCol < endCol) {
             int midCol = startCol + (endCol - startCol) / 2;
-            int maxInMidCol = mat[findMaxInColumn(mat, midCol)][midCol];
+            int maxRow = findMaxRow(mat, midCol);
+            int midColMax = mat[maxRow][midCol];
 
-            int maxInLeftCol = midCol > 0 ? mat[findMaxInColumn(mat, midCol - 1)][midCol - 1]: Integer.MIN_VALUE;
-            int maxInRightCol = midCol < mat[0].length - 1? mat[findMaxInColumn(mat, midCol + 1)][midCol + 1] : Integer.MIN_VALUE;
+            // 确保左右是最大的
+            int leftCol = midCol - 1;
+            int leftColMax = leftCol >= 0? mat[findMaxRow(mat, leftCol)][leftCol] : Integer.MIN_VALUE;
 
-            if (maxInLeftCol > maxInMidCol) {
-                endCol = midCol - 1;
-            } else if (maxInRightCol > maxInMidCol) {
+            int rightCol = midCol + 1;
+            int rightColMax = rightCol < mat[0].length? mat[findMaxRow(mat, rightCol)][rightCol] : Integer.MIN_VALUE;
+
+            if (rightColMax > midColMax) {
                 startCol = midCol + 1;
+            } else if (leftColMax > midColMax) {
+                endCol = midCol;
             } else {
-                return new int[]{findMaxInColumn(mat, midCol), midCol};
+                // 这个顺序不能改，这里return放在以后
+                return new int[]{maxRow, midCol};
             }
         }
 
         return new int[]{-1, -1};
     }
 
-    public int findMaxInColumn(int[][] mat, int col) {
-        int max = Integer.MIN_VALUE;
-        int maxRow = -1;
-        
+
+    // 确保上下是最大的
+    public int findMaxRow(int[][] mat, int col) {
+        int maxRow = 0;
+
         for (int row = 0; row < mat.length; row++) {
-            if (mat[row][col] > max) {
-                max = mat[row][col];
+            if (mat[row][col] >= mat[maxRow][col]) {
                 maxRow = row;
             }
         }
