@@ -16,6 +16,7 @@ class Solution {
             }
         }
 
+        // 有些字符可能在 order 没有出现
         for (int i = 0; i < 26; i++) {
             if (freq[i] > 0) {
                 for (int j = 0; j < freq[i]; j++) {
