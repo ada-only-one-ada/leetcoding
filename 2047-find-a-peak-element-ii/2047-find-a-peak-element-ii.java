@@ -28,8 +28,8 @@ class Solution {
             */
             // 这里先找到77，左边最大是68，右边最大是77，这种情况下第一个 if 不会返回
             // if (midColMax > leftColMax && midColMax > rightColMax) 是错的
-          
-            // 加一个等号可以
+            // 加一个等号可以通过
+            
             if (midColMax >= leftColMax && midColMax >= rightColMax) {
                 return new int[]{maxRow, midCol};
             // 如果左边那一列的最大值更大，大值在左边，往左边找
