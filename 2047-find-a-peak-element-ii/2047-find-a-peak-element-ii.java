@@ -5,22 +5,30 @@ class Solution {
         
         while (startCol < endCol) {
             int midCol = startCol + (endCol - startCol) / 2;
+            // 确保上下是最大的
+            // 找到 midCol 中的最大值在哪一行
             int maxRow = findMaxRow(mat, midCol);
+            // 拿到 midCol 中的最大值
             int midColMax = mat[maxRow][midCol];
 
             // 确保左右是最大的
             int leftCol = midCol - 1;
+            // 拿到左边那一列的最大值
             int leftColMax = leftCol >= 0? mat[findMaxRow(mat, leftCol)][leftCol] : Integer.MIN_VALUE;
 
             int rightCol = midCol + 1;
+            // 拿到右边那一列的最大值
             int rightColMax = rightCol < mat[0].length? mat[findMaxRow(mat, rightCol)][rightCol] : Integer.MIN_VALUE;
 
-            if (midColMax >= leftColMax && midColMax >= rightColMax) {
-                return new int[]{maxRow, midCol};
+            // 如果左边那一列的最大值更大，大值在左边，往左边找
+            if (leftColMax > midColMax) {
+                endCol = midCol;
+            // 如果右边那一列的最大值更大，大值在右边，往右边找
             } else if (rightColMax > midColMax) {
                 startCol = midCol + 1;
+            // 这个时候应该是当前 midCol 这一列比左右两边的都大了，直接返回
             } else {
-                endCol = midCol;
+                return new int[]{maxRow, midCol};
             } 
         }
 
