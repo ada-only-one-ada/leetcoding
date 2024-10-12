@@ -12,19 +12,20 @@ class Solution {
                     evenFreq[word.charAt(i) - 'a']++;
                 }
             }
-            StringBuilder key = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
             for (int i = 0; i < 26; i++) {
-                key.append(oddFreq[i]).append(",");
+                sb.append(oddFreq[i]).append(",");
             }
-            key.append("-");
+            sb.append("-");
             for (int i = 0; i < 26; i++) {
-                key.append(evenFreq[i]).append(",");
+                sb.append(evenFreq[i]).append(",");
             }
 
-            if (!map.containsKey(key.toString())) {
-                map.put(key.toString(), new ArrayList<>());
+            String key = sb.toString();
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
             }
-            map.get(key.toString()).add(word);
+            map.get(key).add(word);
         }
 
         return map.size();
