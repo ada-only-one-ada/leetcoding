@@ -2,15 +2,15 @@ class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         // 这里的sum如果太大会造成溢出，要用long
         // 我们也可以直接设置 max 给 end
-        /*
-        int sum = 0;
+        // 最佳是设置 max(piles)
+        
+        int max = 0;
         for (int pile: piles) {
-            sum += pile;
+            max = Math.max(max, pile);
         }
-        */
-
+        
         int start = 1;
-        int end = Integer.MAX_VALUE;
+        int end = max + 1;
         while (start < end) {
             int mid = start + (end - start) / 2;
 
