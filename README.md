@@ -173,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
 | [0907-koko-eating-bananas](https://github.com/Adagggggg/leetcoding/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
+| [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
@@ -354,6 +355,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
+| [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
@@ -399,6 +401,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
+| [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
@@ -474,6 +477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
+| [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
