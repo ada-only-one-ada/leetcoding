@@ -14,7 +14,6 @@ class Solution {
 
         for (int node = 0; node < n; node++) {
             for (int nei = 0; nei < n; nei++) {
-                
                 if (isConnected[node][nei] == 1) {
                     connect(node, nei);
                 }
