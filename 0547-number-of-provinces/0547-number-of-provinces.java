@@ -7,23 +7,23 @@ class Solution {
         parent = new int[n];
         rank = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            parent[i] = i;
-            rank[i] = 1;
+        for (int node = 0; node < n; node++) {
+            parent[node] = node;
+            rank[node] = 1;
         } 
 
         for (int node = 0; node < n; node++) {
-            for (int i = 0; i < n; i++) {
-                if (i == node) continue;
-                if (isConnected[node][i] == 1) {
-                    connect(node, i);
+            for (int nei = 0; nei < n; nei++) {
+                
+                if (isConnected[node][nei] == 1) {
+                    connect(node, nei);
                 }
             }
         }
 
-        for (int i = 0; i < n; i++) {
-            parent[i] = findParent(i);     
-        } 
+        for (int node = 0; node < n; node++) {
+            parent[node] = findParent(node);
+        }
 
         Set<Integer> uniqueParents = new HashSet<>();
         for (int p: parent) {
