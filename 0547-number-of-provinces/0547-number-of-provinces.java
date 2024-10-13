@@ -27,7 +27,6 @@ class Solution {
         Set<Integer> uniqueParents = new HashSet<>();
         for (int p: parent) {
             uniqueParents.add(p);
-            System.out.println(p);
         }
 
         return uniqueParents.size();
