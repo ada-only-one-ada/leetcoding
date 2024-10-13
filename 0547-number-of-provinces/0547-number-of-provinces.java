@@ -20,6 +20,7 @@ class Solution {
             }
         }
 
+        // 最后不要忘记再更新一遍 parent array
         for (int node = 0; node < n; node++) {
             parent[node] = findParent(node);
         }
