@@ -7,7 +7,7 @@ class Solution {
         for (int node = 0; node < n; node++) {
             if (!visited.contains(node))  {
                 res++; // 增加一组
-                dfs(isConnected, node, visited);
+                dfs(isConnected, node, visited); // mark这组连起来的点们
             }
         }
         /*
