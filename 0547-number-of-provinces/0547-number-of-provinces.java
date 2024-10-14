@@ -7,15 +7,9 @@ class Solution {
         for (int node = 0; node < n; node++) {
             if (!visited.contains(node))  {
                 res++; // 增加一组
-                dfs(isConnected, node, visited); // mark这组连起来的点们
+                dfs(isConnected, node, visited); // 把与这个相连的点都加入visited
             }
         }
-        /*
-        1 0 0 1
-        0 1 1 0
-        0 1 1 1
-        1 0 1 1
-        */
 
         return res;
     }
