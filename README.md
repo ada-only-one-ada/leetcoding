@@ -192,6 +192,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Adagggggg/leetcoding/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Adagggggg/leetcoding/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
@@ -448,6 +449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
@@ -460,6 +462,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Sorting
 |  |
 | ------- |
@@ -629,6 +632,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 ## Sliding Window
 |  |
@@ -642,6 +646,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 ## Recursion
 |  |
 | ------- |
@@ -775,4 +780,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
+## Segment Tree
+|  |
+| ------- |
+| [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 <!---LeetCode Topics End-->
