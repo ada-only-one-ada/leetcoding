@@ -16,11 +16,11 @@ class Solution {
 
     public void dfs(int[][] isConnected, int node, Set<Integer> visited) {
         for (int nei = 0; nei < isConnected[0].length; nei++) {
-            if (visited.contains(nei)) continue;
+            if (visited.contains(nei)) continue; // 已经加入不必再加
 
-            if (isConnected[node][nei] == 1) {
-                visited.add(nei);
-                dfs(isConnected, nei, visited);
+            if (isConnected[node][nei] == 1) { // 如果是相连接的点
+                visited.add(nei); // 加入visited
+                dfs(isConnected, nei, visited); // 这个nei点再继续dfs
             }
         }
     }
