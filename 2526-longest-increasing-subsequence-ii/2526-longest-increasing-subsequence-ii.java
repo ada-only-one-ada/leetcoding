@@ -1,68 +1,88 @@
+class Node {
+    Node left, right;
+    int val, add;
+}
+
 class Solution {
     public int lengthOfLIS(int[] nums, int k) {
-        int res = 0;
-        // 找到nums中的最小和最大值，为了确定线段树的范围
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        for (int num : nums) {
-            min = Math.min(min, num);
-            max = Math.max(max, num);
+        int ans = 0;
+        int N = (int) 1e5;
+        Node root = new Node();
+        
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            // 查询区间 [nums[i] - k, nums[i] - 1] 的最值
+            int cnt = query(root, 0, N, Math.max(0, nums[i] - k), nums[i] - 1) + 1;
+            // 更新，注意这里是覆盖更新，对应的模版中覆盖更新不需要累加，已在下方代码中标注
+            update(root, 0, N, nums[i], nums[i], cnt);
+            ans = Math.max(ans, cnt);
         }
 
-        // 创建线段树
-        SegmentTree segTree = new SegmentTree(min, max);
-
-        // 遍历数组，更新线段树并查询最大值
-        for (int num : nums) {
-            // 查询当前num-k到num-1的最大LIS长度
-            int maxLIS = segTree.query(Math.max(min, num - k), num - 1) + 1;
-            // 更新当前数的LIS长度
-            segTree.update(num, maxLIS);
-            // 更新结果
-            res = Math.max(res, maxLIS);
-        }
-
-        return res;
+        return ans;
     }
     
-    class SegmentTree {
-        int start, end;
-        SegmentTree left, right;
-        int max;
-
-        public SegmentTree(int start, int end) {
-            this.start = start;
-            this.end = end;
-            this.max = 0;
-            if (start != end) {
-                int mid = start + (end - start) / 2;
-                this.left = new SegmentTree(start, mid);
-                this.right = new SegmentTree(mid + 1, end);
-            }
+    public void update(Node node, int start, int end, int l, int r, int val) {
+        if (l <= start && end <= r) {
+            node.val = val; // 不需要累加
+            node.add = val; // 不需要累加
+            return ;
         }
 
-        public int query(int l, int r) {
-            if (l > end || r < start) {
-                return 0;
-            }
-            if (l <= start && end <= r) {
-                return max;
-            }
-            return Math.max(left.query(l, r), right.query(l, r));
+        pushDown(node);
+
+        int mid = start + (end - start) / 2;
+        if (l <= mid) {
+            update(node.left, start, mid, l, r, val);
         }
 
-        public void update(int idx, int value) {
-            if (start == end) {
-                max = Math.max(max, value);
-                return;
-            }
-            int mid = start + (end - start) / 2;
-            if (idx <= mid) {
-                left.update(idx, value);
-            } else {
-                right.update(idx, value);
-            }
-            max = Math.max(left.max, right.max);
+        if (r > mid) {
+            update(node.right, mid + 1, end, l, r, val);
         }
+        
+        pushUp(node);
+    }
+
+    public int query(Node node, int start, int end, int l, int r) {
+        if (l <= start && end <= r) {
+            return node.val;
+        }
+
+        pushDown(node);
+
+        int mid = start + (end - start) / 2;
+        int ans = 0;
+        if (l <= mid) {
+            ans = query(node.left, start, mid, l, r);
+        }
+
+        if (r > mid) {
+            ans = Math.max(ans, query(node.right, mid + 1, end, l, r));
+        }
+
+        return ans;
+    }
+
+    public void pushUp(Node node) {
+        node.val = Math.max(node.left.val, node.right.val);
+    }
+
+    public void pushDown(Node node) {
+        if (node.left == null) {
+            node.left = new Node();
+        }
+
+        if (node.right == null) {
+            node.right = new Node();
+        }
+
+        if (node.add == 0) {
+            return;
+        }
+
+        node.left.val = node.add;  // 不需要累加
+        node.right.val = node.add; // 不需要累加
+        node.left.add = node.add;  // 不需要累加
+        node.right.add = node.add; // 不需要累加
+        node.add = 0;
     }
 }
