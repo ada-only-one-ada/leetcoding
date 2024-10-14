@@ -1,62 +1,33 @@
 class Solution {
-    int[] parent;
-    int[] rank;
-
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
-        parent = new int[n];
-        rank = new int[n];
+        int res = 0;
+        Set<Integer> visited = new HashSet<>();
 
         for (int node = 0; node < n; node++) {
-            parent[node] = node;
-            rank[node] = 1;
-        } 
-
-        for (int node = 0; node < n; node++) {
-            for (int nei = 0; nei < n; nei++) {
-                if (isConnected[node][nei] == 1) {
-                    connect(node, nei);
-                }
+            if (!visited.contains(node))  {
+                res++; // 增加一组
+                dfs(isConnected, node, visited);
             }
         }
+        /*
+        1 0 0 1
+        0 1 1 0
+        0 1 1 1
+        1 0 1 1
+        */
 
-        // 最后不要忘记再更新一遍 parent array
-        for (int node = 0; node < n; node++) {
-            parent[node] = findParent(node);
-        }
-
-        Set<Integer> uniqueParents = new HashSet<>();
-        for (int p: parent) {
-            uniqueParents.add(p);
-        }
-
-        return uniqueParents.size();
+        return res;
     }
 
-    public void connect(int nodeA, int nodeB) {
-        int parentA = findParent(nodeA);
-        int parentB = findParent(nodeB);
-        if (parentA == parentB) {
-            return;
-        }
+    public void dfs(int[][] isConnected, int node, Set<Integer> visited) {
+        for (int nei = 0; nei < isConnected[0].length; nei++) {
+            if (visited.contains(nei)) continue;
 
-        int rankA = rank[parentA];
-        int rankB = rank[parentB];
-        if (rankA >= rankB) {
-            parent[parentB] = parentA;
-            rank[parentA] += rank[parentB];
-        } else {
-            parent[parentA] = parentB;
-            rank[parentB] += rank[parentA];
+            if (isConnected[node][nei] == 1) {
+                visited.add(nei);
+                dfs(isConnected, nei, visited);
+            }
         }
-    }
-
-    public int findParent(int node) {
-        int p = parent[node];
-        if (parent[p] != p) {
-            parent[node] = findParent(p);
-        }
-
-        return parent[node];
     }
 }
