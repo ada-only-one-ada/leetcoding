@@ -1,88 +1,71 @@
-class Node {
-    Node left, right;
-    int val, add;
-}
-
 class Solution {
-    public int lengthOfLIS(int[] nums, int k) {
-        int ans = 0;
-        int N = (int) 1e5;
-        Node root = new Node();
-        
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            // 查询区间 [nums[i] - k, nums[i] - 1] 的最值
-            int cnt = query(root, 0, N, Math.max(0, nums[i] - k), nums[i] - 1) + 1;
-            // 更新，注意这里是覆盖更新，对应的模版中覆盖更新不需要累加，已在下方代码中标注
-            update(root, 0, N, nums[i], nums[i], cnt);
-            ans = Math.max(ans, cnt);
-        }
+    int[] segmentTree;
 
-        return ans;
-    }
-    
-    public void update(Node node, int start, int end, int l, int r, int val) {
-        if (l <= start && end <= r) {
-            node.val = val; // 不需要累加
-            node.add = val; // 不需要累加
-            return ;
+    /**
+     * 求解最长递增子序列的长度，其中序列元素之间的最大差值不超过k
+     *
+     * @param nums 输入的整数数组
+     * @param maxDiff 允许的最大差值k
+     * @return 最长递增子序列的长度
+     */
+    public int lengthOfLIS(int[] nums, int maxDiff) {
+        int maxValue = 0;
+        for (int num : nums) maxValue = Math.max(maxValue, num);
+        segmentTree = new int[maxValue * 4];
+        for (int num : nums) {
+            if (num == 1) {
+                updateSegmentTree(1, 1, maxValue, 1, 1);
+            } else {
+                int res = 1 + querySegmentTree(1, 1, maxValue, Math.max(num - maxDiff, 1), num - 1);
+                updateSegmentTree(1, 1, maxValue, num, res);
+            }
         }
-
-        pushDown(node);
-
-        int mid = start + (end - start) / 2;
-        if (l <= mid) {
-            update(node.left, start, mid, l, r, val);
-        }
-
-        if (r > mid) {
-            update(node.right, mid + 1, end, l, r, val);
-        }
-        
-        pushUp(node);
+        return segmentTree[1];
     }
 
-    public int query(Node node, int start, int end, int l, int r) {
-        if (l <= start && end <= r) {
-            return node.val;
-        }
-
-        pushDown(node);
-
-        int mid = start + (end - start) / 2;
-        int ans = 0;
-        if (l <= mid) {
-            ans = query(node.left, start, mid, l, r);
-        }
-
-        if (r > mid) {
-            ans = Math.max(ans, query(node.right, mid + 1, end, l, r));
-        }
-
-        return ans;
-    }
-
-    public void pushUp(Node node) {
-        node.val = Math.max(node.left.val, node.right.val);
-    }
-
-    public void pushDown(Node node) {
-        if (node.left == null) {
-            node.left = new Node();
-        }
-
-        if (node.right == null) {
-            node.right = new Node();
-        }
-
-        if (node.add == 0) {
+    /**
+     * 更新线段树中的值
+     *
+     * @param nodeIndex 当前节点索引
+     * @param left 当前节点表示的区间左端点
+     * @param right 当前节点表示的区间右端点
+     * @param idx 需要更新的位置
+     * @param val 更新后的值
+     */
+    private void updateSegmentTree(int nodeIndex, int left, int right, int idx, int val) {
+        if (left == right) {
+            segmentTree[nodeIndex] = val;
             return;
         }
+        int mid = (left + right) / 2;
+        if (idx <= mid) {
+            updateSegmentTree(nodeIndex * 2, left, mid, idx, val);
+        } else {
+            updateSegmentTree(nodeIndex * 2 + 1, mid + 1, right, idx, val);
+        }
+        segmentTree[nodeIndex] = Math.max(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1]);
+    }
 
-        node.left.val = node.add;  // 不需要累加
-        node.right.val = node.add; // 不需要累加
-        node.left.add = node.add;  // 不需要累加
-        node.right.add = node.add; // 不需要累加
-        node.add = 0;
+    /**
+     * 查询线段树中的最大值
+     *
+     * @param nodeIndex 当前节点索引
+     * @param left 当前节点表示的区间左端点
+     * @param right 当前节点表示的区间右端点
+     * @param queryLeft 查询区间左端点
+     * @param queryRight 查询区间右端点
+     * @return 区间 [queryLeft, queryRight] 内的最大值
+     */
+    private int querySegmentTree(int nodeIndex, int left, int right, int queryLeft, int queryRight) {
+        if (queryLeft <= left && right <= queryRight) return segmentTree[nodeIndex];
+        int res = 0;
+        int mid = (left + right) / 2;
+        if (queryLeft <= mid) {
+            res = querySegmentTree(nodeIndex * 2, left, mid, queryLeft, queryRight);
+        }
+        if (queryRight > mid) {
+            res = Math.max(res, querySegmentTree(nodeIndex * 2 + 1, mid + 1, right, queryLeft, queryRight));
+        }
+        return res;
     }
 }
