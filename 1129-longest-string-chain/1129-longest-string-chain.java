@@ -11,7 +11,7 @@ class Solution {
             for (int j = 0; j < i; j++) {
                 if (words[j].length() + 1 < words[i].length()) continue; // word[j] 长度太短
                 if (words[j].length() + 1 > words[i].length()) break; // word[j] 长度太长
-
+                
                 if (isSubsequence(words[j], words[i])) {
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
