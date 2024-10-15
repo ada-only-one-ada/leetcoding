@@ -5,9 +5,9 @@ class Solution {
     public int longestStrChain(String[] words) {
         // 初始化每个单词的最长链长度为0，表示尚未计算
         for (String word : words) {
-            wordToChainLength.put(word, 1);
+            wordToChainLength.put(word, 0);
         }
-        int maxLength = 1;
+        int maxLength = 0;
         // 遍历每个单词，使用DFS计算最长链
         for (String word : wordToChainLength.keySet()) {
             maxLength = Math.max(maxLength, dfs(word));
@@ -17,7 +17,7 @@ class Solution {
 
     private int dfs(String currentWord) {
         int currentLength = wordToChainLength.get(currentWord);
-        if (currentLength > 1) {
+        if (currentLength > 0) {
             // 如果已经计算过这个单词的最长链长度，直接返回结果
             return currentLength;
         }
