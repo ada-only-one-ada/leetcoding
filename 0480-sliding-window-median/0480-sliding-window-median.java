@@ -29,13 +29,13 @@ class Solution {
         result.add(getMedian(k));
 
         // 开始移动滑动窗口
-        for (int right = k; right < nums.length; right++) {
-            
+        for (int right = k; right < nums.length; right++) {  
             int leftNum = nums[right - k]; // 即将被移出窗口的元素
             removedMap.put(leftNum, removedMap.getOrDefault(leftNum, 0) + 1); // 标记该元素将移除窗口
 
             // 判断即将移出的元素在哪个堆中，并调整平衡因子
             // 被移除的数字等于或小于 small 的堆顶，在 small 堆中
+            // 这里 balance 可以实际上加减，在我们心目中已经去掉了
             if (!small.isEmpty() && leftNum <= small.peek()) {
                 balance--; // small 失去了一个元素
             // 否则在 big 堆中
@@ -55,7 +55,7 @@ class Solution {
             // 理想状态下的 balance：
             // k 是偶数： balance = 0，表示 small 和 big 一样
             // k 是奇数： balance = 1，表示 small 比 big 多一个
-            if (balance > 1) {
+            if (balance > 0) {
                 big.add(small.poll());
                 balance -= 2; // small 移动一个元素到 big
             }
