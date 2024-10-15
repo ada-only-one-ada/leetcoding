@@ -8,6 +8,7 @@ class Solution {
         Arrays.sort(words, (a, b) -> a.length() - b.length());
 
         for (int i = 1; i < words.length; i++) {
+            // 二分法找到第一个比 words[i] 长度少1的单词
             int start = 0;
             int end = i;
             while (start < end) {
@@ -34,8 +35,6 @@ class Solution {
     }
 
     public boolean isSubsequence(String candidate, String word) {
-        if (candidate.length() + 1 != word.length()) return false;
-
         int i = 0;
         int j = 0;
         while (i < candidate.length() && j < word.length()) {
