@@ -8,7 +8,18 @@ class Solution {
         Arrays.sort(words, (a, b) -> a.length() - b.length());
 
         for (int i = 1; i < words.length; i++) {
-            for (int j = 0; j < i; j++) {
+            int start = 0;
+            int end = i;
+            while (start < end) {
+                int mid = start + (end - start) / 2;
+                if (words[mid].length() + 1 < words[i].length()) {
+                    start = mid + 1;
+                } else {
+                    end = mid;
+                }
+            }
+
+            for (int j = start; j < i; j++) {
                 if (words[j].length() + 1 < words[i].length()) continue; // word[j] 长度太短
                 if (words[j].length() + 1 > words[i].length()) break; // word[j] 长度太长
                 
