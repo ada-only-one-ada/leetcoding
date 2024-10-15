@@ -21,16 +21,16 @@ class Solution {
             // 如果已经计算过这个单词的最长链长度，直接返回结果
             return currentLength;
         }
-        int maxLengthFromCurrent = 0;
+        int maxLengthToCurrent = 0;
         // 尝试删除当前单词的每一个字符，看是否能形成更长的链
         for (int i = 0; i < currentWord.length(); i++) {
-            String nextWord = currentWord.substring(0, i) + currentWord.substring(i + 1);
-            if (wordToChainLength.containsKey(nextWord)) {
-                maxLengthFromCurrent = Math.max(maxLengthFromCurrent, dfs(nextWord));
+            String prevWord = currentWord.substring(0, i) + currentWord.substring(i + 1);
+            if (wordToChainLength.containsKey(prevWord)) {
+                maxLengthToCurrent = Math.max(maxLengthToCurrent, dfs(prevWord));
             }
         }
         // 记录并返回包括当前单词的最长链长度
-        wordToChainLength.put(currentWord, maxLengthFromCurrent + 1);
-        return maxLengthFromCurrent + 1;
+        wordToChainLength.put(currentWord, maxLengthToCurrent + 1);
+        return maxLengthToCurrent + 1;
     }
 }
