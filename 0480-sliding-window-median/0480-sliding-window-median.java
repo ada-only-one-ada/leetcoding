@@ -56,8 +56,7 @@ class Solution {
             // 理想状态下的 balance：
             // k 是偶数： balance = 0，表示 small 和 big 一样
             // k 是奇数： balance = 1，表示 small 比 big 多一个
-
-            if ((k%2==0 && balance > 0) || (k%2 != 0 && balance > 1)) {
+            if ((k%2 == 0 && balance > 0) || (k % 2 != 0 && balance > 1)) {
                 big.add(small.poll());
                 balance -= 2; // small 移动一个元素到 big
             }
