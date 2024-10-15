@@ -1,6 +1,6 @@
 class Solution {
-    PriorityQueue<Integer> small = new PriorityQueue<>(Collections.reverseOrder());
-    PriorityQueue<Integer> big = new PriorityQueue<>();
+    Queue<Integer> small = new PriorityQueue<>(Collections.reverseOrder());
+    Queue<Integer> big = new PriorityQueue<>();
     Map<Integer, Integer> removedMap = new HashMap<>();
     public double[] medianSlidingWindow(int[] nums, int k) {
         List<Double> result = new ArrayList<>();
