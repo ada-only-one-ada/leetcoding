@@ -64,7 +64,6 @@ class Solution {
             // 添加新的中位数
             result.add(getMedian(k));
         }
-                return result.stream().mapToDouble(Double::doubleValue).toArray();
-
+        return result.stream().mapToDouble(Double::doubleValue).toArray();
     }
 }
