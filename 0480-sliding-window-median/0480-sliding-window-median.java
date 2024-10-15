@@ -12,22 +12,25 @@ class Solution {
 
     public double[] medianSlidingWindow(int[] nums, int k) {
         List<Double> result = new ArrayList<>();
+        int balance = 0; // 平衡因子，用于调整两个堆的大小
 
         // 初始化第一个窗口
         // 分给small k个 (因为不一定有序，所以不能在一开始small分一半，big分一半)
         for (int i = 0; i < k; i++) {
             small.add(nums[i]);
+            balance++;
         }
         // 这其中分给big一半
         for (int i = 0; i < k / 2; i++) {
             big.add(small.poll());
+            balance -= 2;
         }
         // 第一个窗口的中位数结果
         result.add(getMedian(k));
 
         // 开始移动滑动窗口
         for (int right = k; right < nums.length; right++) {
-            int balance = 0; // 平衡因子，用于调整两个堆的大小
+            
             int leftNum = nums[right - k]; // 即将被移出窗口的元素
             removedMap.put(leftNum, removedMap.getOrDefault(leftNum, 0) + 1); // 标记该元素将移除窗口
 
