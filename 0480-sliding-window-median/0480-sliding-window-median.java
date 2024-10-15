@@ -1,7 +1,7 @@
 class Solution {
     Queue<Integer> small = new PriorityQueue<>(Collections.reverseOrder());
     Queue<Integer> big = new PriorityQueue<>();
-    Map<Integer, Integer> removedMap = new HashMap<>();
+    Map<Integer, Integer> map = new HashMap<>();
     public double[] medianSlidingWindow(int[] nums, int k) {
         List<Double> result = new ArrayList<>();
         int balance = 0; 
@@ -16,7 +16,7 @@ class Solution {
         result.add(getMedian(k));
         for (int right = k; right < nums.length; right++) {  
             int leftNum = nums[right - k]; 
-            removedMap.put(leftNum, removedMap.getOrDefault(leftNum, 0) + 1);
+            map.put(leftNum, map.getOrDefault(leftNum, 0) + 1);
             if (!small.isEmpty() && leftNum <= small.peek()) balance--; 
             else balance++; 
             if (!small.isEmpty() && nums[right] <= small.peek()) {
@@ -34,11 +34,11 @@ class Solution {
                 small.add(big.poll());
                 balance += 2; 
             }
-            while (!small.isEmpty() && removedMap.getOrDefault(small.peek(), 0) > 0) {
-                removedMap.put(small.peek(), removedMap.get(small.poll()) - 1);               
+            while (!small.isEmpty() && map.getOrDefault(small.peek(), 0) > 0) {
+                map.put(small.peek(), map.get(small.poll()) - 1);               
             }
-            while (!big.isEmpty() && removedMap.getOrDefault(big.peek(), 0) > 0) {
-                removedMap.put(big.peek(), removedMap.get(big.poll()) - 1);
+            while (!big.isEmpty() && map.getOrDefault(big.peek(), 0) > 0) {
+                map.put(big.peek(), map.get(big.poll()) - 1);
             }
 
             result.add(getMedian(k));
