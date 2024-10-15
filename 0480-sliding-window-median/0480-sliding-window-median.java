@@ -70,11 +70,17 @@ class Solution {
             // 清除延迟删除的元素
             while (!small.isEmpty() && removedMap.getOrDefault(small.peek(), 0) > 0) {
                 removedMap.put(small.peek(), removedMap.get(small.peek()) - 1);
+                if (removedMap.get(small.peek()) <= 0) {
+                    removedMap.remove(small.peek());
+                } 
                 small.poll();
             }
 
             while (!big.isEmpty() && removedMap.getOrDefault(big.peek(), 0) > 0) {
                 removedMap.put(big.peek(), removedMap.get(big.peek()) - 1);
+                if (removedMap.get(big.peek()) <= 0) {
+                    removedMap.remove(big.peek());
+                }
                 big.poll();
             }
 
@@ -92,7 +98,7 @@ class Solution {
         if (k % 2 != 0) {
             return small.peek();
         } else {
-            return small.peek() / 2.0 + big.peek()/ 2.0;
+            return small.peek() / 2.0 + big.peek() / 2.0;
         }
     }
 }
