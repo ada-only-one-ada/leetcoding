@@ -1,5 +1,5 @@
 class Solution {
-    int[] segmentTree;
+    int[] segmentTree; // 线段树数组，用于存储各个区间的最大值
 
     /**
      * 求解最长递增子序列的长度，其中序列元素之间的最大差值不超过k
@@ -10,17 +10,19 @@ class Solution {
      */
     public int lengthOfLIS(int[] nums, int maxDiff) {
         int maxValue = 0;
-        for (int num : nums) maxValue = Math.max(maxValue, num);
-        segmentTree = new int[maxValue * 4];
+        for (int num : nums) maxValue = Math.max(maxValue, num); // 计算数组中的最大值
+        segmentTree = new int[maxValue * 4]; // 初始化线段树，大小为最大值的4倍
+        
         for (int num : nums) {
-            if (num == 1) {
+            if (num == 1) { // 如果数字为1，无法形成递增关系，初始化为1
                 updateSegmentTree(1, 1, maxValue, 1, 1);
             } else {
+                // 查询以num结束的最长递增子序列长度
                 int res = 1 + querySegmentTree(1, 1, maxValue, Math.max(num - maxDiff, 1), num - 1);
-                updateSegmentTree(1, 1, maxValue, num, res);
+                updateSegmentTree(1, 1, maxValue, num, res); // 更新线段树，将索引为num的值设置为计算得到的长度
             }
         }
-        return segmentTree[1];
+        return segmentTree[1]; // 线段树的根节点保存了整个数组的最长递增子序列长度
     }
 
     /**
@@ -33,16 +35,19 @@ class Solution {
      * @param val 更新后的值
      */
     private void updateSegmentTree(int nodeIndex, int left, int right, int idx, int val) {
-        if (left == right) {
+        if (left == right) { // 如果到达叶子节点，直接更新值，比如[1,1], [2,2]
             segmentTree[nodeIndex] = val;
             return;
         }
-        int mid = (left + right) / 2;
-        if (idx <= mid) {
+
+        int mid = (left + right) / 2; // 计算中点，用于分割区间
+        if (idx <= mid) { // 判断更新的索引在左子树还是右子树
             updateSegmentTree(nodeIndex * 2, left, mid, idx, val);
         } else {
             updateSegmentTree(nodeIndex * 2 + 1, mid + 1, right, idx, val);
         }
+
+        // 更新完子树后，需要更新当前节点的值为子节点的最大值
         segmentTree[nodeIndex] = Math.max(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1]);
     }
 
@@ -57,15 +62,20 @@ class Solution {
      * @return 区间 [queryLeft, queryRight] 内的最大值
      */
     private int querySegmentTree(int nodeIndex, int left, int right, int queryLeft, int queryRight) {
-        if (queryLeft <= left && right <= queryRight) return segmentTree[nodeIndex];
+        // 如果当前区间完全在查询区间内，直接返回当前节点的值
+        if (queryLeft <= left && right <= queryRight) {
+            return segmentTree[nodeIndex]; 
+        }
+        
         int res = 0;
-        int mid = (left + right) / 2;
-        if (queryLeft <= mid) {
+        int mid = (left + right) / 2; // 计算中点
+        if (queryLeft <= mid) { // 如果查询区间与左子区间有交集，递归查询左子树
             res = querySegmentTree(nodeIndex * 2, left, mid, queryLeft, queryRight);
         }
-        if (queryRight > mid) {
+
+        if (queryRight > mid) { // 如果查询区间与右子区间有交集，递归查询右子树
             res = Math.max(res, querySegmentTree(nodeIndex * 2 + 1, mid + 1, right, queryLeft, queryRight));
         }
-        return res;
+        return res; // 返回查询结果
     }
 }
