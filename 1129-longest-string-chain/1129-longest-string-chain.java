@@ -9,6 +9,8 @@ class Solution {
 
         for (int i = 1; i < words.length; i++) {
             for (int j = 0; j < i; j++) {
+                if (words[j].length() + 1 > words[i].length()) break;
+
                 if (isSubsequence(words[j], words[i])) {
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
