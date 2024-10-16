@@ -16,9 +16,7 @@ class Solution {
                 int pickLeftSum = prefixSum[end] - prefixSum[start];
                 int pickLeftDp = dp[start + 1][end];
 
-                int prevSum = 0;
-                if (start > 0) prevSum = prefixSum[start - 1];
-                int pickRightSum = prefixSum[end - 1] - prevSum;
+                int pickRightSum = prefixSum[end - 1] - (start > 0? prefixSum[start - 1] : 0);
                 int pickRightDp = dp[start][end - 1];
 
                 dp[start][end] = Math.max(pickLeftSum - pickLeftDp,  pickRightSum - pickRightDp);
