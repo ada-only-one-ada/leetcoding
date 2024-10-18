@@ -1,43 +1,19 @@
 class Solution {
     public int maxScore(int[] nums) {
+        // 先把正数都加上，这样之后扣掉负数变成负数的越少
+        // （正数最大的 - 负数最小的）
+
+        long prefixSum = 0;
+        int res = 0;
+
         Arrays.sort(nums);
-        List<Integer> pos = new ArrayList<>();
-        List<Integer> neg = new ArrayList<>();
-        for (int num: nums) {
-            if (num > 0) {
-                pos.add(num);
-            } else {
-                neg.add(num);
+        for (int i = nums.length - 1; i >= 0; i--) {
+            prefixSum += nums[i];
+            if (prefixSum > 0) {
+                res++;
             }
         }
 
-        int res = 0;
-        long prefixSum = 0;
-
-        int i = pos.size() - 1;
-        int j = neg.size() - 1;
-
-        while (i >= 0 && j >= 0) {
-            prefixSum += pos.get(i);
-            i--;
-            if (prefixSum > 0) res++;
-
-          
-        }
-
-        while (i >= 0) {
-            prefixSum += pos.get(i);
-            i--;
-            if (prefixSum > 0) res++;
-        }
-
-        while (j >= 0) {
-            prefixSum += neg.get(j);
-            j--;
-            if (prefixSum > 0) res++;
-        }
-
-        System.out.println(prefixSum);
         return res;
     }
 }
