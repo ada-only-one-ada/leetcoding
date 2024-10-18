@@ -210,6 +210,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
+| [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
@@ -514,6 +515,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Adagggggg/leetcoding/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
+| [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -567,6 +569,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
+| [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 ## Backtracking
 |  |
@@ -593,6 +596,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
+| [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
