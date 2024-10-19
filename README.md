@@ -472,6 +472,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
+| [1362-airplane-seat-assignment-probability](https://github.com/Adagggggg/leetcoding/tree/master/1362-airplane-seat-assignment-probability) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
 | [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
@@ -634,6 +635,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1031-add-to-array-form-of-integer](https://github.com/Adagggggg/leetcoding/tree/master/1031-add-to-array-form-of-integer) |
+| [1362-airplane-seat-assignment-probability](https://github.com/Adagggggg/leetcoding/tree/master/1362-airplane-seat-assignment-probability) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
@@ -828,4 +830,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
+## Brainteaser
+|  |
+| ------- |
+| [1362-airplane-seat-assignment-probability](https://github.com/Adagggggg/leetcoding/tree/master/1362-airplane-seat-assignment-probability) |
+## Probability and Statistics
+|  |
+| ------- |
+| [1362-airplane-seat-assignment-probability](https://github.com/Adagggggg/leetcoding/tree/master/1362-airplane-seat-assignment-probability) |
 <!---LeetCode Topics End-->
