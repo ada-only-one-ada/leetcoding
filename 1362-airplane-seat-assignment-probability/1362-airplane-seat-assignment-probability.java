@@ -6,7 +6,7 @@ class Solution {
         double[] dp = new double[n + 1];
         dp[1] = 1.0;
 
-        for (int i = 2; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             dp[i] = (1.0 / i) 
                   + (double) (i - 2) / i * dp[i - 1];
         }
