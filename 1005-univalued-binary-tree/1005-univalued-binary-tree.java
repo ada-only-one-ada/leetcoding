@@ -1,15 +1,23 @@
-class Solution {
-    int val = -1;
-
+public class Solution {
     public boolean isUnivalTree(TreeNode root) {
         if (root == null) return true;
-        if (val == -1) {
-            val = root.val;
-        } else {
-            if (root.val != val) return false;
+        int value = root.val;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode currentNode = queue.poll();
+            if (currentNode.val != value) {
+                return false;
+            }
+            if (currentNode.left != null) {
+                queue.add(currentNode.left);
+            }
+            if (currentNode.right != null) {
+                queue.add(currentNode.right);
+            }
         }
 
-        return isUnivalTree(root.left) &&
-        isUnivalTree(root.right);
+        return true;
     }
 }
