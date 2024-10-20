@@ -12,8 +12,6 @@ class Solution {
     public void backtracking(int[] nums, int start, List<Integer> currRes) {
         if (currRes.size() >= 2) {
             res.add(new ArrayList<>(currRes));
-
-            if (start == nums.length) return;
         }
 
         for (int i = start; i < nums.length; i++) {
