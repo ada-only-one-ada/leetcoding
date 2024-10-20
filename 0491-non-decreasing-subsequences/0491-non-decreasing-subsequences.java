@@ -1,25 +1,27 @@
 class Solution {
-    Set<List<Integer>> res = new HashSet<>();
+    List<List<Integer>> res = new ArrayList<>();
     public List<List<Integer>> findSubsequences(int[] nums) {
-        backtracking(nums, 0, new ArrayList<>());
-        List<List<Integer>> list = new ArrayList<>();
-        for (List<Integer> currRes: res) {
-            list.add(currRes);
-        }
-        return list;
+        backtracking(nums, new ArrayList<>(), 0);
+        return res;
     }
 
-    public void backtracking(int[] nums, int start, List<Integer> currRes) {
+    public void backtracking(int[] nums, List<Integer> currRes, int start) {
         if (currRes.size() >= 2) {
             res.add(new ArrayList<>(currRes));
         }
 
+        Set<Integer> set = new HashSet<>();
         for (int i = start; i < nums.length; i++) {
-            if (currRes.size() == 0 || nums[i] >= currRes.get(currRes.size() - 1)) {
+            if (set.contains(nums[i])) continue;
+
+            if (currRes.size() == 0 || (nums[i] >= currRes.get(currRes.size() - 1))){
                 currRes.add(nums[i]);
-                backtracking(nums, i + 1, currRes);
-                currRes.remove(currRes.size() - 1); // 不一定要接着这个数字
-            }
+                set.add(nums[i]);
+
+                backtracking(nums, currRes, i + 1);
+
+                currRes.remove(currRes.size() - 1);
+            }        
         }
     }
 }
