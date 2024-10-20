@@ -17,7 +17,6 @@ class Solution {
         }
 
         for (int i = start; i < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1] && currRes.size() == 0) continue; // 相同数字的start跳过
             if (currRes.size() == 0 || nums[i] >= currRes.get(currRes.size() - 1)) {
                 currRes.add(nums[i]);
                 backtracking(nums, i + 1, currRes);
