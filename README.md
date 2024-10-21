@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
@@ -248,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Adagggggg/leetcoding/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 ## Linked List
 |  |
 | ------- |
@@ -535,6 +537,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 | [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/Adagggggg/leetcoding/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3510-maximize-the-total-height-of-unique-towers](https://github.com/Adagggggg/leetcoding/tree/master/3510-maximize-the-total-height-of-unique-towers) |
@@ -577,6 +580,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Adagggggg/leetcoding/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/Adagggggg/leetcoding/tree/master/3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 ## Prefix Sum
 |  |
