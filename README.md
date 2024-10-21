@@ -202,6 +202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2261-all-divisions-with-the-highest-score-of-a-binary-array](https://github.com/Adagggggg/leetcoding/tree/master/2261-all-divisions-with-the-highest-score-of-a-binary-array) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
+| [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
 | [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
@@ -260,6 +261,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0908-middle-of-the-linked-list) |
+| [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 ## Stack
 |  |
 | ------- |
@@ -273,6 +275,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
+| [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 ## Tree
 |  |
 | ------- |
@@ -832,6 +835,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
+| [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 ## Game Theory
 |  |
 | ------- |
