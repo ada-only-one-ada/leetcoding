@@ -2,16 +2,20 @@ class Solution {
     public int[] separateDigits(int[] nums) {
         List<Integer> list = new ArrayList<>();
 
-        for (int i = nums.length - 1; i >= 0; i--) {
-            int num = nums[i];
+        for (int num: nums) {
+            List<Integer> temp = new ArrayList<>();
             int leftover = 0;
             while (num > 0) {
                 int sum = num % 10 + leftover;
-                list.add(0, sum % 10);
+                temp.add(sum % 10);
                 leftover = sum / 10;
                 num = num / 10;
             }
-            if (leftover > 0) list.add(0, leftover);
+            if (leftover > 0) temp.add(leftover);
+            
+            for (int i = temp.size() - 1; i >= 0; i--) {
+                list.add(temp.get(i));
+            }
         }
         
         int[] res = new int[list.size()];
