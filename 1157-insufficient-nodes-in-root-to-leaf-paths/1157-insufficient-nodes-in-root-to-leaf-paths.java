@@ -3,11 +3,7 @@ class Solution {
         if (root == null) return null;
 
         if (root.left == null && root.right == null) {
-            if (root.val < limit) {
-                return null;
-            } else {
-                return root;
-            }
+            return root.val < limit ? null : root;
         }
 
         root.left = sufficientSubset(root.left, limit - root.val);
