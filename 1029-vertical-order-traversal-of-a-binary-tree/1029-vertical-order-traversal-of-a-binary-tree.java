@@ -11,7 +11,7 @@ class Solution {
         int maxColumn = Integer.MIN_VALUE;
         
         while (!queue.isEmpty()) {
-            int size = queue.size();
+            int size = queue.size() ;
             for (int i = 0; i < size; i++) {
                 Pair<TreeNode, int[]> curr = queue.poll();
                 TreeNode currNode = curr.getKey();
@@ -57,9 +57,9 @@ class Solution {
             for (int level = minLevel; level <= maxLevel; level++) {
                 List<Integer> list = subMap.get(level);
                 if (list == null) continue;
+                
                 Collections.sort(list);
                 currRes.addAll(list);
-                
             }
 
             res.add(currRes);
