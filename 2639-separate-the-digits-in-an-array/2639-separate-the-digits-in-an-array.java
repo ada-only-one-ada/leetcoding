@@ -3,21 +3,23 @@ class Solution {
         List<Integer> list = new ArrayList<>();
 
         for (int num: nums) {
-            List<Integer> temp = new ArrayList<>();
-            int leftover = 0;
+            List<Integer> subList = new ArrayList<>();
+            int leftOver = 0;
+
             while (num > 0) {
-                int sum = num % 10 + leftover;
-                temp.add(sum % 10);
-                leftover = sum / 10;
+                int sum = leftOver + (num % 10);
+                subList.add(sum % 10);
+
+                leftOver = sum / 10;
                 num = num / 10;
             }
-            if (leftover > 0) temp.add(leftover);
-            
-            for (int i = temp.size() - 1; i >= 0; i--) {
-                list.add(temp.get(i));
+
+            if (leftOver > 0) subList.add(leftOver);
+            for (int i = subList.size() - 1; i >= 0; i--) {
+                list.add(subList.get(i));
             }
         }
-        
+
         int[] res = new int[list.size()];
         for (int i = 0; i < res.length; i++) {
             res[i] = list.get(i);
