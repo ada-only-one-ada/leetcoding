@@ -58,9 +58,8 @@ class Solution {
                 List<Integer> list = subMap.get(level);
                 if (list == null) continue;
                 Collections.sort(list);
-                for (int num: list) {
-                    currRes.add(num);
-                }   
+                currRes.addAll(list);
+                
             }
 
             res.add(currRes);
