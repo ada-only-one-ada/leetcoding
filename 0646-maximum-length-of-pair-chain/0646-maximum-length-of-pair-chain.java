@@ -7,21 +7,20 @@ class Solution {
             return a[0] - b[0];
         });
 
-        int[] prev = pairs[0];
+        int prevEnd = pairs[0][1];
         int maxLen = 1;
         int currLen = 1; 
         for (int i = 1; i < pairs.length; i++) {
-            int[] curr = pairs[i];
+            int currStart = pairs[i][0];
+            int currEnd = pairs[i][1];
 
-            if (curr[0] > prev[1]) {
-                prev = curr;
+            if (currStart > prevEnd) {
+                prevEnd = currEnd;
                 currLen++;
             } else {
-                if (curr[1] < prev[1]) {
-                    prev = curr;
-                }
+                prevEnd = Math.min(prevEnd, currEnd);
             }
-
+            
             maxLen = Math.max(maxLen, currLen);
         }
 
