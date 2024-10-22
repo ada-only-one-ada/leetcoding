@@ -1,27 +1,25 @@
 class Solution {
-    Set<List<Integer>> res = new HashSet<>();
+    List<List<Integer>> res = new ArrayList<>();
     public List<List<Integer>> findSubsequences(int[] nums) {
-        backtracking(nums, 0, new ArrayList<>());
-        List<List<Integer>> list = new ArrayList<>();
-        for (List<Integer> currRes: res) {
-            list.add(currRes);
-        }
-        return list;
+        dfs(nums, 0, new ArrayList<>());
+        return res;
     }
 
-    public void backtracking(int[] nums, int start, List<Integer> currRes) {
+    public void dfs(int[] nums, int start, List<Integer> currRes) {
         if (currRes.size() >= 2) {
             res.add(new ArrayList<>(currRes));
-
-            // if (start == nums.length) return; 上面这行没有nums[start] optional
         }
 
+        Set<Integer> set = new HashSet<>();
         for (int i = start; i < nums.length; i++) {
-            if (i > 0 && nums[i] == nums[i - 1] && currRes.size() == 0) continue; // 相同数字的start跳过
+            if (set.contains(nums[i])) continue;
+           
             if (currRes.size() == 0 || nums[i] >= currRes.get(currRes.size() - 1)) {
+                set.add(nums[i]);
+                
                 currRes.add(nums[i]);
-                backtracking(nums, i + 1, currRes);
-                currRes.remove(currRes.size() - 1); // 不一定要接着这个数字
+                dfs(nums, i + 1, currRes);
+                currRes.remove(currRes.size() - 1);
             }
         }
     }
