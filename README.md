@@ -270,6 +270,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
@@ -295,6 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0975-range-sum-of-bst](https://github.com/Adagggggg/leetcoding/tree/master/0975-range-sum-of-bst) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
@@ -325,6 +327,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0975-range-sum-of-bst](https://github.com/Adagggggg/leetcoding/tree/master/0975-range-sum-of-bst) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
