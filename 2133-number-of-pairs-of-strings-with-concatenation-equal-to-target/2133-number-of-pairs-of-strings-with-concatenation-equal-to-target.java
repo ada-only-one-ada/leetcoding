@@ -8,14 +8,15 @@ class Solution {
         int res = 0;
         for (String s: map.keySet()) {
             if (s.length() >= target.length()) continue;
+            // if (!s.equals(target.substring(0, s.length()))) continue; //前半段要一致
             if (target.indexOf(s) != 0) continue;
 
-            String other = target.substring(s.length());
+            String other = target.substring(s.length());     
             if (map.containsKey(other)) {
                 int freq = map.get(other);
-
                 if (s.equals(other)) {
-                    res += (freq - 1) * freq;
+                    // 对于每一个s，都可以和剩下的组成pair，一共有freq个s
+                    res += freq * (freq - 1);
                 } else {
                     res += freq * map.get(s);
                 }
