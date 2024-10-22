@@ -1,27 +1,27 @@
 class Solution {
     public int minimumSubarrayLength(int[] nums, int k) {
         int orSum = 0;
-        int minLen = nums.length + 1;
+        int res = nums.length + 1;
 
         int left = 0;
-        for (int right = 0; right < nums.length; right++) {
-            if (nums[right] >= k) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] >= k) {
                 return 1;
             }
 
-            orSum |= nums[right];
+            orSum |= nums[i];
 
-            while (left < nums.length && orSum >= k) {
-                minLen = Math.min(minLen, right - left + 1);
+            while (orSum >= k && left < i) {
+                res = Math.min(i - left + 1, res);
                 left++;
-
-                orSum = 0;
-                for (int j = left; j <= right; j++) {
-                    orSum |= nums[j];
+                int newOrSum = 0;
+                for (int j = left; j <= i; j++) {
+                    newOrSum |= nums[j];
                 }
+                orSum = newOrSum;
             }
-        }
+        }   
 
-        return minLen != nums.length + 1 ? minLen : -1;
+        return res != nums.length + 1 ? res : -1;
     }
 }
