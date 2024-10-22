@@ -8,14 +8,16 @@ class Solution {
         int res = 0;
         for (String s: map.keySet()) {
             if (s.length() >= target.length()) continue;
-            if (!s.equals(target.substring(0, s.length()))) continue;
+            if (target.indexOf(s) != 0) continue;
 
-            String other = target.substring(s.length());     
+            String other = target.substring(s.length());
             if (map.containsKey(other)) {
-                if (!s.equals(other)) {
-                    res += map.get(other) * map.get(s);
+                int freq = map.get(other);
+
+                if (s.equals(other)) {
+                    res += (freq - 1) * freq;
                 } else {
-                    res += map.get(s) * (map.get(s) - 1);
+                    res += freq * map.get(s);
                 }
             }
         }
