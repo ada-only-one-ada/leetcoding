@@ -1,6 +1,7 @@
 class Solution {
     public boolean sumOfNumberAndReverse(int num) {
-        for (int i = 0; i <= num; i++) {
+        // i = 0, 优化后起始值设为 num 的一半
+        for (int i = num / 2; i <= num; i++) {
             if (i + getReversed(i) == num) {
                 return true;
             }
