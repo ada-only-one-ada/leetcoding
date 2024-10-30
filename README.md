@@ -704,6 +704,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
+| [2541-sum-of-number-and-its-reverse](https://github.com/Adagggggg/leetcoding/tree/master/2541-sum-of-number-and-its-reverse) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2610-closest-prime-numbers-in-range](https://github.com/Adagggggg/leetcoding/tree/master/2610-closest-prime-numbers-in-range) |
 | [2619-categorize-box-according-to-criteria](https://github.com/Adagggggg/leetcoding/tree/master/2619-categorize-box-according-to-criteria) |
@@ -915,4 +916,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0284-peeking-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0284-peeking-iterator) |
+## Enumeration
+|  |
+| ------- |
+| [2541-sum-of-number-and-its-reverse](https://github.com/Adagggggg/leetcoding/tree/master/2541-sum-of-number-and-its-reverse) |
 <!---LeetCode Topics End-->
