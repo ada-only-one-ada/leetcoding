@@ -1,6 +1,8 @@
 class Solution {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         int root = findRoot(n, leftChild, rightChild);
+
+        // 如果没有找到根节点或者有多个根节点，则不是有效的二叉树
         if (root == -1) return false;
 
         Queue<Integer> queue = new LinkedList<>();
@@ -9,6 +11,8 @@ class Solution {
 
         while (!queue.isEmpty()) {
             int currNode = queue.poll();
+
+            // 如果当前节点已经被访问过，说明存在环，返回false
             if (visited.contains(currNode)) return false;
 
             int currLeftChild = leftChild[currNode];
@@ -40,8 +44,8 @@ class Solution {
             }
         }
 
-        int numOfRoot = 0;;
-        int root = 0;
+        int numOfRoot = 0;
+        int root = -1;
         for (int i = 0; i < n; i++) {
             if (!isChildOfOther.contains(i)) {
                 numOfRoot++;
