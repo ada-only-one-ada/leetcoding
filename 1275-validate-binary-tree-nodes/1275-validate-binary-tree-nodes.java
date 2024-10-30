@@ -42,7 +42,7 @@ class Solution {
             }
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { // All node have same ancestor
             if (findAncestor(i) != rootAncestor) {
                 return false;
             }
