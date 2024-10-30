@@ -4,16 +4,15 @@ class Solution {
       所以在 dfs 方法中对 hasCycle 进行的更新在方法返回后不会保持。
       这意味着 dfs 方法中循环检测的逻辑不起作用，因为 hasCycle 变量的更改不会反映在方法外部。
     */
-    boolean hasCycle = false;
+    // boolean hasCycle = false; // put it outside 
+    boolean[] visited;
 
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         int root = findRoot(n, leftChild, rightChild);
         if (root == -1) return false;
 
-        boolean[] visited = new boolean[n];
-
-        dfs(root, leftChild, rightChild, visited);
-        if (hasCycle) return false;
+        visited = new boolean[n];
+        if (!dfs(root, leftChild, rightChild)) return false;
 
         for (boolean isVisted: visited) {
             if (!isVisted) return false;
@@ -22,20 +21,24 @@ class Solution {
         return true;
     }
 
-    public void dfs(int currNode, int[] leftChild, int[] rightChild, boolean[] visited) {
+    public boolean dfs(int currNode, int[] leftChild, int[] rightChild) {
         if (visited[currNode]) {
-            hasCycle = true;
-            return;
+            return false;
         }
+
         visited[currNode] = true;
 
+        boolean left = true;
         if (leftChild[currNode] != -1) {
-            dfs(leftChild[currNode], leftChild, rightChild, visited);
+            left = dfs(leftChild[currNode], leftChild, rightChild);
         }
 
+        boolean right = true;
         if (rightChild[currNode] != -1) {
-            dfs(rightChild[currNode], leftChild, rightChild, visited);
+            right = dfs(rightChild[currNode], leftChild, rightChild);
         }
+
+        return left & right;
     }
 
     public int findRoot(int n, int[] leftChild, int[] rightChild) {
