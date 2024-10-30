@@ -29,6 +29,7 @@ class Solution {
             visited.add(currNode);
         }
 
+        // 最后，所有节点都应该被访问一次，如果访问的节点数等于n，说明构成了一棵有效的二叉树
         return visited.size() == n;
     }
 
