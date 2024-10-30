@@ -1,78 +1,55 @@
 class Solution {
-    int[] parent;
-    int[] rank;
-
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
-        parent = new int[n];
-        rank = new int[n];
-        boolean[] hasParent = new boolean[n];   
+        int root = findRoot(n, leftChild, rightChild);
+        if (root == -1) return false;
 
-        for (int i = 0; i < n; i++) {
-            parent[i] = i;
-            rank[i] = 1;
-        } 
+        Queue<Integer> queue = new LinkedList<>();
+        Set<Integer> visited = new HashSet<>();
+        queue.add(root);
 
-        for (int i = 0; i < n; i++) {
-            int leftChildNode = leftChild[i];
-            if (leftChildNode != -1) {
-                if (hasParent[leftChildNode]) return false; // Already have a parent
-                hasParent[leftChildNode] = true;
+        while (!queue.isEmpty()) {
+            int currNode = queue.poll();
+            if (visited.contains(currNode)) return false;
 
-                if (!connect(i, leftChildNode)) return false; // Already connected, a circle
+            int currLeftChild = leftChild[currNode];
+            int currRightChild = rightChild[currNode];
+
+            if (currLeftChild != -1) {
+                queue.add(currLeftChild);
             }
 
-            int rightChildNode = rightChild[i];
-            if (rightChildNode != -1) {
-                if (hasParent[rightChildNode]) return false; // Already have a parent
-                hasParent[rightChildNode] = true;
-
-                if (!connect(i, rightChildNode)) return false;
+            if (currRightChild != -1) {
+                queue.add(currRightChild);
             }
+
+            visited.add(currNode);
         }
 
-        // find Root ancestor
-        int rootAncestor = 0;
-        int numberOfRootAncestor = 0;
-
-        for (int i = 0; i < n; i++) {
-            if (findAncestor(i) == i) {
-                if (numberOfRootAncestor == 1) return false; // We can only have one ancestor that has no parent
-                numberOfRootAncestor++;
-                rootAncestor = i;
-            }
-        }
-
-        for (int i = 0; i < n; i++) { // All node have same ancestor
-            if (findAncestor(i) != rootAncestor) {
-                return false;
-            }
-        }
-
-        return true;
+        return visited.size() == n;
     }
 
-    public boolean connect(int node1,  int node2) {
-        int a1 = findAncestor(node1);
-        int a2 = findAncestor(node2);
+    public int findRoot(int n, int[] leftChild, int[] rightChild) {
+        Set<Integer> isChildOfOther = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            if (leftChild[i] != -1) {
+                isChildOfOther.add(leftChild[i]);
+            }
 
-        if (a1 == a2) return false; // Already connected!
-
-        if (rank[a1] >= rank[a2]) {
-            parent[a2] = a1;
-            rank[a1] += rank[a2];
-        } else {
-            parent[a1] = a2;
-            rank[a2] += rank[a1];
+            if (rightChild[i] != -1) {
+                isChildOfOther.add(rightChild[i]);
+            }
         }
 
-        return true;
-    }
-
-    public int findAncestor(int node) {
-        if (node != parent[node]) {
-            parent[node] = findAncestor(parent[node]);
+        int numOfRoot = 0;;
+        int root = 0;
+        for (int i = 0; i < n; i++) {
+            if (!isChildOfOther.contains(i)) {
+                numOfRoot++;
+                root = i;
+            }
         }
 
-        return parent[node];
+        if (numOfRoot > 1) return -1;
+        return root;
     }
 }
