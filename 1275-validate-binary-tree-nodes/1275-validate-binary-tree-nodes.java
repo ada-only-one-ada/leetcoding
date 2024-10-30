@@ -1,36 +1,36 @@
 class Solution {
+    boolean hasCycle = false;
+
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         int root = findRoot(n, leftChild, rightChild);
-
-        // 如果没有找到根节点或者有多个根节点，则不是有效的二叉树
         if (root == -1) return false;
 
-        Queue<Integer> queue = new LinkedList<>();
-        Set<Integer> visited = new HashSet<>();
-        queue.add(root);
+        boolean[] visited = new boolean[n];
 
-        while (!queue.isEmpty()) {
-            int currNode = queue.poll();
+        dfs(root, leftChild, rightChild, visited);
+        if (hasCycle) return false;
 
-            // 如果当前节点已经被访问过，说明存在环，返回false
-            if (visited.contains(currNode)) return false;
+        for (boolean isVisted: visited) {
+            if (!isVisted) return false;
+        }
+        
+        return true;
+    }
 
-            int currLeftChild = leftChild[currNode];
-            int currRightChild = rightChild[currNode];
+    public void dfs(int currNode, int[] leftChild, int[] rightChild, boolean[] visited) {
+        if (visited[currNode]) {
+            hasCycle = true;
+            return;
+        }
+        visited[currNode] = true;
 
-            if (currLeftChild != -1) {
-                queue.add(currLeftChild);
-            }
-
-            if (currRightChild != -1) {
-                queue.add(currRightChild);
-            }
-
-            visited.add(currNode);
+        if (leftChild[currNode] != -1) {
+            dfs(leftChild[currNode], leftChild, rightChild, visited);
         }
 
-        // 最后，所有节点都应该被访问一次，如果访问的节点数等于n，说明构成了一棵有效的二叉树
-        return visited.size() == n;
+        if (rightChild[currNode] != -1) {
+            dfs(rightChild[currNode], leftChild, rightChild, visited);
+        }
     }
 
     public int findRoot(int n, int[] leftChild, int[] rightChild) {
