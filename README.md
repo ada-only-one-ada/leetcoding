@@ -308,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 ## Depth-First Search
@@ -344,6 +345,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 ## Binary Search Tree
@@ -380,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
 ## Doubly-Linked List
@@ -666,6 +669,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 ## Math
 |  |
@@ -767,6 +771,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 ## Geometry
@@ -841,6 +846,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
+| [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 ## Topological Sort
 |  |
 | ------- |
