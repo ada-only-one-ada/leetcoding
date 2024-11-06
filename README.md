@@ -299,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0543-diameter-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0543-diameter-of-binary-tree) |
 | [0545-boundary-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0545-boundary-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
+| [0606-construct-string-from-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0606-construct-string-from-binary-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -337,6 +338,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0565-array-nesting](https://github.com/Adagggggg/leetcoding/tree/master/0565-array-nesting) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
+| [0606-construct-string-from-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0606-construct-string-from-binary-tree) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -378,6 +380,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0543-diameter-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0543-diameter-of-binary-tree) |
 | [0545-boundary-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0545-boundary-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
+| [0606-construct-string-from-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0606-construct-string-from-binary-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
@@ -473,6 +476,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
+| [0606-construct-string-from-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0606-construct-string-from-binary-tree) |
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
