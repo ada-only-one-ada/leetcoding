@@ -4,7 +4,7 @@ class Solution {
         int res = helper(node);
 
         for (TreeNode curr: map.keySet()) {
-            System.out.println("Node: " + curr.val + " has size of " + map.get(curr));
+            System.out.println("Node " + curr.val + " has size of " + map.get(curr));
         } 
         return res;
     }
