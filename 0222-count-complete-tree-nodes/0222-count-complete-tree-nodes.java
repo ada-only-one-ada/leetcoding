@@ -1,10 +1,12 @@
 class Solution {
     static Map<TreeNode, Integer> map = new HashMap();
     public static int countNodes(TreeNode node) {
+        int res = helper(node);
+
         for (TreeNode curr: map.keySet()) {
-            System.out.println("Node: " + curr.val + "has size of " + map.get(curr));
-        }
-        return helper(node);
+            System.out.println("Node: " + curr.val + " has size of " + map.get(curr));
+        } 
+        return res;
     }
     
     public static int helper(TreeNode node) {
