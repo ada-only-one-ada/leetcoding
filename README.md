@@ -200,6 +200,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
+| [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
 | [2261-all-divisions-with-the-highest-score-of-a-binary-array](https://github.com/Adagggggg/leetcoding/tree/master/2261-all-divisions-with-the-highest-score-of-a-binary-array) |
@@ -546,6 +547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1362-airplane-seat-assignment-probability](https://github.com/Adagggggg/leetcoding/tree/master/1362-airplane-seat-assignment-probability) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
+| [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 | [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
@@ -667,6 +669,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
 | [0800-letter-case-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0800-letter-case-permutation) |
+| [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 ## Greedy
 |  |
 | ------- |
@@ -855,6 +858,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
 | [0800-letter-case-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0800-letter-case-permutation) |
+| [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
@@ -920,6 +924,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
+| [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 ## Data Stream
 |  |
 | ------- |
