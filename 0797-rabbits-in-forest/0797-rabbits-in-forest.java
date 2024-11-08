@@ -4,16 +4,11 @@ class Solution {
         int[] allow = new int[1000];
 
         for (int ans: answers) {
-            if (allow[ans] == 0) {
+            if (allow[ans] <= 0) {
                 res += ans + 1;
                 allow[ans] = ans;
             } else {
-                if (allow[ans] > 0) {
-                    allow[ans]--;
-                } else if (allow[ans] <= 0) {
-                    res += ans + 1;
-                    allow[ans] = ans;
-                }
+                allow[ans]--;
             }
         }
         return res;
