@@ -1,34 +1,19 @@
 class Solution {
-    public int[] buildArray(int[] nums) {
-        /* 
-        [5,       0,     1,     2,     3,     4]
-        4005    5000    1      1002   2003   3004
-        [4,5,0,1,2,3]
+    public int[] buildArray(int[] nums) {    
+        // [5, 0, 1, 2, 3, 4]
+        //  4.5? 比如是Integer，如何存
+        // 4*1000 + 5 = 4005
+        for (int i = 0; i < nums.length; i++) {
+            int initNum = nums[i];
+            int targetNum = nums[nums[i]] % 1000; 
 
-        为了使得构建过程可以完整进行，我们需要让 nums 中的每个元素 nums[i]，
-        能够同时存储「当前值」（即 nums[i]）和「最终值」（即 nums[nums[i]]），
-        我们注意到 nums 中元素的取值范围为 [0,999] 闭区间，
-        这意味着 nums 中的每个元素的「当前值」和「最终值」都在 [0,999] 闭区间内。
-        因此，我们可以使用类似「1000 进制」的思路来表示每个元素的「当前值」和「最终值」。
-        对于每个元素，我们用它除以 1000 的商数表示它的「最终值」，而用余数表示它的「当前值」。
-        那么，我们首先遍历 nums，计算每个元素的「最终值」，并乘以 1000 加在该元素上。
-        随后，我们再次遍历数组，并将每个元素的值除以 1000 保留其商数。
-        此时 nums 即为构建完成的数组，我们返回该数组作为答案。
-        在计算 nums[i] 的「最终值」并修改该元素时，我们需要计算修改前 nums[nums[i]] 的值，
-        而 nums 中下标为 nums[i] 的元素可能已被修改，因此我们需要将取下标得到的值对 1000 取模得到「最终值」。
-        */
+            nums[i] = targetNum * 1000 + initNum;
+        }
 
         for (int i = 0; i < nums.length; i++) {
-            int targetIndex = nums[i];
-            int targetNum = nums[targetIndex];
-
-            nums[i] = 1000 * (targetNum % 1000) + nums[i];
+            nums[i] = nums[i] / 1000;
         }
         
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] /= 1000;
-        }
-
         return nums;
     }
 }
