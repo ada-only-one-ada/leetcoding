@@ -200,6 +200,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
+| [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
@@ -837,6 +838,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
+| [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2639-separate-the-digits-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2639-separate-the-digits-in-an-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [3336-water-bottles-ii](https://github.com/Adagggggg/leetcoding/tree/master/3336-water-bottles-ii) |
