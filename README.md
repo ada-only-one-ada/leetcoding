@@ -196,6 +196,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/Adagggggg/leetcoding/tree/master/1646-kth-missing-positive-number) |
+| [1781-check-if-two-string-arrays-are-equivalent](https://github.com/Adagggggg/leetcoding/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
@@ -502,6 +503,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [1781-check-if-two-string-arrays-are-equivalent](https://github.com/Adagggggg/leetcoding/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1899-count-items-matching-a-rule](https://github.com/Adagggggg/leetcoding/tree/master/1899-count-items-matching-a-rule) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
