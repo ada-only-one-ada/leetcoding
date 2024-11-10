@@ -193,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/Adagggggg/leetcoding/tree/master/1646-kth-missing-positive-number) |
@@ -448,6 +449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
+| [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
@@ -910,6 +912,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0284-peeking-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0284-peeking-iterator) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
+| [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Number Theory
