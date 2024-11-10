@@ -1,20 +1,18 @@
 class Solution {
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
-        return helper(original, cloned, target);
-    }
-
-    public TreeNode helper(TreeNode original, TreeNode cloned, TreeNode target) {
-        if ( cloned == null) return null;
-
-        if (cloned.val == target.val) {
+        if (cloned != null && cloned.val == target.val) {
             return cloned;
-        }
+        } 
 
-        TreeNode left = helper(original, cloned.left, target);
-        TreeNode right= helper(original, cloned.right, target);
+        if (cloned == null) {
+            return null;
+        } 
 
-        if (left != null) return left;
-        if (right != null) return right;
+        TreeNode res1 = getTargetCopy(original, cloned.left, target);
+        TreeNode res2 = getTargetCopy(original, cloned.right, target);
+
+        if (res1 != null) return res1;
+        if (res2 != null) return res2;
         return null;
     }
 }
