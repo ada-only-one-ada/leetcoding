@@ -192,6 +192,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
+| [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -845,6 +846,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0054-spiral-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
+| [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2639-separate-the-digits-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2639-separate-the-digits-in-an-array) |
