@@ -248,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3528-reach-end-of-array-with-max-score](https://github.com/Adagggggg/leetcoding/tree/master/3528-reach-end-of-array-with-max-score) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/Adagggggg/leetcoding/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/Adagggggg/leetcoding/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Binary Search
@@ -271,6 +272,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Adagggggg/leetcoding/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/Adagggggg/leetcoding/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Linked List
 |  |
 | ------- |
