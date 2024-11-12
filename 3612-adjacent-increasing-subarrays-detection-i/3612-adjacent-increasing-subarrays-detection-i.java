@@ -11,7 +11,7 @@ class Solution {
 
         for (int i = 0; i < dp.length; i++) {
             if (i - k + 1 >= 0 && i + k <= dp.length - 1) {
-                if (dp[i] - dp[i-k+1] + 1 == k && dp[i+k] - dp[i+1] + 1== k) {
+                if (dp[i] - dp[i-k+1] + 1 == k && dp[i+k] - dp[i+1] + 1 == k) {
                     return true;
                 }
             }
