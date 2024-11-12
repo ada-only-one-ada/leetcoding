@@ -13,6 +13,7 @@ class Solution {
         }
 
         int maxBeauty = 0;
+        // 因为price在一开始按从小到大排序了，所以在这之前的item，价格肯定是低于或者等于的，它们的beuty如果更大可以适用当前item
         for (int price: map.keySet()) {
             maxBeauty = Math.max(maxBeauty, map.get(price));
             map.put(price, maxBeauty);
@@ -24,10 +25,6 @@ class Solution {
 
             if (map.floorKey(ts) != null) {
                 res[i] = map.get(map.floorKey(ts));
-            } 
-            
-            if (map.lowerKey(ts) != null) {
-                res[i] = Math.max(res[i], map.get(map.lowerKey(ts)));
             } 
         }
 
