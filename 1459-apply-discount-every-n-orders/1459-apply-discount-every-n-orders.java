@@ -3,7 +3,7 @@ class Cashier {
     int n;
     int discount;
     Map<Integer, Integer> map;
-
+    
     public Cashier(int n, int discount, int[] products, int[] prices) {
         this.id = 0;    
         this.n = n;
