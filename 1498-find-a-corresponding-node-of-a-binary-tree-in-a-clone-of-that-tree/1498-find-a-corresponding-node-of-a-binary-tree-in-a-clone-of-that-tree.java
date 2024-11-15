@@ -5,9 +5,8 @@ class Solution {
         if (cloned.val == target.val) return cloned;
 
         TreeNode left = getTargetCopy(original, cloned.left, target);
-        TreeNode right = getTargetCopy(original, cloned.right, target);
-
         if (left != null) return left;
+        TreeNode right = getTargetCopy(original, cloned.right, target);
         if (right != null) return right;
         return null;
     }
