@@ -4,12 +4,14 @@ class Solution {
         String[] words = paragraph.split("[\\s,.!?;']+");
         
         for (String word: words) {
-            map.put(word.toLowerCase(), map.getOrDefault(word.toLowerCase(), 0) + 1);
+            String lowerCaseWord = word.toLowerCase();
+            map.put(lowerCaseWord, map.getOrDefault(lowerCaseWord, 0) + 1);
         } 
     
         for (String ban: banned) {
-            if (map.containsKey(ban.toLowerCase())) {
-                map.remove(ban.toLowerCase());
+            String lowerCaseBan = ban.toLowerCase();
+            if (map.containsKey(lowerCaseBan)) {
+                map.remove(lowerCaseBan);
             }
         }
 
