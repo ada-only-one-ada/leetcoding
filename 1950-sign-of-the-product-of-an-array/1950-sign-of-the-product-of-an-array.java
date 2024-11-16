@@ -6,7 +6,7 @@ class Solution {
 
         for (int num: nums) {
             if (num == 0) {
-                zero++;
+                return 0;
             } else if (num > 0) {
                 pos++;
             } else if (num < 0) {
@@ -14,12 +14,7 @@ class Solution {
             }
         }
 
-        if (zero > 0) {
-            return 0;
-        } else if (neg % 2 == 0) {
-            return 1;
-        } 
-
+        if (neg % 2 == 0) return 1;
         return -1;
     }
 }
