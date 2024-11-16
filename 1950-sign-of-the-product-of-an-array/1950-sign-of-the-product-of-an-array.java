@@ -18,9 +18,7 @@ class Solution {
             return 0;
         } else if (neg % 2 == 0) {
             return 1;
-        } else if (neg % 2 != 0) {
-            return -1;
-        }
+        } 
 
         return -1;
     }
