@@ -7,7 +7,11 @@ class Solution {
         res = new int[totalLen];
         int[] currRes = new int[totalLen];
         boolean[] usedNums = new boolean[n + 1];
-        backtracking(n, currRes, 0, usedNums);
+        // 找到一个有效的，立刻返回，因为此时是字典序最大
+        if (backtracking(n, currRes, 0, usedNums)) {
+            return res;
+        }
+
         return res;
     }
 
@@ -33,6 +37,7 @@ class Solution {
             if (num == 1) {
                 currRes[index] = num;
                 usedNums[num] = true;
+                // 这里一旦找到一个正确的立刻返回，因为需要字典序最大
                 if (backtracking(n, currRes, index + 1, usedNums)) {
                     return true;
                 }
@@ -46,6 +51,7 @@ class Solution {
                 currRes[index] = num;
                 currRes[index + num] = num;
                 usedNums[num] = true;
+                // 这里一旦找到一个正确的立刻返回，因为需要字典序最大
                 if (backtracking(n, currRes, index + 1, usedNums)) {
                     return true;
                 }
