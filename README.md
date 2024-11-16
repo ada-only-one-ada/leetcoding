@@ -206,6 +206,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Adagggggg/leetcoding/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [1899-count-items-matching-a-rule](https://github.com/Adagggggg/leetcoding/tree/master/1899-count-items-matching-a-rule) |
+| [1950-sign-of-the-product-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
@@ -762,6 +763,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
+| [1950-sign-of-the-product-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
