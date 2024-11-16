@@ -8,9 +8,7 @@ class Solution {
         int[] currRes = new int[totalLen];
         boolean[] usedNums = new boolean[n + 1];
         // 找到一个有效的，立刻返回，因为此时是字典序最大
-        if (backtracking(n, currRes, 0, usedNums)) {
-            return res;
-        }
+        backtracking(n, currRes, 0, usedNums);
 
         return res;
     }
