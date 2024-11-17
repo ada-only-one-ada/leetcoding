@@ -459,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
+| [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
@@ -519,6 +520,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
+| [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0800-letter-case-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0800-letter-case-permutation) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
