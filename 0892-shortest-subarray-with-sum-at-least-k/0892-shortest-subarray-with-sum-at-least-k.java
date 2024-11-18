@@ -23,6 +23,7 @@ class Solution {
                 res = Math.min(res, end - dequeue.pollFirst());
             }
 
+            // 维持递增
             // 如果当前索引 end 的前缀和 prefixSum[end] 比队列中最后一个索引的前缀和小或者相等，
             // 那么从这个队尾索引开始到 end 的子数组的和会是负数或零。
             // 这意味着，如果我们从队尾索引开始的子数组和已经不能满足条件 ≥k，
