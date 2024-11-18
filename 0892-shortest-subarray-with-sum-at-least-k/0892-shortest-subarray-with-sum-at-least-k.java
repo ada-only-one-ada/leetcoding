@@ -23,10 +23,17 @@ class Solution {
                 res = Math.min(res, end - dequeue.pollFirst());
             }
 
+            // 如果当前索引 end 的前缀和 prefixSum[end] 比队列中最后一个索引的前缀和小或者相等，
+            // 那么从这个队尾索引开始到 end 的子数组的和会是负数或零。
+            // 这意味着，如果我们从队尾索引开始的子数组和已经不能满足条件 ≥k，
+            // 那么从任何比这个队尾索引还要早的位置开始的子数组都不可能满足条件。
+            // 因此，继续保持这个更大的前缀和没有意义，因为从更早的位置开始的子数组只会更长，
+            // 而且不会帮助我们找到满足条件的更短子数组。
             while (!dequeue.isEmpty() && prefixSum[end] <= prefixSum[dequeue.getLast()]) {
                 dequeue.pollLast();
             }
 
+            // 把当前 index 作为 startIndex 加入 queue
             dequeue.addLast(end);
         }
 
