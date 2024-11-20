@@ -23,6 +23,7 @@ class Solution {
 
             // 更新所有生成了当前最小丑数的index
             // 这意味着下次该质数将乘以 uglyNums 中的下一个丑数
+            // 比如质数7跟第一个丑数1相乘，贡献了下一个最小丑数，那么下一次质数7只能跟第二个丑数相乘
             for (int i = 0; i < primes.length; i++) {
                 if (uglyNums[indices[i]] * primes[i] == min) {
                     indices[i]++;
