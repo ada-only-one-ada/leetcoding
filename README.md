@@ -158,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
 | [0284-peeking-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0284-peeking-iterator) |
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
+| [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
@@ -577,6 +578,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Adagggggg/leetcoding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
+| [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
@@ -769,6 +771,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0263-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
+| [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
