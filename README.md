@@ -295,6 +295,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/Adagggggg/leetcoding/tree/master/0071-simplify-path) |
+| [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
@@ -316,6 +317,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
+| [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/Adagggggg/leetcoding/tree/master/0199-binary-tree-right-side-view) |
 | [0222-count-complete-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
@@ -356,6 +358,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0101-symmetric-tree](https://github.com/Adagggggg/leetcoding/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
+| [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/Adagggggg/leetcoding/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
@@ -407,6 +410,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
+| [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/Adagggggg/leetcoding/tree/master/0199-binary-tree-right-side-view) |
 | [0222-count-complete-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
