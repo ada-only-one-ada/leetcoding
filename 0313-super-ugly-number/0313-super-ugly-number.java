@@ -1,10 +1,10 @@
 class Solution {
     public int nthSuperUglyNumber(int n, int[] primes) {
-        long[] uglyNums = new long[n + 1]; // 存储丑数，从1开始索引
+        long[] uglyNums = new long[n + 1]; // 存储丑数，从 1 到 n
         uglyNums[1] = 1; // 第一个丑数是1
 
-        int[] indices = new int[primes.length]; // 存储每个质数对应的丑数索引
-        Arrays.fill(indices, 1); // 初始化为第一个丑数的索引
+        int[] indices = new int[primes.length]; // 存储每个质数对应的丑数index
+        Arrays.fill(indices, 1); // 初始每个质数对应的丑数index都为1（第一个丑数）
 
         // dp 依次填充第 2 到 n 个丑数
         for (int num = 2; num <= n; num++) {
@@ -21,7 +21,8 @@ class Solution {
             // 更新丑数数组
             uglyNums[num] = min;
 
-            // 更新所有生成了当前最小丑数的索引，避免重复
+            // 更新所有生成了当前最小丑数的index
+            // 这意味着下次该质数将乘以 uglyNums 中的下一个丑数
             for (int i = 0; i < primes.length; i++) {
                 if (uglyNums[indices[i]] * primes[i] == min) {
                     indices[i]++;
