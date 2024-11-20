@@ -21,7 +21,7 @@ class Solution {
             // 更新丑数数组
             uglyNums[num] = min;
 
-            // 更新所有生成了当前最小丑数的index
+            // 更新所有生成了当前最小丑数的index（可能有重复的）
             // 这意味着下次该质数将乘以 uglyNums 中的下一个丑数
             // 比如质数7跟第一个丑数1相乘，贡献了下一个最小丑数，那么下一次质数7只能跟第二个丑数相乘
             for (int i = 0; i < primes.length; i++) {
