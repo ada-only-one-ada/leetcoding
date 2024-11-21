@@ -1,54 +1,20 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    List<String> list = new ArrayList<>();
     public int sumRootToLeaf(TreeNode root) {
-        helper(root, "");
-      
-        int sum = 0;
-        for (String s: list) {
-            sum += binaryToDecimal(s);
-        }
-
-        return sum;
+        return helper(root, 0);
     }
 
-    public void helper(TreeNode root, String s) {
-        if (root == null) return;
-
-        if (root.left == null && root.right == null) {
-            list.add(s + String.valueOf(root.val));
-            return;
-        }
+    private int helper(TreeNode node, int currentSum) {
+        if (node == null) return 0;
         
-        helper(root.left, s + String.valueOf(root.val));
-        helper(root.right, s + String.valueOf(root.val));
-    }
+        // 更新当前路径的值（将前一个值乘以2，再加上当前节点的值）
+        currentSum = currentSum * 2 + node.val;
 
-    public int binaryToDecimal(String s) {
-        int res = 0;
-        int count = 0;
+        // 如果是叶子节点，直接返回当前路径累积的值
+        if (node.left == null && node.right == null) {
+            return currentSum;
+        }
 
-        for (int i = s.length() - 1; i >= 0; i--) {
-            if (s.charAt(i) == '1') {
-                res += (int) Math.pow(2, count);
-            }
-            count++;
-        } 
-
-        return res;
+        // 递归计算左右子树的路径和，并返回总和
+        return helper(node.left, currentSum) + helper(node.right, currentSum);
     }
 }
