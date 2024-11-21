@@ -1,8 +1,8 @@
 class Solution {
     Map<Integer, Integer> map;
     public TreeNode constructFromPrePost(int[] preorder, int[] postorder) {
-        // preorder：根 左 右
-        // postorder：左 右 根
+        // preorder：根-左-右
+        // postorder：左-右-根
 
         map = new HashMap<>();
         for (int i = 0; i < postorder.length; i++) {
