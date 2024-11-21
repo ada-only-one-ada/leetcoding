@@ -20,7 +20,6 @@ class Solution {
             i++;
         }
 
-
         return new int[0];
     }
 }
