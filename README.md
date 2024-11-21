@@ -342,6 +342,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1005-univalued-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1005-univalued-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1040-maximum-binary-tree-ii](https://github.com/Adagggggg/leetcoding/tree/master/1040-maximum-binary-tree-ii) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/Adagggggg/leetcoding/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
@@ -385,6 +386,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1005-univalued-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1005-univalued-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/Adagggggg/leetcoding/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
@@ -432,6 +434,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1005-univalued-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1005-univalued-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1040-maximum-binary-tree-ii](https://github.com/Adagggggg/leetcoding/tree/master/1040-maximum-binary-tree-ii) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/Adagggggg/leetcoding/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1092-maximum-difference-between-node-and-ancestor](https://github.com/Adagggggg/leetcoding/tree/master/1092-maximum-difference-between-node-and-ancestor) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
