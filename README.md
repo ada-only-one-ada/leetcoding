@@ -362,6 +362,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -409,6 +410,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Adagggggg/leetcoding/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -461,6 +463,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Adagggggg/leetcoding/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2347-count-nodes-equal-to-average-of-subtree](https://github.com/Adagggggg/leetcoding/tree/master/2347-count-nodes-equal-to-average-of-subtree) |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -918,6 +921,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Adagggggg/leetcoding/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 ## Geometry
 |  |
