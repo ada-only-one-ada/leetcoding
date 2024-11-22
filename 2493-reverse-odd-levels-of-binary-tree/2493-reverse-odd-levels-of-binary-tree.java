@@ -1,5 +1,6 @@
 class Solution {
     public TreeNode reverseOddLevels(TreeNode root) {
+        // 注意：孩子nodes不会跟着一起反转
         if (root == null) return null;
         int level = 0;
 
