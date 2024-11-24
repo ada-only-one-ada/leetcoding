@@ -26,13 +26,10 @@ class Solution {
             // 如果当前 index 超过了 maxLength，需要移除不再需要的前缀和记录
             if (i >= maxLength) {
                 int outdatedPrefixSum = prefixSum[i - maxLength];
-                int count = prefixCountMap.get(outdatedPrefixSum);
-                
-                if (count == 1) {
+                prefixCountMap.put(outdatedPrefixSum, prefixCountMap.get(outdatedPrefixSum) - 1);
+                if (prefixCountMap.get(outdatedPrefixSum) == 0) {
                     prefixCountMap.remove(outdatedPrefixSum);
-                } else {
-                    prefixCountMap.put(outdatedPrefixSum, count - 1);
-                }
+                } 
             }
         }
 
