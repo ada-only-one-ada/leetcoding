@@ -18,9 +18,6 @@ class Solution {
 
         for (String key: targetMap.keySet()) {
             if (!map.containsKey(key)) return false;
-            System.out.println(map.get(key));
-            System.out.println(targetMap.get(key));
-
             if (!map.get(key).equals(targetMap.get(key))) return false;
         }
 
