@@ -7,17 +7,14 @@ class Solution {
        
         for (int i = 1; i <= nums.size(); i++) {
             prefixSum[i] = prefixSum[i - 1] + nums.get(i - 1); // 更新前缀和数组
+            // 【0，3，1，2，6】
            
             if (i < minLength) continue; // 仅当子数组长度达到 minLength 时开始处理
             
             // 记录当前前缀和减去 minLength 前的前缀和次数
             int currentPrefixSum = prefixSum[i - minLength];
-            if (prefixCountMap.containsKey(currentPrefixSum)) {
-                prefixCountMap.put(currentPrefixSum, prefixCountMap.get(currentPrefixSum) + 1);
-            } else {
-                prefixCountMap.put(currentPrefixSum, 1);
-            }
-
+            prefixCountMap.put(currentPrefixSum, prefixCountMap.getOrDefault(currentPrefixSum, 0) + 1);
+          
             // 查找当前前缀和下最接近但小于的前缀和值
             Integer lowerPrefixSum = prefixCountMap.lowerKey(prefixSum[i]);
             // 如果找到，则尝试更新最小和
