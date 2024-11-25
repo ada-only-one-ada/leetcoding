@@ -201,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
+| [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
@@ -516,6 +517,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
@@ -709,6 +711,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
 | [0837-most-common-word](https://github.com/Adagggggg/leetcoding/tree/master/0837-most-common-word) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
