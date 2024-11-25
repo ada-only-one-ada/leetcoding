@@ -1,22 +1,16 @@
 class Solution {
     public TreeNode balanceBST(TreeNode root) {
         List<TreeNode> list = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack();
-
-        TreeNode curr = root;
-        while (curr != null || !stack.isEmpty()) {
-            if (curr != null) {
-                stack.push(curr);
-                curr = curr.left;
-            } else {
-                TreeNode node = stack.pop();
-                list.add(node);
-
-                if (node.right != null) curr = node.right;
-            }
-        }
-
+        inorder(root, list);
         return buildTree(list, 0, list.size() - 1);
+    }
+
+    public void inorder(TreeNode root, List<TreeNode> list) {
+        if (root == null) return;
+
+        inorder(root.left, list);
+        list.add(root);
+        inorder(root.right, list);
     }
 
     public TreeNode buildTree(List<TreeNode> list, int start, int end) {
