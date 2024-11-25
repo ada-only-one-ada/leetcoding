@@ -1,64 +1,33 @@
 class Solution {
     public int numTeams(int[] rating) {
-        /*
-        递增 或者 递减
-        【1，2，3，4】：
-        递增：
-        【1，2，3】，【1，2，4】，【1，3，4】
-        【2，3，4】
+        int res = 0;
 
-        【2，5，3，4，1】
-        递增：
-        【2，3，4】
-        递减：
-        【5，3，1】，【5，4，1】
+        for (int i = 0; i < rating.length; i++) {
+            int[] freq = count(rating, i);
+            // 左边比他小的人数 × 右边比他大的人数 + 左边比他大的人数 × 右边比他小的人数
+            res += freq[0] * freq[3] + freq[1] * freq[2];
+        }
+       
+        return res;
+    }
 
-        大：
-        2:【5，3，4】
-        5:【】
-        3:【4】
-        4:【】
-        1:【】
+    public int[] count(int[] rating, int index) {
+        // 【左边比它小，左边比它大，右边比它小，右边比它大】
+        int[] res = new int[4];
 
-        小 
-        2:【1】
-        5:【3，4，1】
-        3:【1】
-        4:【1】
-        1:【】
-        */
-
-        Map<Integer, Set<Integer>> smallMap = new HashMap<>();
-        Map<Integer, Set<Integer>> bigMap = new HashMap<>();
-
-        for (int i = 0; i < rating.length - 1; i++) {
-            smallMap.put(rating[i], new HashSet<>());
-            bigMap.put(rating[i], new HashSet<>());
-
-            for (int j = i + 1; j < rating.length; j++) {
-                if (rating[j] < rating[i]) smallMap.get(rating[i]).add(rating[j]);
-                if (rating[j] > rating[i]) bigMap.get(rating[i]).add(rating[j]);
+        for (int i = 0; i < index; i++) {
+            if (rating[i] < rating[index]) {
+                res[0]++;
+            } else if (rating[i] > rating[index]) {
+                res[1]++;
             }
         }
 
-        int res = 0;
-        for (int i = 0; i < rating.length; i++) {
-            Set<Integer> smallNeibors = smallMap.get(rating[i]);
-            if (smallNeibors != null) {
-                for (int s: smallNeibors) {
-                    if (smallMap.get(s) != null) {
-                        res += smallMap.get(s).size();
-                    }
-                }
-            }
-            
-            Set<Integer> bigNeibors = bigMap.get(rating[i]);
-            if (bigNeibors != null) {
-                for (int b: bigNeibors) {
-                    if (bigMap.get(b) != null) {
-                        res += bigMap.get(b).size();
-                    }
-                }
+        for (int i = index + 1; i < rating.length; i++) {
+            if (rating[i] < rating[index]) {
+                res[2]++;
+            } else if (rating[i] > rating[index]) {
+                res[3]++;
             }
         }
 
