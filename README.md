@@ -713,6 +713,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
+| [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
@@ -960,6 +961,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
+| [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2639-separate-the-digits-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2639-separate-the-digits-in-an-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
@@ -1027,6 +1029,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0284-peeking-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0284-peeking-iterator) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
+| [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 ## Number Theory
