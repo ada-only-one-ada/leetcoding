@@ -14,8 +14,9 @@ class Solution {
                         i++; // 跳过 *
                     } else if (i + 1 < line.length() && line.charAt(i) == '/' && line.charAt(i + 1) == '/') {
                         i++; // 跳过 /
-                        break;
+                        break; // 忽略本行剩余部分
                     } else {
+                        // 不是注释的情况，将字符添加到新行
                         resLine.append(line.charAt(i));
                     }
                 // 代码块，检查接下来是否结束代码块
