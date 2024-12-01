@@ -12,14 +12,14 @@ class Solution {
         int sum = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
+            map.put(nums[i] * 2, i);
             sum += nums[i];
         }
         
         int maxOutlier = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
-            if ((sum - nums[i]) % 2 == 0 && map.containsKey((sum - nums[i]) / 2) && map.get((sum - nums[i]) / 2) != i) {
+            if (map.containsKey((sum - nums[i])) && map.get(sum - nums[i]) != i) {
                 maxOutlier = Math.max(maxOutlier, nums[i]);
             }
         }
