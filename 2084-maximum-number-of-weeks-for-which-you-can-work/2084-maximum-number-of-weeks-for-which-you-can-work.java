@@ -1,26 +1,24 @@
 class Solution {
     public long numberOfWeeks(int[] milestones) {
-        Arrays.sort(milestones);
+        long maxMi = 0; // 用于存储最大的里程碑值
+        long sum = 0;   // 用于存储所有里程碑的总和
 
-        long sum = 0;
-        for (int mi: milestones) {
-            sum += mi;
-        }
-        // [5, 2, 1]，从小到大排序，先做的5，那么下一个task至少可以做
-        // 5_5_5_5_5，这里的5不能做满因为不够tasks隔开，只能 5 2 5 2 5 1 5，做4个，也就是剩余之和 3 + 1 = 4
-        // tasks的数量，和最多能做的，取小的
-        long firstlyCanDo = Math.min(milestones[milestones.length - 1], sum - milestones[milestones.length - 1] + 1);
-
-        long res = firstlyCanDo;
-        long prev =  firstlyCanDo;
-
-        for (int i = milestones.length - 2; i >= 0; i--) {
-            // 当前最多能做 prev * 2个tasks，1个换2个，2个换4个
-            long canDo = Math.min(milestones[i], prev * 2);
-            res += canDo;
-            prev = canDo;
+        // 遍历每个里程碑
+        for (int mi : milestones) {
+            sum += mi; // 累加总和
+            maxMi = Math.max(mi, maxMi); // 更新最大里程碑值
         }
 
-        return res;
+        // 判断最大里程碑值是否大于其他所有里程碑的总和
+        if (maxMi > sum - maxMi) {
+            // 如果最大里程碑的工作量过大，则无法连续工作完成所有里程碑
+            // 最多可以完成的周数是其他里程碑总和的两倍加一（每个最大里程碑间可以安排一个其他任务），
+            // 并再加上一个最大里程碑的机会
+            return 2 * (sum - maxMi) + 1;
+        } else {
+            // 如果没有任何单个里程碑的工作量过大，可以顺利完成所有里程碑
+            // 直接返回总周数
+            return sum;
+        }
     }
 }
