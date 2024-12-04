@@ -222,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
 | [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
+| [2084-maximum-number-of-weeks-for-which-you-can-work](https://github.com/Adagggggg/leetcoding/tree/master/2084-maximum-number-of-weeks-for-which-you-can-work) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Adagggggg/leetcoding/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
@@ -805,6 +806,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
+| [2084-maximum-number-of-weeks-for-which-you-can-work](https://github.com/Adagggggg/leetcoding/tree/master/2084-maximum-number-of-weeks-for-which-you-can-work) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
