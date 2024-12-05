@@ -209,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1511-count-number-of-teams](https://github.com/Adagggggg/leetcoding/tree/master/1511-count-number-of-teams) |
+| [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/Adagggggg/leetcoding/tree/master/1646-kth-missing-positive-number) |
@@ -775,6 +776,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
@@ -908,6 +910,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
