@@ -17,7 +17,7 @@ class Solution {
                 }
 
                 repeated = 1;
-            }
+            } 
         }
 
         chars[filledIndex] = chars[chars.length - 1];
