@@ -16,11 +16,11 @@ class Solution {
 
         for (int i = index; i < nums.length; i++) {
             // i > index 说明超过一位数，且首位是0，不符合题目要求
-            if (i > index && nums[index] == 0) continue;
+            if (i > index && nums[index] == 0) break;
 
             long num = getNum(nums, index, i);
-            if (num > Integer.MAX_VALUE) continue;
-            if (res.size() >= 2 && num > res.get(res.size() - 1) + res.get(res.size() - 2)) continue;
+            if (num > Integer.MAX_VALUE) break;
+            if (res.size() >= 2 && num > res.get(res.size() - 1) + res.get(res.size() - 2)) break;
 
             if (res.size() < 2 || num == res.get(res.size() - 1) + res.get(res.size() - 2)) {
                 res.add((int) num);
