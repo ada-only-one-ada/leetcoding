@@ -567,6 +567,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
+| [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
@@ -796,6 +797,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
+| [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
 | [0800-letter-case-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0800-letter-case-permutation) |
