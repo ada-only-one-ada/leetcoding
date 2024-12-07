@@ -2,42 +2,31 @@ class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         List<String> res = new ArrayList<>();
 
-        StringBuilder sb = new StringBuilder();
-        Map<Character, Integer> map = new HashMap<>();
-        map.put(pattern.charAt(0), 0);
-
-        for (int i = 0; i < pattern.length(); i++) {
-            char c = pattern.charAt(i);
-            if (map.containsKey(c)) {
-                sb.append(map.get(c));
-            } else {
-                map.put(c, map.size());
-                sb.append(map.get(c));
-            }
-            sb.append(".");
-        }
-
         for (String word: words) {
             if (word.length() != pattern.length()) continue;
+            boolean valid = true;
+            Set<Character> seen = new HashSet<>();
 
-            StringBuilder wordPattern = new StringBuilder();
-            Map<Character, Integer> wordMap = new HashMap<>();
-            wordMap.put(word.charAt(0), 0);
-
+            Map<Character, Character> wToP = new HashMap<>();
             for (int i = 0; i < word.length(); i++) {
-                char c = word.charAt(i);
-                if (wordMap.containsKey(c)) {
-                    wordPattern.append(wordMap.get(c));
+                char curr = word.charAt(i);
+
+                if (wToP.containsKey(curr)) {
+                    if (wToP.get(curr) != pattern.charAt(i)) {
+                        valid = false;
+                    }
                 } else {
-                   wordMap.put(c, wordMap.size());
-                   wordPattern.append(wordMap.get(c));
+                    if (seen.contains(pattern.charAt(i))) {
+                        valid = false;
+                    } else {
+                        wToP.put(curr, pattern.charAt(i));
+                        seen.add(pattern.charAt(i));
+                    }
                 }
-                wordPattern.append(".");
+                if (valid == false) break;
             }
 
-            if (wordPattern.toString().equals(sb.toString())) {
-                res.add(word);
-            }
+            if (valid) res.add(word);
         }
 
         return res;
