@@ -501,6 +501,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
+| [0290-word-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0290-word-pattern) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
@@ -572,6 +573,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
+| [0290-word-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0290-word-pattern) |
 | [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
