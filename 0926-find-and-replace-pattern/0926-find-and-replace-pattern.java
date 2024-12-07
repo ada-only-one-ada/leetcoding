@@ -4,9 +4,10 @@ class Solution {
 
         for (String word: words) {
             if (word.length() != pattern.length()) continue;
-            boolean valid = true;
-            Set<Character> seen = new HashSet<>();
 
+            boolean valid = true;
+            boolean[] matched = new boolean[26];
+           
             Map<Character, Character> wToP = new HashMap<>();
             for (int i = 0; i < word.length(); i++) {
                 char curr = word.charAt(i);
@@ -16,11 +17,11 @@ class Solution {
                         valid = false;
                     }
                 } else {
-                    if (seen.contains(pattern.charAt(i))) {
+                    if (matched[pattern.charAt(i) - 'a']) {
                         valid = false;
                     } else {
                         wToP.put(curr, pattern.charAt(i));
-                        seen.add(pattern.charAt(i));
+                        matched[pattern.charAt(i) - 'a'] = true;
                     }
                 }
                 if (valid == false) break;
