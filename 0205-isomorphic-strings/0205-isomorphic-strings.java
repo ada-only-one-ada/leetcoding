@@ -3,7 +3,6 @@ class Solution {
         if (s.length() != t.length()) return false;
 
         Map<Character, Character> map = new HashMap<>();
-        Set<Character> matched = new HashSet<>();
 
         for (int i = 0; i < s.length(); i++) {
             char w = s.charAt(i);
@@ -12,8 +11,7 @@ class Solution {
             if (map.containsKey(w)) {
                 if (map.get(w) != pattern) return false;
             } else {
-                if (matched.contains(pattern)) return false;
-                matched.add(pattern);
+                if (map.containsValue(pattern)) return false;
                 map.put(w, pattern);
             }
         }
