@@ -272,6 +272,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 | [3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i](https://github.com/Adagggggg/leetcoding/tree/master/3526-minimum-number-of-flips-to-make-binary-grid-palindromic-i) |
 | [3528-reach-end-of-array-with-max-score](https://github.com/Adagggggg/leetcoding/tree/master/3528-reach-end-of-array-with-max-score) |
+| [3594-identify-the-largest-outlier-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/Adagggggg/leetcoding/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/Adagggggg/leetcoding/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
@@ -558,6 +559,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3363-most-frequent-ids](https://github.com/Adagggggg/leetcoding/tree/master/3363-most-frequent-ids) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
+| [3594-identify-the-largest-outlier-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 ## String
 |  |
@@ -756,6 +758,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3594-identify-the-largest-outlier-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 ## Two Pointers
 |  |
 | ------- |
@@ -1139,6 +1142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2541-sum-of-number-and-its-reverse](https://github.com/Adagggggg/leetcoding/tree/master/2541-sum-of-number-and-its-reverse) |
+| [3594-identify-the-largest-outlier-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 ## Shortest Path
 |  |
 | ------- |
