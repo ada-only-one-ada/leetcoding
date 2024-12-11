@@ -616,6 +616,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2550-words-within-two-edits-of-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/2550-words-within-two-edits-of-dictionary) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
+| [2723-find-the-longest-balanced-substring-of-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2723-find-the-longest-balanced-substring-of-a-binary-string) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3636-check-balanced-string](https://github.com/Adagggggg/leetcoding/tree/master/3636-check-balanced-string) |
