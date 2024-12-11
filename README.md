@@ -607,6 +607,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0926-find-and-replace-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0926-find-and-replace-pattern) |
 | [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/Adagggggg/leetcoding/tree/master/0962-flip-string-to-monotone-increasing) |
+| [0977-distinct-subsequences-ii](https://github.com/Adagggggg/leetcoding/tree/master/0977-distinct-subsequences-ii) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
@@ -668,6 +669,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/Adagggggg/leetcoding/tree/master/0962-flip-string-to-monotone-increasing) |
+| [0977-distinct-subsequences-ii](https://github.com/Adagggggg/leetcoding/tree/master/0977-distinct-subsequences-ii) |
 | [1121-partition-array-for-maximum-sum](https://github.com/Adagggggg/leetcoding/tree/master/1121-partition-array-for-maximum-sum) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
