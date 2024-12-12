@@ -1,24 +1,31 @@
-
 class Solution {
     public boolean isHappy(int n) {
-        Set<Integer> visited = new HashSet<>();
-        while (n > 0) {
-            int newN = getSquare(n);
-            if (visited.contains(newN)) return false;
-            if (newN == 1) return true;
-            visited.add(newN);
-            n = newN;      
+        int slow = n;
+        int fast = getSum(n);
+
+        while (slow != fast) {
+            slow = getSum(slow);
+            fast = getSum(getSum(fast));
+
+            if (fast == 1) {
+                return true;
+            }
+
+            if (slow == fast) {
+                break;
+            }
         }
-        return false;
+
+        return fast == 1;
     }
 
-    public int getSquare(int n) {   // time complexity is O(logn)
-        int squared = 0;
-        while (n != 0) {
-            squared += (n % 10) * (n % 10);
-            n = n / 10; 
+    public int getSum(int n) {
+        int sum = 0;
+        while (n > 0) {
+            sum += (n % 10) * (n % 10);
+            n /= 10;
         }
 
-        return squared;
+        return sum;
     }
 }
