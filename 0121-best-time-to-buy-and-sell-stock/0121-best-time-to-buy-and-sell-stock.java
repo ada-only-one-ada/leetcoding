@@ -3,7 +3,7 @@ class Solution {
         // 低买高卖
         if (prices.length == 1) return 0;
 
-        int res = Integer.MIN_VALUE;
+        int res = 0;
         int min = prices[0];        
 
         // 注意不能更新max，因为不能保证max在min之后
@@ -12,6 +12,6 @@ class Solution {
             min = Math.min(min, prices[i]);
         }
 
-        return res < 0 ? 0: res;
+        return res;
     }
 }
