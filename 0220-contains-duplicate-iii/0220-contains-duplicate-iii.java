@@ -16,6 +16,7 @@ class Solution {
 
             map.put(currBucketId, nums[i]);
 
+            // 比如我遍历到3，这时候要移除index为0的，因为下一轮for loop是遍历到4的位置。
             if (i >= indexDiff) {
                 int oldBucketId = getBucketId(nums[i - indexDiff]);
                 map.remove(oldBucketId);
@@ -24,7 +25,11 @@ class Solution {
         return false;
     }
 
-    private int getBucketId(int number) {
-        return number >= 0 ? number / bucketSize : (number + 1) / bucketSize - 1;
+    public int getBucketId(int num) {
+        if (num >= 0) {
+            return num / bucketSize;
+        } else {
+            return (num + 1) / bucketSize - 1;
+        }
     }
 }
