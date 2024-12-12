@@ -1,26 +1,24 @@
+
 class Solution {
     public boolean isHappy(int n) {
-        Set<Integer> set = new HashSet<>();
-
-        while (true) {
-            int next = getSum(n);
-            if (next == 1) return true;
-            if (set.contains(next)) break;
-            set.add(n);
-            n = next;
+        Set<Integer> visited = new HashSet<>();
+        while (n > 0) {
+            int newN = getSquare(n);
+            if (visited.contains(newN)) return false;
+            if (newN == 1) return true;
+            visited.add(newN);
+            n = newN;      
         }
-
-        return n == 1;
+        return false;
     }
 
-    public int getSum(int n) {
-        int sum = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            sum += digit * digit;
-            n = n / 10;
+    public int getSquare(int n) {   // time complexity is O(logn)
+        int squared = 0;
+        while (n != 0) {
+            squared += (n % 10) * (n % 10);
+            n = n / 10; 
         }
-        return sum;
+
+        return squared;
     }
 }
