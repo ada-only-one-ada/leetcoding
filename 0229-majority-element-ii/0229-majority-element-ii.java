@@ -23,7 +23,8 @@ class Solution {
                     freqOne--;
                     freqTwo--;
 
-                    // 这里-1才需要真正被代替
+                    // 这里-1才需要真正被代替，或者comment掉，下一轮更新
+                    /*
                     if (freqOne == -1) {
                         candidateOne = num;
                         freqOne = 1;
@@ -31,6 +32,7 @@ class Solution {
                         candidateTwo = num;
                         freqTwo = 1;
                     } 
+                    */
                 }
             }
         }
