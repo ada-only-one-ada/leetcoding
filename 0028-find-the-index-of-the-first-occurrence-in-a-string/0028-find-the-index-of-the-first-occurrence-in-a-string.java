@@ -3,6 +3,5 @@ class Solution {
         if (haystack.length() < needle.length()) return -1;
 
         return haystack.indexOf(needle);
-
     }
 }
