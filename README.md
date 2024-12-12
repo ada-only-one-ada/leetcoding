@@ -153,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
+| [0228-summary-ranges](https://github.com/Adagggggg/leetcoding/tree/master/0228-summary-ranges) |
 | [0229-majority-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
