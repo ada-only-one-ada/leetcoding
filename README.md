@@ -574,6 +574,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/Adagggggg/leetcoding/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0043-multiply-strings](https://github.com/Adagggggg/leetcoding/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Adagggggg/leetcoding/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
@@ -779,6 +780,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/Adagggggg/leetcoding/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/Adagggggg/leetcoding/tree/master/0016-3sum-closest) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adagggggg/leetcoding/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0031-next-permutation) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/0088-merge-sorted-array) |
@@ -1066,6 +1068,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String Matching
 |  |
 | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 ## Hash Function
 |  |
