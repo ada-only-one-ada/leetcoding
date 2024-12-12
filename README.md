@@ -151,6 +151,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/Adagggggg/leetcoding/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
@@ -504,6 +505,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/Adagggggg/leetcoding/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
@@ -961,6 +963,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Adagggggg/leetcoding/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
+| [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
