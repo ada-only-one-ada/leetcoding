@@ -7,8 +7,11 @@ class Solution {
 
         for (int i = 0; i < nums.length; i++) {
             int currBucketId = getBucketId(nums[i]);
+            // 桶内已有元素了，说明存在差值范围在valueDiff内的另一个值，直接返回true
+            // 比如和我生日差30天的人，那么同一个月份的肯定是在这个范围内
             if (map.containsKey(currBucketId)) return true;
 
+            // 或者检查上/下一个月的，也有可能差值在30天内
             int prevBucketId = currBucketId - 1;
             int nextBucketId = currBucketId + 1;
             if (map.containsKey(prevBucketId) && nums[i] - map.get(prevBucketId) <= valueDiff) return true;
