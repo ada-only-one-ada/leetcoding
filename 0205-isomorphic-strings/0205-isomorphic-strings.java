@@ -3,16 +3,23 @@ class Solution {
         if (s.length() != t.length()) return false;
 
         Map<Character, Character> map = new HashMap<>();
+        Set<Character> used = new HashSet<>();
 
         for (int i = 0; i < s.length(); i++) {
-            char w = s.charAt(i);
-            char pattern = t.charAt(i);
+            char sc = s.charAt(i);
+            char tc = t.charAt(i);
 
-            if (map.containsKey(w)) {
-                if (map.get(w) != pattern) return false;
+            if (!map.containsKey(sc)) {
+                if (used.contains(tc)) {
+                    return false;
+                } else {
+                    map.put(sc, tc);
+                    used.add(tc);
+                }
             } else {
-                if (map.containsValue(pattern)) return false;
-                map.put(w, pattern);
+                if (tc != map.get(sc)) {
+                    return false;
+                }
             }
         }
 
