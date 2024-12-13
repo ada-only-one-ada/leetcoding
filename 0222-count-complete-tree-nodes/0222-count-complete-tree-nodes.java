@@ -1,22 +1,29 @@
 class Solution {
-    static Map<TreeNode, Integer> map = new HashMap();
-    public static int countNodes(TreeNode node) {
-        int res = helper(node);
+    public int countNodes(TreeNode root) {
+        if (root == null) return 0;
 
-        for (TreeNode curr: map.keySet()) {
-            System.out.println("Node " + curr.val + " has size of " + map.get(curr));
-        } 
-        return res;
+        int leftHeight = getHeight(root.left);
+        int rightHeight = getHeight(root.right);
+
+        // 左子树肯定是完整的
+        if (leftHeight == rightHeight) {
+            return 1 + getCompleteNodes(leftHeight) + countNodes(root.right);
+        // 右子树肯定是完整的
+        } else if (leftHeight > rightHeight) {
+            return 1 + getCompleteNodes(rightHeight) + countNodes(root.left);
+        }
+
+        return 0;
     }
-    
-    public static int helper(TreeNode node) {
-        if (node == null) return 0;
-        if (node.left == null && node.right == null) return 1;
-        
-        int totalSize = 1 + helper(node.left) + helper(node.right);
-        
-        map.put(node, totalSize);
-        return totalSize;
+
+    public int getCompleteNodes(int height) {
+        return (int)Math.pow(2, height) - 1;
     }
+
+    public int getHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return 1 + Math.max(getHeight(root.left), getHeight(root.right));
+    } 
 }
-       
