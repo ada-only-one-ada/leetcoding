@@ -26,16 +26,12 @@ class Solution {
             curr = curr.next;
         }
 
-        while (i1 != null) {
+        if (i1 != null) {
             curr.next = i1;
-            i1 = i1.next;
-            curr = curr.next;
         }
 
-        while (i2 != null) {
+        if (i2 != null) {
             curr.next = i2;
-            i2 = i2.next;
-            curr = curr.next;
         }
 
         return dummy.next;
