@@ -24,6 +24,6 @@ class Solution {
         if (root == null) {
             return 0;
         }
-        return 1 + Math.max(getHeight(root.left), getHeight(root.right));
+        return 1 + getHeight(root.left);
     } 
 }
