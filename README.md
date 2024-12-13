@@ -283,6 +283,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/Adagggggg/leetcoding/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3651-transformed-array](https://github.com/Adagggggg/leetcoding/tree/master/3651-transformed-array) |
 ## Binary Search
 |  |
 | ------- |
@@ -1049,6 +1050,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [3336-water-bottles-ii](https://github.com/Adagggggg/leetcoding/tree/master/3336-water-bottles-ii) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
+| [3651-transformed-array](https://github.com/Adagggggg/leetcoding/tree/master/3651-transformed-array) |
 ## Memoization
 |  |
 | ------- |
