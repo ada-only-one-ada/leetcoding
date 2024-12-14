@@ -8,17 +8,16 @@ class Solution {
     public void dfs(TreeNode root) {
         if (root == null) return;
 
-        TreeNode leftSubtree = root.left;
+        // 在递归之前先保存下来，确保不会因为展平左子树而丢失右子树的信息
         TreeNode rightSubtree = root.right;
 
         if (prevNode != null) {
             prevNode.right = root;
             prevNode.left = null;
-
         }
         prevNode = root;
 
-        dfs(leftSubtree);
+        dfs(root.left);
         dfs(rightSubtree);
     }
 }
