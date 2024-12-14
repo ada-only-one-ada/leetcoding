@@ -7,7 +7,8 @@ class Solution {
         // 否则，从第三个数字开始loop
         for (int i = 2; i < nums.length; i++) {
             // 如果当前数字跟即将替代的index的前一个或者前两个不一样，就可以取代
-            if (nums[i] != nums[replaceIndex-1] || nums[i] != nums[replaceIndex-2]) {
+            // 注意这里比较的不是 i-1 和 i-2
+            if (nums[i] != nums[replaceIndex - 1] || nums[i] != nums[replaceIndex - 2]) {
                 nums[replaceIndex++] = nums[i];
             } 
         }
