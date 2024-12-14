@@ -2,11 +2,12 @@ class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) return false;
         int sum = 0;
-        int copy = x;
+        int temp = x;
 
-        while (copy > 0) {
-            sum = sum * 10 + copy % 10;
-            copy /= 10;   
+        while (temp > 0) {
+            sum = sum * 10 + temp % 10;
+            temp /= 10;   
+
             if (sum == x) return true;  
             if (sum > x) return false;      
         }
