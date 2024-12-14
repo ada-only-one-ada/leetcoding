@@ -138,6 +138,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0054-spiral-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/Adagggggg/leetcoding/tree/master/0057-insert-interval) |
+| [0066-plus-one](https://github.com/Adagggggg/leetcoding/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 | [0088-merge-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/0088-merge-sorted-array) |
@@ -910,6 +911,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/Adagggggg/leetcoding/tree/master/0013-roman-to-integer) |
 | [0043-multiply-strings](https://github.com/Adagggggg/leetcoding/tree/master/0043-multiply-strings) |
 | [0050-powx-n](https://github.com/Adagggggg/leetcoding/tree/master/0050-powx-n) |
+| [0066-plus-one](https://github.com/Adagggggg/leetcoding/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/Adagggggg/leetcoding/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
