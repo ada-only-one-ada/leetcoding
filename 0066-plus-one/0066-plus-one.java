@@ -1,20 +1,20 @@
 class Solution {
     public int[] plusOne(int[] digits) {
-        int remain = 0;
-        
+        int carry = 1;
+        int[] res = new int[digits.length];
+
         for (int i = digits.length - 1; i >= 0; i--) {
-            int sum = digits[i] + remain;
-            if (i == digits.length - 1) sum++;
-
-            digits[i] = sum % 10;
-            remain = sum / 10;
+            int sum = digits[i] + carry;
+            carry = sum / 10;
+            int curr = sum % 10;
+            res[i] = curr;
         }
 
-        if (remain > 0) {
-            digits = new int[digits.length + 1];
-            digits[0] = remain;
+        if (carry == 1) {
+            res = new int[res.length + 1]; 
+            res[0] = 1;
         }
 
-        return digits;
+        return res;
     }
 }
