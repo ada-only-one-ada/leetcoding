@@ -6,7 +6,7 @@ class Solution {
         }
 
         int max = 0;
-        for (int num: nums) {
+        for (int num: set) {
             // start
             int currLen = 1;
             if (!set.contains(num - 1)) {
