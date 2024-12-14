@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 | [0088-merge-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/0088-merge-sorted-array) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Adagggggg/leetcoding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
@@ -345,6 +346,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0101-symmetric-tree](https://github.com/Adagggggg/leetcoding/tree/master/0101-symmetric-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/Adagggggg/leetcoding/tree/master/0112-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
@@ -444,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0098-validate-binary-search-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -460,6 +463,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0101-symmetric-tree](https://github.com/Adagggggg/leetcoding/tree/master/0101-symmetric-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/Adagggggg/leetcoding/tree/master/0112-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
@@ -710,6 +714,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
