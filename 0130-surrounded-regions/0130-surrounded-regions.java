@@ -17,7 +17,7 @@ class Solution {
             for (int col = 0; col < colNum; col++) {
                 if (board[row][col] == '!') {
                     board[row][col] = 'O';
-                } else if (board[row][col] != '!') {
+                } else if (board[row][col] == 'O') {
                     board[row][col] = 'X';
                 }
             }
