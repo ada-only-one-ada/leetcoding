@@ -11,13 +11,8 @@ class Solution {
         }
 
         if (remain > 0) {
-            int[] temp = new int[digits.length + 1];
-            temp[0] = remain;
-
-            for (int i = 1; i < temp.length; i++) {
-                temp[i] = digits[i - 1];
-            }
-            digits = temp;
+            digits = new int[digits.length + 1];
+            digits[0] = remain;
         }
 
         return digits;
