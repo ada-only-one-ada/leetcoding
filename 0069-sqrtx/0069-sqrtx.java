@@ -1,12 +1,10 @@
 class Solution {
     public int mySqrt(int x) {
-        if (x == 0) return 0;
+        if (x <= 1) return x;
 
         int start = 1;
-        int end = x + 1; 
-        if (x == Integer.MAX_VALUE) { // 最大值 + 1 会溢出
-            end = x;
-        }
+        int end = x;
+
         int res = -1;
         while (start < end) {
             int mid = start + (end - start) / 2;
