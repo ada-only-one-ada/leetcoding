@@ -1,18 +1,21 @@
 class Solution {
     int min = Integer.MAX_VALUE;
+    int prev = -1;
+
     public int getMinimumDifference(TreeNode root) {
-        dfs(root, new ArrayList<>());
+        dfs(root);
         return min;
     }
 
-    public void dfs(TreeNode root, List<Integer> list) {
+    public void dfs(TreeNode root) {
         if (root == null) return;
 
-        dfs(root.left, list);
-        if (list.size() > 0) {
-            min = Math.min(min, root.val - list.get(list.size() - 1));
+        dfs(root.left);
+        if (prev != -1) {
+            min = Math.min(min, root.val - prev);
         }
-        list.add(root.val);
-        dfs(root.right, list);
+        prev = root.val;
+
+        dfs(root.right);
     }
 }
