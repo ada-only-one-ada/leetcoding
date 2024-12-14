@@ -1,21 +1,24 @@
 class Solution {
-    int min = Integer.MAX_VALUE;
-    Integer prev = null;
-
     public int getMinimumDifference(TreeNode root) {
-        dfs(root);
-        return min;
-    }
+        int res = Integer.MAX_VALUE;
+        Stack<TreeNode> stack = new Stack();
+        TreeNode prev = null;
 
-    public void dfs(TreeNode root) {
-        if (root == null) return;
+        while (!stack.isEmpty() || root != null) {
+            if (root != null) {
+                stack.push(root);
+                root = root.left;
+            } else {
+                TreeNode curr = stack.pop();
+                if (prev != null && curr.val - prev.val < res) {
+                    res = curr.val - prev.val;
+                }
 
-        dfs(root.left);
-        if (prev != null)  {
-            min = Math.min(min, root.val - prev);
+                prev = curr;
+                root = curr.right;
+            }
         }
-        prev = root.val;
 
-        dfs(root.right);
+        return res;
     }
 }
