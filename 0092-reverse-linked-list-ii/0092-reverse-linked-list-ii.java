@@ -14,21 +14,24 @@ class Solution {
             prev = prev.next;
         }
 
-        // 需要反转的第一个节点
+        // reverseStart 指向需要反转的第一个节点
         ListNode reverseStart = prev.next;
-        // 查找需要反转的最后一个节点
+        // reverseEnd 指向需要反转的最后一个节点
         ListNode reverseEnd = reverseStart;
         // 第一个节点算一个，需要找 right-left+1 个
         for (int i = 1; i < right - left + 1; i++) {
             reverseEnd = reverseEnd.next;
         }
 
-        // 反转的最后一个节点的下一个
+        // 记录反转部分的后一个节点
         ListNode after = reverseEnd.next;
-        // 断开
+        // 断开反转部分与后面的链表
         reverseEnd.next = null;
 
+        // 反转从start到end的部分
         prev.next = reverse(reverseStart);
+        // 连接反转后的部分与after
+        // 注意是从reverseStart连，比如例子里面的节点2，连接到5
         reverseStart.next = after;
 
         return dummy.next;
