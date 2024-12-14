@@ -1,23 +1,33 @@
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int start = 0;
-        int end = nums.length;
+        int left = 0;
+        int right = nums.length - 1;
 
-        int res = -1;
-        while (start < end) {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            // 当前数字大于target，肯定在这之前
-            } else if (nums[mid] > target) {
-                end = mid;
-            // 当前数字小于target，可能插入在当前位置之后一个，也可能之后
-            } else if (nums[mid] < target) {
-                res = mid;
-                start = mid + 1;
+        while (left + 1 < right){
+            int mid = left + (right-left)/2;
+            if (nums[mid] >= target){
+                right = mid;
+            }else if (nums[mid] < target){
+                left = mid;
             }
         }
 
-        return res + 1;
+        if (target > nums[right]) return right + 1;
+        if (target > nums[left]) return left + 1;
+        if (target <= nums[left]) return left;
+        return -1;
     }
 }
+/*
+1. <=left, return left;
+if (target == nums[left]) return left;
+if (target < nums[left]) return left;
+
+2. >right, return right+1
+if (target > nums[right]) return right + 1;
+       
+3.==right, or left < target < right, return left+1
+if (target == nums[right]) return right;
+return left + 1;
+*/
