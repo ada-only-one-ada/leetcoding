@@ -20,6 +20,7 @@ class Solution {
 
         StringBuilder res = new StringBuilder();
         while (num > 0) {
+            // 找到最大的，小于等于当前数字的
             int lastEqualSmaller = treemap.floorKey(num);
             int times = num / lastEqualSmaller;
 
