@@ -8,7 +8,7 @@ class Solution {
             sum = sum * 10 + temp % 10;
             temp /= 10;   
 
-            // 已经超过了，不用再继续loop了
+            // 已经超过了，提前返回，不用再继续loop了
             if (sum > x) return false;      
         }
 
