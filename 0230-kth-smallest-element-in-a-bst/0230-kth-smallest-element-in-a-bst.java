@@ -10,13 +10,14 @@ class Solution {
         if (root == null) return;
 
         dfs(root.left, k);
+        // 先数数
         count++;
+        // 再判断
         if (count == k) {
             res = root.val;
             return;
         }
 
-      
         dfs(root.right, k);
     }
 }
