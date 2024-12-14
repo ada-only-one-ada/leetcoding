@@ -3,23 +3,19 @@ class Solution {
         int[] values =    {1000, 900, 500,  400,  100,  90,  50,   40,  10,  9,    5,   4,   1};
         String[] romans = {"M", "CM", "D",  "CD", "C", "XC", "L", "XL", "X","IX", "V", "IV","I"};
 
-        TreeMap<Integer, String> treemap = new TreeMap<>();
-        treemap.put(1000, "m");
-        treemap.put(1000, "m");
-        treemap.put(1000, "m");
+        StringBuilder res = new StringBuilder();
+        // 因为我们的array是按照从大到小的，所以从左到右遍历
+        for (int i = 0; i < values.length && num > 0; i++) {
+            if (num < values[i]) continue;
 
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < values.length; i++){
-            int repeated = num / values[i];
-
-            for (int no = 0; no < repeated; no++){
-                sb.append(romans[i]);
+            int times = num / values[i];
+            for (int j = 0; j < times; j++) {
+                res.append(romans[i]);
             }
 
-            num = num - repeated * values[i];
-            // if (num <= 0) break;
+            num -= values[i] * times;
         }
 
-        return sb.toString();
+        return res.toString();
     }
 }
