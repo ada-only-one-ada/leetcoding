@@ -3,8 +3,8 @@ class Solution {
         if (x == 0) return 0;
 
         int start = 1;
-        int end = x + 1; // 最大值 + 1 会溢出
-        if (x == Integer.MAX_VALUE) {
+        int end = x + 1; 
+        if (x == Integer.MAX_VALUE) { // 最大值 + 1 会溢出
             end = x;
         }
         int res = -1;
