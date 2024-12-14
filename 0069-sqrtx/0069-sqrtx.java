@@ -3,7 +3,7 @@ class Solution {
         if (x == 0) return 0;
 
         int start = 1;
-        int end = x + 1;
+        int end = x + 1; // 最大值 + 1 会溢出
         if (x == Integer.MAX_VALUE) {
             end = x;
         }
