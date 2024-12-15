@@ -13,7 +13,6 @@ class MinStack {
     
     public void push(int val) {
         stack.push(new int[]{index, val});
-        
         if (minStack.isEmpty() || val <= minStack.peek()[1]) {
             minStack.push(new int[]{index, val});
         }
@@ -32,9 +31,7 @@ class MinStack {
     }
     
     public int getMin() {
-        while (!minStack.isEmpty() && set.contains(minStack.peek()[0])) {
-            set.remove(minStack.pop()[0]);
-        }
+        
         
         return minStack.peek()[1];
     }
