@@ -13,9 +13,7 @@ class MinStack {
     
     public void push(int val) {
         stack.push(new int[]{index, val});
-        while (!minStack.isEmpty() && set.contains(minStack.peek()[0])) {
-            set.remove(minStack.pop()[0]);
-        }
+        
         if (minStack.isEmpty() || val <= minStack.peek()[1]) {
             minStack.push(new int[]{index, val});
         }
@@ -24,7 +22,9 @@ class MinStack {
     
     public void pop() {
         int popedIndex = stack.pop()[0];
-        set.add(popedIndex);
+        if (minStack.peek()[0] == popedIndex) {
+            minStack.pop();
+        }
     }
     
     public int top() {
