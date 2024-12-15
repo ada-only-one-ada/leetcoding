@@ -7,7 +7,6 @@ class Solution {
             int toTake = pre[0];
             int mustTake = pre[1];
 
-            map.putIfAbsent(toTake, new HashSet<>());
             map.putIfAbsent(mustTake, new HashSet<>());
             map.get(mustTake).add(toTake);
             indegree[toTake]++;
