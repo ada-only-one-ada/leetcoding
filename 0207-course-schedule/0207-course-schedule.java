@@ -1,15 +1,16 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, Set<Integer>> map = new HashMap<>();
         int[] indegree = new int[numCourses];
 
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        for (int[] p: prerequisites) {
-            int toTake = p[0];
-            int mustTake = p[1];
-            indegree[toTake]++;
-            map.putIfAbsent(toTake, new ArrayList<>());
-            map.putIfAbsent(mustTake, new ArrayList<>());
+        for (int[] pre: prerequisites) {
+            int toTake = pre[0];
+            int mustTake = pre[1];
+
+            map.putIfAbsent(toTake, new HashSet<>());
+            map.putIfAbsent(mustTake, new HashSet<>());
             map.get(mustTake).add(toTake);
+            indegree[toTake]++;
         }
 
         Queue<Integer> queue = new LinkedList<>();
@@ -18,26 +19,23 @@ class Solution {
                 queue.add(i);
             }
         }
-
+        
+        int finished = 0;
         while (!queue.isEmpty()) {
-            int taking = queue.poll();
-            List<Integer> nei = map.get(taking);
-            if (nei == null) continue;
+            int currTaking = queue.poll();
+            finished++;
 
-            for (int n: nei) {
-                indegree[n]--;
-                if (indegree[n] == 0) {
-                    queue.add(n);
+            Set<Integer> set = map.get(currTaking);
+            if (set == null) continue;
+            for (int nextCourse: set) {
+                indegree[nextCourse]--;
+
+                if (indegree[nextCourse] == 0) {
+                    queue.add(nextCourse);
                 }
             }
         }
 
-        for (int i: indegree) {
-            if (i != 0) {
-                return false;
-            }
-        }
-
-        return true;
+        return finished == numCourses;
     }
 }
