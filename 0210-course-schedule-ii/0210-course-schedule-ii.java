@@ -19,13 +19,11 @@ class Solution {
             }
         }
 
-        int finished = 0;
         int[] res = new int[numCourses];
         int index = 0;
         while (!queue.isEmpty()) {
             int currTaking = queue.poll();
             res[index++] = currTaking;
-            finished++;
 
             Set<Integer> set = map.get(currTaking);
             if (set == null) continue;
@@ -38,7 +36,7 @@ class Solution {
             }
         }
 
-        if (finished < numCourses) return new int[0];
+        if (index < numCourses) return new int[0];
         return res;
     }
 }
