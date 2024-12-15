@@ -2,13 +2,11 @@ class MinStack {
     Stack<int[]> stack;
     Stack<int[]> minStack;
     int index;
-    Set<Integer> set;
 
     public MinStack() {
         stack = new Stack();
         minStack = new Stack();
         index = 0;
-        set = new HashSet<>();
     }
     
     public void push(int val) {
@@ -31,8 +29,6 @@ class MinStack {
     }
     
     public int getMin() {
-        
-        
         return minStack.peek()[1];
     }
 }
