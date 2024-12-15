@@ -1,23 +1,14 @@
 class Solution {
     public String reverseWords(String s) {
-        String[] arr = s.trim().split("\\s+");
-        int left = 0;
-        int right = arr.length - 1;
-     
-        while (left < right) {
-            String temp = arr[left].trim();
-            arr[left] = arr[right].trim();
-            arr[right] = temp;
-            left++;
-            right--;
-        }
-
+        String[] words = s.trim().split("\\s+");          
+        
         StringBuilder res = new StringBuilder();
-        for (int i = 0; i < arr.length; i++) {
-            res.append(arr[i]);
-            if (i != arr.length - 1) res.append(" ");
+        for (int i = words.length - 1; i >= 0; i--){
+            res.append(words[i] + ' ');
         }
-
-        return res.toString();
+        
+        return res.toString().trim(); // remove last space
     }
 }
+// "    a  b"  = [a, b]; 
+// "\\s+" means multiple empty space
