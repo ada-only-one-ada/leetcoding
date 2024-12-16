@@ -6,26 +6,22 @@ class Solution {
         int leftCol = 0, rightCol = colNum - 1;
 
         while (res.size() < rowNum * colNum) {
-            for (int col = leftCol; col <= rightCol; col++) {
-                if (res.size() == rowNum * colNum) break;
+            for (int col = leftCol; col <= rightCol && res.size() < rowNum * colNum; col++) {
                 res.add(matrix[topRow][col]);
             }
             topRow++;
 
-            for (int row = topRow; row <= bottomRow; row++) {
-                if (res.size() == rowNum * colNum) break;
+            for (int row = topRow; row <= bottomRow && res.size() < rowNum * colNum; row++) {
                 res.add(matrix[row][rightCol]);
             }
             rightCol--;
 
-            for (int col = rightCol; col >= leftCol; col--) {
-                if (res.size() == rowNum * colNum) break;
+            for (int col = rightCol; col >= leftCol && res.size() < rowNum * colNum; col--) {
                 res.add(matrix[bottomRow][col]);
             }
             bottomRow--;
 
-            for (int row = bottomRow; row >= topRow; row--) {
-                if (res.size() == rowNum * colNum) break;
+            for (int row = bottomRow; row >= topRow && res.size() < rowNum * colNum; row--) {
                 res.add(matrix[row][leftCol]);
             }
             leftCol++;
