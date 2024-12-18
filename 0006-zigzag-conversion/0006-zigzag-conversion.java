@@ -1,39 +1,27 @@
 class Solution {
-    public String convert(String s, int numRows) {
-        if (numRows <= 1) return s; // "AB", 1
-        Map<Integer, List<Character>> map = new HashMap<>();
-        for (int row = 0; row < numRows; row++) {
-            map.put(row, new ArrayList<>());
+    public String convert(String s, int numRows) {      
+        StringBuilder[] sb = new StringBuilder[numRows];
+        for (int row = 0; row < numRows; row++){
+            sb[row] = new StringBuilder();
         }
-
-        int currRow = 0;
-        int i = 0;
-        while (i < s.length()) {    
-            while (i < s.length() && currRow < numRows) {
-                char c = s.charAt(i);
-                map.get(currRow).add(c);
-                currRow++;
-                i++;
+        
+        int index = 0;
+        while (index < s.length()){
+            for (int row = 0; row < numRows && index < s.length(); row++){
+                sb[row].append(s.charAt(index));
+                index++;
             }
-
-            currRow -= 2;
-            while (i < s.length() && currRow >= 1) {
-                char c = s.charAt(i);
-                map.get(currRow).add(c);
-                currRow--;
-                i++;
+            
+            for (int row = numRows-2; row >= 1 && index < s.length(); row--){
+                sb[row].append(s.charAt(index));
+                index++;
             }
         }
-
-        StringBuilder sb = new StringBuilder();
-        for (int row = 0; row < numRows; row++) {
-            List<Character> list = map.get(row);
-            if (list == null) continue;
-            for (char c: list) {
-                sb.append(c);
-            }
+        
+        for (int row = 1; row < numRows; row++){
+            sb[0].append(sb[row]);
         }
 
-        return sb.toString();
+        return sb[0].toString();
     }
 }
