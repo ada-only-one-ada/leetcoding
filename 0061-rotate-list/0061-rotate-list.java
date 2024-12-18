@@ -1,6 +1,6 @@
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        if (head == null) return null; // head=[], k=0
+        if (head == null) return null; 
         int size = 0;
         ListNode curr = head;
         while (curr != null) {
