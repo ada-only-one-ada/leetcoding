@@ -17,13 +17,12 @@ class Solution {
             }
 
             currRow -= 2;
-            while (i < s.length() && currRow >= 0) {
+            while (i < s.length() && currRow >= 1) {
                 char c = s.charAt(i);
                 map.get(currRow).add(c);
                 currRow--;
                 i++;
             }
-            currRow += 2;
         }
 
         StringBuilder sb = new StringBuilder();
