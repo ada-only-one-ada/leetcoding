@@ -12,8 +12,8 @@ class Solution {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         curr = dummy;
-
         int currPos = -1;
+        
         while (currPos != removedPos - 1) {
             curr = curr.next;
             currPos++;
