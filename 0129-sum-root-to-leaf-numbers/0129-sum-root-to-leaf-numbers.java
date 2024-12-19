@@ -1,20 +1,16 @@
 class Solution {
-    int totalSum = 0;
     public int sumNumbers(TreeNode root) {
-        backtracking(root, 0);
-        return totalSum;
+        return dfs(root, 0);
     }
 
-    public void backtracking(TreeNode root, int currSum) {
-        if (root == null) return;
+    public int dfs(TreeNode root, int sum){
+        if (root == null) return 0;
 
         if (root.left == null && root.right == null) {
-            currSum = currSum * 10 + root.val;
-            totalSum += currSum;
-            return;
+            return sum * 10 + root.val;
         }
 
-        backtracking(root.left, currSum * 10 + root.val);
-        backtracking(root.right, currSum * 10 + root.val);
+        return dfs(root.left, sum * 10 + root.val) + 
+               dfs(root.right, sum * 10 + root.val);
     }
 }
