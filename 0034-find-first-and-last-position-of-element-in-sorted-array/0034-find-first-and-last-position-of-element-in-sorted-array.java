@@ -4,46 +4,44 @@ class Solution {
     }
 
     public int findFirst(int[] nums, int target) {
-        if (nums.length == 0) return -1;
-
         int start = 0;
-        int end = nums.length - 1;
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
+        int end = nums.length;
 
-            if (nums[mid] == target) {
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            // 当前数字比target大，说明第一次出现肯定在前面
+            // 当前数字等于target，说明第一次可能是当前，也可能在前面
+            if (nums[mid] >= target) {
                 end = mid;
             } else if (nums[mid] < target) {
                 start = mid + 1;
-            } else if (nums[mid] > target) {
-                end = mid - 1;
-            }
+            } 
         }
 
-        if (nums[start] == target) return start;
-        if (nums[end] == target) return end;
+        if (start >= 0 && start < nums.length && nums[start] == target) return start;
         return -1;
     }
 
     public int findLast(int[] nums, int target) {
-        if (nums.length == 0) return -1;
-
         int start = 0;
-        int end = nums.length - 1;
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
+        int end = nums.length;
 
-            if (nums[mid] == target) {
-                start = mid;
-            } else if (nums[mid] < target) {
+        int save = -1;
+
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            // 当前数字比target大，说明最后一个肯定在之前
+            if (nums[mid] > target) {
+                end = mid;
+            // 当前数字小于，肯定在最后
+            // 等于，可能是当前，也可能之后
+            } else if (nums[mid] <= target) {
+                save = mid;
                 start = mid + 1;
-            } else if (nums[mid] > target) {
-                end = mid - 1;
-            }
+            } 
         }
 
-        if (nums[end] == target) return end;
-        if (nums[start] == target) return start;
+        if (save >= 0 && save < nums.length && nums[save] == target) return save;
         return -1;
     }
 }
