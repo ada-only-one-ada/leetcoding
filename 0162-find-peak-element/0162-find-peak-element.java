@@ -5,14 +5,18 @@ class Solution {
 
         while (start < end) {
             int mid = start + (end - start) / 2;
-            if ((mid - 1 == -1 || nums[mid] > nums[mid - 1]) && (mid + 1 == nums.length || nums[mid] > nums[mid + 1])) {
+            boolean greaterThanLeftNei = mid - 1 == -1 || nums[mid] > nums[mid - 1];
+            boolean greaterThanRightNei = mid + 1 == nums.length || nums[mid] > nums[mid + 1];
+
+            if (greaterThanLeftNei && greaterThanRightNei) {
                 return mid;
-            } else if (mid - 1 >= 0 && nums[mid] < nums[mid - 1]) {
-                end = mid;
-            } else {
+            // mid + 1 更大，是一个可能的candidate
+            } else if (mid + 1 < nums.length && nums[mid] < nums[mid + 1]) {
                 start = mid + 1;
+            } else {
+                end = mid;
             }
-        }  
+        }
 
         return start;
     }
