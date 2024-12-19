@@ -5,10 +5,7 @@ class Solution {
         int start = 0;
         int end = nums.length;
         while (start < end) {
-            if (start + 1 == end - 1) {
-                return Math.min(nums[start], nums[end - 1]);
-            }
-
+           
             int mid = start + (end - start) / 2;
 
             // 左边是递增的，意味着最小值可能是左边第一个，或者是 mid - end 的一个
