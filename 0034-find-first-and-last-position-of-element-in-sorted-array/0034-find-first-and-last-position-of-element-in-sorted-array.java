@@ -9,8 +9,8 @@ class Solution {
 
         while (start < end) {
             int mid = start + (end - start) / 2;
-            // 当前数字比target大，说明第一次出现肯定在前面
-            // 当前数字等于target，说明第一次可能是当前，也可能在前面
+            // 当前数字比 target 大，说明第一次出现肯定在前面
+            // 当前数字等于 target，说明第一次可能是当前，也可能在前面
             if (nums[mid] >= target) {
                 end = mid;
             } else if (nums[mid] < target) {
@@ -26,22 +26,22 @@ class Solution {
         int start = 0;
         int end = nums.length;
 
-        int save = -1;
+        int saved = -1;
 
         while (start < end) {
             int mid = start + (end - start) / 2;
-            // 当前数字比target大，说明最后一个肯定在之前
+            // 当前数字比 target 大，说明最后一个肯定在之前
             if (nums[mid] > target) {
                 end = mid;
-            // 当前数字小于，肯定在最后
-            // 等于，可能是当前，也可能之后
+            // 当前数字小于 target，肯定在最后
+            // 当前数字等于 target，可能是当前，也可能在之后，先存起来
             } else if (nums[mid] <= target) {
-                save = mid;
+                saved = mid;
                 start = mid + 1;
             } 
         }
 
-        if (save >= 0 && save < nums.length && nums[save] == target) return save;
+        if (saved >= 0 && saved < nums.length && nums[saved] == target) return saved;
         return -1;
     }
 }
