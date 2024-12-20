@@ -144,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Adagggggg/leetcoding/tree/master/0079-word-search) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Adagggggg/leetcoding/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/0088-merge-sorted-array) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
@@ -654,6 +655,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0071-simplify-path](https://github.com/Adagggggg/leetcoding/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/Adagggggg/leetcoding/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
@@ -712,6 +714,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [0054-spiral-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0073-set-matrix-zeroes) |
+| [0079-word-search](https://github.com/Adagggggg/leetcoding/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/Adagggggg/leetcoding/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -920,6 +923,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
 | [0077-combinations](https://github.com/Adagggggg/leetcoding/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Adagggggg/leetcoding/tree/master/0079-word-search) |
 | [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
