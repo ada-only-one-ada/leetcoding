@@ -18,7 +18,7 @@ class Solution {
         }
 
         for (int row = 0; row < matrix.length; row++) {
-            for (int col = row + 1; col < matrix.length; col++) {
+             for (int col = row + 1; col < matrix.length; col++) {
             // for (int col = 0; col < row; col++) {
                 int temp = matrix[row][col];
                 matrix[row][col] = matrix[col][row];
