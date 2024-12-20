@@ -5,25 +5,37 @@ class Solution {
         boolean[][] dp = new boolean[s1.length() + 1][s2.length() + 1];
         dp[0][0] = true;
 
-        // Initialize dp for the first row using only s1
         for (int i = 1; i <= s1.length(); i++) {
-            dp[i][0] = dp[i - 1][0] && s1.charAt(i - 1) == s3.charAt(i - 1);
+            if (s1.charAt(i - 1) == s3.charAt(i - 1)) {
+                dp[i][0] = dp[ i- 1][0];
+            } else {
+                dp[i][0] = false;
+            }
         }
         
-        // Initialize dp for the first column using only s2
         for (int j = 1; j <= s2.length(); j++) {
-            dp[0][j] = dp[0][j - 1] && s2.charAt(j - 1) == s3.charAt(j - 1);
+            if (s2.charAt(j - 1) == s3.charAt(j - 1)) {
+                dp[0][j] = dp[0][j - 1];
+            } else {
+                dp[0][j] = false;
+            }
         }
 
-        // Fill the rest of the dp table
         for (int i = 1; i <= s1.length(); i++) {
             for (int j = 1; j <= s2.length(); j++) {
-                int k = i + j - 1; // Corresponding index in s3
                 char c1 = s1.charAt(i - 1);
                 char c2 = s2.charAt(j - 1);
 
-                dp[i][j] = (c1 == s3.charAt(k) && dp[i - 1][j]) ||
-                           (c2 == s3.charAt(k) && dp[i][j - 1]);
+                char target = s3.charAt(i + j - 1);
+                char lastTarget = s3.charAt(i + j - 2);
+
+                if (c1 == target) {
+                    dp[i][j] = dp[i-1][j];
+                }
+
+                if (c2 == target) {
+                    dp[i][j] |= dp[i][j-1];
+                }
             }
         }
 
