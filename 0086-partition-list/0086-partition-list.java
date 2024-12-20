@@ -10,27 +10,27 @@
  */
 class Solution {
     public ListNode partition(ListNode head, int x) {
-        ListNode less = new ListNode(-1);
-        ListNode lessCurr = less;
+        ListNode lessList = new ListNode(-1);
+        ListNode less = lessList;
 
-        ListNode equalMore = new ListNode(-1);
-        ListNode equalMoreCurr = equalMore;
+        ListNode moreList = new ListNode(-1);
+        ListNode more = moreList;
 
         ListNode curr = head;
         while (curr != null) {
             if (curr.val < x) {
-                lessCurr.next = curr;
-                lessCurr = lessCurr.next;
+                less.next = curr;
+                less = less.next;
             } else {
-                equalMoreCurr.next = curr;
-                equalMoreCurr = equalMoreCurr.next;
+                more.next = curr;
+                more = more.next;
             }
 
             curr = curr.next;
         }
 
-        lessCurr.next = equalMore.next;
-        equalMoreCurr.next = null;
-        return less.next;
+        less.next = moreList.next;
+        more.next = null; // 要断开
+        return lessList.next;
     }
 }
