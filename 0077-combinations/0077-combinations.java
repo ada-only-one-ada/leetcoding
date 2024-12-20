@@ -1,22 +1,24 @@
 class Solution {
-
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new ArrayList<>();
         backtracking(n, k, res, new ArrayList<>(), 1);
         return res;
     }
 
-    public void backtracking(int n, int k, List<List<Integer>> res, List<Integer> currRes, int currNumber) {
-        // 先收获，不然包含最后一个数字 n 的组合不会加入结果集
+    public void backtracking(int n, int k, List<List<Integer>> res, List<Integer> currRes, int newC) {
         if (currRes.size() == k) {
             res.add(new ArrayList<>(currRes));
             return;
         }
-        
-        // 再判断当前数字能不能加
-        //if (currNumber == n + 1) return;
 
-        for (int i = currNumber; i <= n; i++) {
+        // cut subtrees
+        // k - currRes.size(): how many numbers we still need to look for 
+        // e.g. n = 4, k = 3. currently currRes is 0, i can go to the right at most 2, so it will have 2,3,4
+        // it i goes to 3, it only have two numbers left, can't find three numbers. So we cut it here
+        // 4 - (3 - 0) + 1:
+        // 4 - we still need to look for 3 numbers + 1
+        // (4 - 3) + 1 = 1 + 1 = 2. 2 is included! [2,3,4]
+        for (int i = newC; i <= n - (k - currRes.size()) + 1; i++) {
             currRes.add(i);
             backtracking(n, k, res, currRes, i + 1);
             currRes.remove(currRes.size() - 1);
