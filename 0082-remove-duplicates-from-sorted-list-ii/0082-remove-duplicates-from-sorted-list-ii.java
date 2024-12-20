@@ -2,7 +2,7 @@ class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;
         
-        ListNode dummy = new ListNode(-1);  // 创建一个哑节点作为链表的新头部
+        ListNode dummy = new ListNode(-1000);  // 创建一个哑节点作为链表的新头部
         dummy.next = head;
         
         ListNode prevNode = dummy;   // prevNode 是指向最后一个无重复节点的指针
