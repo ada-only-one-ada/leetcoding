@@ -19,7 +19,7 @@ class Solution {
         // 4 - we still need to look for 3 numbers + 1
         // (4 - 3) + 1 = 1 + 1 = 2. 2 is included! [2,3,4]
 
-        for (int i = currNumber; i <= n - (k - currRes.size()) + 1; i++) {
+        for (int i = currNumber; n - i + 1 >= k - currRes.size(); i++) {
             currRes.add(i);
             backtracking(n, k, res, currRes, i + 1);
             currRes.remove(currRes.size() - 1);
