@@ -1,6 +1,8 @@
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || p.val == root.val || q.val == root.val) return root;
+        if (p == null && q == null) return null;
+        if (root == null) return null;
+        if (p == root || q == root) return root; 
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
@@ -9,7 +11,7 @@ class Solution {
             return root;
         } else if (left != null) {
             return left;
-        } else  {
+        } else {
             return right;
         }
     }
