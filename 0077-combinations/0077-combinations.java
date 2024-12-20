@@ -14,7 +14,7 @@ class Solution {
         }
         
         // 再判断当前数字能不能加
-        if (currNumber == n + 1) return;
+        //if (currNumber == n + 1) return;
 
         for (int i = currNumber; i <= n; i++) {
             currRes.add(i);
