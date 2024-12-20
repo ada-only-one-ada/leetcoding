@@ -1,51 +1,37 @@
+/*
+// Definition for a Node.
+class Node {
+    int val;
+    Node next;
+    Node random;
+
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
+*/
+
 class Solution {
     public Node copyRandomList(Node head) {
-        if (head == null) return null;
+        Map<Node, Node> map = new HashMap<>();
 
-        Node origin = head;
-        while (origin != null) {
-            Node nextOrigin = origin.next;
-
-            Node copy = new Node(origin.val);
-            origin.next = copy;
-            copy.next = nextOrigin;
-
-            origin = nextOrigin;
+        Node curr = head;
+        while (curr != null) {
+            map.put(curr, new Node(curr.val));
+            curr = curr.next;
         }
 
-        origin = head;
-        while (origin != null) {
-            Node nextOrigin = origin.next.next;
-           
-            Node copy = origin.next;
-            if (origin.random != null) {
-                copy.random = origin.random.next;
-            }
+        for (Node oldNode: map.keySet()) {
+            Node newNode = map.get(oldNode);
 
-            origin = nextOrigin;
+            Node oldRandom = oldNode.random;
+            newNode.random = map.get(oldRandom);
+            Node oldNext = oldNode.next;
+            newNode.next = map.get(oldNext);
         }
 
-        Node newHead = head.next;
-        Node newCopy = newHead;
-
-        origin = head;
-        while (origin != null) {
-            Node nextOrigin = origin.next.next;
-
-            Node copy = origin.next;
-            Node originNext = copy.next; 
-            
-            if (originNext != null) {
-                newCopy.next = originNext.next;
-                newCopy = newCopy.next;
-            } else {
-                newCopy.next = null; // the last node 
-            }
-            origin.next = originNext; // restore
-
-            origin = nextOrigin;
-        }
-
-        return newHead;
+        return map.get(head);
     }
 }
