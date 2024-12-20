@@ -1,13 +1,12 @@
 class Solution {
-    List<List<Integer>> res;
 
     public List<List<Integer>> combine(int n, int k) {
-        res = new ArrayList<>();
-        backtracking(n, k, new ArrayList<>(), 1);
+        List<List<Integer>> res = new ArrayList<>();
+        backtracking(n, k, res, new ArrayList<>(), 1);
         return res;
     }
 
-    public void backtracking(int n, int k, List<Integer> currRes, int currNumber) {
+    public void backtracking(int n, int k, List<List<Integer>> res, List<Integer> currRes, int currNumber) {
         // 先收获，不然包含最后一个数字 n 的组合不会加入结果集
         if (currRes.size() == k) {
             res.add(new ArrayList<>(currRes));
@@ -19,7 +18,7 @@ class Solution {
 
         for (int i = currNumber; i <= n; i++) {
             currRes.add(i);
-            backtracking(n, k, currRes, i + 1);
+            backtracking(n, k, res, currRes, i + 1);
             currRes.remove(currRes.size() - 1);
         }
     }
