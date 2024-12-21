@@ -1,38 +1,46 @@
 class Solution {
     public void gameOfLife(int[][] board) {
-        int[][] directions = {{-1,-1}, {-1,0}, {-1,1}, {1,-1}, {1,0}, {1,1}, {0,-1}, {0,1}};
-
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[0].length; col++) {
-                int sum = 0;
-                for (int[] dir: directions) {
-                    int neiRow = dir[0] + row;
-                    int neiCol = dir[1] + col;
-                    if (neiRow >= 0 && neiRow < board.length && neiCol >= 0 && neiCol < board[0].length) {
-                        if (board[neiRow][neiCol] == 1 || board[neiRow][neiCol] == 3) {
-                            sum++;
-                        }
-                    }
-                }
-
-                // live become dead, set to (3), means previous state was (1) then (0)
-                if ((sum < 2 || sum > 3) && board[row][col] == 1) {
-                    board[row][col] = 3;
-                // dead become live, set to (4), means previous state was (0) then (1)
-                } else if (board[row][col] == 0 && sum == 3) {
-                    board[row][col] = 4;
+                if (alive(board, row, col) && board[row][col] == 0) {
+                    board[row][col] = 100;
+                } else if (!alive(board, row, col) && board[row][col] == 1) {
+                    board[row][col] = -1;
                 }
             }
         }
 
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[0].length; col++) {
-                if (board[row][col] == 3) {
-                    board[row][col] = 0;
-                } else if (board[row][col] == 4) {
+                if (board[row][col] == 100) {
                     board[row][col] = 1;
+                } else if (board[row][col] == -1) {
+                    board[row][col] = 0;
                 }
             }
         }
+    }
+
+    public boolean alive(int[][] board, int row, int col) {
+        int neibor = 0;
+
+        int[][] directions = {{-1,-1},{-1,0},{-1,1},{1,-1},{1,0},{1,1},{0,-1},{0,1}};
+        for (int[] direction: directions) {
+            int rowNei = row + direction[0];
+            int colNei = col + direction[1];
+            if (rowNei >= 0 && rowNei < board.length && colNei >= 0 && colNei < board[0].length) {
+                if (Math.abs(board[rowNei][colNei]) == 1) neibor++;
+            }
+        }
+        
+        if (Math.abs(board[row][col]) == 1) {
+            if (neibor < 2) return false;
+            if (neibor == 2 || neibor == 3) return true;
+            if (neibor > 3) return false;
+        } else if (Math.abs(board[row][col]) == 0) {
+            if (neibor == 3) return true;
+        }
+
+        return false;
     }
 }
