@@ -23,33 +23,26 @@ class Solution {
         if (node == null) return null;
 
         Queue<Node> queue = new LinkedList<>();
-        queue.add(node);
-
         Map<Node, Node> map = new HashMap<>();
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                Node curr = queue.poll();
-                map.put(curr, new Node(curr.val, new ArrayList<>()));
+        queue.add(node);
+         map.put(node, new Node(node.val, new ArrayList<>())); // 创建新curr
 
+        
+        while (!queue.isEmpty()) {
+           
+                Node curr = queue.poll();
+               
                 List<Node> neis = curr.neighbors;
                 if (neis == null) continue;
                 for (Node nei: neis) {
                     if (!map.containsKey(nei)) {
                         queue.add(nei);
+                        map.put(nei, new Node(nei.val, new ArrayList<>())); // 创建curr的nei的新nei
                     }
+
+                    map.get(curr).neighbors.add(map.get(nei));
                 }
-            }
-        }
-
-        for (Node oldNode: map.keySet()) {
-            List<Node> oldNeis = oldNode.neighbors;
-            if (oldNeis == null) continue;
-
-            Node newNode = map.get(oldNode);
-            for (Node oldNei: oldNeis) {
-                newNode.neighbors.add(map.get(oldNei));
-            }
+            
         }
 
         return map.get(node);
