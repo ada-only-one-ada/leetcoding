@@ -1,5 +1,10 @@
 class Solution {
     public String[] spellchecker(String[] wordlist, String[] queries) {
+        /* 
+          1、有匹配的立刻返回
+          2、优先检查大小写（有一个即可）
+          3、再检查忽略元音
+        */
         Set<String> perfect = new HashSet<>();
         Map<String, String> deCaseMap = new HashMap<>();
         Map<String, String> deVowelMap = new HashMap<>();
