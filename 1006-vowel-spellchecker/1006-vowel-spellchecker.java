@@ -12,21 +12,17 @@ class Solution {
         set.addAll(Arrays.asList('a', 'e', 'i', 'o', 'u'));
 
         for (String word: wordlist) {
-            // 完全匹配的情况
             perfect.add(word);
  
-            // 不匹配的情况
             String lowerCaseWord = word.toLowerCase();
             if (!ignoreCaseMap.containsKey(lowerCaseWord)) {
                 ignoreCaseMap.put(lowerCaseWord, word);
             }
 
-            StringBuilder tempIgnoreVowel = new StringBuilder();
-            for (char letter: lowerCaseWord.toCharArray()) {
-                if (set.contains(letter)) {
-                    tempIgnoreVowel.append('-');
-                } else {
-                    tempIgnoreVowel.append(letter);
+            StringBuilder tempIgnoreVowel = new StringBuilder(lowerCaseWord);
+            for (int i = 0; i < tempIgnoreVowel.length(); i++) {
+                if (set.contains(tempIgnoreVowel.charAt(i))) {
+                    tempIgnoreVowel.setCharAt(i, '-');
                 }
             }
 
@@ -42,17 +38,14 @@ class Solution {
             if (perfect.contains(queries[i])) {
                 res[i] = queries[i];
             } else {
-                String lowerWord = queries[i].toLowerCase();
-                if (ignoreCaseMap.containsKey(lowerWord)) {
-                    res[i] = ignoreCaseMap.get(lowerWord);
+                String lowerCaseWord = queries[i].toLowerCase();
+                if (ignoreCaseMap.containsKey(lowerCaseWord)) {
+                    res[i] = ignoreCaseMap.get(lowerCaseWord);
                 } else {
-                    StringBuilder noVowel = new StringBuilder();
-                    for (char c: queries[i].toCharArray()) {
-                        Character lowerC = Character.toLowerCase(c);
-                        if (set.contains(lowerC)) {
-                            noVowel.append('-');
-                        } else {
-                            noVowel.append(lowerC);
+                    StringBuilder noVowel = new StringBuilder(lowerCaseWord);
+                    for (int j = 0; j < noVowel.length(); j++) {
+                        if (set.contains(noVowel.charAt(j))) {
+                            noVowel.setCharAt(j, '-');
                         }
                     }
                     
