@@ -14,26 +14,20 @@ class Solution {
         for (String word: wordlist) {
             // 完全匹配的情况
             perfect.add(word);
-
+ 
             // 不匹配的情况
-            StringBuilder tempIgnoreCase = new StringBuilder();
-            StringBuilder tempIgnoreVowel = new StringBuilder();
-            for (char letter: word.toCharArray()) {
-                // 全部变成小写
-                char lowerCaseLetter = Character.toLowerCase(letter);
-
-                tempIgnoreCase.append(lowerCaseLetter);
-
-                if (set.contains(lowerCaseLetter)) {
-                    tempIgnoreVowel.append('-');
-                } else {
-                    tempIgnoreVowel.append(lowerCaseLetter);
-                }
+            String lowerCaseWord = word.toLowerCase();
+            if (!ignoreCaseMap.containsKey(lowerCaseWord)) {
+                ignoreCaseMap.put(lowerCaseWord, word);
             }
 
-            // 加入第一个即可
-            if (!ignoreCaseMap.containsKey(tempIgnoreCase.toString())) {
-                ignoreCaseMap.put(tempIgnoreCase.toString(), word);
+            StringBuilder tempIgnoreVowel = new StringBuilder();
+            for (char letter: lowerCaseWord.toCharArray()) {
+                if (set.contains(letter)) {
+                    tempIgnoreVowel.append('-');
+                } else {
+                    tempIgnoreVowel.append(letter);
+                }
             }
 
             if (!ignoreVowelMap.containsKey(tempIgnoreVowel.toString())) {
