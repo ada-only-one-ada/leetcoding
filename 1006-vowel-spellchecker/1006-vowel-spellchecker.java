@@ -1,53 +1,74 @@
 class Solution {
-    Set<String> words_perfect;
-    Map<String, String> words_cap;
-    Map<String, String> words_vow;
-
     public String[] spellchecker(String[] wordlist, String[] queries) {
-        words_perfect = new HashSet();
-        words_cap = new HashMap();
-        words_vow = new HashMap();
+        /* 
+          1、有匹配的立刻返回
+          2、优先检查大小写（有一个即可）
+          3、再检查忽略元音
+        */
+        Set<String> perfect = new HashSet<>();
+        Map<String, String> ignoreCaseMap = new HashMap<>();
+        Map<String, String> ignoreVowelMap = new HashMap<>();
+        Set<Character> set = new HashSet<>();
+        set.addAll(Arrays.asList('a', 'e', 'i', 'o', 'u'));
 
         for (String word: wordlist) {
-            words_perfect.add(word);
+            // 完全匹配的情况
+            perfect.add(word);
 
-            String wordlow = word.toLowerCase();
-            words_cap.putIfAbsent(wordlow, word);
+            // 不匹配的情况
+            StringBuilder tempIgnoreCase = new StringBuilder();
+            StringBuilder tempIgnoreVowel = new StringBuilder();
+            for (char letter: word.toCharArray()) {
+                // 全部变成小写
+                char lowerCaseLetter = Character.toLowerCase(letter);
 
-            String wordlowDV = devowel(wordlow);
-            words_vow.putIfAbsent(wordlowDV, word);
+                tempIgnoreCase.append(lowerCaseLetter);
+
+                if (set.contains(lowerCaseLetter)) {
+                    tempIgnoreVowel.append('-');
+                } else {
+                    tempIgnoreVowel.append(lowerCaseLetter);
+                }
+            }
+
+            // 加入第一个即可
+            if (!ignoreCaseMap.containsKey(tempIgnoreCase.toString())) {
+                ignoreCaseMap.put(tempIgnoreCase.toString(), word);
+            }
+
+            if (!ignoreVowelMap.containsKey(tempIgnoreVowel.toString())) {
+                ignoreVowelMap.put(tempIgnoreVowel.toString(), word);
+            }
         }
 
-        String[] ans = new String[queries.length];
-        int t = 0;
-        for (String query: queries)
-            ans[t++] = solve(query);
-        return ans;
-    }
+        String[] res = new String[queries.length];
+        Arrays.fill(res, "");
 
-    public String solve(String query) {
-        if (words_perfect.contains(query))
-            return query;
+        for (int i = 0; i < queries.length; i++) {
+            if (perfect.contains(queries[i])) {
+                res[i] = queries[i];
+            } else {
+                String lowerWord = queries[i].toLowerCase();
+                if (ignoreCaseMap.containsKey(lowerWord)) {
+                    res[i] = ignoreCaseMap.get(lowerWord);
+                } else {
+                    StringBuilder noVowel = new StringBuilder();
+                    for (char c: queries[i].toCharArray()) {
+                        Character lowerC = Character.toLowerCase(c);
+                        if (set.contains(lowerC)) {
+                            noVowel.append('-');
+                        } else {
+                            noVowel.append(lowerC);
+                        }
+                    }
+                    
+                    if (ignoreVowelMap.containsKey(noVowel.toString())) {
+                        res[i] = ignoreVowelMap.get(noVowel.toString());
+                    }
+                }
+            }
+        }
 
-        String queryL = query.toLowerCase();
-        if (words_cap.containsKey(queryL))
-            return words_cap.get(queryL);
-
-        String queryLV = devowel(queryL);
-        if (words_vow.containsKey(queryLV))
-            return words_vow.get(queryLV);
-
-        return "";
-    }
-
-    public String devowel(String word) {
-        StringBuilder ans = new StringBuilder();
-        for (char c: word.toCharArray())
-            ans.append(isVowel(c) ? '*' : c);
-        return ans.toString();
-    }
-
-    public boolean isVowel(char c) {
-        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+        return res;
     }
 }
