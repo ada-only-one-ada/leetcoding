@@ -1,67 +1,37 @@
 class Solution {
     public int maxSubarraySumCircular(int[] nums) {
-        /*
-          1、正常情况
-          2、取两边最大（即找到连续子数组的和最小，总sum-最小子数组和即为答案）
-          3、全是负数的情况
-        */        
+        // 1. 检查是否同53题一样无环的情况，最大连续子序和，那我们直接找最大的就行
+        // 2. 检查最大是否结果在两边的环，那我们找到情况1中最小连续子序和，总sum减掉它即为两边的最大连续子序列和
+        // 3. 如果nums中所有元素都是负数，我们直接返回情况1中最大连续子序和。如果按照情况2中，减掉一个负数，反而变成负负得正了
 
-        // [-3,-2,-3]
-        int total = getTotalSum(nums); // -8
-        int maxSub = getMaxSubarraySum(nums); // -2
-        int minSub = getMinSubarraySum(nums); // -8
+        // 因为下面的loop从1开始，我们要检查len为1的情况
+        if (nums.length == 1) return nums[0];
+        int totalSum = nums[0];
 
-        int res = Integer.MIN_VALUE;
-        res = Math.max(res, maxSub);        
-        res = Math.max(res, total == minSub ? getMinNum(nums) : total - minSub);
-        return res;
-    }
+        int maxSum = Integer.MIN_VALUE;
+        int minSum = Integer.MAX_VALUE;
 
-    public int getTotalSum(int[] nums) {
-        int sum = 0;
-        for (int num: nums) {
-            sum += num;
-        }
-        return sum;
-    }
-
-    public int getMinNum(int[] nums) {
-        int minNum = Integer.MAX_VALUE;
-        for (int num: nums) {
-            minNum = Math.min(minNum, num);
-        }
-        return minNum;
-    }
-
-    public int getMaxSubarraySum(int[] nums) {
-        int res = Integer.MIN_VALUE;
-
-        int prevSum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= prevSum + nums[i]) {
-                prevSum = nums[i];
+        int currMaxSum = nums[0];
+        int currMinSum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (currMaxSum + nums[i] > nums[i]) {
+                currMaxSum += nums[i];
             } else {
-                prevSum += nums[i];
+                currMaxSum = nums[i];
             }
+            maxSum = Math.max(maxSum, currMaxSum);
 
-            res = Math.max(res, prevSum);
-        }
-        return res;
-    }
-
-    public int getMinSubarraySum(int[] nums) {
-        int res = Integer.MAX_VALUE;
-
-        int prevSum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (prevSum + nums[i] < nums[i]) {
-                prevSum += nums[i];
+            if (currMinSum + nums[i] < nums[i]) {
+                currMinSum += nums[i];
             } else {
-                prevSum = nums[i];
+                currMinSum = nums[i];
             }
+            minSum = Math.min(minSum, currMinSum);
 
-            res = Math.min(res, prevSum);
+            totalSum += nums[i];
         }
-        return res;
+
+        if (totalSum == minSum) return maxSum;
+        return Math.max(maxSum, totalSum - minSum);
     }
 }
