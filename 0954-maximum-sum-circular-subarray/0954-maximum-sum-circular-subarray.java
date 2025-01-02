@@ -12,10 +12,12 @@ class Solution {
         int minSubarraySum = getMinSubarraySum(nums); // -8
 
         int res = Integer.MIN_VALUE;
-        res = Math.max(res, maxSubarraySum);        
+        res = Math.max(res, maxSubarraySum);   
+        // 非全是负数的情况     
         if (totalSum != minSubarraySum) res = Math.max(res, totalSum - minSubarraySum);
+        // 全是负数的情况
         if (totalSum == minSubarraySum) res = Math.max(res, getMinNum(nums));
-        
+
         return res;
     }
 
