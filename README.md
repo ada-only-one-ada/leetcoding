@@ -338,6 +338,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/Adagggggg/leetcoding/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adagggggg/leetcoding/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0021-merge-two-sorted-lists) |
+| [0023-merge-k-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0023-merge-k-sorted-lists) |
 | [0061-rotate-list](https://github.com/Adagggggg/leetcoding/tree/master/0061-rotate-list) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Adagggggg/leetcoding/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0086-partition-list](https://github.com/Adagggggg/leetcoding/tree/master/0086-partition-list) |
@@ -792,6 +793,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
@@ -1045,6 +1047,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
@@ -1324,4 +1327,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
 | [3363-most-frequent-ids](https://github.com/Adagggggg/leetcoding/tree/master/3363-most-frequent-ids) |
+## Merge Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
