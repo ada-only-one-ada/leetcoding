@@ -1004,6 +1004,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/Adagggggg/leetcoding/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
+| [0172-factorial-trailing-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0172-factorial-trailing-zeroes) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
