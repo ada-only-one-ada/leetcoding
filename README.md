@@ -182,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/Adagggggg/leetcoding/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
@@ -454,6 +455,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0508-most-frequent-subtree-sum](https://github.com/Adagggggg/leetcoding/tree/master/0508-most-frequent-subtree-sum) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
@@ -679,6 +681,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0392-is-subsequence) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -987,6 +990,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/Adagggggg/leetcoding/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Adagggggg/leetcoding/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
@@ -1125,6 +1129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Adagggggg/leetcoding/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
@@ -1232,6 +1237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/Adagggggg/leetcoding/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Adagggggg/leetcoding/tree/master/0210-course-schedule-ii) |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
@@ -1320,6 +1326,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Shortest Path
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Ordered Set
