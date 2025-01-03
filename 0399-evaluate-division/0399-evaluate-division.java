@@ -15,8 +15,8 @@ class Solution {
             map.get(num1).put(num2, value);
             map.get(num2).put(num1, 1 / value);
 
-            //map.get(num1).put(num1, 1.0);
-            //map.get(num2).put(num2, 1.0);
+            // map.get(num1).put(num1, 1.0);
+            // map.get(num2).put(num2, 1.0);
         }
 
         double[] res = new double[queries.size()];
@@ -45,7 +45,6 @@ class Solution {
             set.remove(num1);
         }
         
-
         return -1.0;
     }
 }
