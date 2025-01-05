@@ -15,34 +15,27 @@ class Solution {
         [11,10,13]   
         */
 
-        List<Integer> dp = new ArrayList<>();
-        dp.add(triangle.get(0).get(0));
+        int[] dp = new int[triangle.size()];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = triangle.get(0).get(0);
 
         for (int row = 1; row < triangle.size(); row++) {
-            List<Integer> temp = new ArrayList<>();
-            for (int col = 0; col <= row; col++) {
+            for (int col = row; col >= 0; col--) {
                 int number = triangle.get(row).get(col);
                 int minPathSum = Integer.MAX_VALUE;
 
-                if (col - 1 >= 0) {
-                    minPathSum = Math.min(minPathSum, number + dp.get(col - 1));
-                }
+                if (col - 1 >= 0) minPathSum = Math.min(minPathSum, number + dp[col - 1]);
+                if (dp[col] != Integer.MAX_VALUE) minPathSum = Math.min(minPathSum, number + dp[col]);
 
-                if (col < dp.size()) {
-                    minPathSum = Math.min(minPathSum, number + dp.get(col));
-                }
-
-                temp.add(minPathSum);
+                dp[col] = minPathSum;
             }
-
-            dp = temp;
         }
 
-        int res = Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
         for (int sum: dp) {
-            res = Math.min(res, sum);
+            min = Math.min(min, sum);
         }
 
-        return res;
+        return min;
     }
 }
