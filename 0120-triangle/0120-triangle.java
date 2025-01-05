@@ -3,9 +3,10 @@ class Solution {
         int[] dp = new int[triangle.size() + 1];
         int sum = 0;
         
-        for (int i = triangle.size()-1; i >= 0; i--){
-            for (int j = 0; j <= i; j++){
-                dp[j] = triangle.get(i).get(j) + Math.min(dp[j], dp[j+1]);
+        for (int row = triangle.size() - 1; row >= 0; row--){
+            for (int col = 0; col <= row; col++){
+                int number = triangle.get(row).get(col);
+                dp[col] = number + Math.min(dp[col], dp[col + 1]);
             }
         }
          
