@@ -24,11 +24,6 @@ class Solution {
             }
         }
 
-        int sum = 0;
-        while (!stack.isEmpty()) {
-            sum += stack.pop();
-        }
-
-        return sum;
+        return stack.peek();
     }
 }
