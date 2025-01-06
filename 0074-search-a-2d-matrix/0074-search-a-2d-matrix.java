@@ -22,6 +22,7 @@ class Solution {
                 } else if (matrix[midRow][midCol] < target) {
                     startCol = midCol + 1;
                 }
+                // 把这个loop里的最后一个数字先存下来，避免 startCol 越界
                 lastNum = matrix[midRow][midCol];
             }
 
