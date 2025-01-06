@@ -1,46 +1,41 @@
 class Solution {
     public String simplifyPath(String path) {
-        Stack<String> stack = new Stack<>();
-        StringBuilder temp = new StringBuilder();
-        int numOfDots = 0;
-        path += '/'; // 这样可以确保最后一个 local path也可以被收获
+        /* 
+        . 表示当前路径
+        .. 表示上一级路径
+        // 或者 /// 相当于一个 /
+        3个或以上的 . 为一个合法路径
 
-        for (int i = 0; i < path.length(); i++) {
-            char curr = path.charAt(i);
+        必须 / 开头
+        不同的path 用 一个 / 隔开
+        不能以 / 结束，除非是 root 
+        3个以下的 . 不是合法路径
 
-            if (curr == '/') {
-                // 重复的 '/' 可以跳过
-                if (i > 0 && path.charAt(i - 1) == '/') continue; 
+        /home//foo/ 
+        ['home', '', 'foo']
+        */
+        String[] paths = path.split("/");
+        Stack<String> stack = new Stack();
 
-                // 全是 dots 且只有两个 dots 且 stack 不为空，上一级path可以移除
-                if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
-                    stack.pop();
-                // 全是 dots 且 dots 数量多于 3个，或者不全是 dots的情况，加入 stack
-                } else if (numOfDots >= 3 || numOfDots != temp.length()) {
-                    stack.push(temp.toString());
-                }
-
-                temp.setLength(0);
-                numOfDots = 0;
-            } else {
-                temp.append(curr);
-                if (curr == '.') numOfDots++;
+        for (int i = 0; i < paths.length; i++) {
+            if (paths[i].equals("..") && !stack.isEmpty()) {
+                stack.pop();
+            } else if (paths[i].length() == 0) {
+                continue;
+            } else if (paths[i].equals(".")) {
+                continue;
+            } else if (!paths[i].equals("..")) {
+                stack.push(paths[i]);
             } 
         }
 
-        /*
-        if (numOfDots == 2 && numOfDots == temp.length() && !stack.isEmpty()) {
-            stack.pop();
-        } else if (numOfDots >= 3 || numOfDots != temp.length()) {
-            stack.push(temp.toString());
-        }
-        */
+        String res = "";
 
-        StringBuilder res = new StringBuilder();
         while (!stack.isEmpty()) {
-            res.insert(0, "/" + stack.pop());
+            res = stack.pop() + "/" + res;
         }
-
-        return res.length() == 0? "/" : res.toString();
+        
+        if (res.length() > 1) return  "/" + res.substring(0, res.length() - 1);
+        return "/" + res;
     }
 }
