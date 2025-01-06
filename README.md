@@ -134,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0035-search-insert-position](https://github.com/Adagggggg/leetcoding/tree/master/0035-search-insert-position) |
 | [0036-valid-sudoku](https://github.com/Adagggggg/leetcoding/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/Adagggggg/leetcoding/tree/master/0039-combination-sum) |
+| [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/Adagggggg/leetcoding/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/Adagggggg/leetcoding/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/Adagggggg/leetcoding/tree/master/0049-group-anagrams) |
@@ -359,6 +360,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0071-simplify-path](https://github.com/Adagggggg/leetcoding/tree/master/0071-simplify-path) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0144-binary-tree-preorder-traversal) |
@@ -761,6 +763,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Adagggggg/leetcoding/tree/master/0005-longest-palindromic-substring) |
+| [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
 | [0097-interleaving-string](https://github.com/Adagggggg/leetcoding/tree/master/0097-interleaving-string) |
@@ -897,6 +900,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adagggggg/leetcoding/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/Adagggggg/leetcoding/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/Adagggggg/leetcoding/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Adagggggg/leetcoding/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -1275,6 +1279,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
