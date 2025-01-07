@@ -19,7 +19,7 @@ class Solution {
             if (currStart <= prevEnd) {
                 prevEnd = Math.min(prevEnd, currEnd);
             } else {
-                prevEnd = Math.max(prevEnd, currEnd);
+                prevEnd = currEnd;
                 res++;
             }
         }
