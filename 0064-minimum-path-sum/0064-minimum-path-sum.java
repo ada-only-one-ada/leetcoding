@@ -20,12 +20,12 @@ class Solution {
             if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length) continue;
             
             String state = row + " " + col;
-            int newSum = sum + grid[row][col];
+            int nextSum = sum + grid[row][col];
 
-            if (!map.containsKey(state) || newSum < map.get(state)) {
-                queue.add(new int[]{row + 1, col, newSum});
-                queue.add(new int[]{row, col + 1, newSum});
-                map.put(state, newSum);
+            if (!map.containsKey(state) || nextSum < map.get(state)) {
+                queue.add(new int[]{row + 1, col, nextSum});
+                queue.add(new int[]{row, col + 1, nextSum});
+                map.put(state, nextSum);
             }
         }
 
