@@ -16,7 +16,6 @@ class Solution {
             list.add(intervals[index]);
             index++;
         }
-
       
         while (index < intervals.length && intervals[index][0] <= insertEnd) {
             insertStart = Math.min(insertStart, intervals[index][0]);
