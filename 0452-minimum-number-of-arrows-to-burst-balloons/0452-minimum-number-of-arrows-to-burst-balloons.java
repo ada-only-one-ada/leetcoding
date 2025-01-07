@@ -17,9 +17,12 @@ class Solution {
             // 没有重叠，需要额外的一支箭
             if (currStart > prevEnd) {
                 res++;
-                prevEnd = Math.max(prevEnd, currEnd);
+                // 新开的尽量远
+                // 这里的 currEnd 一定是比 prevEnd 大的，因为 currStart 就已经比 prevEnd 大了
+                prevEnd = currEnd;
             // 有重叠
             } else {
+                // 只能在重叠的最大点，即较小的那个
                 prevEnd = Math.min(prevEnd, currEnd);
             }
         }
