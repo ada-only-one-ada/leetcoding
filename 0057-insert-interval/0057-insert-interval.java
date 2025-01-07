@@ -3,9 +3,7 @@ class Solution {
         // 读题目：You are given an array of non-overlapping intervals
         
         if (intervals.length == 0) return new int[][]{newInterval};
-        Arrays.sort(intervals, (a, b) -> {
-            return a[0] - b[0];
-        });
+       
 
         List<int[]> list = new ArrayList<>();
         int insertStart = newInterval[0];
