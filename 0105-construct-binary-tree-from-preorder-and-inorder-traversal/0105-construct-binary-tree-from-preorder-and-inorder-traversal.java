@@ -17,6 +17,7 @@ class Solution {
 
         TreeNode root = new TreeNode(rootValue);
         root.left = helper(preorder, preRootIndex + 1, inorder, inStart, inRootIndex - 1);
+        // 注意判断左子树的节点数量，需要减去 inStart，而不是仅仅用 inRootIndex - 0 判断
         root.right = helper(preorder, preRootIndex + 1 + (inRootIndex - inStart), inorder, inRootIndex + 1, inEnd);
 
         return root;
