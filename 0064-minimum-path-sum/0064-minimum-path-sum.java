@@ -23,7 +23,10 @@ class Solution {
                 int nextRow = row + direction[0];
                 int nextCol = col + direction[1];
 
+                // 越界了，不走
                 if (nextRow >= grid.length || nextCol >= grid[0].length) continue;
+
+                // 已经走过，且之前走的花费更小，不走
                 String state = nextRow + " " + nextCol;
                 int nextSum = sum + grid[nextRow][nextCol];
                 if (map.containsKey(state) && nextSum >= map.get(state)) continue;
