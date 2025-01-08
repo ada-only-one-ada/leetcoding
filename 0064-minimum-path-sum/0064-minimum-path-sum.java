@@ -1,41 +1,26 @@
 class Solution {
     public int minPathSum(int[][] grid) {
-        // 只能走 down 或者 right  
-        // 左上走到右下
-        int[][] directions = new int[][]{{1,0}, {0,1}};
-
-        Queue<int[]> queue = new PriorityQueue<>((a, b) -> {
-            return a[2] - b[2];
-        });
-
-        queue.add(new int[]{0, 0, grid[0][0]});
-        Map<String, Integer> map = new HashMap<>();
-
-        while (!queue.isEmpty()) {
-            int[] curr = queue.poll();
-            int row = curr[0];
-            int col = curr[1];
-            int sum = curr[2];
-
-            if (row == grid.length - 1 && col == grid[0].length - 1) return sum;
-            
-            for (int[] direction: directions) {
-                int nextRow = row + direction[0];
-                int nextCol = col + direction[1];
-
-                // 越界了，不走
-                if (nextRow >= grid.length || nextCol >= grid[0].length) continue;
-
-                // 已经走过，且之前走的花费更小，不走
-                String state = nextRow + " " + nextCol;
-                int nextSum = sum + grid[nextRow][nextCol];
-                if (map.containsKey(state) && nextSum >= map.get(state)) continue;
-
-                queue.add(new int[]{nextRow, nextCol, nextSum});
-                map.put(state, nextSum);
+        int rowNum = grid.length;
+        int colNum = grid[0].length;
+        int[][] dp = new int[rowNum][colNum];
+        
+        for (int row = 0; row < rowNum; row++) {
+            for (int col = 0; col < colNum; col++) {
+                // 左上第一个格子，花费是它本身
+                if (row == 0 && col == 0) {
+                    dp[row][col] = grid[row][col];
+                // 第一行，只能由左边走过来
+                } else if (row == 0 && col > 0) {
+                    dp[row][col] = dp[row][col - 1] + grid[row][col];
+                // 第一列，只能由上面走下来
+                } else if (col == 0 && row > 0) {
+                    dp[row][col] = dp[row - 1][col] + grid[row][col];
+                } else {
+                    dp[row][col] = Math.min(dp[row - 1][col] + grid[row][col], dp[row][col - 1] + grid[row][col]);
+                }
             }
         }
 
-        return Integer.MAX_VALUE;
-    }
+        return dp[rowNum - 1][colNum - 1];
+    } 
 }
