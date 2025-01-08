@@ -10,13 +10,14 @@ class Solution {
                 if (row == 0 && col == 0) {
                     dp[row][col] = grid[row][col];
                 // 第一行，只能由左边走过来
-                } else if (row == 0 && col > 0) {
+                } else if (row == 0) {
                     dp[row][col] = dp[row][col - 1] + grid[row][col];
                 // 第一列，只能由上面走下来
-                } else if (col == 0 && row > 0) {
+                } else if (col == 0) {
                     dp[row][col] = dp[row - 1][col] + grid[row][col];
+                // 其他情况：可以由左边或者上面走下来
                 } else {
-                    dp[row][col] = Math.min(dp[row - 1][col] + grid[row][col], dp[row][col - 1] + grid[row][col]);
+                    dp[row][col] = Math.min(dp[row][col - 1] + grid[row][col], dp[row - 1][col] + grid[row][col]);
                 }
             }
         }
