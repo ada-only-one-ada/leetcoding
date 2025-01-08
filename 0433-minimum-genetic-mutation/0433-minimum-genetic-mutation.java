@@ -13,24 +13,23 @@ class Solution {
 
         while (!queue.isEmpty()) {
             Pair<String, Integer> curr = queue.poll();
-            String gene = curr.getKey();
-            int mutation = curr.getValue();
+            String currGene = curr.getKey();
+            int currMutation = curr.getValue();
 
-            if (gene.equals(endGene)) return mutation;
-            if (visited.contains(gene)) continue;
+            if (currGene.equals(endGene)) return currMutation;
+            if (visited.contains(currGene)) continue;
 
             for (int i = 0; i < 8; i++) {
-                StringBuilder newGene = new StringBuilder(gene);
-
+                StringBuilder newGene = new StringBuilder(currGene);
                 for (char c: letters) {
                     newGene.setCharAt(i, c);
                     if (set.contains(newGene.toString())) {
-                        queue.add(new Pair(newGene.toString(), mutation + 1));
+                        queue.add(new Pair(newGene.toString(), currMutation + 1));
                     }
                 }
             }
 
-            visited.add(gene);
+            visited.add(currGene);
         }
 
         return -1;
