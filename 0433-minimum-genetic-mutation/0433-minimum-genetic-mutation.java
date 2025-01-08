@@ -12,13 +12,14 @@ class Solution {
                 map.get(s).add(startGene);
             }
         }
-        buildGraph(map, bank);
 
+        buildGraph(map, bank);
         if (!map.containsKey(endGene)) return -1;
+
         Queue<Pair<String, Integer>> queue = new LinkedList<>();
 
         queue.add(new Pair(startGene, 0));
-        Set<String> set = new HashSet<>();
+        Set<String> visited = new HashSet<>();
 
         while (!queue.isEmpty()) {
             Pair<String, Integer> curr = queue.poll();
@@ -26,15 +27,14 @@ class Solution {
             int mutation = curr.getValue();
 
             if (gene.equals(endGene)) return mutation;
-            if (set.contains(gene)) continue;
+            if (visited.contains(gene)) continue;
 
             if (map.get(gene) == null) continue;
-
             for (String nextGene: map.get(gene)) {
                 queue.add(new Pair(nextGene, mutation + 1));
             }
 
-            set.add(gene);
+            visited.add(gene);
         }
 
         return -1;
