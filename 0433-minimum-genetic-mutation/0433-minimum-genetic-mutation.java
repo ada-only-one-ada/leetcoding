@@ -1,38 +1,79 @@
 class Solution {
     public int minMutation(String startGene, String endGene, String[] bank) {
-        char[] letters = {'A', 'C', 'G', 'T'};
-
-        Set<String> remainingGene = new HashSet<>(Arrays.asList(bank));
-        if (remainingGene.isEmpty() || !remainingGene.contains(endGene)) {
-            return -1;
+        Set<String> bankSet = new HashSet<>();
+        for (String s: bank) {
+            bankSet.add(s);
         }
+        if (startGene.equals(endGene)) return 0;
+        if (!bankSet.contains(endGene)) return -1;
 
-        Queue<String> queue = new LinkedList<>();
-        queue.offer(startGene);
-        int level = 0;
+        Map<String, List<String>> map = new HashMap<>();
+        buildGraph(map, bank, startGene);
+        
+        
+        Queue<Pair<String, Integer>> queue = new LinkedList<>();
+
+        queue.add(new Pair(startGene, 0));
+        Set<String> set = new HashSet<>();
 
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                String currGene = queue.poll();
-                if (currGene.equals(endGene)) {
-                    return level;
-                }
+            Pair<String, Integer> curr = queue.poll();
+            String gene = curr.getKey();
+            int mutation = curr.getValue();
 
-                for (int replaceIndex = 0; replaceIndex < currGene.length(); replaceIndex++) {
-                    for (char letter: letters) {
-                        String newGene = currGene.substring(0, replaceIndex) + letter + currGene.substring(replaceIndex + 1);
+            if (gene.equals(endGene)) return mutation;
+            if (set.contains(gene)) continue;
 
-                        if (remainingGene.contains(newGene)) {
-                            queue.add(newGene);
-                            remainingGene.remove(newGene);
-                        }
-                    }
-                }
+            if (map.get(gene) == null) continue;
+
+            for (String nextGene: map.get(gene)) {
+                queue.add(new Pair(nextGene, mutation + 1));
             }
-            level++;
+
+            set.add(gene);
         }
 
         return -1;
+    }
+
+    public void buildGraph(Map<String, List<String>> map, String[] bank, String startGene) {
+        for (int i = 0; i < bank.length; i++) {
+            for (int j = 0; j < bank.length; j++) {
+                if (bank[i].equals(bank[j])) continue;
+                if (bank[i].length() != bank[j].length()) continue;
+
+                int diff = 0;
+                for (int index = 0; index < bank[i].length(); index++) {
+                    if (bank[i].charAt(index) != bank[j].charAt(index)) {
+                        diff++;
+                    }
+                }
+
+                if (diff == 1) {
+                    map.putIfAbsent(bank[i], new ArrayList<>());
+                    map.putIfAbsent(bank[j], new ArrayList<>());
+                    map.get(bank[i]).add(bank[j]);
+                    map.get(bank[j]).add(bank[i]);
+                }
+            }
+
+            for (int j = 0; j < startGene.length(); j++) {
+                if (bank[i].length() != startGene.length()) continue;
+
+                int diff = 0;
+                for (int index = 0; index < bank[i].length(); index++) {
+                    if (bank[i].charAt(index) != startGene.charAt(index)) {
+                        diff++;
+                    }
+                }
+
+                if (diff == 1) {
+                    map.putIfAbsent(bank[i], new ArrayList<>());
+                    map.putIfAbsent(startGene, new ArrayList<>());
+                    map.get(bank[i]).add(startGene);
+                    map.get(startGene).add(bank[i]);
+                }
+            }
+        } 
     }
 }
