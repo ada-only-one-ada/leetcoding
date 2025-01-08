@@ -43,9 +43,8 @@ class Solution {
     public void buildGraph(Map<String, List<String>> map, String[] bank) {
         for (int i = 0; i < bank.length; i++) {
             for (int j = 0; j < bank.length; j++) {
+                if (i == j) continue;
                 if (hasOneDiff(bank[i], bank[j])) {
-                    map.putIfAbsent(bank[i], new ArrayList<>());
-                    map.putIfAbsent(bank[j], new ArrayList<>());
                     map.get(bank[i]).add(bank[j]);
                     map.get(bank[j]).add(bank[i]);
                 }
