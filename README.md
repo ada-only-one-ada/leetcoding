@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/Adagggggg/leetcoding/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0054-spiral-matrix) |
+| [0055-jump-game](https://github.com/Adagggggg/leetcoding/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/Adagggggg/leetcoding/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/Adagggggg/leetcoding/tree/master/0063-unique-paths-ii) |
@@ -792,6 +793,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/Adagggggg/leetcoding/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/Adagggggg/leetcoding/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Adagggggg/leetcoding/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
@@ -1001,6 +1003,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Adagggggg/leetcoding/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/Adagggggg/leetcoding/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Adagggggg/leetcoding/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0134-gas-station](https://github.com/Adagggggg/leetcoding/tree/master/0134-gas-station) |
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
