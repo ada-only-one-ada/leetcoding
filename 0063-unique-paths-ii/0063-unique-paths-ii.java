@@ -4,24 +4,25 @@ class Solution {
         int colNum = obstacleGrid[0].length;
         int[][] dp = new int[rowNum][colNum];
 
-        for (int row = 0; row < rowNum; row++) {
-            for (int col = 0; col < colNum; col++) {
-                if (obstacleGrid[row][col] == 1) {
+        for (int row = rowNum - 1; row >= 0; row--) {               // order matters:
+            for (int col = colNum - 1; col >= 0; col--) {
+                if (obstacleGrid[row][col] == 1) {                  // 有障碍
                     dp[row][col] = 0;
-                } else {
-                    if (row > 0 && col > 0) {
-                        dp[row][col] = dp[row - 1][col] + dp[row][col - 1];
-                    } else if (row > 0) {
-                        dp[row][col] = dp[row - 1][col];
-                    } else if (col > 0){
-                        dp[row][col] = dp[row][col - 1];
+                } else {                                            // 没障碍
+                    if (row == rowNum - 1 && col == colNum - 1){    // 终点
+                        dp[row][col] = 1; 
+                    } else if (row == rowNum - 1) {                 // 最后一行
+                        dp[row][col] = dp[row][col + 1];
+                    } else if (col == colNum - 1) {                 // 最后一列
+                        dp[row][col] = dp[row + 1][col];
                     } else {
-                        dp[row][col] = 1;
-                    }
-                } 
+                        dp[row][col] = dp[row + 1][col] + dp[row][col + 1]; // 其他
+                    }                          
+
+                }
             }
         }
-
-        return dp[rowNum - 1][colNum - 1];
+        
+        return dp[0][0];
     }
 }
