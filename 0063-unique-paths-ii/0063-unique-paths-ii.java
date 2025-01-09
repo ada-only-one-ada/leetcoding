@@ -14,16 +14,16 @@ class Solution {
                     // 终点                                       
                     if (row == rowNum - 1 && col == colNum - 1){   
                         dp[row][col] = 1; 
-                    // 其他
-                    } else if (row < rowNum -1 && col < colNum - 1) {
-                        dp[row][col] = dp[row + 1][col] + dp[row][col + 1]; 
                     // 最后一行
                     } else if (row == rowNum - 1) {                 
                         dp[row][col] = dp[row][col + 1];
                     // 最后一列
                     } else if (col == colNum - 1) {                 
                         dp[row][col] = dp[row + 1][col];
-                    }                     
+                    // 其他
+                    } else {
+                        dp[row][col] = dp[row + 1][col] + dp[row][col + 1];  
+                    }                
                 }
             }
         }
