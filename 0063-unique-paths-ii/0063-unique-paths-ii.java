@@ -10,21 +10,23 @@ class Solution {
         // 到达起点的位置的方式有一种
         dp[0][0] = 1;
         
-        // 第一列，看上方是否有障碍物，或者自己本身是不是障碍物，没有就是一种
+        // 第一列，看上方是否有障碍物，或者自己本身是不是障碍物，没有障碍物就是一种
         for (int row = 1; row < rowNum; row++) {
             dp[row][0] = obstacleGrid[row][0] == 1 || dp[row - 1][0] == 0 ? 0 : 1;
         }
 
-        // 第一行，看左边是否有障碍物，或者自己本身是不是障碍物，没有就是一种
+        // 第一行，看左边是否有障碍物，或者自己本身是不是障碍物，没有障碍物就是一种
         for (int col = 1; col < colNum; col++) {
             dp[0][col] = obstacleGrid[0][col] == 1 || dp[0][col - 1] == 0 ? 0 : 1;
         }
 
         for (int row = 1; row < rowNum; row++) {
             for (int col = 1; col < colNum; col++) {
+                // 如果自己本身是障碍物，或者左边和上方都没有路走下来的，就是0种
                 if (obstacleGrid[row][col] == 1 || (dp[row-1][col] == 0 && dp[row][col - 1] == 0)) {
                     dp[row][col] = 0;
                 } else {
+                    // 否则等于左边来的方法 + 上边来的方法
                     dp[row][col] = dp[row - 1][col] + dp[row][col - 1];
                 }
             }
