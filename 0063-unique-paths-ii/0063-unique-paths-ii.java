@@ -18,7 +18,7 @@ class Solution {
 
         for (int row = 1; row < rowNum; row++) {
             for (int col = 1; col < colNum; col++) {
-                if (obstacleGrid[row][col] == 1 || (dp[row-1][col] == 0 && dp[row][col - 1] == 0)) {
+                if (obstacleGrid[row][col] == 1 ) {
                     dp[row][col] = 0;
                 } else {
                     dp[row][col] = dp[row - 1][col] + dp[row][col - 1];
