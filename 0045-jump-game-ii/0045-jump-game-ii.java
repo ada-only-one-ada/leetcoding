@@ -1,31 +1,23 @@
 class Solution {
     public int jump(int[] nums) {
-        if (nums.length <= 1) return 0; // 如果数组长度为1或更小，则不需要跳跃
-
-        int steps = 0; // 跳跃次数
-        int currFar = 0; // 当前步骤能达到的最远距离
-        int nextFar = 0; // 下一步能达到的最远距离
-        int i = 0; // 用来遍历数组
-
-        // 我们不需要遍历最后一个元素，因为在达到最后一个元素之前就已经停止循环
-        while (i < nums.length - 1) {
-            // 更新下一步的最远距离
-            nextFar = Math.max(nextFar, i + nums[i]);
-            
-            // 如果当前索引达到当前步的最远距离，我们需要进行一次新的跳跃
-            if (i == currFar) {
-                steps++; // 增加跳跃次数
-                currFar = nextFar; // 更新当前最远距离
-
-                // 如果当前最远距离已经可以到达或超过最后一个索引，直接返回跳跃次数
-                if (currFar >= nums.length - 1) {
-                    return steps;
-                }
+        if (nums.length == 0) return 0; // start is the destination, no need to move
+        int steps = 0;
+        
+        int start = 0;
+        int currFar = 0;
+        int nextFar = 0;
+        while (currFar < nums.length - 1) { // we don't need to iterate the last element: destination
+            for (int i = start; i <= currFar; i++) { // 当前覆盖范围，可以走到的最远的地方，即记录下一次可以跳的覆盖范围
+                nextFar = Math.max(i + nums[i], nextFar);
             }
 
-            i++; // 继续遍历数组
+            start = currFar + 1; // start++ is also working
+            steps++; // 当前覆盖范围走不动了，要开始下一个覆盖范围
+            currFar = nextFar;
+            if (currFar >= nums.length - 1) break;
+           
         }
 
-        return steps;
+        return steps;   
     }
 }
