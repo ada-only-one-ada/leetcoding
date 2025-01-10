@@ -1,7 +1,7 @@
 class Solution {
     public int jump(int[] nums) {
+        // 这里不需要 priority queue，因为每次走都一步，越晚加入的肯定花费越大
         Queue<int[]> queue = new LinkedList<>();
-
         Map<Integer, Integer> map = new HashMap<>();
 
         // start at index 0, cost 0.
@@ -13,9 +13,10 @@ class Solution {
 
             if (currIndex >= nums.length - 1) return currCost;
             for (int i = currIndex + 1; i <= currIndex + nums[currIndex]; i++) {
-                if (!map.containsKey(i) || currCost + 1 < map.get(i)) {
-                    queue.add(new int[]{i, currCost + 1});
-                    map.put(i, currCost + 1);
+                int nextCost = currCost + 1;
+                if (!map.containsKey(i) || nextCost < map.get(i)) {
+                    queue.add(new int[]{i, nextCost});
+                    map.put(i, nextCost);
                 }
             }
         }
