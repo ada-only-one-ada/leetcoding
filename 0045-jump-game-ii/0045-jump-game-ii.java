@@ -1,8 +1,6 @@
 class Solution {
     public int jump(int[] nums) {
-        Queue<int[]> queue = new PriorityQueue<>((a, b) -> {
-            return a[1] - b[1];
-        });
+        Queue<int[]> queue = new LinkedList<>();
 
         Map<Integer, Integer> map = new HashMap<>();
 
