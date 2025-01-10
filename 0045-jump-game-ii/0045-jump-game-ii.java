@@ -1,6 +1,8 @@
 class Solution {
     public int jump(int[] nums) {
-        if (nums.length == 0) return 0; // 如果数组长度为0，直接返回0（虽然题目默认至少有一个元素）
+        // 如果数组长度为0，直接返回 0（虽然题目默认至少有一个元素）
+        if (nums.length == 0) return 0; 
+
         int res = 0;
         
         int currentStart = 0;
