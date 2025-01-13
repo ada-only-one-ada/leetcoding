@@ -5,10 +5,9 @@ class Solution {
         int res = 0;  // 用来记录跳跃次数
         int currEnd = 0;  // 当前跳能达到的最远位置
         int nextEnd = 0;  // 下一跳能达到的最远位置
-        int i = 0;  // 数组索引，用于遍历数组
 
         // 循环条件是当前最远位置小于数组最后一个元素的索引
-        while (currEnd < nums.length - 1) {
+        for (int i = 0; i < nums.length - 1; i++) {
             // 更新下一跳能达到的最远位置
             nextEnd = Math.max(nextEnd, i + nums[i]);
 
@@ -22,8 +21,6 @@ class Solution {
                 res++;
                 currEnd = nextEnd;
             }
-            // 移动索引，继续向前探索
-            i++;
         }
         
         return res;  // 返回需要的最小跳跃次数
