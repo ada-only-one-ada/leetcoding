@@ -1,32 +1,33 @@
 class Solution {
     public void nextPermutation(int[] nums) {
-        int lowerIndex = nums.length - 2;
-        while (lowerIndex >= 0 && nums[lowerIndex] >= nums[lowerIndex + 1]) {
-            lowerIndex--;
+        // 5,4,3,2,1 从右往左全部都是递增，这种情况下已经是最大的了，返回1,2,3,4,5
+        // 1,1,5,4,3 -> 1,3,1,4,5
+
+        int i = nums.length - 2;
+        while (i >= 0 && nums[i] >= nums[i + 1]) {
+            i--;
         }
 
-        if (lowerIndex < 0) { 
-            reverse(nums, 0, nums.length - 1);
+        if (i < 0) {
+            Arrays.sort(nums);
             return;
         }
 
-        int higherIndex = nums.length - 1;
-        while (higherIndex >= 0 && nums[higherIndex] <= nums[lowerIndex]) {
-            higherIndex--;
+        int j = nums.length - 1;
+        while (j >= 0 && nums[j] <= nums[i]) {
+            j--;
         }
 
-        int temp = nums[lowerIndex];
-        nums[lowerIndex] = nums[higherIndex];
-        nums[higherIndex] = temp;
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
 
-        reverse(nums, lowerIndex + 1, nums.length - 1);
-    }
-
-    public void reverse(int[] array, int left, int right) {
+        int left = i + 1;
+        int right = nums.length - 1;
         while (left < right) {
-            int temp = array[left];
-            array[left] = array[right];
-            array[right] = temp;
+            int tempNum = nums[left];
+            nums[left] = nums[right];
+            nums[right] = tempNum;
             left++;
             right--;
         }
