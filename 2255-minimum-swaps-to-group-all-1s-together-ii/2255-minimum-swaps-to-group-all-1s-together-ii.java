@@ -13,9 +13,8 @@ class Solution {
             int num = nums[right % nums.length];
             countOnes += num;
             longestConsecutiveOnes = Math.max(longestConsecutiveOnes, countOnes);
+           
             if (right - left + 1 == ones) {
-                //longestConsecutiveOnes = Math.max(longestConsecutiveOnes, countOnes);
-               
                 countOnes -= nums[left % nums.length];
                 left++;
             }
