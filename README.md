@@ -268,6 +268,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2179-most-beautiful-item-for-each-query](https://github.com/Adagggggg/leetcoding/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
 | [2233-number-of-smooth-descent-periods-of-a-stock](https://github.com/Adagggggg/leetcoding/tree/master/2233-number-of-smooth-descent-periods-of-a-stock) |
+| [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2261-all-divisions-with-the-highest-score-of-a-binary-array](https://github.com/Adagggggg/leetcoding/tree/master/2261-all-divisions-with-the-highest-score-of-a-binary-array) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
@@ -1149,6 +1150,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
