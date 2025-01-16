@@ -3,7 +3,7 @@ class Solution {
         // [第一次买][第一次卖][第二次买][第二次卖]
         int[][] dp = new int[prices.length][4];
         dp[0][0] = -prices[0];
-        dp[0][2] = -prices[0];
+        dp[0][2] = -prices[0]; // you need to initialize this
 
         for (int i = 1; i < prices.length; i++) {
             dp[i][0] = Math.max(dp[i-1][0], -prices[i]);
