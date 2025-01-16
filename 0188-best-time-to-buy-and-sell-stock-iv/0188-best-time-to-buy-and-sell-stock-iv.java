@@ -1,8 +1,8 @@
 class Solution {
     public int maxProfit(int k, int[] prices) {
         int[][] dp = new int[prices.length][k * 2];
-        for (int i = 0; i < k * 2; i += 2) {
-            dp[0][i] = -prices[0];
+        for (int currK = 0; currK < k * 2; currK += 2) {
+            dp[0][currK] = -prices[0];
         }
 
         for (int i = 1; i < prices.length; i++) {
