@@ -5,15 +5,16 @@ class Solution {
         return res;
     }
 
-    public void backtracking(String s, List<List<String>> res, List<String> currRes, int startIndex) {
-        if (startIndex == s.length()) {
+    public void backtracking(String s, List<List<String>> res, List<String> currRes, int index) {
+        if (index == s.length()) {
             res.add(new ArrayList<>(currRes));
             return;
         }
 
-        for (int i = startIndex; i < s.length(); i++) {
-            if (isPalindrome(s, startIndex, i)) {
-                String substring = s.substring(startIndex, i+1);
+        for (int i = index; i < s.length(); i++) {
+            String substring = s.substring(index, i + 1);
+
+            if (isPalindrome(substring)) {
                 currRes.add(substring);
 
                 backtracking(s, res, currRes, i + 1);
@@ -22,14 +23,18 @@ class Solution {
         }
     }
 
-    public boolean isPalindrome (String s, int left, int right) {
+    // 检查是否是 palindrome
+    public boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
                 return false;
-            } else {
-                left++;
-                right--;
             }
+
+            left++;
+            right--;
         }
 
         return true;
