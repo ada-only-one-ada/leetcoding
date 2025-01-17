@@ -17,6 +17,7 @@ class Solution {
             if (isPalindrome(substring)) {
                 currRes.add(substring);
 
+                // 下一次开始是 i + 1 的位置
                 backtracking(s, res, currRes, i + 1);
                 currRes.remove(currRes.size() - 1);
             }
