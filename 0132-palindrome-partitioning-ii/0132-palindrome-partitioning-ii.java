@@ -36,6 +36,18 @@ class Solution {
             // 如果 [0, i] 不是回文串，我们要去 cut 它，比如 aab中的 aab
             } else {
                 for (int cut = 0; cut < i; cut++) {
+                    /* 
+                    dp[cut] 的结果是已知的，如果 cut 的右边 到 i 即 [cut, i] 是一个回文串
+                    那么就是 dp[cut] + 1
+                    我们可以在不同位置 cut，选一个最小的即可
+                    例子：
+                      c
+                    a | b b
+                    dp[cut] = 0
+                    因为 isPalindrom[cut + 1][i] 即 bb 是回文串
+                    结果就是 dp[cut] + 1 = 0 + 1
+                    */
+                    
                     if (isPalindrome[cut + 1][i]) {
                         dp[i] = Math.min(dp[i], dp[cut] + 1);
                     }
