@@ -280,6 +280,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2261-all-divisions-with-the-highest-score-of-a-binary-array](https://github.com/Adagggggg/leetcoding/tree/master/2261-all-divisions-with-the-highest-score-of-a-binary-array) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2433-best-poker-hand](https://github.com/Adagggggg/leetcoding/tree/master/2433-best-poker-hand) |
@@ -1124,6 +1125,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
 | [1950-sign-of-the-product-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2233-number-of-smooth-descent-periods-of-a-stock](https://github.com/Adagggggg/leetcoding/tree/master/2233-number-of-smooth-descent-periods-of-a-stock) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
@@ -1273,6 +1275,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2464-time-needed-to-rearrange-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
 | [2639-separate-the-digits-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2639-separate-the-digits-in-an-array) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
@@ -1440,4 +1443,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Adagggggg/leetcoding/tree/master/0023-merge-k-sorted-lists) |
+## Combinatorics
+|  |
+| ------- |
+| [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
 <!---LeetCode Topics End-->
