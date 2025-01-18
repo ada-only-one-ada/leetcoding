@@ -20,7 +20,6 @@ class Solution {
             }
         }
 
-
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j + 1 < s.length(); j++) {
                 if (isPalindrome[0][i] && isPalindrome[i+1][j] && isPalindrome[j+1][s.length()-1]) {
