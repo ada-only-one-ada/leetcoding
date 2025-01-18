@@ -446,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/Adagggggg/leetcoding/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -508,6 +509,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/Adagggggg/leetcoding/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -581,6 +583,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1157-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Adagggggg/leetcoding/tree/master/1157-insufficient-nodes-in-root-to-leaf-paths) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/Adagggggg/leetcoding/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -1221,6 +1224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1243-sum-of-nodes-with-even-valued-grandparent](https://github.com/Adagggggg/leetcoding/tree/master/1243-sum-of-nodes-with-even-valued-grandparent) |
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
