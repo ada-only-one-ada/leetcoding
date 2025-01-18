@@ -1,6 +1,5 @@
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
-        if (nums.length <= 1) return 0;
 
         // 左边最大，右边最小
         // 要比左边最大大，要比右边最小小
