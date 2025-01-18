@@ -17,22 +17,19 @@ class Solution {
             min[i] = Math.min(min[i + 1], nums[i + 1]);
         }
 
-        boolean[] wrong = new boolean[nums.length];
-        // 要比左边最大大，要比右边最小小
-        for (int i = 0; i < nums.length; i++) {
+        int start = 0;
+        int end = 0;
+
+        for (int i = max.length - 1; i >= 0; i--) {
             if (nums[i] < max[i] || nums[i] > min[i]) {
-                wrong[i] = true;
+                start = i;
             }
         }
 
-        int start = 0;
-        int end = 0;
-        for (int i = 0; i < wrong.length; i++) {
-            if (wrong[i]) end = i;
-        }
-
-        for (int i = wrong.length - 1; i >= 0; i--) {
-            if (wrong[i]) start = i;
+        for (int i = 0; i < min.length; i++) {
+            if (nums[i] < max[i] || nums[i] > min[i]) {
+                end = i;
+            }
         }
 
         if (start == end) return 0; 
