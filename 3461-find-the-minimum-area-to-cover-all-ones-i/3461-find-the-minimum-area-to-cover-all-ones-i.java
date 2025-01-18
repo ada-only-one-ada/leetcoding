@@ -16,12 +16,7 @@ class Solution {
                 }
             }
         }
-
-        System.out.println("top " + top);
-        System.out.println("bottom " + bottom);
-        System.out.println("left " + left);
-        System.out.println("right " + right);
-
+        
         return (bottom - top + 1) * (right - left + 1);
     }
 }
