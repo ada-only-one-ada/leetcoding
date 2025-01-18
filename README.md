@@ -212,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
 | [0565-array-nesting](https://github.com/Adagggggg/leetcoding/tree/master/0565-array-nesting) |
+| [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0661-image-smoother](https://github.com/Adagggggg/leetcoding/tree/master/0661-image-smoother) |
@@ -792,6 +793,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
+| [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
 | [0661-image-smoother](https://github.com/Adagggggg/leetcoding/tree/master/0661-image-smoother) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
@@ -1269,6 +1271,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0054-spiral-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/Adagggggg/leetcoding/tree/master/0067-add-binary) |
 | [0289-game-of-life](https://github.com/Adagggggg/leetcoding/tree/master/0289-game-of-life) |
+| [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
 | [0640-solve-the-equation](https://github.com/Adagggggg/leetcoding/tree/master/0640-solve-the-equation) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
