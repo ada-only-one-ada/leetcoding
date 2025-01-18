@@ -251,6 +251,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1382-calculate-amount-paid-in-taxes](https://github.com/Adagggggg/leetcoding/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1511-count-number-of-teams](https://github.com/Adagggggg/leetcoding/tree/master/1511-count-number-of-teams) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -794,6 +795,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
@@ -1144,6 +1146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2636-maximum-subsequence-score](https://github.com/Adagggggg/leetcoding/tree/master/2636-maximum-subsequence-score) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
@@ -1231,6 +1234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1254-deepest-leaves-sum](https://github.com/Adagggggg/leetcoding/tree/master/1254-deepest-leaves-sum) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Adagggggg/leetcoding/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/2493-reverse-odd-levels-of-binary-tree) |
@@ -1326,6 +1330,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Topological Sort
@@ -1415,6 +1420,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Ordered Set
