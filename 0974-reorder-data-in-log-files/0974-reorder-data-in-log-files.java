@@ -33,8 +33,8 @@ class Solution {
         for (Pair<String, String> pair: letterLogs) {
             res.add(pair.getKey() + " " + pair.getValue());
         }
-
         res.addAll(digitLogs);
+        
         String[] resArray = new String[res.size()];
         for (int i = 0; i < resArray.length; i++) {
             resArray[i] = res.get(i);
