@@ -276,6 +276,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2084-maximum-number-of-weeks-for-which-you-can-work](https://github.com/Adagggggg/leetcoding/tree/master/2084-maximum-number-of-weeks-for-which-you-can-work) |
 | [2133-number-of-pairs-of-strings-with-concatenation-equal-to-target](https://github.com/Adagggggg/leetcoding/tree/master/2133-number-of-pairs-of-strings-with-concatenation-equal-to-target) |
 | [2138-sum-of-beauty-in-the-array](https://github.com/Adagggggg/leetcoding/tree/master/2138-sum-of-beauty-in-the-array) |
+| [2145-grid-game](https://github.com/Adagggggg/leetcoding/tree/master/2145-grid-game) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Adagggggg/leetcoding/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
 | [2233-number-of-smooth-descent-periods-of-a-stock](https://github.com/Adagggggg/leetcoding/tree/master/2233-number-of-smooth-descent-periods-of-a-stock) |
@@ -811,6 +812,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2047-find-a-peak-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/2047-find-a-peak-element-ii) |
+| [2145-grid-game](https://github.com/Adagggggg/leetcoding/tree/master/2145-grid-game) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/Adagggggg/leetcoding/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -1026,6 +1028,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [2145-grid-game](https://github.com/Adagggggg/leetcoding/tree/master/2145-grid-game) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
