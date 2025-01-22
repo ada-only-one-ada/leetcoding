@@ -35,14 +35,16 @@ class UndergroundSystem {
         routeToSumAmount.get(fullRoute)[1]++;
 
         // 乘客出站以后记得移除
-        //idToStart.remove(id);
+        idToStart.remove(id);
     }
     
     public double getAverageTime(String startStation, String endStation) {
         String fullRoute = startStation + "->" + endStation;
 
+        // 这个路线还没有乘客搭乘过，无记录
         if (!routeToSumAmount.containsKey(fullRoute)) return -1;
 
+        // 返回结果
         return (double) routeToSumAmount.get(fullRoute)[0] / routeToSumAmount.get(fullRoute)[1];
     }
 }
