@@ -35,7 +35,7 @@ class UndergroundSystem {
         routeToSumAmount.get(fullRoute)[1]++;
 
         // 乘客出站以后记得移除
-        idToStart.remove(id);
+        //idToStart.remove(id);
     }
     
     public double getAverageTime(String startStation, String endStation) {
