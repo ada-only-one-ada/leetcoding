@@ -1,38 +1,27 @@
-
 class Solution {
-    public int bestClosingTime(String customers) {
-        /* 规则：
-           1.关门之前有人最多，无人最少
-           2.关门之后无人最多，有人最少
-        */
-        
-        int[] yesBefore = new int[customers.length() + 1];
-        for (int i = 1; i < yesBefore.length; i++) {
-            if (customers.charAt(i-1) == 'Y') {
-                yesBefore[i] = yesBefore[i-1] + 1;
-            } else {
-                yesBefore[i] = yesBefore[i-1];
-            }
-        }     
+    public int bestClosingTime(String customers) {        
+        int earliestClosingHour = customers.length();
+        // 最大化分数
+        // 也就是之后的的yes越来越少
+        int score = 0;
+        int maxScore = 0;
 
-        int res = yesBefore.length - 1;
-        int max = yesBefore[yesBefore.length - 1]; 
-        
-        int[] noAfter = new int[customers.length() + 1];
-        for (int i = noAfter.length - 2; i >= 0; i--) {
-            if (customers.charAt(i) == 'N') {
-                noAfter[i] = noAfter[i+1] + 1;
-            } else {
-                noAfter[i] = noAfter[i+1];
+       // 因为是从后往前遍历，所以如果越往前， N 越多时 score 的值便会越大，那么便会越早关门
+        for (int i = customers.length() - 1; i >= 0; i--) {
+            char c = customers.charAt(i);
+
+            if (c == 'Y') {
+                score--;
+            } else if (c == 'N') {
+                score++;
             }
 
-            yesBefore[i] += noAfter[i];
-            if (yesBefore[i] >= max) {
-                res = i;
-                max = yesBefore[i];
-            }
+            if (score >= maxScore) {
+                maxScore = score;
+                earliestClosingHour = i;
+            } 
         }
 
-        return res;
+        return earliestClosingHour;
     }
 }
