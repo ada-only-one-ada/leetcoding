@@ -779,6 +779,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2464-time-needed-to-rearrange-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
 | [2550-words-within-two-edits-of-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/2550-words-within-two-edits-of-dictionary) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/2572-append-characters-to-string-to-make-subsequence) |
+| [2576-minimum-penalty-for-a-shop](https://github.com/Adagggggg/leetcoding/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
 | [2723-find-the-longest-balanced-substring-of-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2723-find-the-longest-balanced-substring-of-a-binary-string) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -1029,6 +1030,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2145-grid-game](https://github.com/Adagggggg/leetcoding/tree/master/2145-grid-game) |
+| [2576-minimum-penalty-for-a-shop](https://github.com/Adagggggg/leetcoding/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2625-increment-submatrices-by-one](https://github.com/Adagggggg/leetcoding/tree/master/2625-increment-submatrices-by-one) |
 | [2655-rearrange-array-to-maximize-prefix-score](https://github.com/Adagggggg/leetcoding/tree/master/2655-rearrange-array-to-maximize-prefix-score) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
