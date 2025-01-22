@@ -677,6 +677,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
+| [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
@@ -771,6 +772,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Adagggggg/leetcoding/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/Adagggggg/leetcoding/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1871-palindrome-partitioning-iv](https://github.com/Adagggggg/leetcoding/tree/master/1871-palindrome-partitioning-iv) |
@@ -1384,6 +1386,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
+| [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
 | [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
