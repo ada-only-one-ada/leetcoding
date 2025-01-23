@@ -1,29 +1,27 @@
 class Solution {
     public int maxScore(int[] cardPoints, int k) {
-        int sum = 0;
-        for (int points: cardPoints) {
-            sum += points;
-        }   
-        if (k == cardPoints.length) return sum;
+        // maximum leftmost + rightmost card
+        // minimum middle subarray sum
 
-        int len = cardPoints.length - k;
-        // 长度为len的subarray，和最小
-
-        int minSubarraySum = Integer.MAX_VALUE;
-        int currSubarraySum = 0;
-
+        int window = cardPoints.length - k;
+        int total = 0;
+        int minSum = Integer.MAX_VALUE;
+        
+        int currSum = 0;
         int left = 0;
         for (int right = 0; right < cardPoints.length; right++) {
-            currSubarraySum += cardPoints[right];
+            total += cardPoints[right];
 
-            if (right - left + 1 == len) {
-                minSubarraySum = Math.min(minSubarraySum, currSubarraySum);
+            currSum += cardPoints[right];
+            if (right - left + 1 == window) {
+                minSum = Math.min(minSum, currSum);
 
-                currSubarraySum -= cardPoints[left];
+                currSum -= cardPoints[left];
                 left++;
             }
         }
 
-        return sum - minSubarraySum;
+        if (k == cardPoints.length) return total;
+        return total - minSum;
     }
 }
