@@ -9,17 +9,18 @@ class Solution {
                 }
             }
         }
+
         return res;
     }
 
-    int[][] directions = {{-1,0}, {1,0}, {0,-1}, {0,1}};
     public void dfs(char[][] grid, int row, int col) {
-        if (row < 0 || row == grid.length || col < 0 || col == grid[0].length) return;
-        if (grid[row][col] != '1') return;
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length) return;
+        if (grid[row][col] == '0') return;
 
         grid[row][col] = '0';
-        for (int[] dir: directions) {
-            dfs(grid, row + dir[0], col + dir[1]);
-        }
+        dfs(grid, row-1, col);
+        dfs(grid, row+1, col);
+        dfs(grid, row, col-1);
+        dfs(grid, row, col+1);
     }
 }
