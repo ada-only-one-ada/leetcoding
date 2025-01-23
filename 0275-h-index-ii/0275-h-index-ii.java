@@ -10,7 +10,7 @@ class Solution {
             int mid = left + (right - left) / 2;
             int amount = citations.length - mid;
             
-            // 满足条件的话，忘左边走
+            // 满足条件的话，往左边走
             if (citations[mid] >= amount) {
                 res = amount;
                 right = mid - 1;
