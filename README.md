@@ -1185,6 +1185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
+| [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -1396,6 +1397,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0303-range-sum-query-immutable](https://github.com/Adagggggg/leetcoding/tree/master/0303-range-sum-query-immutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
+| [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
@@ -1476,6 +1478,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
+| [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [3363-most-frequent-ids](https://github.com/Adagggggg/leetcoding/tree/master/3363-most-frequent-ids) |
 ## Merge Sort
 |  |
