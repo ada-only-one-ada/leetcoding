@@ -1,38 +1,32 @@
 class Solution {
     public int hIndex(int[] citations) {
-        /*
-        [3,0,6,1,5]
-        第一个paper：3个citation
-        第二个paper：0个citation
-        第三个paper：6个citation
-        第四个paper：1个citation
-        第五个paper：5个citation
-
-        h-index的意思是：至少有 h 个 paper，被 cite 了至少 h 次
-        返回最大的 h-index
-        最大的就是数组的长度，因为只有那么多 paper
-
-        [100] expected 1
-        [0,0,2] expected 1
-        [0] expected 0
-        [11,15] expected 2 
-        [1,7,9,4] expected 3
-        */
+        /* 
+        寻找一个数number：
+           1.citations 数组中至少有 number 个数
+           2.有number 个数都大于等于 number 
         
+        e.g.
+        [3,0,6,1,5] ->
+        [0,1,3,5,6]
+        有5个number大于等于0（5？no）
+        有4个number大于等于1（4？no）
+        有3个number大于等于3（3？yes） - max
+        有2个number大于等于5（2？yes）
+        有1个number大于等于6（1？yes）
+
+        [1,3,1] ->
+        [1,1,3]
+        有3个number大于等于1（3？no）
+        有2个number大于等于1（2？no）
+        有1个number大于等于3（1？yes） - max
+        */
+
         Arrays.sort(citations);
         for (int i = 0; i < citations.length; i++) {
-            // 包含当前的，和之后的数字一共有几个
+            int cite = citations[i];
+
             int amount = citations.length - i;
-
-            //  0 1 2 3 4
-            // [0,1,3,5,6]
-            // i = 2，此时 citaion 是 3，amount 是 3
-            // citation 3 是大于等于 amount 3 的
-
-            // [100]
-            // i = 0，此时citations 是 100，amount 是 1
-            // citaion 100 是大于等于 amont 1 的
-            if (citations[i] >= amount) {
+            if (cite >= amount) {
                 return amount;
             }
         }
