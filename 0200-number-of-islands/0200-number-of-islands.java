@@ -12,6 +12,9 @@ class Solution {
             }
         }
 
+        for (int area: areas) {
+            System.out.println(area);
+        }
         return areas.size();
     }
 
@@ -25,13 +28,11 @@ class Solution {
         }
 
         grid[row][col] = '0';
-        int sum = 1;
-        sum += 
+        
+        return 1 + 
         dfs(grid, row-1, col) + 
         dfs(grid, row+1, col) + 
         dfs(grid, row, col-1) +
         dfs(grid, row, col+1);
-
-        return sum;
     }
 }
