@@ -1,15 +1,23 @@
 class Solution {
     public int hIndex(int[] citations) {
-        Arrays.sort(citations);
+        // 这道题已经sorted好了，用二分法
+        int res = 0;
 
-        for (int i = 0; i < citations.length; i++) {
-            int amount = citations.length - i;
+        int left = 0;
+        int right = citations.length - 1;
 
-            if (citations[i] >= amount) {
-                return amount;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int amount = citations.length - mid;
+            
+            if (citations[mid] >= amount) {
+                res = amount;
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
 
-        return 0;
+        return res;
     }
 }
