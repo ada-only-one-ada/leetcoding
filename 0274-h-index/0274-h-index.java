@@ -21,8 +21,17 @@ class Solution {
         
         Arrays.sort(citations);
         for (int i = 0; i < citations.length; i++) {
+            // 包含当前的，和之后的数字一共有几个
             int amount = citations.length - i;
 
+            //  0 1 2 3 4
+            // [0,1,3,5,6]
+            // i = 2，此时 citaion 是 3，amount 是 3
+            // citation 3 是大于等于 amount 3 的
+
+            // [100]
+            // i = 0，此时citations 是 100，amount 是 1
+            // citaion 100 是大于等于 amont 1 的
             if (citations[i] >= amount) {
                 return amount;
             }
