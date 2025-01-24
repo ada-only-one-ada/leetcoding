@@ -1,9 +1,9 @@
 class Solution {
     public int kthFactor(int n, int k) {
-        // less than O(n) complexity
+        int sqrt = (int) Math.sqrt(n);
         int count = 0;
-
-        for (int i = 1; i <= n/2; i++) {
+        
+        for (int i = 1; i <= sqrt; i++) {
             if (n % i == 0) {
                 count++;
                 if (count == k) {
@@ -11,8 +11,16 @@ class Solution {
                 }
             }
         }
-
-        if (count == k - 1) return n; 
+        
+        for (int i = sqrt; i >= 1; i--) {
+            // Avoid counting the square root twice if n is a perfect square
+            if (n % i == 0 && n / i != i) { 
+                count++;
+                if (count == k) {
+                    return n / i;
+                }
+            }
+        }
 
         return -1;
     }
