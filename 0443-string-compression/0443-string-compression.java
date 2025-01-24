@@ -6,26 +6,24 @@ class Solution {
         for (int i = 1; i < chars.length; i++) {
             if (chars[i] == chars[i - 1]) {
                 count++;
-            } else if (chars[i] != chars[i - 1]) {
-                chars[filled] = chars[i - 1];
-                filled++;
+            } else {
+                chars[filled++] = chars[i - 1];
                 if (count == 1) continue;
 
                 String times = count + "";
-                for (int index = 0; index < times.length(); index++) {
-                    chars[filled++] = times.charAt(index);
+                for (char time: times.toCharArray()) {
+                    chars[filled++] = time;
                 }
 
                 count = 1;
             }
         }
 
-        chars[filled] = chars[chars.length - 1];
-        filled++;
+        chars[filled++] = chars[chars.length - 1];
         if (count > 1) {
             String lastTimes = count + "";
-            for (int index = 0; index < lastTimes.length(); index++) {
-                chars[filled++] = lastTimes.charAt(index);
+            for (char time: lastTimes.toCharArray()) {
+                chars[filled++] = time;
             }
         }
 
