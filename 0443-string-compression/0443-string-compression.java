@@ -1,34 +1,34 @@
 class Solution {
     public int compress(char[] chars) {
-        int repeated = 1;
-        int filledIndex = 0;
+        int filled = 0;
+        int count = 1;
 
         for (int i = 1; i < chars.length; i++) {
             if (chars[i] == chars[i - 1]) {
-                repeated++;
+                count++;
             } else if (chars[i] != chars[i - 1]) {
-                chars[filledIndex] = chars[i - 1];
-                filledIndex++;
-                if (repeated == 1) continue;
-                
-                String strRepeated = String.valueOf(repeated);
-                for (int j = 0; j < strRepeated.length(); j++) {
-                    chars[filledIndex++] = strRepeated.charAt(j);
+                chars[filled] = chars[i - 1];
+                filled++;
+                if (count == 1) continue;
+
+                String times = count + "";
+                for (int index = 0; index < times.length(); index++) {
+                    chars[filled++] = times.charAt(index);
                 }
 
-                repeated = 1;
-            } 
-        }
-
-        chars[filledIndex] = chars[chars.length - 1];
-        filledIndex++;
-        if (repeated > 1) {
-            String strRepeated = String.valueOf(repeated);
-            for (int j = 0; j < strRepeated.length() && filledIndex < chars.length; j++) {
-                chars[filledIndex++] = strRepeated.charAt(j);
+                count = 1;
             }
         }
 
-        return filledIndex;
+        chars[filled] = chars[chars.length - 1];
+        filled++;
+        if (count > 1) {
+            String lastTimes = count + "";
+            for (int index = 0; index < lastTimes.length(); index++) {
+                chars[filled++] = lastTimes.charAt(index);
+            }
+        }
+
+        return filled;
     }
 }
