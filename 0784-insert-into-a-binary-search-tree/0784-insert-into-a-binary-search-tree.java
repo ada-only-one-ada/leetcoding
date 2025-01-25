@@ -1,15 +1,26 @@
 class Solution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
-        if (root == null) {// 如果当前节点为空，也就意味着val找到了合适的位置，此时创建节点直接返回。
-            return new TreeNode(val);
-        }
-            
-        if (val > root.val){
-            root.right = insertIntoBST(root.right, val); // 递归创建右子树
-        }else if (val < root.val){
-            root.left = insertIntoBST(root.left, val); // 递归创建左子树
+        if (root == null) return new TreeNode(val);
+    
+        TreeNode preRoot = null;
+        TreeNode curr = root;
+
+        while (curr != null) {
+            preRoot = curr;
+
+            if (val < curr.val){
+                curr = curr.left;
+            } else if (val > curr.val) {
+                curr = curr.right;
+            }
         }
 
+        if (val > preRoot.val){
+            preRoot.right = new TreeNode(val);
+        } else{
+            preRoot.left = new TreeNode(val);
+        }
+        
         return root;
     }
 }
