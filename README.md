@@ -752,6 +752,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Adagggggg/leetcoding/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
+| [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0290-word-pattern) |
 | [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
@@ -867,6 +868,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0132-palindrome-partitioning-ii](https://github.com/Adagggggg/leetcoding/tree/master/0132-palindrome-partitioning-ii) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Adagggggg/leetcoding/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/Adagggggg/leetcoding/tree/master/0198-house-robber) |
+| [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
 | [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
@@ -1147,6 +1149,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
+| [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0263-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
@@ -1255,6 +1258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0025-reverse-nodes-in-k-group](https://github.com/Adagggggg/leetcoding/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Adagggggg/leetcoding/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
+| [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Breadth-First Search
 |  |
@@ -1339,6 +1343,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Adagggggg/leetcoding/tree/master/0070-climbing-stairs) |
+| [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Bit Manipulation
