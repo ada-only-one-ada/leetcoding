@@ -454,6 +454,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0776-n-ary-tree-postorder-traversal) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
@@ -555,6 +556,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/Adagggggg/leetcoding/tree/master/0975-range-sum-of-bst) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -597,6 +599,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0662-maximum-width-of-binary-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
