@@ -12,6 +12,7 @@ class Solution {
                 if (state == '1') {
                     // marks as visited
                     grids[row][col] = '1';
+                    grids[row][col] = '2';
                     count++;
                     queue.add(new int[]{row, col});
                    
