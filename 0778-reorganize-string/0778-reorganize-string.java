@@ -1,40 +1,73 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] freq = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            freq[s.charAt(i) - 'a']++;
+        int n = s.length();
+        // 
+        int[] store = new int[26];
+        int maximum = 0;
+
+        for (int i = 0; i < n; i++) {
+            store[s.charAt(i) - 'a']++;
+
+            if (maximum < store[i]) {
+                maximum = store[i];
+            }
         }
 
-        Queue<Pair<Character, Integer>> queue = new PriorityQueue<>((a, b) -> {
-            return b.getValue() - a.getValue();
-        });
+        // aaabb, ababa, len 
+
+        if (s.length() - maximum < maximum - 1) {
+            return "";
+        }
+        // max: 至少要有max-1把他隔开
+        // index
+        // res: acabab work
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(
+            (a, b) -> {
+                return store[b] - store[a];
+            }
+        );
+
+        // aaaa c d
+        // a:3, d:1
+        // res = ac a 
+
 
         for (int i = 0; i < 26; i++) {
-            if (freq[i] == 0) continue;
-            queue.add(new Pair((char)(i+'a') , freq[i]));
+            if (store[i] != 0) {
+                pq.add(i);
+            }
         }
+
         StringBuilder sb = new StringBuilder();
 
-        while (!queue.isEmpty()) {
-            if (queue.size() == 1 && queue.peek().getValue() > 1) return "";
-            List<Pair<Character, Integer>> wl = new ArrayList<>();
+        while (pq.size() >= 2) {
+            int first = pq.poll();
+            int second = pq.poll();
 
-            for (int i = 0; i < 2 && !queue.isEmpty(); i++) {
-                Pair<Character, Integer> curr = queue.poll();
-                char currChar = curr.getKey();
-                sb.append(currChar);
+            sb.append((char)(first + 'a'));
+            sb.append((char)(second + 'a'));
 
-                int currFreq = curr.getValue();
-                if (currFreq - 1 > 0) {
-                    wl.add(new Pair(currChar, currFreq - 1));
-                } 
+            store[first]--;
+            store[second]--;
+
+            if (store[first] > 0) {
+                pq.add(first);
             }
 
-            for (Pair<Character, Integer> pair: wl) {
-                queue.add(pair);
+            if (store[second] > 0) {
+                pq.add(second);
             }
+        }
+        // "aaabbcc"
+        // a:0, b:0, c:0
+        // "abacabc"
+        
+        if (pq.size() == 1) {
+            sb.append((char)(pq.peek() + 'a'));
         }
 
         return sb.toString();
     }
+        
 }
