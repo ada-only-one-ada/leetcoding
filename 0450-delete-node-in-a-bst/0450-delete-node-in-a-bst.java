@@ -16,23 +16,14 @@ class Solution {
             } else if (root.right == null) {
                 return root.left;
             } else {
-                /*
-                TreeNode leftMax = root.left;
-                while (leftMax.right != null) {
-                    leftMax = leftMax.right;
-                }
-
-                leftMax.right = root.right;
-                return root.left;
-                */
-
                 TreeNode rightMin = root.right;
                 while (rightMin.left != null) {
                     rightMin = rightMin.left;
                 }
 
-                rightMin.left = root.left;
-                return root.right;
+                root.val = rightMin.val;
+                root.right = deleteNode(root.right, rightMin.val);
+                return root;
             }
         }
 
