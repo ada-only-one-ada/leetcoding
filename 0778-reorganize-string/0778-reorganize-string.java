@@ -8,15 +8,21 @@ class Solution {
         for (int i = 0; i < n; i++) {
             store[s.charAt(i) - 'a']++;
 
-            if (maximum < store[i]) {
-                maximum = store[i];
+            if (maximum < store[s.charAt(i) - 'a']) {
+                maximum = store[s.charAt(i) - 'a'];
             }
         }
 
         // aaabb, ababa, len 
 
-        if (s.length() - maximum < maximum - 1) {
-            return "";
+        if (s.length() % 2 == 0) {
+            if (maximum > s.length() / 2) {
+                return "";
+            }
+        } else {
+            if (maximum > (s.length() + 1) / 2) {
+                return "";
+            }
         }
         // max: 至少要有max-1把他隔开
         // index
