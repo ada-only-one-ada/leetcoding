@@ -11,7 +11,7 @@ class Solution {
                 // an island
                 if (state == '1') {
                     // marks as visited
-                    grids[row][col] = '2';
+                    grids[row][col] = '1';
                     count++;
                     queue.add(new int[]{row, col});
                    
