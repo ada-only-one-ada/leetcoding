@@ -21,7 +21,9 @@ class Solution {
                     rightMin = rightMin.left;
                 }
 
+                // 替代当前root的val
                 root.val = rightMin.val;
+                // 把最小那个删了
                 root.right = deleteNode(root.right, rightMin.val);
                 return root;
             }
