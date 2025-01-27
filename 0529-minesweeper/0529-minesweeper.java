@@ -17,19 +17,20 @@ class Solution {
                 board[row][col] = 'X';
                 return board;
             } else if (board[row][col] == 'E') {
-                int adjacentReveled = 0;
+                // 注意这里是地雷的话就要加，不管有没有揭露
+                int adjacentMines = 0;
                 for (int[] d: directions) {
                     int nextRow = row + d[0];
                     int nextCol = col + d[1];
 
                     if (nextRow >= 0 && nextCol >= 0 && nextRow < board.length && nextCol < board[0].length) {
                         if (board[nextRow][nextCol] == 'X' || board[nextRow][nextCol] == 'M') {
-                            adjacentReveled++;
+                            adjacentMines++;
                         }
                     }
                 }
 
-                if (adjacentReveled == 0) {
+                if (adjacentMines == 0) {
                     board[row][col] = 'B';
                     for (int[] d: directions) {
                         int nextRow = row + d[0];
@@ -41,7 +42,7 @@ class Solution {
                     
                     }
                 } else {
-                    board[row][col] = (char) (adjacentReveled + '0');
+                    board[row][col] = Character.forDigit(adjacentMines, 10);
                 }
             }
         }
