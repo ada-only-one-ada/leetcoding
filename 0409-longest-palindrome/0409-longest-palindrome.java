@@ -8,10 +8,14 @@ class Solution {
 
         int res = 0;
         for (int times : freq) {
-            res += times / 2 * 2;
-
-            if (times % 2 == 1 && res % 2 == 0) {
-                res++;
+            if (times % 2 == 1) {
+                if (res % 2 == 0) {
+                    res += times;
+                } else {
+                    res += times - 1;
+                }
+            } else if (times % 2 == 0) {
+                res += times;
             }
         }
 
