@@ -3,7 +3,7 @@ class Solution {
         if (nums.length <= 1) return 0;
 
         int currFar = 0;
-        int nextFar = nums[0];
+        int nextFar = 0;
 
         int res = 1;
         for (int i = 0; i <= currFar; i++) {
