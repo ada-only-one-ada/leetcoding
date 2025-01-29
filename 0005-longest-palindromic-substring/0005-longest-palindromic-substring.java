@@ -4,7 +4,7 @@ class Solution {
 
         for (int i = 0; i < s.length(); i++) {
             String res1 = check(s, i, i);
-            String res2 = check(s, i, i + 1);
+            String res2 = check(s, i-1, i);
 
             if (res1.length() > res.length()) {
                 res = res1;
