@@ -7,7 +7,7 @@ class Solution {
             if (set.contains(nums[i])) {
                 int numToDelete = i + 1;
 
-                return numToDelete / 3 + (numToDelete % 3 == 0? 0:1);
+                return numToDelete / 3 + (numToDelete % 3 == 0 ? 0 : 1);
             }
 
             set.add(nums[i]);
