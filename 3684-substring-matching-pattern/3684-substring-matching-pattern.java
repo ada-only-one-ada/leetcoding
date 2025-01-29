@@ -20,8 +20,10 @@ class Solution {
 
         // 从左边以后的位置开始找右边的
         int secondPartIndex = s.indexOf(after, firstPartIndex + before.length());
-
+        // 没找到右边的，返回false
         if (secondPartIndex == -1) return false;
+
+        // 返回true
         return true;
     }
 }
