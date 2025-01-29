@@ -1,79 +1,43 @@
 class Solution {
     public String reorganizeString(String s) {
-        int n = s.length();
-        // 
-        int[] store = new int[26];
-        int maximum = 0;
+        int[] freq = new int[26];
+        int max = 0;
 
-        for (int i = 0; i < n; i++) {
-            store[s.charAt(i) - 'a']++;
-
-            if (maximum < store[s.charAt(i) - 'a']) {
-                maximum = store[s.charAt(i) - 'a'];
-            }
+        for (char c: s.toCharArray()) {
+            freq[c - 'a']++;
+            max = Math.max(max, freq[c - 'a']);
         }
 
-        // aaabb, ababa, len 
+        if (s.length() - max < max - 1) return "";
 
-        if (s.length() % 2 == 0) {
-            if (maximum > s.length() / 2) {
-                return "";
-            }
-        } else {
-            if (maximum > (s.length() + 1) / 2) {
-                return "";
-            }
-        }
-        // max: 至少要有max-1把他隔开
-        // index
-        // res: acabab work
-
-        PriorityQueue<Integer> pq = new PriorityQueue<>(
-            (a, b) -> {
-                return store[b] - store[a];
-            }
-        );
-
-        // aaaa c d
-        // a:3, d:1
-        // res = ac a 
-
-
+        PriorityQueue<Character> queue = new PriorityQueue<>((a, b) -> freq[b - 'a'] - freq[a - 'a']);
         for (int i = 0; i < 26; i++) {
-            if (store[i] != 0) {
-                pq.add(i);
+            if (freq[i] > 0) {
+                queue.add((char)(i + 'a'));
             }
         }
 
-        StringBuilder sb = new StringBuilder();
-
-        while (pq.size() >= 2) {
-            int first = pq.poll();
-            int second = pq.poll();
-
-            sb.append((char)(first + 'a'));
-            sb.append((char)(second + 'a'));
-
-            store[first]--;
-            store[second]--;
-
-            if (store[first] > 0) {
-                pq.add(first);
+        StringBuilder res = new StringBuilder();
+        while (!queue.isEmpty()) {
+            if (queue.size() == 1 && freq[queue.peek() - 'a'] > 1) {
+                return "";
             }
 
-            if (store[second] > 0) {
-                pq.add(second);
+            List<Character> wl = new ArrayList<>();
+            for (int i = 0; i < 2 && !queue.isEmpty(); i++) {
+                char c = queue.poll();
+                res.append(c);
+                freq[c - 'a']--;
+                if (freq[c - 'a'] > 0) {
+                    wl.add(c);
+                }
+            }
+
+            for (char c: wl) {
+                queue.add(c);
             }
         }
-        // "aaabbcc"
-        // a:0, b:0, c:0
-        // "abacabc"
-        
-        if (pq.size() == 1) {
-            sb.append((char)(pq.peek() + 'a'));
-        }
 
-        return sb.toString();
+        return res.toString();
     }
-        
 }
