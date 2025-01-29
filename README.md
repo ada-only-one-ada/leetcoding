@@ -337,6 +337,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/Adagggggg/leetcoding/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3651-transformed-array](https://github.com/Adagggggg/leetcoding/tree/master/3651-transformed-array) |
+| [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/Adagggggg/leetcoding/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 ## Binary Search
 |  |
 | ------- |
@@ -730,6 +731,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/Adagggggg/leetcoding/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 ## String
 |  |
 | ------- |
