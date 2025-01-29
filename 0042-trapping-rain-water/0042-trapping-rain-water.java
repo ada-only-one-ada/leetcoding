@@ -1,30 +1,33 @@
 class Solution {
     public int trap(int[] height) {
         // 左边第一个比它高的，右边第一个比它高的
-        // [2,1,0,1,    3]
-        int sumArea = 0;
-        Stack<Integer> stack = new Stack<>();
-
+        int[] h = new int[height.length + 2];
         for (int i = 0; i < height.length; i++) {
-            if (stack.isEmpty() || height[i] <= height[stack.peek()]) {
+            h[i + 1] = height[i];
+        }
+        height = h;
+
+        int res = 0;
+        Stack<Integer> stack = new Stack();
+        for (int i = 0; i < height.length; i++) {
+            if (stack.size() <= 2 || height[i] <= height[stack.peek()]) {
                 stack.push(i);
             } else {
                 while (stack.size() >= 2 && height[i] > height[stack.peek()]) {
-                    int rightIndex = i;
-                    int midIndex = stack.pop();
-                    int leftIndex = stack.peek();
+                    int right = i;
+                    int mid = stack.pop();
+                    int left = stack.peek();
 
-                    int h = Math.min(height[leftIndex], height[rightIndex]);
-                    int w = rightIndex - leftIndex - 1;
-                    int midh = height[midIndex];
+                    int currWidth = right - left - 1;
+                    int currHeight = Math.min(height[right], height[left]);
 
-                    int area = h * w - midh * w;
-                    if (area > 0) sumArea += area;
+                    int currArea = currWidth * currHeight - currWidth * height[mid];
+                    if (currArea >  0) res += currArea;
                 }
                 stack.push(i);
             }
         }
 
-        return sumArea;
+        return res;
     }
 }
