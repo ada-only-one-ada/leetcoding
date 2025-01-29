@@ -819,6 +819,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3636-check-balanced-string](https://github.com/Adagggggg/leetcoding/tree/master/3636-check-balanced-string) |
+| [3684-substring-matching-pattern](https://github.com/Adagggggg/leetcoding/tree/master/3684-substring-matching-pattern) |
 ## Matrix
 |  |
 | ------- |
@@ -1393,6 +1394,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
+| [3684-substring-matching-pattern](https://github.com/Adagggggg/leetcoding/tree/master/3684-substring-matching-pattern) |
 ## Hash Function
 |  |
 | ------- |
