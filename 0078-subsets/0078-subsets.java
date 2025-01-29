@@ -5,11 +5,11 @@ class Solution {
         return res;
     }
 
-    public void backtracking(int[] nums, List<List<Integer>> res, List<Integer> currRes, int start) {
+    public void backtracking(int[] nums, List<List<Integer>> res, List<Integer> currRes, int index) {
         res.add(new ArrayList<>(currRes));
+        if (index == nums.length) return;
 
-        if (start == nums.length) return;
-        for (int i = start; i < nums.length; i++) {
+        for (int i = index; i < nums.length; i++) {
             currRes.add(nums[i]);
             backtracking(nums, res, currRes, i + 1);
             currRes.remove(currRes.size() - 1);
