@@ -404,6 +404,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0150-evaluate-reverse-polish-notation](https://github.com/Adagggggg/leetcoding/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Adagggggg/leetcoding/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0173-binary-search-tree-iterator) |
+| [0224-basic-calculator](https://github.com/Adagggggg/leetcoding/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
@@ -765,6 +766,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Adagggggg/leetcoding/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0224-basic-calculator](https://github.com/Adagggggg/leetcoding/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
@@ -1168,6 +1170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0172-factorial-trailing-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0172-factorial-trailing-zeroes) |
 | [0189-rotate-array](https://github.com/Adagggggg/leetcoding/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
+| [0224-basic-calculator](https://github.com/Adagggggg/leetcoding/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0263-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0263-ugly-number) |
@@ -1279,6 +1282,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0025-reverse-nodes-in-k-group](https://github.com/Adagggggg/leetcoding/tree/master/0025-reverse-nodes-in-k-group) |
 | [0050-powx-n](https://github.com/Adagggggg/leetcoding/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
+| [0224-basic-calculator](https://github.com/Adagggggg/leetcoding/tree/master/0224-basic-calculator) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
 ## Breadth-First Search
