@@ -26,7 +26,7 @@ class Solution {
                 i = j - 1;
             }
 
-            if (c != ' ' && c == '+' || c == '-'|| i == s.length() - 1) {
+            if ((c != ' ' && (c == '+' || c == '-')) || i == s.length() - 1) {
                 stack.push(num * prevSign);
                 num = 0;
                 if (c == '+') {
