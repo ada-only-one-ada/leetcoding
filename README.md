@@ -289,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2354-minimum-health-to-beat-game](https://github.com/Adagggggg/leetcoding/tree/master/2354-minimum-health-to-beat-game) |
 | [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2433-best-poker-hand](https://github.com/Adagggggg/leetcoding/tree/master/2433-best-poker-hand) |
@@ -1137,6 +1138,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2084-maximum-number-of-weeks-for-which-you-can-work](https://github.com/Adagggggg/leetcoding/tree/master/2084-maximum-number-of-weeks-for-which-you-can-work) |
+| [2354-minimum-health-to-beat-game](https://github.com/Adagggggg/leetcoding/tree/master/2354-minimum-health-to-beat-game) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/Adagggggg/leetcoding/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/Adagggggg/leetcoding/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
