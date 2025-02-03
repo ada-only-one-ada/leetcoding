@@ -1,14 +1,12 @@
 class LRUCache {
     HashMap<Integer, Node> map;
     int capacity;
-    int size;
     Node head;
     Node tail;
 
     public LRUCache(int capacity) {
         map = new HashMap<>();
         this.capacity = capacity;
-        size = 0;
         head = null;
         tail = null;
     }
@@ -60,20 +58,18 @@ class LRUCache {
     
     public void put(int key, int value) {
         // have the key 
-        if (get(key) != -1) {
+        if (get(key) != -1) { // calling get() will update the position
             Node node = map.get(key);
             node.value = value;
         } else {
             if (map.size() == capacity) {
                 map.remove(head.key);
                 remove(head);
-                size--;
             }
 
             Node newNode = new Node(key, value);
             map.put(key, newNode);
             add(newNode);
-            size++;
         }
     }
 }
