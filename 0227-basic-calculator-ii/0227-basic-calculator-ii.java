@@ -1,38 +1,36 @@
 class Solution {
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack();
-
-        int value = 0;
+        Stack<Integer> stack = new Stack<>();
         char prevSign = '+';
+        int num = 0;
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            
-            if (Character.isDigit(c) || i == s.length() - 1) {
-                if (c != ' ') value = value * 10 + (c - '0');        
+
+            if (Character.isDigit(c)) {
+                num = num * 10 + c - '0';
+            } 
                 if (i == s.length() - 1) {
-                    if (prevSign == '+') stack.push(value);
-                    else if (prevSign == '-') stack.push(-value);
-                    else if (prevSign == '*') stack.push(stack.pop() * value);
-                    else if (prevSign == '/') stack.push(stack.pop() / value);
-                }
-            } else {
-                if (c == '+' || c == '-' || c == '*' || c == '/') {
-                    if (prevSign == '+') stack.push(value);
-                    else if (prevSign == '-') stack.push(-value);
-                    else if (prevSign == '*') stack.push(stack.pop() * value);
-                    else if (prevSign == '/') stack.push(stack.pop() / value);
+                    if (prevSign == '+') stack.push(num);
+                    else if (prevSign == '-') stack.push(-num);
+                    else if (prevSign == '*') stack.push(stack.pop() * num);
+                    else if (prevSign == '/') stack.push(stack.pop() / num);
 
-                    value = 0;
+                } else if (c != ' ' && (c == '+' || c == '-' || c == '*' || c == '/')) {
+                    if (prevSign == '+') stack.push(num);
+                    else if (prevSign == '-') stack.push(-num);
+                    else if (prevSign == '*') stack.push(stack.pop() * num);
+                    else if (prevSign == '/') stack.push(stack.pop() / num);
                     prevSign = c;
+                    num = 0;
                 }
-            }
+            
         }
 
-        int res = 0;
+        int sum = 0;
         while (!stack.isEmpty()) {
-            res += stack.pop();
+            sum += stack.pop();
         }
-
-        return res;
+        return sum;
     }
 }
