@@ -21,7 +21,7 @@ class Solution {
             List<Integer> wl = new ArrayList<>();
 
             for (int i = 0; i < n + 1; i++) {
-                if (queue.isEmpty() && wl.size() == 0) break;
+                if (queue.isEmpty() && wl.size() == 0) break; // 最后有可能没了
                 if (!queue.isEmpty()) {
                     int currTask = queue.poll();
                     sb.append("T");
