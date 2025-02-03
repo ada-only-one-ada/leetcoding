@@ -1,5 +1,5 @@
 class LRUCache {
-    Map<Integer, Node> map;
+    HashMap<Integer, Node> map;
     int capacity;
     int size;
     Node head;
@@ -10,7 +10,7 @@ class LRUCache {
         this.capacity = capacity;
         size = 0;
         head = null;
-        tail = null;   
+        tail = null;
     }
     
     public int get(int key) {
@@ -19,10 +19,47 @@ class LRUCache {
         Node node = map.get(key);
         remove(node);
         add(node);
+
         return node.value;
+    }
+
+    public void add(Node node) {
+        // empty list
+        if (head == null) {
+            head = node;
+            tail = node;
+            tail.next = null;
+        // add to the end of the linkedlist
+        } else {
+            node.prev = tail;
+            tail.next = node;
+            tail = node;
+            tail.next = null;
+        }
+    }
+
+    public void remove(Node node) {
+        // in the middle
+        if (node.prev != null && node.next != null) {
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+        // head node
+        } else if (node.prev == null && node.next != null) {
+            head = head.next;
+            head.prev = null;
+        // tail node
+        } else if (node.prev != null && node.next == null) {
+            tail = tail.prev;
+            tail.next = null;
+        // single node
+        } else {
+            head = null;
+            tail = null;
+        }
     }
     
     public void put(int key, int value) {
+        // have the key 
         if (map.containsKey(key)) {
             Node node = map.get(key);
             node.value = value;
@@ -41,35 +78,6 @@ class LRUCache {
             size++;
         }
     }
-
-    public void add(Node node) {
-        if (head == null) {
-            head = node;
-            tail = node;
-            tail.next = null;
-        } else {
-            node.prev = tail;
-            tail.next = node;
-            tail = node;
-            tail.next = null;
-        }
-    }
-
-    public void remove(Node node) {
-        if (node.prev != null && node.next != null) {
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
-        } else if (node.next != null && node.prev == null) {
-            head = node.next;
-            node.next.prev = null;
-        } else if (node.prev != null && node.next == null) {
-            node.prev.next = null;
-            tail = node.prev;
-        } else {
-            head = null;
-            tail = null;
-        }
-    }
 }
 
 class Node {
@@ -80,4 +88,4 @@ class Node {
         this.key = key;
         this.value = value;
     }
-}
+} 
