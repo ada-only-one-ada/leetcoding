@@ -1,38 +1,30 @@
 class RandomizedSet {
-    Map<Integer, Integer> map;
     List<Integer> list;
-    Random rand;
 
     public RandomizedSet() {
-        map = new HashMap<>();
         list = new ArrayList<>();
-        rand = new Random();
     }
     
     public boolean insert(int val) {
-        if (map.containsKey(val)) return false;        
+        if (!list.contains(val)) {
+            list.add(val);
+            return true;
+        }
 
-        map.put(val, list.size());
-        list.add(val);
-        return true;
+        return false;
     }
     
-    public boolean remove(int val) { 
-        if (!map.containsKey(val)) return false;
+    public boolean remove(int val) {
+        if (!list.contains(val)) {
+            return false;
+        }
 
-        int removedIndex = map.get(val); // 找到要移除的那个数字的index
-        int lastNum = list.get(list.size() - 1); // 找到当前list的最后的数字
-        
-        list.set(removedIndex, lastNum); 
-        map.put(lastNum, removedIndex); // 把之前弄走的 val 的index 分给最后一个数字
-        list.remove(list.size() - 1); // 把最后一个数字从list移除
-       
-        map.remove(val); // 移除当前要弄走的 val
-
+        list.remove(Integer.valueOf(val));
         return true;
     }
     
     public int getRandom() {
+        Random rand = new Random();
         int index = rand.nextInt(list.size());
         return list.get(index);
     }
