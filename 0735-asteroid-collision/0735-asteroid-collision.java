@@ -1,33 +1,31 @@
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
-        Stack<Integer> stack = new Stack<>();
-        for (int aster : asteroids) {
-            // 当前小行星向左移动，且栈顶小行星向右移动时，才会发生碰撞
-            while (!stack.isEmpty() && aster < 0 && stack.peek() > 0) {
-                if (stack.peek() < -aster) { // 栈顶小行星更小，爆炸
+        Stack<Integer> stack = new Stack();
+
+        for (int a: asteroids) {
+            while (!stack.isEmpty() && stack.peek() > 0 && a < 0) {
+                // size 一样，都爆炸
+                if (Math.abs(stack.peek()) == Math.abs(a)) {
+                    a = 0;
                     stack.pop();
-                } else if (stack.peek() == -aster) { // 两者大小相同，都爆炸
+                    break;
+                // 小的爆炸
+                } else if (Math.abs(stack.peek()) > Math.abs(a)) {
+                    a = 0;
+                    break;
+                } else if (Math.abs(stack.peek()) < Math.abs(a)) {
                     stack.pop();
-                    aster = 0; // 当前小行星也爆炸
-                    break;
-                } else { // 栈顶小行星更大，当前小行星爆炸
-                    aster = 0;
-                    break;
                 }
             }
-            if (aster != 0) { // 如果当前小行星没有爆炸，加入栈中
-                stack.push(aster);
-            }
-        }
 
-        // 将栈转换为数组（保持原始顺序）
+            if (a != 0) stack.push(a);
+        }
         int[] res = new int[stack.size()];
         int index = stack.size() - 1;
 
         while (!stack.isEmpty()) {
             res[index--] = stack.pop();
         }
-        
         
         return res;
     }
