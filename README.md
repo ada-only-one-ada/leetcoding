@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0565-array-nesting](https://github.com/Adagggggg/leetcoding/tree/master/0565-array-nesting) |
 | [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0661-image-smoother](https://github.com/Adagggggg/leetcoding/tree/master/0661-image-smoother) |
@@ -697,6 +698,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0560-subarray-sum-equals-k](https://github.com/Adagggggg/leetcoding/tree/master/0560-subarray-sum-equals-k) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
@@ -985,6 +987,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
@@ -1021,6 +1024,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0229-majority-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
@@ -1136,6 +1140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
 | [0517-super-washing-machines](https://github.com/Adagggggg/leetcoding/tree/master/0517-super-washing-machines) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
 | [0738-monotone-increasing-digits](https://github.com/Adagggggg/leetcoding/tree/master/0738-monotone-increasing-digits) |
@@ -1244,6 +1249,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
+| [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
