@@ -30,7 +30,7 @@ class Solution {
                 possibleRes.clear();
                 possibleRes.add(p.substring(1));
                 max = patterns.get(p);
-            } else if (patterns.get(p) == max) {
+            } else if (patterns.get(p) == max){
                 possibleRes.add(p.substring(1));
             }
         }
@@ -39,19 +39,18 @@ class Solution {
         return Arrays.asList(possibleRes.get(0).split("-"));
     }
 
-    public void backtracking(List<String> websites, int index, String currRes, int count, Map<String, Integer> patterns, Set<String> visited) {
+    public void backtracking(List<String> websites, int index, String currRes, int count, Map<String, Integer> patterns, HashSet<String> visited) {
         if (index == websites.size() || count == 3) {
-            if (count == 3) {
-                if (!visited.contains(currRes)) {
-                    patterns.put(currRes, patterns.getOrDefault(currRes, 0) + 1);
-                }
-                visited.add(currRes);
+            if (count == 3 && !visited.contains(currRes)) {
+                patterns.put(currRes, patterns.getOrDefault(currRes, 0) + 1);
             }
+            visited.add(currRes);
             return;
         }
 
         for (int i = index; i < websites.size(); i++) {
-           // if (i > index && websites.get(i).equals(websites.get(i-1))) continue;
+           // if (count == 0 && i > 0 && websites.get(i).equals(websites.get(i-1))) continue;
+
             backtracking(websites, i + 1, currRes + "-" + websites.get(i), count + 1, patterns, visited);
         }
     }
