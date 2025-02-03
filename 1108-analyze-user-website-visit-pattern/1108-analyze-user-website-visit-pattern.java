@@ -49,8 +49,6 @@ class Solution {
         }
 
         for (int i = index; i < websites.size(); i++) {
-           // if (count == 0 && i > 0 && websites.get(i).equals(websites.get(i-1))) continue;
-
             backtracking(websites, i + 1, currRes + "-" + websites.get(i), count + 1, patterns, visited);
         }
     }
