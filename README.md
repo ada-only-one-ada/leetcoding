@@ -389,6 +389,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/Adagggggg/leetcoding/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
 | [0138-copy-list-with-random-pointer](https://github.com/Adagggggg/leetcoding/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/Adagggggg/leetcoding/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0206-reverse-linked-list) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
@@ -644,6 +645,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Doubly-Linked List
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 ## Hash Table
 |  |
@@ -664,6 +666,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/Adagggggg/leetcoding/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/Adagggggg/leetcoding/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
@@ -1446,6 +1449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Adagggggg/leetcoding/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0173-binary-search-tree-iterator) |
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
