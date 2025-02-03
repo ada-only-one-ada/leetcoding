@@ -13,6 +13,7 @@ class Solution {
                 } else if (Math.abs(stack.peek()) > Math.abs(a)) {
                     a = 0;
                     break;
+                // 小的没爆，还可以继续爆stack底下的
                 } else if (Math.abs(stack.peek()) < Math.abs(a)) {
                     stack.pop();
                 }
