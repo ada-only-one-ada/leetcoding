@@ -64,7 +64,7 @@ class LRUCache {
             Node node = map.get(key);
             node.value = value;
         } else {
-            if (size == capacity) {
+            if (map.size() == capacity) {
                 map.remove(head.key);
                 remove(head);
                 size--;
