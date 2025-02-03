@@ -24,7 +24,7 @@ class Solution {
                 if (queue.isEmpty() && wl.size() == 0) break; // 最后有可能没了
                 if (!queue.isEmpty()) {
                     int currTask = queue.poll();
-                    sb.append("T");
+                    sb.append((char)(currTask + 'A'));
                     freq[currTask]--;
                     if (freq[currTask] > 0) wl.add(currTask);
                 } else {
