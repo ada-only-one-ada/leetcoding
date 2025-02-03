@@ -1,21 +1,18 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        int[] bucket = new int[20001];
+        // 10000
+        int[] freq = new int[20001];
+        for (int i = 0; i < nums.length; i++) {
+            int number = nums[i] + 10000;
 
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        for (int num: nums) {
-            bucket[num + 10000]++;
-            max = Math.max(max, num + 10000);
-            min = Math.min(min, num + 10000);
+            freq[number]++;
         }
 
-        for (int i = max; i >= min; i--) {
-            k -= bucket[i];
+        for (int i = freq.length - 1; i >= 0; i--) {
+            if (freq[i] == 0) continue;
+            k -= freq[i];
 
-            if (k <= 0) {
-                return i - 10000;
-            }
+            if (k <= 0) return i - 10000;
         }
 
         return -1;
