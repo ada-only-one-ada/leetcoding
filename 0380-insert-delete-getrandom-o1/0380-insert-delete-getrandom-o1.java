@@ -11,7 +11,8 @@ class RandomizedSet {
     
     public boolean insert(int val) {
         if (map.containsKey(val)) return false;
-        map.put(val, list.size()); // 新开一个index
+
+        map.put(val, list.size());
         list.add(val);
         return true;
     }
@@ -19,12 +20,13 @@ class RandomizedSet {
     public boolean remove(int val) {
         if (!map.containsKey(val)) return false;
 
-        int removedIndex = map.get(val);
         int lastNum = list.get(list.size() - 1);
+        int removedIndex = map.get(val);
         list.set(removedIndex, lastNum);
-        map.put(lastNum, removedIndex);
         list.remove(list.size() - 1);
+        map.put(lastNum, removedIndex);
         map.remove(val);
+
         return true;
     }
     
