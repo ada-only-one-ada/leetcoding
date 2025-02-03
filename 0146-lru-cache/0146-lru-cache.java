@@ -17,8 +17,8 @@ class LRUCache {
         if (!map.containsKey(key)) return -1;
 
         Node node = map.get(key);
-        remove(node);
-        add(node);
+        remove(node); // update of its position in the linkedlist
+        add(node);    // update of its position in the linkedlist
 
         return node.value;
     }
@@ -60,11 +60,9 @@ class LRUCache {
     
     public void put(int key, int value) {
         // have the key 
-        if (map.containsKey(key)) {
+        if (get(key) != -1) {
             Node node = map.get(key);
             node.value = value;
-            remove(node);
-            add(node);
         } else {
             if (size == capacity) {
                 map.remove(head.key);
