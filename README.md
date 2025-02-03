@@ -248,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1031-add-to-array-form-of-integer](https://github.com/Adagggggg/leetcoding/tree/master/1031-add-to-array-form-of-integer) |
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1095-two-city-scheduling](https://github.com/Adagggggg/leetcoding/tree/master/1095-two-city-scheduling) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1121-partition-array-for-maximum-sum](https://github.com/Adagggggg/leetcoding/tree/master/1121-partition-array-for-maximum-sum) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
@@ -708,6 +709,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1006-vowel-spellchecker](https://github.com/Adagggggg/leetcoding/tree/master/1006-vowel-spellchecker) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -990,6 +992,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1019-squares-of-a-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1095-two-city-scheduling](https://github.com/Adagggggg/leetcoding/tree/master/1095-two-city-scheduling) |
+| [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/Adagggggg/leetcoding/tree/master/1427-all-elements-in-two-binary-search-trees) |
