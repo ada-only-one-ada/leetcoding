@@ -274,6 +274,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/Adagggggg/leetcoding/tree/master/1646-kth-missing-positive-number) |
+| [1762-furthest-building-you-can-reach](https://github.com/Adagggggg/leetcoding/tree/master/1762-furthest-building-you-can-reach) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/Adagggggg/leetcoding/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1808-stone-game-vii](https://github.com/Adagggggg/leetcoding/tree/master/1808-stone-game-vii) |
@@ -1169,6 +1170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
 | [1095-two-city-scheduling](https://github.com/Adagggggg/leetcoding/tree/master/1095-two-city-scheduling) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
+| [1762-furthest-building-you-can-reach](https://github.com/Adagggggg/leetcoding/tree/master/1762-furthest-building-you-can-reach) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [1929-maximum-value-at-a-given-index-in-a-bounded-array](https://github.com/Adagggggg/leetcoding/tree/master/1929-maximum-value-at-a-given-index-in-a-bounded-array) |
 | [2084-maximum-number-of-weeks-for-which-you-can-work](https://github.com/Adagggggg/leetcoding/tree/master/2084-maximum-number-of-weeks-for-which-you-can-work) |
@@ -1281,6 +1283,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1762-furthest-building-you-can-reach](https://github.com/Adagggggg/leetcoding/tree/master/1762-furthest-building-you-can-reach) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/Adagggggg/leetcoding/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/Adagggggg/leetcoding/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/Adagggggg/leetcoding/tree/master/2616-maximal-score-after-applying-k-operations) |
