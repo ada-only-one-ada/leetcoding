@@ -225,6 +225,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0661-image-smoother](https://github.com/Adagggggg/leetcoding/tree/master/0661-image-smoother) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0722-remove-comments](https://github.com/Adagggggg/leetcoding/tree/master/0722-remove-comments) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/Adagggggg/leetcoding/tree/master/0735-asteroid-collision) |
@@ -545,6 +546,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0637-average-of-levels-in-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0662-maximum-width-of-binary-tree) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -709,6 +711,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
@@ -816,6 +819,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0640-solve-the-equation](https://github.com/Adagggggg/leetcoding/tree/master/0640-solve-the-equation) |
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0722-remove-comments](https://github.com/Adagggggg/leetcoding/tree/master/0722-remove-comments) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
@@ -1004,6 +1008,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
@@ -1189,6 +1194,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/Adagggggg/leetcoding/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1275-validate-binary-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/1275-validate-binary-tree-nodes) |
@@ -1362,6 +1368,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0637-average-of-levels-in-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0662-maximum-width-of-binary-tree) |
+| [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
