@@ -15,6 +15,8 @@ class Solution {
             l2 = l2.next;
         }
 
+        // 复原
+        middleNode.next = reverse(secondHalf);
         return true;
     }
 
