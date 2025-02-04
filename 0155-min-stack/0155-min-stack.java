@@ -1,45 +1,36 @@
 class MinStack {
-    Stack<Integer> stack;
-    int min;
+    Stack<int[]> stack;
+    Stack<int[]> minStack;
+    int i;
 
-    // 如果当前min被pop了，需要拿到下一个min，我们可以把下一个min放在能拿到的位置
     public MinStack() {
-        stack = new Stack();    
-        min = Integer.MAX_VALUE;
+        stack = new Stack();
+        minStack = new Stack();    
+        i = 0;
     }
     
     public void push(int val) {
-        if (val > min) {
-            stack.push(val);
-        } else {
-            stack.push(min); // 当前的min放在val下面，变成了下一个min的candidate，这个不是实际的数字，是做reference的作用
-            stack.push(val);
-            min = val;
+        stack.push(new int[]{i, val});
+
+        if (minStack.isEmpty() || val <= minStack.peek()[1]) {
+            minStack.push(new int[]{i, val});
         }
+        i++;
     }
     
     public void pop() {
-        int popedNum = stack.peek();
-        // 如果扔掉的这个数字是最小值
-        if (popedNum == min) {
-            // 先把这个数字扔了
-            stack.pop();
-            // 然后更新 min 为下一个 min 的 candidate
-            min = stack.pop(); // 把 reference 也扔了
-        // 如果扔掉的这个数字不是最小值，那么不需要更新 min
-        } else {
-            // 直接扔掉这个数字
-            stack.pop();
+        int[] poped = stack.pop();
+        if (minStack.peek()[0] == poped[0]) {
+            minStack.pop();
         }
-
     }
     
     public int top() {
-        return stack.peek();
+        return stack.peek()[1];
     }
     
     public int getMin() {
-        return min;
+        return minStack.peek()[1];
     }
 }
 
