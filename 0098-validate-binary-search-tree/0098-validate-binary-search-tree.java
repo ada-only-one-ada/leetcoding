@@ -3,10 +3,13 @@ class Solution {
         return helper(root, null, null);
     }
 
-    public boolean helper(TreeNode root, Integer min, Integer max) {
+    public boolean helper(TreeNode root, Integer max, Integer min) {
         if (root == null) return true;
 
-        if ((min != null && root.val <= min)|| (max != null && root.val >= max)) return false;
-        return helper(root.left, min, root.val) && helper(root.right, root.val, max);
+        if ((max != null && root.val >= max) || (min != null && root.val <= min)) {
+            return false;
+        }
+
+        return helper(root.left, root.val, min) && helper(root.right, max, root.val);
     }
 }
