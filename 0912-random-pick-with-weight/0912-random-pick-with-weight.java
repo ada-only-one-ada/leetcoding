@@ -17,6 +17,20 @@ class Solution {
         Random rand = new Random();
 
         int randNum = rand.nextInt(maxNum) + 1;
+        int left = 0;
+        int right = prefixSum.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (randNum <= prefixSum[mid]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+
+        /*
         for (int i = 0; i < prefixSum.length; i++) {
             if (randNum <= prefixSum[i]) {
                 return i;
@@ -24,5 +38,6 @@ class Solution {
         }
 
         return -1;
+        */
     }
 }
