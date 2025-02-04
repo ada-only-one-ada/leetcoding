@@ -3,66 +3,57 @@ class Solution {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) return res;
 
-        Queue<Pair<TreeNode, int[]>> queue = new LinkedList<>();
-        Map<Integer, Map<Integer, List<Integer>>> map = new HashMap<>();
+        Queue<Pair<TreeNode, Integer>> queue = new LinkedList<>();
+        queue.add(new Pair(root, 0));
 
-        queue.add(new Pair(root, new int[]{0, 0}));
-        int minColumn = Integer.MAX_VALUE;
-        int maxColumn = Integer.MIN_VALUE;
-        
+        // col: <value, level>
+        Map<Integer, List<Pair<Integer, Integer>>> map = new HashMap<>();
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        int level = 0;
+
         while (!queue.isEmpty()) {
-            int size = queue.size() ;
+            int size = queue.size();
             for (int i = 0; i < size; i++) {
-                Pair<TreeNode, int[]> curr = queue.poll();
-                TreeNode currNode = curr.getKey();
-                int[] columnLevel = curr.getValue();
-                int column = columnLevel[0];
-                int level = columnLevel[1];
 
-                minColumn = Math.min(minColumn, column);
-                maxColumn = Math.max(maxColumn, column);
+                Pair<TreeNode, Integer> pair = queue.poll();
+                TreeNode node = pair.getKey();
+                int index = pair.getValue();
+                max = Math.max(max, index);
+                min = Math.min(min, index);
 
-                if (!map.containsKey(column)) {
-                    map.put(column, new HashMap<>());
-                }
+                map.putIfAbsent(index, new ArrayList<>());
+                map.get(index).add(new Pair(node.val, level));
 
-                if (!map.get(column).containsKey(level)) {
-                    map.get(column).put(level, new ArrayList<>());
-                }
+                if (node.left != null) {
+                    queue.add(new Pair(node.left, index - 1));
+                } 
 
-                map.get(column).get(level).add(currNode.val);
-
-                if (currNode.left != null) {
-                    queue.add(new Pair(currNode.left, new int[]{column - 1, level + 1}));
-                }
-
-                if (currNode.right != null) {
-                    queue.add(new Pair(currNode.right, new int[]{column + 1, level + 1}));
-                }
+                if (node.right != null) {
+                    queue.add(new Pair(node.right, index + 1));
+                } 
             }
+            level++;
         }
 
-        for (int i = minColumn; i <= maxColumn; i++) {
-            Map<Integer, List<Integer>> subMap = map.get(i);
+        for (int i = min; i <= max; i++) {
+            List<Pair<Integer, Integer>> currRes = map.get(i);
+            
+            Collections.sort(currRes, (a, b) -> {
+                if (a.getValue() == b.getValue()) {
+                    return a.getKey().compareTo(b.getKey());
+                }
+                return a.getValue().compareTo(b.getValue());
+            });
 
-            List<Integer> currRes = new ArrayList<>();
-            int minLevel = Integer.MAX_VALUE;
-            int maxLevel = Integer.MIN_VALUE;
-
-            for (int level: subMap.keySet()) {
-                minLevel = Math.min(minLevel, level);
-                maxLevel = Math.max(maxLevel, level);
+            List<Integer> sortedRes = new ArrayList<>();
+            for (Pair<Integer, Integer> pair: currRes) {
+                sortedRes.add(pair.getKey());
             }
 
-            for (int level = minLevel; level <= maxLevel; level++) {
-                List<Integer> list = subMap.get(level);
-                if (list == null) continue;
-                
-                Collections.sort(list);
-                currRes.addAll(list);
-            }
-
-            res.add(currRes);
+            res.add(sortedRes);
         }
 
         return res;
