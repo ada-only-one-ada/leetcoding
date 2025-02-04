@@ -22,7 +22,7 @@ class Solution {
                     dp[i][j] = dp[i-1][j-1];
                 } else if (c2 == '*') {
                     char prevChar = p.charAt(j-2);
-                    if (prevChar == c1 || prevChar == '.') {
+                    if (prevChar == c1 || prevChar == '.' || prevChar == '*') {
                         dp[i][j] = dp[i][j-2] || dp[i-1][j];
                     } else {
                         dp[i][j] = dp[i][j-2];
