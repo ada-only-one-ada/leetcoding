@@ -1,20 +1,21 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        boolean[][] rowUsed = new boolean[9][10];
-        boolean[][] colUsed = new boolean[9][10];
-        boolean[][][] gridUsed = new boolean[3][3][10];
+        boolean[][] rowCheck = new boolean[9][10];
+        boolean[][] colCheck = new boolean[9][10];
+        boolean[][][] gridCheck = new boolean[3][3][10];
 
         for (int row = 0; row < 9; row++) {
             for (int col = 0; col < 9; col++) {
                 if (board[row][col] == '.') continue;
 
                 int num = Character.getNumericValue(board[row][col]);
-                if (rowUsed[row][num] || colUsed[col][num] || gridUsed[row/3][col/3][num]) {
-                    return false;
-                }
-                rowUsed[row][num] = true;
-                colUsed[col][num] = true;
-                gridUsed[row/3][col/3][num] = true;
+                if (rowCheck[row][num]) return false;
+                if (colCheck[col][num]) return false;
+                if (gridCheck[row/3][col/3][num]) return false;
+
+                rowCheck[row][num] = true;
+                colCheck[col][num] = true;
+                gridCheck[row/3][col/3][num] = true;
             }
         }
 
