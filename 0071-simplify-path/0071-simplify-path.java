@@ -20,22 +20,19 @@ class Solution {
         for (int i = 0; i < paths.length; i++) {
             if (paths[i].equals("..") && !stack.isEmpty()) {
                 stack.pop();
-            } else if (paths[i].length() == 0) {
-                continue;
-            } else if (paths[i].equals(".") || paths[i].equals("..")) {
+            } else if (paths[i].equals(".") || paths[i].equals("..") || paths[i].length() == 0) {
                 continue;
             } else {
                 stack.push(paths[i]);
-            } 
+            }
         }
 
         String res = "";
-
         while (!stack.isEmpty()) {
             res = stack.pop() + "/" + res;
         }
-        
-        if (res.length() > 1) return  "/" + res.substring(0, res.length() - 1);
+
+        if (res.length() > 0) return "/" + res.substring(0, res.length() - 1);
         return "/" + res;
     }
 }
