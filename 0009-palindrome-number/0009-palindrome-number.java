@@ -9,6 +9,7 @@ class Solution {
             num = num * 10 + copyX % 10;            
             copyX /= 10;
 
+            // 已经超过了，提前返回，不用再继续loop了
             if (num > x) return false;
         }
 
