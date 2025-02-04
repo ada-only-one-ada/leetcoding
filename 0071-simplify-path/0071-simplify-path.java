@@ -24,7 +24,7 @@ class Solution {
                 continue;
             } else if (paths[i].equals(".") || paths[i].equals("..")) {
                 continue;
-            } else  {
+            } else {
                 stack.push(paths[i]);
             } 
         }
