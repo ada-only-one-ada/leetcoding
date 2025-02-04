@@ -1,17 +1,15 @@
 class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) return false;
-        int sum = 0;
-        int temp = x;
 
-        while (temp > 0) {
-            sum = sum * 10 + temp % 10;
-            temp /= 10;   
+        int copyX = x;
+        int num = 0;
 
-            // 已经超过了，提前返回，不用再继续loop了
-            if (sum > x) return false;      
+        while (copyX > 0) {
+            num = num * 10 + copyX % 10;            
+            copyX /= 10;
         }
 
-        return sum == x;
+        return num == x;
     }
 }
