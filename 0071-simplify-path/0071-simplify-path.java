@@ -22,9 +22,9 @@ class Solution {
                 stack.pop();
             } else if (paths[i].length() == 0) {
                 continue;
-            } else if (paths[i].equals(".")) {
+            } else if (paths[i].equals(".") || paths[i].equals("..")) {
                 continue;
-            } else if (!paths[i].equals("..")) {
+            } else  {
                 stack.push(paths[i]);
             } 
         }
