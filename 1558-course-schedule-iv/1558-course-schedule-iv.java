@@ -1,39 +1,44 @@
-import java.util.*;
-
-public class Solution {
+class Solution {
     public List<Boolean> checkIfPrerequisite(int numCourses, int[][] prerequisites, int[][] queries) {
-        List<Boolean> result = new ArrayList<>();
-        // Create an adjacency list to represent the graph
-        Map<Integer, List<Integer>> graph = new HashMap<>();
-        for (int[] pre : prerequisites) {
-            graph.putIfAbsent(pre[0], new ArrayList<>());
-            graph.get(pre[0]).add(pre[1]);
+        // 小岛问题，把连起来的岛都收集起来
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+
+        for (int[] prereq: prerequisites) {
+            int mustTake = prereq[0];
+            int toTake = prereq[1];
+            map.putIfAbsent(mustTake, new HashSet<>());
+            map.get(mustTake).add(toTake);
         }
 
-        // Build the prereqMap using DFS to determine all reachable nodes from each node
-        Map<Integer, Set<Integer>> prereqMap = new HashMap<>();
-        for (int i = 0; i < numCourses; i++) {
+        for (int course = 0; course < numCourses; course++) {
+            Set<Integer> allToTakes = new HashSet<>();
             Set<Integer> visited = new HashSet<>();
-            Set<Integer> reachables = new HashSet<>();
-            dfs(i, graph, visited, reachables);
-            prereqMap.put(i, reachables);
+           
+            dfs(course, map, allToTakes, visited);
+            map.put(course, allToTakes);
         }
 
-        // Evaluate the queries
-        for (int[] query : queries) {
-            result.add(prereqMap.getOrDefault(query[0], new HashSet<>()).contains(query[1]));
+        List<Boolean> res = new ArrayList<>();
+        for (int[] q: queries) {
+            if (map.containsKey(q[0]) && map.get(q[0]).contains(q[1])) {
+                res.add(true);
+            } else {
+                res.add(false);
+            }
         }
 
-        return result;
+        return res;
     }
 
-    private void dfs(int current, Map<Integer, List<Integer>> graph, Set<Integer> visited, Set<Integer> reachables) {
-        visited.add(current);
-        for (int neighbor : graph.getOrDefault(current, new ArrayList<>())) {
-            reachables.add(neighbor);
-            if (!visited.contains(neighbor)) {
-                dfs(neighbor, graph, visited, reachables);
-            }
+    public void dfs(int course, Map<Integer, Set<Integer>> map, Set<Integer> allToTakes, Set<Integer> visited) {
+        if (visited.contains(course)) return;
+        visited.add(course);
+
+        if (!map.containsKey(course) || map.get(course).size() == 0) return;
+
+        for (int nei: map.get(course)) {
+            allToTakes.add(nei);
+            dfs(nei, map, allToTakes, visited);
         }
     }
 }
