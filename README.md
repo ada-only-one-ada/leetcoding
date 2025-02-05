@@ -711,6 +711,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Adagggggg/leetcoding/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Adagggggg/leetcoding/tree/master/0169-majority-element) |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0202-happy-number](https://github.com/Adagggggg/leetcoding/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
@@ -823,6 +824,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0131-palindrome-partitioning](https://github.com/Adagggggg/leetcoding/tree/master/0131-palindrome-partitioning) |
 | [0132-palindrome-partitioning-ii](https://github.com/Adagggggg/leetcoding/tree/master/0132-palindrome-partitioning-ii) |
 | [0151-reverse-words-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0151-reverse-words-in-a-string) |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0205-isomorphic-strings](https://github.com/Adagggggg/leetcoding/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Adagggggg/leetcoding/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -1347,6 +1349,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/Adagggggg/leetcoding/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Adagggggg/leetcoding/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0076-minimum-window-substring](https://github.com/Adagggggg/leetcoding/tree/master/0076-minimum-window-substring) |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0209-minimum-size-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
@@ -1486,6 +1489,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0078-subsets](https://github.com/Adagggggg/leetcoding/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Adagggggg/leetcoding/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0137-single-number-ii) |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0222-count-complete-tree-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/Adagggggg/leetcoding/tree/master/0371-sum-of-two-integers) |
@@ -1516,6 +1520,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Function
 |  |
 | ------- |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0694-number-of-distinct-islands](https://github.com/Adagggggg/leetcoding/tree/master/0694-number-of-distinct-islands) |
@@ -1658,6 +1663,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Rolling Hash
 |  |
 | ------- |
+| [0187-repeated-dna-sequences](https://github.com/Adagggggg/leetcoding/tree/master/0187-repeated-dna-sequences) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
 ## Counting Sort
 |  |
