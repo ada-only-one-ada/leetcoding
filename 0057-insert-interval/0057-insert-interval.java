@@ -1,31 +1,31 @@
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        // 读题目：You are given an array of non-overlapping intervals
         List<int[]> list = new ArrayList<>();
-        int insertStart = newInterval[0];
-        int insertEnd = newInterval[1];
+        int newStart = newInterval[0];
+        int newEnd = newInterval[1];
 
-        int index = 0;
-        while (index < intervals.length && intervals[index][1] < insertStart) {
-            list.add(intervals[index]);
-            index++;
-        }
-      
-        while (index < intervals.length && intervals[index][0] <= insertEnd) {
-            insertStart = Math.min(insertStart, intervals[index][0]);
-            insertEnd = Math.max(insertEnd, intervals[index][1]);
-            index++;
+        int i = 0;
+        while (i < intervals.length && newStart > intervals[i][1]) {
+            list.add(intervals[i]);
+            i++;
         }
 
-        list.add(new int[]{insertStart, insertEnd});
-        while (index < intervals.length) {
-            list.add(intervals[index]);
-            index++;
+        while (i < intervals.length && intervals[i][0] <= newEnd) {
+            newStart = Math.min(newStart, intervals[i][0]);
+            newEnd = Math.max(newEnd, intervals[i][1]);
+            i++;
+        }
+
+        list.add(new int[]{newStart, newEnd});
+
+        while (i < intervals.length) {
+            list.add(intervals[i]);
+            i++;
         }
 
         int[][] res = new int[list.size()][2];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = list.get(i);
+        for (int index = 0; index < res.length; index++) {
+            res[index] = list.get(index);
         }
 
         return res;
