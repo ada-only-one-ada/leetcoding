@@ -1,50 +1,24 @@
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public List<Node> neighbors;
-    public Node() {
-        val = 0;
-        neighbors = new ArrayList<Node>();
-    }
-    public Node(int _val) {
-        val = _val;
-        neighbors = new ArrayList<Node>();
-    }
-    public Node(int _val, ArrayList<Node> _neighbors) {
-        val = _val;
-        neighbors = _neighbors;
-    }
-}
-*/
-
 class Solution {
     public Node cloneGraph(Node node) {
         if (node == null) return null;
+        
+        Map<Integer, Node> map = new HashMap<>();
+        map.put(node.val, new Node(node.val, new ArrayList<>()));
 
         Queue<Node> queue = new LinkedList<>();
-        Map<Node, Node> map = new HashMap<>();
         queue.add(node);
-         map.put(node, new Node(node.val, new ArrayList<>())); // 创建新curr
 
-        
         while (!queue.isEmpty()) {
-           
-                Node curr = queue.poll();
-               
-                List<Node> neis = curr.neighbors;
-                if (neis == null) continue;
-                for (Node nei: neis) {
-                    if (!map.containsKey(nei)) {
-                        queue.add(nei);
-                        map.put(nei, new Node(nei.val, new ArrayList<>())); // 创建curr的nei的新nei
-                    }
-
-                    map.get(curr).neighbors.add(map.get(nei));
+            Node oldNode = queue.poll();
+            for (Node oldNei: oldNode.neighbors) {
+                if (!map.containsKey(oldNei.val)) {
+                    map.put(oldNei.val, new Node(oldNei.val, new ArrayList<>()));
+                    queue.add(oldNei);
                 }
-            
+                map.get(oldNode.val).neighbors.add(map.get(oldNei.val));
+            }
         }
 
-        return map.get(node);
+        return map.get(node.val);
     }
 }
