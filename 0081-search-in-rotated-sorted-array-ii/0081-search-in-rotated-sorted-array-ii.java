@@ -1,7 +1,6 @@
 class Solution {
     public boolean search(int[] nums, int target) {
         // not necessarily with distinct values
-
         int start = 0;
         int end = nums.length;
         
@@ -10,6 +9,7 @@ class Solution {
             if (nums[mid] == target) {
                 return true;
             } else {
+                // 由于存在重复元素，需要处理跳过重复的情况
                 if (nums[start] == nums[mid] && nums[mid] == nums[end-1]) {
                     start++;
                     end--;
