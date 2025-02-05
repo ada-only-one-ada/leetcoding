@@ -1,48 +1,51 @@
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        // 如果链表为空，直接返回
-        if (head == null) return null; 
+        if (head == null || head.next == null) return head;
 
-        // 遍历一边得到节点的数量
-        int size = 0;
-        ListNode currNode = head;
-        while (currNode != null) {
-            size++;
-            currNode = currNode.next;
-        }        
+        
+        k = k % getLen(head);
+        if (k == getLen(head) || k == 0) return head;
 
-        // 简化 k 
-        k %= size;
-        // 如果 rotate 次数为0，直接返回
-        if (k == 0) return head;
+        head = reverse(head);
 
-        // 计算出新的头节点的位置（index 从0开始）
-        int newHeadPos = size - k;
-        // 把新的头节点的前一个节点存起来，方便后续断开
-        ListNode prevNode = null;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode curr = dummy;
 
-        // 重置开始遍历
-        currNode = head;
-        int currPos = 0;
-        // 直到找到新的头节点的位置
-        while (currPos < newHeadPos) {
-            currPos++;
-            prevNode = currNode;
-            currNode = currNode.next;
+        for (int i = 0; i < k; i++) {
+            curr = curr.next;
         }
-
-        // 新的头节点
-        ListNode newHead = currNode;
-        // 断开前一段
-        prevNode.next = null;
-
-        // 遍历到新的头节点那一段的最后一个节点
-        while (currNode.next != null) {
-            currNode = currNode.next;
+    
+        ListNode secondHalf = reverse(curr.next);
+        curr.next = null;
+        ListNode firstHalf = reverse(head);
+        ListNode p = firstHalf;
+        while (p.next != null) {
+            p = p.next;
         }
-        // 把最后一个节点连到旧的头节点
-        currNode.next = head;
-        // 返回新的头节点
-        return newHead;
+        p.next = secondHalf;
+        return firstHalf;
+    }
+
+    public int getLen(ListNode head) {
+        int count = 0;
+        ListNode curr = head;
+        while (curr != null) {
+            count++;
+            curr = curr.next;
+        }
+        return count;
+    }
+
+    public ListNode reverse(ListNode head) {
+        ListNode prev = null;
+
+        while (head != null) {
+            ListNode nextHead = head.next;
+            head.next = prev;
+            prev = head;
+            head = nextHead;
+        }
+        return prev;
     }
 }
