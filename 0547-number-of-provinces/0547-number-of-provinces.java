@@ -11,16 +11,14 @@ class Solution {
                 }
             }
         }
-
         return res;
     }
 
     public void dfs(int node, int[][] isConnected, Set<Integer> visited) {
         if (visited.contains(node)) return;
         visited.add(node);
-
-        int[] neis = isConnected[node];
-        for (int nei = 0; nei < neis.length; nei++) {
+        
+        for (int nei = 0; nei < isConnected[node].length; nei++) {
             if (isConnected[node][nei] == 1) {
                 dfs(nei, isConnected, visited);
             }
