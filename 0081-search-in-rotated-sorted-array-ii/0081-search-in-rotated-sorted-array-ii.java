@@ -11,6 +11,11 @@ class Solution {
             if (nums[mid] == target) {
                 return true;
             } else {
+                /* 由于存在重复元素，需要处理跳过重复的情况
+                if (nums[start] == nums[mid] && nums[end - 1] == nums[mid]) {
+                    start++;
+                    end--;
+                } else*/ 
                 if (nums[start] <= nums[mid]) {
                     if (nums[start] <= target && target < nums[mid]) {
                         end = mid;
