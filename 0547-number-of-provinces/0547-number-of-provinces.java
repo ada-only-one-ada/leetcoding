@@ -21,7 +21,6 @@ class Solution {
 
         int[] neis = isConnected[node];
         for (int nei = 0; nei < neis.length; nei++) {
-            if (node == nei) continue;
             if (isConnected[node][nei] == 1) {
                 dfs(nei, isConnected, visited);
             }
