@@ -5,7 +5,7 @@ class Solution {
             for (int col = 0; col < grid[0].length; col++) {
                 if (grid[row][col] == 1) {
                     StringBuilder sb = new StringBuilder();
-                    sb.append("o");
+                   // sb.append("o");
                     dfs(grid, row, col, sb);
                     res.add(sb.toString());
                 }
