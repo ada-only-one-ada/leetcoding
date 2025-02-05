@@ -1,7 +1,7 @@
 class Solution {
     public Node cloneGraph(Node node) {
         if (node == null) return null;
-        
+
         Map<Integer, Node> map = new HashMap<>();
         map.put(node.val, new Node(node.val, new ArrayList<>()));
 
@@ -15,6 +15,7 @@ class Solution {
                     map.put(oldNei.val, new Node(oldNei.val, new ArrayList<>()));
                     queue.add(oldNei);
                 }
+
                 map.get(oldNode.val).neighbors.add(map.get(oldNei.val));
             }
         }
