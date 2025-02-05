@@ -271,6 +271,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1511-count-number-of-teams](https://github.com/Adagggggg/leetcoding/tree/master/1511-count-number-of-teams) |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/Adagggggg/leetcoding/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
