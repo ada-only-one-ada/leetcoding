@@ -752,6 +752,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/Adagggggg/leetcoding/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -863,6 +864,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0977-distinct-subsequences-ii](https://github.com/Adagggggg/leetcoding/tree/master/0977-distinct-subsequences-ii) |
 | [1006-vowel-spellchecker](https://github.com/Adagggggg/leetcoding/tree/master/1006-vowel-spellchecker) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1156-occurrences-after-bigram](https://github.com/Adagggggg/leetcoding/tree/master/1156-occurrences-after-bigram) |
 | [1238-alphabet-board-path](https://github.com/Adagggggg/leetcoding/tree/master/1238-alphabet-board-path) |
@@ -1496,6 +1498,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0211-design-add-and-search-words-data-structure](https://github.com/Adagggggg/leetcoding/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
+| [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
 |  |
@@ -1550,6 +1553,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
+| [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
