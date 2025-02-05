@@ -4,7 +4,7 @@ class Solution {
         int end = nums.length;
 
         while (start + 1 < nums.length && nums[start] == nums[start + 1]) start++;
-        while (end - 3 >= 0 && nums[end - 1] == nums[end - 2]) end--;
+        while (end - 2 > 0 && nums[end - 1] == nums[end - 2]) end--;
 
         while (start < end) {
             int mid = start + (end - start) / 2;
