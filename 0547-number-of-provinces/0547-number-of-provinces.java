@@ -1,27 +1,56 @@
 class Solution {
+    int[] root;
+    int[] count;
     public int findCircleNum(int[][] isConnected) {
-        int n = isConnected.length;
-        int res = 0;
-        Set<Integer> visited = new HashSet<>();
+        root = new int[isConnected.length];
+        count = new int[isConnected.length];
 
-        for (int node = 0; node < n; node++) {
-            if (!visited.contains(node))  {
-                res++; // 增加一组
-                dfs(isConnected, node, visited); // 把与这个相连的点都加入visited
+        for (int i = 0; i < isConnected.length; i++) {
+            root[i] = i;
+            count[i] = 1;
+        }
+
+        for (int i = 0; i < isConnected.length; i++) {
+            for (int nei = 0; nei < isConnected.length; nei++) {
+                if (isConnected[i][nei] == 1) {
+                    connect(i, nei);
+                }
             }
         }
 
-        return res;
+        for (int i = 0; i < isConnected.length; i++) {
+            root[i] = findRoot(i);
+        }
+
+
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < root.length; i++) {
+            set.add(root[i]);
+        }
+        return set.size();
     }
 
-    public void dfs(int[][] isConnected, int node, Set<Integer> visited) {
-        for (int nei = 0; nei < isConnected[0].length; nei++) {
-            if (visited.contains(nei)) continue; // 已经加入不必再加
+    public void connect(int node1, int node2) {
+        int root1 = findRoot(node1);
+        int root2 = findRoot(node2);
 
-            if (isConnected[node][nei] == 1) { // 如果是相连接的点
-                visited.add(nei); // 加入visited
-                dfs(isConnected, nei, visited); // 这个nei点再继续dfs
-            }
+        if (root1 == root2) return;
+
+        if (count[root1] >= count[root2]) {
+            root[root2] = root1;
+            count[root1] += count[root2];
+        } else {
+            root[root1] = root2; 
+            count[root2] += count[root1];
         }
+    }
+
+    public int findRoot(int node) {
+        int p = root[node];
+        if (root[p] != p) {
+            p = findRoot(root[p]);
+        }
+
+        return root[p];
     }
 }
