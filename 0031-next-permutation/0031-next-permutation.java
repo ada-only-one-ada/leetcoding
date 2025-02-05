@@ -1,13 +1,13 @@
 class Solution {
     public void nextPermutation(int[] nums) {
-        if (nums.length == 1) return;
+        if (nums.length <= 1) return;
 
         int i = nums.length - 2;
         while (i >= 0 && nums[i] >= nums[i+1]) {
             i--;
         }
 
-        if (i == -1){
+        if (i == -1) {
             reverse(nums, 0, nums.length - 1);
             return;
         }
@@ -16,10 +16,9 @@ class Solution {
         while (bigIndex >= 0 && nums[bigIndex] <= nums[i]) {
             bigIndex--;
         }
-        
-        swap(nums, bigIndex, i);
-        reverse(nums, i+1, nums.length - 1);
 
+        swap(nums, bigIndex, i);
+        reverse(nums, i + 1, nums.length - 1);
     }
 
     public void swap(int[] nums, int i1, int i2) {
@@ -30,10 +29,7 @@ class Solution {
 
     public void reverse(int[] nums, int start, int end) {
         while (start < end) {
-            int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
-
+            swap(nums, start, end);
             start++;
             end--;
         }
