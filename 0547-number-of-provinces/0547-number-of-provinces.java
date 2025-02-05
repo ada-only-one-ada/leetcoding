@@ -5,8 +5,6 @@ class Solution {
 
         for (int node = 0; node < isConnected.length; node++) {
             for (int nei = 0; nei < isConnected[0].length; nei++) {
-                
-                
                 if (isConnected[node][nei] == 1 && !visited.contains(node)) {
                     res++;
                     dfs(node, isConnected, visited);
