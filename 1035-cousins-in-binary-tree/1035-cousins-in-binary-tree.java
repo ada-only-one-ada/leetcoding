@@ -1,22 +1,27 @@
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
-        int[] findx = dfs(root, x, 0, -1);
-        int[] findy = dfs(root, y, 0, -1);
+        // Each node has a unique value
+        
+        int[] findX = helper(root, x, null, 0);
+        int[] findY = helper(root, y, null, 0);
 
-        return findx[0] == findy[0] && findx[1] != findy[1];
+        return findX[0] != findY[0] && findX[1] == findY[1];
     }
 
-    public int[] dfs(TreeNode root, int val, int level, int parent) {
-        if (root == null) return new int[]{-1,-1};
+    public int[] helper(TreeNode root, int val, TreeNode parent, int level) {
+        if (root == null) return new int[]{-1, -1};
 
-        if (root.val == val) return new int[]{level, parent};
+        if (root.val == val && parent != null) {
+            return new int[]{parent.val, level};
+        }
 
-        int[] left = dfs(root.left, val, level + 1, root.val);
-        int[] right = dfs(root.right, val, level + 1, root.val);
+        int[] left = helper(root.left, val, root, level + 1);
+        int[] right = helper(root.right, val, root, level + 1);
 
-        if (left[0] != -1) return left;
-        if (right[0] != -1) return right;
-
-        return new int[]{-1,-1};
+        if (left[0] != -1) {
+            return left;
+        } else {
+            return right;
+        }
     }
 }
