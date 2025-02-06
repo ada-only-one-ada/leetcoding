@@ -17,7 +17,7 @@ class Solution {
             res += groupOfThree;
             freq = freq % 3;
 
-            if (freq >= 2) {
+            if (freq == 2) {
                 res += freq / 2;
             } else if (freq == 1) {
                 res++;
