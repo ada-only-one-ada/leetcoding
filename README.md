@@ -321,6 +321,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
 | [2526-longest-increasing-subsequence-ii](https://github.com/Adagggggg/leetcoding/tree/master/2526-longest-increasing-subsequence-ii) |
 | [2550-words-within-two-edits-of-dictionary](https://github.com/Adagggggg/leetcoding/tree/master/2550-words-within-two-edits-of-dictionary) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Adagggggg/leetcoding/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2561-number-of-distinct-averages](https://github.com/Adagggggg/leetcoding/tree/master/2561-number-of-distinct-averages) |
 | [2567-closest-nodes-queries-in-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/2567-closest-nodes-queries-in-a-binary-search-tree) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Adagggggg/leetcoding/tree/master/2581-divide-players-into-teams-of-equal-skill) |
@@ -809,6 +810,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Adagggggg/leetcoding/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/Adagggggg/leetcoding/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Adagggggg/leetcoding/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2561-number-of-distinct-averages](https://github.com/Adagggggg/leetcoding/tree/master/2561-number-of-distinct-averages) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/Adagggggg/leetcoding/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
@@ -1425,6 +1427,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1046-max-consecutive-ones-iii](https://github.com/Adagggggg/leetcoding/tree/master/1046-max-consecutive-ones-iii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Adagggggg/leetcoding/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2884-length-of-the-longest-valid-substring](https://github.com/Adagggggg/leetcoding/tree/master/2884-length-of-the-longest-valid-substring) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
