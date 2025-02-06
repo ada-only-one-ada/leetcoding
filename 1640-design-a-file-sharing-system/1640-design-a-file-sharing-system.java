@@ -22,22 +22,16 @@ class FileSharing {
 
         for (int chunk: ownedChunks) {
             map.putIfAbsent(chunk, new HashSet<>());
-
-            
-                map.get(chunk).add(assignedId);
-            
+            map.get(chunk).add(assignedId);
         }
 
         userToChunks.put(assignedId, ownedChunks);
-
         return assignedId;
     }
     
     public void leave(int userID) {
         for (int chunk: userToChunks.get(userID)) {
-            if (map.get(chunk).contains(userID)) {
-                map.get(chunk).remove(Integer.valueOf(userID));
-            }
+            map.get(chunk).remove(userID);
         }
         queue.add(userID);
     }
@@ -49,10 +43,10 @@ class FileSharing {
         if (res.size() == 0) return res;
 
         Collections.sort(res);
-        if (map.get(chunkID).size() > 0 && !map.get(chunkID).contains(userID)) {
+       
             map.get(chunkID).add(userID);
             userToChunks.get(userID).add(chunkID);
-        }
+        
         return res;
     }
 }
