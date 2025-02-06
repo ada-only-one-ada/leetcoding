@@ -30,7 +30,6 @@ class Solution {
             int stops = curr[1];
             int totalCost = curr[2];
 
-            if (pos == dst) return totalCost;
             if (stops < k + 2) {
                 for (Pair<Integer, Integer> next: map.get(pos)) {
                     int nextCity = next.getKey();
@@ -43,6 +42,6 @@ class Solution {
             }
         }
 
-        return -1;
+        return record[dst] == Integer.MAX_VALUE? -1 : record[dst];
     }
 }
