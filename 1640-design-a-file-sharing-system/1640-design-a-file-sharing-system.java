@@ -1,5 +1,5 @@
 class FileSharing {
-    Map<Integer, List<Integer>> map; // chunkId: <user1, user2>
+    Map<Integer, Set<Integer>> map; // chunkId: <user1, user2>
     PriorityQueue<Integer> queue; // previous available id
     int id; // new id
     Map<Integer, List<Integer>> userToChunks;
@@ -21,11 +21,11 @@ class FileSharing {
         }
 
         for (int chunk: ownedChunks) {
-            map.putIfAbsent(chunk, new ArrayList<>());
+            map.putIfAbsent(chunk, new HashSet<>());
 
-            if (!map.get(chunk).contains(assignedId)) {
+            
                 map.get(chunk).add(assignedId);
-            }
+            
         }
 
         userToChunks.put(assignedId, ownedChunks);
