@@ -331,6 +331,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [2681-put-marbles-in-bags](https://github.com/Adagggggg/leetcoding/tree/master/2681-put-marbles-in-bags) |
 | [2689-rearranging-fruits](https://github.com/Adagggggg/leetcoding/tree/master/2689-rearranging-fruits) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
@@ -788,6 +789,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2634-minimum-common-value](https://github.com/Adagggggg/leetcoding/tree/master/2634-minimum-common-value) |
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [2689-rearranging-fruits](https://github.com/Adagggggg/leetcoding/tree/master/2689-rearranging-fruits) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -1500,6 +1502,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2078-maximum-compatibility-score-sum](https://github.com/Adagggggg/leetcoding/tree/master/2078-maximum-compatibility-score-sum) |
 | [2621-find-xor-beauty-of-array](https://github.com/Adagggggg/leetcoding/tree/master/2621-find-xor-beauty-of-array) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/Adagggggg/leetcoding/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 ## Trie
 |  |
