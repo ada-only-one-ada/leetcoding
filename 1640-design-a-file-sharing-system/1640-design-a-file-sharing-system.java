@@ -37,11 +37,9 @@ class FileSharing {
     }
     
     public List<Integer> request(int userID, int chunkID) {
-        if (!map.containsKey(chunkID)) return new ArrayList<>();
-        List<Integer> res = new ArrayList<>(map.get(chunkID));  
-             
-        if (res.size() == 0) return res;
+        if (!map.containsKey(chunkID) || map.get(chunkID).size() == 0) return new ArrayList<>();
 
+        List<Integer> res = new ArrayList<>(map.get(chunkID));  
         Collections.sort(res);
        
         map.get(chunkID).add(userID);
