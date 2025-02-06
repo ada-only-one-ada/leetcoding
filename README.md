@@ -789,6 +789,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/Adagggggg/leetcoding/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1635-number-of-good-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1635-number-of-good-pairs) |
+| [1640-design-a-file-sharing-system](https://github.com/Adagggggg/leetcoding/tree/master/1640-design-a-file-sharing-system) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/Adagggggg/leetcoding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1848-sum-of-unique-elements](https://github.com/Adagggggg/leetcoding/tree/master/1848-sum-of-unique-elements) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/Adagggggg/leetcoding/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -1094,6 +1095,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1308-smallest-string-with-swaps](https://github.com/Adagggggg/leetcoding/tree/master/1308-smallest-string-with-swaps) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/Adagggggg/leetcoding/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+| [1640-design-a-file-sharing-system](https://github.com/Adagggggg/leetcoding/tree/master/1640-design-a-file-sharing-system) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Adagggggg/leetcoding/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/Adagggggg/leetcoding/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/Adagggggg/leetcoding/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
@@ -1368,6 +1370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1014-k-closest-points-to-origin](https://github.com/Adagggggg/leetcoding/tree/master/1014-k-closest-points-to-origin) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1640-design-a-file-sharing-system](https://github.com/Adagggggg/leetcoding/tree/master/1640-design-a-file-sharing-system) |
 | [1762-furthest-building-you-can-reach](https://github.com/Adagggggg/leetcoding/tree/master/1762-furthest-building-you-can-reach) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/Adagggggg/leetcoding/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/Adagggggg/leetcoding/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -1622,6 +1625,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
 | [1512-design-underground-system](https://github.com/Adagggggg/leetcoding/tree/master/1512-design-underground-system) |
+| [1640-design-a-file-sharing-system](https://github.com/Adagggggg/leetcoding/tree/master/1640-design-a-file-sharing-system) |
 | [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 | [3516-design-neighbor-sum-service](https://github.com/Adagggggg/leetcoding/tree/master/3516-design-neighbor-sum-service) |
@@ -1655,6 +1659,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Data Stream
 |  |
 | ------- |
+| [1640-design-a-file-sharing-system](https://github.com/Adagggggg/leetcoding/tree/master/1640-design-a-file-sharing-system) |
 | [2620-find-consecutive-integers-from-a-data-stream](https://github.com/Adagggggg/leetcoding/tree/master/2620-find-consecutive-integers-from-a-data-stream) |
 ## Randomized
 |  |
