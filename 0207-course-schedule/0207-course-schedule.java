@@ -29,14 +29,16 @@ class Solution {
         if (state[course] == 2) return false; // 如果该课程已经访问完毕，无需再次访问
 
         state[course] = 1; // 标记为正在访问
-        List<Integer> toTakes = map.getOrDefault(course, Collections.emptyList());
-        if (toTakes == null) return false;
-        
-        for (int toTake: toTakes) {
-            if (hasCycle(toTake, map, state)) {
-                return true;
+
+        List<Integer> toTakes = map.get(course);
+        if (toTakes != null) {
+            for (int toTake: toTakes) {
+                if (hasCycle(toTake, map, state)) {
+                    return true;
+                }
             }
         }
+
         state[course] = 2; // 标记为访问完毕
         return false;
     }
