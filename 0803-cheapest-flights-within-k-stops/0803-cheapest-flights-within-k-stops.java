@@ -16,10 +16,9 @@ class Solution {
         if (!map.containsKey(dst)) return -1;
 
         Queue<int[]> queue = new LinkedList<>();
-
-        int[] record = new int[n];
-        Arrays.fill(record, Integer.MAX_VALUE);
-        record[src] = 0;
+        int[] minCost = new int[n];
+        Arrays.fill(minCost, Integer.MAX_VALUE);
+        minCost[src] = 0;
 
         queue.add(new int[]{src, 1, 0});
         while (!queue.isEmpty()) {
@@ -28,20 +27,18 @@ class Solution {
             int stops = curr[1];
             int totalCost = curr[2];
 
-            if (!map.containsKey(pos)) continue;
-
             if (stops < k + 2) {
                 for (Pair<Integer, Integer> next: map.get(pos)) {
                     int nextCity = next.getKey();
                     int nextCost = totalCost + next.getValue();
 
-                    if (nextCost >= record[nextCity]) continue;
-                    record[nextCity] = nextCost;
+                    if (nextCost >= minCost[nextCity]) continue;
+                    minCost[nextCity] = nextCost;
                     queue.add(new int[]{nextCity, stops + 1, nextCost});
                 }
             }
         }
 
-        return record[dst] == Integer.MAX_VALUE? -1 : record[dst];
+        return minCost[dst] == Integer.MAX_VALUE ? -1 : minCost[dst];
     }
 }
