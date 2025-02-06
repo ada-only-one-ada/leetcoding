@@ -334,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2689-rearranging-fruits](https://github.com/Adagggggg/leetcoding/tree/master/2689-rearranging-fruits) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
+| [2884-length-of-the-longest-valid-substring](https://github.com/Adagggggg/leetcoding/tree/master/2884-length-of-the-longest-valid-substring) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/Adagggggg/leetcoding/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/Adagggggg/leetcoding/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/Adagggggg/leetcoding/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
@@ -791,6 +792,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2679-count-distinct-numbers-on-board](https://github.com/Adagggggg/leetcoding/tree/master/2679-count-distinct-numbers-on-board) |
 | [2689-rearranging-fruits](https://github.com/Adagggggg/leetcoding/tree/master/2689-rearranging-fruits) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/Adagggggg/leetcoding/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2884-length-of-the-longest-valid-substring](https://github.com/Adagggggg/leetcoding/tree/master/2884-length-of-the-longest-valid-substring) |
 | [3265-maximum-good-subarray-sum](https://github.com/Adagggggg/leetcoding/tree/master/3265-maximum-good-subarray-sum) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -894,6 +896,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2576-minimum-penalty-for-a-shop](https://github.com/Adagggggg/leetcoding/tree/master/2576-minimum-penalty-for-a-shop) |
 | [2615-make-number-of-distinct-characters-equal](https://github.com/Adagggggg/leetcoding/tree/master/2615-make-number-of-distinct-characters-equal) |
 | [2723-find-the-longest-balanced-substring-of-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2723-find-the-longest-balanced-substring-of-a-binary-string) |
+| [2884-length-of-the-longest-valid-substring](https://github.com/Adagggggg/leetcoding/tree/master/2884-length-of-the-longest-valid-substring) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/Adagggggg/leetcoding/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/Adagggggg/leetcoding/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3636-check-balanced-string](https://github.com/Adagggggg/leetcoding/tree/master/3636-check-balanced-string) |
@@ -1371,6 +1374,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2626-count-the-number-of-good-subarrays) |
+| [2884-length-of-the-longest-valid-substring](https://github.com/Adagggggg/leetcoding/tree/master/2884-length-of-the-longest-valid-substring) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/Adagggggg/leetcoding/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/Adagggggg/leetcoding/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 ## Monotonic Queue
