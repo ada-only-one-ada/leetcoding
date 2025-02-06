@@ -232,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0722-remove-comments](https://github.com/Adagggggg/leetcoding/tree/master/0722-remove-comments) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/Adagggggg/leetcoding/tree/master/0735-asteroid-collision) |
+| [0753-open-the-lock](https://github.com/Adagggggg/leetcoding/tree/master/0753-open-the-lock) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [0777-toeplitz-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0777-toeplitz-matrix) |
@@ -749,6 +750,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0694-number-of-distinct-islands](https://github.com/Adagggggg/leetcoding/tree/master/0694-number-of-distinct-islands) |
 | [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
+| [0753-open-the-lock](https://github.com/Adagggggg/leetcoding/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
@@ -866,6 +868,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0722-remove-comments](https://github.com/Adagggggg/leetcoding/tree/master/0722-remove-comments) |
+| [0753-open-the-lock](https://github.com/Adagggggg/leetcoding/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0800-letter-case-permutation](https://github.com/Adagggggg/leetcoding/tree/master/0800-letter-case-permutation) |
@@ -1445,6 +1448,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0694-number-of-distinct-islands](https://github.com/Adagggggg/leetcoding/tree/master/0694-number-of-distinct-islands) |
 | [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
+| [0753-open-the-lock](https://github.com/Adagggggg/leetcoding/tree/master/0753-open-the-lock) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
