@@ -16,10 +16,18 @@ class Solution {
 
             if (freq % 3 == 0) {
                 res += freq / 3;
-            } else if (freq % 2 == 0) {
-                res += freq / 2;
             } else {
-                return -1;
+                while (freq >= 2) {
+                    if (freq >= 3) {
+                        res += freq / 3;
+                        freq = freq - (freq / 3) * 3;
+                    } else if (freq >= 2) {
+                        res += freq / 2;
+                        freq = freq - (freq / 2) * 2;
+                    }
+                }
+
+                if (freq > 0) res++;
             }
         }
 
