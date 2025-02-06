@@ -747,6 +747,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
+| [0424-longest-repeating-character-replacement](https://github.com/Adagggggg/leetcoding/tree/master/0424-longest-repeating-character-replacement) |
 | [0433-minimum-genetic-mutation](https://github.com/Adagggggg/leetcoding/tree/master/0433-minimum-genetic-mutation) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
@@ -867,6 +868,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0408-valid-word-abbreviation](https://github.com/Adagggggg/leetcoding/tree/master/0408-valid-word-abbreviation) |
 | [0409-longest-palindrome](https://github.com/Adagggggg/leetcoding/tree/master/0409-longest-palindrome) |
+| [0424-longest-repeating-character-replacement](https://github.com/Adagggggg/leetcoding/tree/master/0424-longest-repeating-character-replacement) |
 | [0433-minimum-genetic-mutation](https://github.com/Adagggggg/leetcoding/tree/master/0433-minimum-genetic-mutation) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0443-string-compression](https://github.com/Adagggggg/leetcoding/tree/master/0443-string-compression) |
@@ -1403,6 +1405,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0219-contains-duplicate-ii](https://github.com/Adagggggg/leetcoding/tree/master/0219-contains-duplicate-ii) |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
 | [0239-sliding-window-maximum](https://github.com/Adagggggg/leetcoding/tree/master/0239-sliding-window-maximum) |
+| [0424-longest-repeating-character-replacement](https://github.com/Adagggggg/leetcoding/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Adagggggg/leetcoding/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
