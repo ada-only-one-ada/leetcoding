@@ -20,7 +20,7 @@ class TimeMap {
         } 
 
         Integer lower = values.lowerKey(timestamp);
-        if (lower == null || !values.containsKey(lower)) return "";
+        if (lower == null) return "";
         return values.get(lower);
     }
 }
