@@ -1,23 +1,27 @@
 class Solution {
     public int getLargestOutlier(int[] nums) {
-        int res = Integer.MIN_VALUE;
-        int sum = 0;
+        // [2,3,5,10]
         Map<Integer, Integer> map = new HashMap<>();
+        int sum = 0;
         for (int num: nums) {
             sum += num;
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
+        int res = Integer.MIN_VALUE;
 
-
-        for (int num: nums) {
-            int doubleSum = sum - num;
-            if (doubleSum % 2 == 0 && map.containsKey(doubleSum / 2)) {
-                if (num == doubleSum / 2 && map.get(num) >= 2) {
-                    res = Math.max(res, num);
-                } else if (num != doubleSum / 2) {
-                    res = Math.max(res, num);
+        
+        
+        for (int outlier: nums) {
+            int totalSum = sum - outlier;
+            int halfSum = totalSum / 2;
+            
+            if (totalSum % 2 == 0 && map.containsKey(halfSum)) {
+                if (outlier == halfSum && map.get(halfSum) > 1)  {
+                    res = Math.max(res, outlier);
+                } else if (outlier != halfSum) {
+                    res = Math.max(res, outlier);
                 }
-            }
+            } 
         }
 
         return res;
