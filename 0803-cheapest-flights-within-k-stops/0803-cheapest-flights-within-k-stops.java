@@ -15,9 +15,7 @@ class Solution {
         if (!map.containsKey(src)) return -1;
         if (!map.containsKey(dst)) return -1;
 
-        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> {
-            return a[2] - b[2];
-        });
+        Queue<int[]> queue = new LinkedList<>();
 
         int[] record = new int[n];
         Arrays.fill(record, Integer.MAX_VALUE);
@@ -37,7 +35,7 @@ class Solution {
                     int nextCity = next.getKey();
                     int nextCost = totalCost + next.getValue();
 
-                    if (nextCost > record[nextCity]) continue;
+                    if (nextCost >= record[nextCity]) continue;
                     record[nextCity] = nextCost;
                     queue.add(new int[]{nextCity, stops + 1, nextCost});
                 }
