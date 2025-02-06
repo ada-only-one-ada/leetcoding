@@ -264,6 +264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/Adagggggg/leetcoding/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1196-filling-bookcase-shelves](https://github.com/Adagggggg/leetcoding/tree/master/1196-filling-bookcase-shelves) |
+| [1221-element-appearing-more-than-25-in-sorted-array](https://github.com/Adagggggg/leetcoding/tree/master/1221-element-appearing-more-than-25-in-sorted-array) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/Adagggggg/leetcoding/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1288-maximum-subarray-sum-with-one-deletion](https://github.com/Adagggggg/leetcoding/tree/master/1288-maximum-subarray-sum-with-one-deletion) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
