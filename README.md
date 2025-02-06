@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0772-construct-quad-tree](https://github.com/Adagggggg/leetcoding/tree/master/0772-construct-quad-tree) |
 | [0777-toeplitz-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0777-toeplitz-matrix) |
+| [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
 | [0790-global-and-local-inversions](https://github.com/Adagggggg/leetcoding/tree/master/0790-global-and-local-inversions) |
 | [0792-binary-search](https://github.com/Adagggggg/leetcoding/tree/master/0792-binary-search) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
@@ -443,6 +444,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0776-n-ary-tree-postorder-traversal) |
+| [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
 | [0874-backspace-string-compare](https://github.com/Adagggggg/leetcoding/tree/master/0874-backspace-string-compare) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/Adagggggg/leetcoding/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
@@ -1064,6 +1066,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
+| [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
 | [0929-groups-of-special-equivalent-strings](https://github.com/Adagggggg/leetcoding/tree/master/0929-groups-of-special-equivalent-strings) |
 | [0974-reorder-data-in-log-files](https://github.com/Adagggggg/leetcoding/tree/master/0974-reorder-data-in-log-files) |
@@ -1226,6 +1229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0680-valid-palindrome-ii](https://github.com/Adagggggg/leetcoding/tree/master/0680-valid-palindrome-ii) |
 | [0738-monotone-increasing-digits](https://github.com/Adagggggg/leetcoding/tree/master/0738-monotone-increasing-digits) |
 | [0778-reorganize-string](https://github.com/Adagggggg/leetcoding/tree/master/0778-reorganize-string) |
+| [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
 | [1095-two-city-scheduling](https://github.com/Adagggggg/leetcoding/tree/master/1095-two-city-scheduling) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -1612,6 +1616,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
+| [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
 | [0943-sum-of-subarray-minimums](https://github.com/Adagggggg/leetcoding/tree/master/0943-sum-of-subarray-minimums) |
 | [1792-find-the-most-competitive-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/1792-find-the-most-competitive-subsequence) |
 | [2227-sum-of-subarray-ranges](https://github.com/Adagggggg/leetcoding/tree/master/2227-sum-of-subarray-ranges) |
