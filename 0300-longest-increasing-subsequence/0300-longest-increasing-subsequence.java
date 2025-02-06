@@ -1,7 +1,7 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        int[] top = new int[nums.length];
         int piles = 0;
+        int[]top = new int[nums.length];
 
         for (int num: nums) {
             int left = 0;
@@ -10,15 +10,17 @@ class Solution {
             while (left < right) {
                 int mid = left + (right - left) / 2;
 
-                if (num <= top[mid]) {
-                    right = mid;
-                } else {
+                if (num > top[mid]) {
                     left = mid + 1;
+                } else {
+                    right = mid;
                 }
             }
 
+            if (left == piles) {
+                piles++;
+            }
             top[left] = num;
-            if (left == piles) piles++;
         }
 
         return piles;
