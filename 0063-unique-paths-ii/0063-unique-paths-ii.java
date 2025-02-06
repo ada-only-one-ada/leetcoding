@@ -37,9 +37,7 @@ class Solution {
                     dp[row][col] = fromTop;
                 } else if (fromLeft != 0) {
                     dp[row][col] = fromLeft;
-                } else {
-                    dp[row][col] = 0;
-                }
+                } 
             }
         }
 
