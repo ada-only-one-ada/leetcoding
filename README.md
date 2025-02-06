@@ -484,6 +484,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0450-delete-node-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0450-delete-node-in-a-bst) |
 | [0508-most-frequent-subtree-sum](https://github.com/Adagggggg/leetcoding/tree/master/0508-most-frequent-subtree-sum) |
@@ -558,6 +559,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
@@ -656,6 +658,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0450-delete-node-in-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0450-delete-node-in-a-bst) |
 | [0508-most-frequent-subtree-sum](https://github.com/Adagggggg/leetcoding/tree/master/0508-most-frequent-subtree-sum) |
@@ -733,6 +736,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0290-word-pattern) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/Adagggggg/leetcoding/tree/master/0383-ransom-note) |
@@ -1059,6 +1063,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/Adagggggg/leetcoding/tree/master/0274-h-index) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
@@ -1437,6 +1442,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Adagggggg/leetcoding/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0433-minimum-genetic-mutation](https://github.com/Adagggggg/leetcoding/tree/master/0433-minimum-genetic-mutation) |
