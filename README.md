@@ -301,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2233-number-of-smooth-descent-periods-of-a-stock](https://github.com/Adagggggg/leetcoding/tree/master/2233-number-of-smooth-descent-periods-of-a-stock) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2261-all-divisions-with-the-highest-score-of-a-binary-array](https://github.com/Adagggggg/leetcoding/tree/master/2261-all-divisions-with-the-highest-score-of-a-binary-array) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Adagggggg/leetcoding/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/Adagggggg/leetcoding/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
@@ -1143,6 +1144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/Adagggggg/leetcoding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1894-merge-strings-alternately](https://github.com/Adagggggg/leetcoding/tree/master/1894-merge-strings-alternately) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Adagggggg/leetcoding/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2524-largest-positive-integer-that-exists-with-its-negative](https://github.com/Adagggggg/leetcoding/tree/master/2524-largest-positive-integer-that-exists-with-its-negative) |
 | [2561-number-of-distinct-averages](https://github.com/Adagggggg/leetcoding/tree/master/2561-number-of-distinct-averages) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/2572-append-characters-to-string-to-make-subsequence) |
@@ -1469,6 +1471,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1642-water-bottles](https://github.com/Adagggggg/leetcoding/tree/master/1642-water-bottles) |
 | [1708-design-parking-system](https://github.com/Adagggggg/leetcoding/tree/master/1708-design-parking-system) |
 | [2048-build-array-from-permutation](https://github.com/Adagggggg/leetcoding/tree/master/2048-build-array-from-permutation) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Adagggggg/leetcoding/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/Adagggggg/leetcoding/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2464-time-needed-to-rearrange-a-binary-string](https://github.com/Adagggggg/leetcoding/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
