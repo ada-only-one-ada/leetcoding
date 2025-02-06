@@ -18,7 +18,7 @@ class Solution {
             freq = freq % 3;
 
             if (freq == 2) {
-                res += freq / 2;
+                res++;
             } else if (freq == 1) {
                 res++;
             }
