@@ -17,6 +17,7 @@ class Solution {
             res += groupOfThree;
             freq = freq % 3;
 
+            // freq % 3 只能是 0，1，2
             if (freq == 2 || freq == 1) {
                 res++;
             } 
