@@ -1,5 +1,9 @@
 class Solution {
     public int[] findThePrefixCommonArray(int[] A, int[] B) {
+        // It is guaranteed that A and B are both a permutation of n integers.
+        // 这意味着里面出现的数字一定是2次
+        
+        // 1 <= A[i], B[i] <= n
         int[] res = new int[A.length];
 
         int[] freq = new int[A.length + 1];
