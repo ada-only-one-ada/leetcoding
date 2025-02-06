@@ -214,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
+| [0503-next-greater-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0503-next-greater-element-ii) |
 | [0517-super-washing-machines](https://github.com/Adagggggg/leetcoding/tree/master/0517-super-washing-machines) |
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
@@ -446,6 +447,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0503-next-greater-element-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0735-asteroid-collision](https://github.com/Adagggggg/leetcoding/tree/master/0735-asteroid-collision) |
@@ -1657,6 +1659,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0042-trapping-rain-water](https://github.com/Adagggggg/leetcoding/tree/master/0042-trapping-rain-water) |
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0503-next-greater-element-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Adagggggg/leetcoding/tree/master/0780-max-chunks-to-make-sorted) |
