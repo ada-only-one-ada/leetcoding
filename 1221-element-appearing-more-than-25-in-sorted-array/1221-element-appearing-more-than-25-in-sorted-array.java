@@ -1,11 +1,10 @@
 class Solution {
     public int findSpecialInteger(int[] arr) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int num: arr) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+        int size = arr.length / 4;
 
-            if (map.get(num) > arr.length / 4) {
-                return num;
+        for (int i = 0; i + size < arr.length; i++) {
+            if (arr[i] == arr[i + size]) {
+                return arr[i];
             }
         }
 
