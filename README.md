@@ -384,6 +384,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/Adagggggg/leetcoding/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/Adagggggg/leetcoding/tree/master/0912-random-pick-with-weight) |
+| [1023-time-based-key-value-store](https://github.com/Adagggggg/leetcoding/tree/master/1023-time-based-key-value-store) |
 | [1046-max-consecutive-ones-iii](https://github.com/Adagggggg/leetcoding/tree/master/1046-max-consecutive-ones-iii) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/Adagggggg/leetcoding/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -764,6 +765,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/Adagggggg/leetcoding/tree/master/0999-regions-cut-by-slashes) |
 | [1006-vowel-spellchecker](https://github.com/Adagggggg/leetcoding/tree/master/1006-vowel-spellchecker) |
+| [1023-time-based-key-value-store](https://github.com/Adagggggg/leetcoding/tree/master/1023-time-based-key-value-store) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
@@ -884,6 +886,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0974-reorder-data-in-log-files](https://github.com/Adagggggg/leetcoding/tree/master/0974-reorder-data-in-log-files) |
 | [0977-distinct-subsequences-ii](https://github.com/Adagggggg/leetcoding/tree/master/0977-distinct-subsequences-ii) |
 | [1006-vowel-spellchecker](https://github.com/Adagggggg/leetcoding/tree/master/1006-vowel-spellchecker) |
+| [1023-time-based-key-value-store](https://github.com/Adagggggg/leetcoding/tree/master/1023-time-based-key-value-store) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [1129-longest-string-chain](https://github.com/Adagggggg/leetcoding/tree/master/1129-longest-string-chain) |
@@ -1601,6 +1604,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
+| [1023-time-based-key-value-store](https://github.com/Adagggggg/leetcoding/tree/master/1023-time-based-key-value-store) |
 | [1125-design-file-system](https://github.com/Adagggggg/leetcoding/tree/master/1125-design-file-system) |
 | [1294-range-frequency-queries](https://github.com/Adagggggg/leetcoding/tree/master/1294-range-frequency-queries) |
 | [1459-apply-discount-every-n-orders](https://github.com/Adagggggg/leetcoding/tree/master/1459-apply-discount-every-n-orders) |
