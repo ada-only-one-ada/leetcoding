@@ -1330,6 +1330,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1950-sign-of-the-product-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2233-number-of-smooth-descent-periods-of-a-stock](https://github.com/Adagggggg/leetcoding/tree/master/2233-number-of-smooth-descent-periods-of-a-stock) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/Adagggggg/leetcoding/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2383-add-two-integers](https://github.com/Adagggggg/leetcoding/tree/master/2383-add-two-integers) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/Adagggggg/leetcoding/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2448-count-number-of-bad-pairs](https://github.com/Adagggggg/leetcoding/tree/master/2448-count-number-of-bad-pairs) |
 | [2525-count-number-of-distinct-integers-after-reverse-operations](https://github.com/Adagggggg/leetcoding/tree/master/2525-count-number-of-distinct-integers-after-reverse-operations) |
