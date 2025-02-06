@@ -1,31 +1,38 @@
 class Solution {
+    Map<Integer, Node> map;
+    Set<Integer> visited;
+
     public Node cloneGraph(Node node) {
         if (node == null) return null;
-        Map<Integer, Node> map = new HashMap<>();
+        
+        map = new HashMap<>();
 
-        copyNode(node, map);
-        copyNeis(node, map, new HashSet<>());
+        cloneNode(node);
+        visited = new HashSet<>();
+        cloneNeighbors(node);
+
         return map.get(node.val);
     }
 
-    public void copyNode(Node node, Map<Integer, Node> map) {
+    public void cloneNode(Node node) {
         if (!map.containsKey(node.val)) {
             map.put(node.val, new Node(node.val, new ArrayList<>()));
 
-            for (Node oldNei: node.neighbors) {
-                copyNode(oldNei, map);
+            for (Node nei: node.neighbors) {
+                cloneNode(nei);
             }
         }
     }
 
-    public void copyNeis(Node node, Map<Integer, Node> map, Set<Integer> visited) {
+    public void cloneNeighbors(Node node) {
+        if (node == null || node.neighbors == null || node.neighbors.size() == 0) return;
+
         if (!visited.contains(node.val)) {
-            visited.add(node.val);
+            visited.add(node.val);    
 
             for (Node oldNei: node.neighbors) {
                 map.get(node.val).neighbors.add(map.get(oldNei.val));
-
-                copyNeis(oldNei, map, visited);
+                cloneNeighbors(oldNei);
             }
         }
     }
