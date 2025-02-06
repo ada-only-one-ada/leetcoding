@@ -7,26 +7,21 @@ class Solution {
 
             if (!Character.isDigit(c)) {
                 List<Integer> left = diffWaysToCompute(expression.substring(0, i));
-                List<Integer> right = diffWaysToCompute(expression.substring(i+1));
+                List<Integer> right = diffWaysToCompute(expression.substring(i + 1));
 
                 for (int num1: left) {
                     for (int num2: right) {
-                        if (c == '+') {
-                            res.add(num1 + num2);
-                        } else if (c == '-') {
-                            res.add(num1 - num2);
-                        } else if (c == '*') {
-                            res.add(num1 * num2);
-                        }
+                        if (c == '+') res.add(num1+ num2);
+                        else if (c == '-') res.add(num1-num2);
+                        else res.add(num1*num2);
                     }
                 }
             }
         }
-        
+
         if (res.size() == 0) {
             res.add(Integer.valueOf(expression));
         }
-
         return res;
     }
 }
