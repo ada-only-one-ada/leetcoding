@@ -849,6 +849,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0443-string-compression](https://github.com/Adagggggg/leetcoding/tree/master/0443-string-compression) |
 | [0459-repeated-substring-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0459-repeated-substring-pattern) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
+| [0516-longest-palindromic-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0516-longest-palindromic-subsequence) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
 | [0539-minimum-time-difference](https://github.com/Adagggggg/leetcoding/tree/master/0539-minimum-time-difference) |
 | [0606-construct-string-from-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0606-construct-string-from-binary-tree) |
@@ -971,6 +972,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/Adagggggg/leetcoding/tree/master/0464-can-i-win) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
+| [0516-longest-palindromic-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0650-2-keys-keyboard](https://github.com/Adagggggg/leetcoding/tree/master/0650-2-keys-keyboard) |
