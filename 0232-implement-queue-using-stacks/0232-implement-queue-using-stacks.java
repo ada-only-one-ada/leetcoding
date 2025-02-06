@@ -3,8 +3,8 @@ class MyQueue {
     Stack<Integer> tempStack;
 
     public MyQueue() {
-        stack = new Stack();
-        tempStack = new Stack();
+        stack = new Stack(); 
+        tempStack = new Stack();   
     }
     
     public void push(int x) {
@@ -14,23 +14,23 @@ class MyQueue {
     public int pop() {
         if (!stack.isEmpty()) {
             return stack.pop();
-        } else {
-            while (!tempStack.isEmpty()) {
-                stack.push(tempStack.pop());
-            }
-            return stack.pop();
         }
+
+        while (!tempStack.isEmpty()) {
+            stack.push(tempStack.pop());
+        }
+        return stack.pop();
     }
     
     public int peek() {
         if (!stack.isEmpty()) {
             return stack.peek();
-        } else {
-            while (!tempStack.isEmpty()) {
-                stack.push(tempStack.pop());
-            }
-            return stack.peek();
         }
+
+        while (!tempStack.isEmpty()) {
+            stack.push(tempStack.pop());
+        }
+        return stack.peek();
     }
     
     public boolean empty() {
