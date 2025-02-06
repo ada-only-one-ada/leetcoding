@@ -1,32 +1,25 @@
 class Solution {
-    Map<Integer, Node> map = new HashMap<>(); // val: node
-    Set<Integer> visited = new HashSet<>();
-
     public Node cloneGraph(Node node) {
         if (node == null) return null;
-        cloneNode(node);
-        cloneNei(node);
+
+        Map<Integer, Node> map = new HashMap<>();
+        map.put(node.val, new Node(node.val, new ArrayList<>()));
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(node);
+
+        while (!queue.isEmpty()) {
+            Node oldNode = queue.poll();
+
+            for (Node oldNei: oldNode.neighbors) {
+                if (!map.containsKey(oldNei.val)) {
+                    map.put(oldNei.val, new Node(oldNei.val, new ArrayList<>()));
+                    queue.add(oldNei);
+                }
+                map.get(oldNode.val).neighbors.add(map.get(oldNei.val));
+            }
+        }
+
         return map.get(node.val);
-    }
-
-    public void cloneNode(Node node) {
-        if (!map.containsKey(node.val)) {
-            map.put(node.val, new Node(node.val, new ArrayList<>()));
-
-            for (Node nei: node.neighbors) {
-                cloneNode(nei);
-            }
-        }
-    }
-
-    public void cloneNei(Node node) {
-        if (!visited.contains(node.val)) {
-            visited.add(node.val);
-
-            for (Node nei: node.neighbors) {
-                map.get(node.val).neighbors.add(map.get(nei.val));
-                cloneNei(nei);
-            }
-        }
     }
 }
