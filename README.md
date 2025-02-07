@@ -432,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0234-palindrome-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/Adagggggg/leetcoding/tree/master/0355-design-twitter) |
+| [0716-max-stack](https://github.com/Adagggggg/leetcoding/tree/master/0716-max-stack) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0908-middle-of-the-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0908-middle-of-the-linked-list) |
@@ -458,6 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0503-next-greater-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0503-next-greater-element-ii) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0654-maximum-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0654-maximum-binary-tree) |
+| [0716-max-stack](https://github.com/Adagggggg/leetcoding/tree/master/0716-max-stack) |
 | [0735-asteroid-collision](https://github.com/Adagggggg/leetcoding/tree/master/0735-asteroid-collision) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
@@ -720,6 +722,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/Adagggggg/leetcoding/tree/master/0146-lru-cache) |
+| [0716-max-stack](https://github.com/Adagggggg/leetcoding/tree/master/0716-max-stack) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 ## Hash Table
 |  |
@@ -1668,6 +1671,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0355-design-twitter](https://github.com/Adagggggg/leetcoding/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
+| [0716-max-stack](https://github.com/Adagggggg/leetcoding/tree/master/0716-max-stack) |
 | [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [0937-online-stock-span](https://github.com/Adagggggg/leetcoding/tree/master/0937-online-stock-span) |
@@ -1762,6 +1766,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0220-contains-duplicate-iii](https://github.com/Adagggggg/leetcoding/tree/master/0220-contains-duplicate-iii) |
+| [0716-max-stack](https://github.com/Adagggggg/leetcoding/tree/master/0716-max-stack) |
 | [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [3363-most-frequent-ids](https://github.com/Adagggggg/leetcoding/tree/master/3363-most-frequent-ids) |
 ## Merge Sort
