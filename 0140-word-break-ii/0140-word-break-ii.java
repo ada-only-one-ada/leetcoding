@@ -30,13 +30,17 @@ class Solution {
             char c = s.charAt(i);
             // 如果在 Trie 中找不到匹配的路径，则直接退出当前循环
             if (node.children[c - 'a'] == null) break;
+
             node = node.children[c - 'a'];
+
             // 如果当前路径表示一个有效单词
             if (node.isValid) {
                 // 截取从 index 到 i 的子串作为一个单词
                 String word = s.substring(index, i + 1);
+
                 // 递归获取从 i+1 开始的所有句子组合
                 List<String> nextSentences = dfs(s, i + 1, memo);
+                
                 for (String next : nextSentences) {
                     // 如果 next 是空字符串，表示 word 已经是最后一个单词，不需要额外空格
                     if (next.equals("")) {
@@ -47,12 +51,12 @@ class Solution {
                 }
             }
         }
+
         // 将 index 位置的计算结果存入备忘录
         memo.put(index, sentences);
         return sentences;
     }
 
-    // 根据单词字典构建 Trie 树
     public void buildDictionary(List<String> wordDict) {
         for (String word : wordDict) {
             Trie node = root;
@@ -62,7 +66,6 @@ class Solution {
                 }
                 node = node.children[c - 'a'];
             }
-            // 标记该路径代表一个有效单词
             node.isValid = true;
         }
     }
