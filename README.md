@@ -244,6 +244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0792-binary-search](https://github.com/Adagggggg/leetcoding/tree/master/0792-binary-search) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
 | [0810-valid-tic-tac-toe-state](https://github.com/Adagggggg/leetcoding/tree/master/0810-valid-tic-tac-toe-state) |
+| [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
 | [0837-most-common-word](https://github.com/Adagggggg/leetcoding/tree/master/0837-most-common-word) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/Adagggggg/leetcoding/tree/master/0882-peak-index-in-a-mountain-array) |
@@ -430,6 +431,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0328-odd-even-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/Adagggggg/leetcoding/tree/master/0355-design-twitter) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
+| [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0908-middle-of-the-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0908-middle-of-the-linked-list) |
 | [2374-steps-to-make-array-non-decreasing](https://github.com/Adagggggg/leetcoding/tree/master/2374-steps-to-make-array-non-decreasing) |
 ## Stack
@@ -778,6 +780,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0782-jewels-and-stones](https://github.com/Adagggggg/leetcoding/tree/master/0782-jewels-and-stones) |
 | [0797-rabbits-in-forest](https://github.com/Adagggggg/leetcoding/tree/master/0797-rabbits-in-forest) |
 | [0807-custom-sort-string](https://github.com/Adagggggg/leetcoding/tree/master/0807-custom-sort-string) |
+| [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0829-subdomain-visit-count](https://github.com/Adagggggg/leetcoding/tree/master/0829-subdomain-visit-count) |
 | [0837-most-common-word](https://github.com/Adagggggg/leetcoding/tree/master/0837-most-common-word) |
 | [0855-count-unique-characters-of-all-substrings-of-a-given-string](https://github.com/Adagggggg/leetcoding/tree/master/0855-count-unique-characters-of-all-substrings-of-a-given-string) |
@@ -1611,6 +1614,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0572-subtree-of-another-tree](https://github.com/Adagggggg/leetcoding/tree/master/0572-subtree-of-another-tree) |
 | [0694-number-of-distinct-islands](https://github.com/Adagggggg/leetcoding/tree/master/0694-number-of-distinct-islands) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
+| [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -1654,6 +1658,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0355-design-twitter](https://github.com/Adagggggg/leetcoding/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Adagggggg/leetcoding/tree/master/0380-insert-delete-getrandom-o1) |
 | [0535-encode-and-decode-tinyurl](https://github.com/Adagggggg/leetcoding/tree/master/0535-encode-and-decode-tinyurl) |
+| [0817-design-hashmap](https://github.com/Adagggggg/leetcoding/tree/master/0817-design-hashmap) |
 | [0885-exam-room](https://github.com/Adagggggg/leetcoding/tree/master/0885-exam-room) |
 | [0937-online-stock-span](https://github.com/Adagggggg/leetcoding/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/Adagggggg/leetcoding/tree/master/1023-time-based-key-value-store) |
