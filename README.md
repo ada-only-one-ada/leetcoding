@@ -195,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0252-meeting-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/Adagggggg/leetcoding/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/Adagggggg/leetcoding/tree/master/0268-missing-number) |
+| [0271-encode-and-decode-strings](https://github.com/Adagggggg/leetcoding/tree/master/0271-encode-and-decode-strings) |
 | [0274-h-index](https://github.com/Adagggggg/leetcoding/tree/master/0274-h-index) |
 | [0275-h-index-ii](https://github.com/Adagggggg/leetcoding/tree/master/0275-h-index-ii) |
 | [0283-move-zeroes](https://github.com/Adagggggg/leetcoding/tree/master/0283-move-zeroes) |
@@ -880,6 +881,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0227-basic-calculator-ii](https://github.com/Adagggggg/leetcoding/tree/master/0227-basic-calculator-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/Adagggggg/leetcoding/tree/master/0241-different-ways-to-add-parentheses) |
 | [0242-valid-anagram](https://github.com/Adagggggg/leetcoding/tree/master/0242-valid-anagram) |
+| [0271-encode-and-decode-strings](https://github.com/Adagggggg/leetcoding/tree/master/0271-encode-and-decode-strings) |
 | [0290-word-pattern](https://github.com/Adagggggg/leetcoding/tree/master/0290-word-pattern) |
 | [0306-additive-number](https://github.com/Adagggggg/leetcoding/tree/master/0306-additive-number) |
 | [0344-reverse-string](https://github.com/Adagggggg/leetcoding/tree/master/0344-reverse-string) |
@@ -1660,6 +1662,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0208-implement-trie-prefix-tree](https://github.com/Adagggggg/leetcoding/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Adagggggg/leetcoding/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0232-implement-queue-using-stacks](https://github.com/Adagggggg/leetcoding/tree/master/0232-implement-queue-using-stacks) |
+| [0271-encode-and-decode-strings](https://github.com/Adagggggg/leetcoding/tree/master/0271-encode-and-decode-strings) |
 | [0284-peeking-iterator](https://github.com/Adagggggg/leetcoding/tree/master/0284-peeking-iterator) |
 | [0303-range-sum-query-immutable](https://github.com/Adagggggg/leetcoding/tree/master/0303-range-sum-query-immutable) |
 | [0355-design-twitter](https://github.com/Adagggggg/leetcoding/tree/master/0355-design-twitter) |
