@@ -16,8 +16,7 @@ class Solution {
 
                     node = node.children[c - 'a'];
                     if (node.isValid) {
-                        dp[j + 1] = true;
-                        
+                        dp[j + 1] = true;        
                     }
                 }
             }
