@@ -1,36 +1,8 @@
-import java.util.*;
-
 class Solution {
-    Trie root = new Trie(); // 初始化 Trie 树根节点
+    Trie root = new Trie(); 
 
     public List<String> wordBreak(String s, List<String> wordDict) {
-        // 根据单词字典构建 Trie 树
-        buildDictionary(wordDict);
-
-        // 使用动态规划判断字符串 s 是否可以拆分成字典中的单词
-        boolean[] dp = new boolean[s.length() + 1];
-        dp[0] = true; // 空字符串可以被拆分
-        for (int i = 0; i < s.length(); i++) {
-            if (dp[i]) { // 如果 s 的前 i 个字符可以拆分
-                Trie node = root;
-                for (int j = i; j < s.length(); j++) {
-                    char c = s.charAt(j);
-                    // 如果当前字符在 Trie 中没有对应的子节点，则跳出循环
-                    if (node.children[c - 'a'] == null) break;
-                    node = node.children[c - 'a'];
-                    // 如果从 i 到 j 的子串是一个有效单词，则标记 dp[j+1] 为 true
-                    if (node.isValid) {
-                        dp[j + 1] = true;
-                    }
-                }
-            }
-        }
-
-        List<String> res = new ArrayList<>();
-        // 如果整个字符串无法拆分，则返回空列表
-        if (!dp[s.length()]) {
-            return res;
-        }
+        buildDictionary(wordDict);        
 
         // 使用 DFS 和备忘录（memoization）生成所有有效的句子组合
         Map<Integer, List<String>> memo = new HashMap<>();
@@ -96,10 +68,9 @@ class Solution {
     }
 }
 
-// Trie 树的基本节点定义
 class Trie {
-    boolean isValid; // 是否为有效单词的结束标志
-    Trie[] children; // 子节点数组，对应 26 个小写字母
+    boolean isValid; 
+    Trie[] children;
 
     public Trie() {
         isValid = false;
