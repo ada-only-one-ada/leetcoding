@@ -214,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
+| [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
 | [0491-non-decreasing-subsequences](https://github.com/Adagggggg/leetcoding/tree/master/0491-non-decreasing-subsequences) |
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
@@ -583,6 +584,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
+| [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
 | [0508-most-frequent-subtree-sum](https://github.com/Adagggggg/leetcoding/tree/master/0508-most-frequent-subtree-sum) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -970,6 +972,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0289-game-of-life](https://github.com/Adagggggg/leetcoding/tree/master/0289-game-of-life) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
+| [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
@@ -1500,6 +1503,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
 | [0433-minimum-genetic-mutation](https://github.com/Adagggggg/leetcoding/tree/master/0433-minimum-genetic-mutation) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
+| [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
