@@ -219,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0496-next-greater-element-i](https://github.com/Adagggggg/leetcoding/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
 | [0503-next-greater-element-ii](https://github.com/Adagggggg/leetcoding/tree/master/0503-next-greater-element-ii) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0517-super-washing-machines](https://github.com/Adagggggg/leetcoding/tree/master/0517-super-washing-machines) |
 | [0525-contiguous-array](https://github.com/Adagggggg/leetcoding/tree/master/0525-contiguous-array) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
@@ -585,6 +586,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0508-most-frequent-subtree-sum](https://github.com/Adagggggg/leetcoding/tree/master/0508-most-frequent-subtree-sum) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -973,6 +975,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
 | [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0566-reshape-the-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0566-reshape-the-matrix) |
@@ -1404,6 +1407,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0451-sort-characters-by-frequency](https://github.com/Adagggggg/leetcoding/tree/master/0451-sort-characters-by-frequency) |
 | [0480-sliding-window-median](https://github.com/Adagggggg/leetcoding/tree/master/0480-sliding-window-median) |
 | [0502-ipo](https://github.com/Adagggggg/leetcoding/tree/master/0502-ipo) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0621-task-scheduler](https://github.com/Adagggggg/leetcoding/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/Adagggggg/leetcoding/tree/master/0692-top-k-frequent-words) |
 | [0761-employee-free-time](https://github.com/Adagggggg/leetcoding/tree/master/0761-employee-free-time) |
@@ -1504,6 +1508,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0433-minimum-genetic-mutation](https://github.com/Adagggggg/leetcoding/tree/master/0433-minimum-genetic-mutation) |
 | [0463-island-perimeter](https://github.com/Adagggggg/leetcoding/tree/master/0463-island-perimeter) |
 | [0490-the-maze](https://github.com/Adagggggg/leetcoding/tree/master/0490-the-maze) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0529-minesweeper](https://github.com/Adagggggg/leetcoding/tree/master/0529-minesweeper) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Adagggggg/leetcoding/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
@@ -1646,6 +1651,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/Adagggggg/leetcoding/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Adagggggg/leetcoding/tree/master/0210-course-schedule-ii) |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0547-number-of-provinces](https://github.com/Adagggggg/leetcoding/tree/master/0547-number-of-provinces) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/Adagggggg/leetcoding/tree/master/0984-most-stones-removed-with-same-row-or-column) |
@@ -1762,6 +1768,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
+| [0505-the-maze-ii](https://github.com/Adagggggg/leetcoding/tree/master/0505-the-maze-ii) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Adagggggg/leetcoding/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Adagggggg/leetcoding/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
