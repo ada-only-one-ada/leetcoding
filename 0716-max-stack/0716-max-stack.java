@@ -8,7 +8,8 @@ class MaxStack {
         id = 0;
         stack = new Stack();
         queue = new PriorityQueue<>((a, b)-> {
-            if (b[1] == a[1]) return b[0]-a[0];
+            // If there is more than one maximum element, only remove the top-most one.
+            if (b[1] == a[1]) return b[0] - a[0];
             return b[1] - a[1];
         });
         set = new HashSet<>();
