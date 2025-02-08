@@ -1,36 +1,51 @@
 class Solution {
-    public int countComponents(int n, int[][] edges) {
-        int res = 0;
-        boolean[] visited = new boolean[n];
+    int[] parent;
+    int[] rank;
 
-        for (int node = 0; node < n; node++) {
-            // 算法从第一个节点开始遍历，直到最后一个节点
-            // 对于每个节点，如果它未被访问过，就执行一次dfs
-            if (visited[node] == false) {
-                dfs(edges, visited, node);
-                res++; // 每当从未访问过的节点开始一次新的DFS时，就发现了一个新的连通分量，因此res加1。
-            }  
+    public int countComponents(int n, int[][] edges) {
+        parent = new int[n];
+        rank = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+            rank[i] = 1;
         }
-        
-        return res;
+
+        for (int[] edge: edges) {
+            connect(edge[0], edge[1]);
+        }
+
+        Set<Integer> unique = new HashSet<>();
+        for (int p: parent) {
+            parent[p] = findRoot(p); 
+            unique.add(parent[p]);
+        }
+
+        return unique.size();
     }
 
-    public void dfs(int[][] edges, boolean[] visited, int node) {
-        if (visited[node] == true) return;
-        visited[node] = true;
+    public void connect(int node1, int node2) {
+        int p1 = findRoot(node1);
+        int p2 = findRoot(node2);
 
-        // 遍历所有边，如果当前节点是边的一个端点，并且另一个端点未被访问，就对另一个端点递归执行dfs
-        for (int[] edge: edges) {
-            int from = edge[0];
-            int to = edge[1];
+        if (p1 == p2) return;
 
-            if (node == from && visited[to] == false) {
-                dfs(edges, visited, to);
-            }
-
-            if (node == to && visited[from] == false) {
-                dfs(edges, visited, from);
-            }
+        if (rank[p1] >= rank[p2]) {
+            parent[p2] = p1;
+            rank[p1] += rank[p2];
+        } else {
+            parent[p1] = p2;
+            rank[p2] += rank[p1];
         }
+    }
+
+    public int findRoot(int node) {
+        int p = parent[node];
+
+        if (p != parent[p]) {
+            parent[p] = findRoot(p); 
+        }
+
+        return parent[p];
     }
 }
