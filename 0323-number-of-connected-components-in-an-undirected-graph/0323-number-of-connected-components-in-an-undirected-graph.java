@@ -1,51 +1,40 @@
 class Solution {
-    int[] parent;
-    int[] rank;
-
     public int countComponents(int n, int[][] edges) {
-        parent = new int[n];
-        rank = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            parent[i] = i;
-            rank[i] = 1;
-        }
-
+        Map<Integer, Set<Integer>> map = new HashMap<>();
         for (int[] edge: edges) {
-            connect(edge[0], edge[1]);
+            map.putIfAbsent(edge[0], new HashSet<>());
+            map.putIfAbsent(edge[1], new HashSet<>());
+            map.get(edge[0]).add(edge[1]);
+            map.get(edge[1]).add(edge[0]);
+        }
+        for (int i = 0; i < n; i++) {
+            map.putIfAbsent(i, new HashSet<>());
         }
 
-        Set<Integer> unique = new HashSet<>();
-        for (int node: parent) {
-            parent[node] = findRoot(node); 
-            unique.add(parent[node]);
+        int groups = 0;
+        Set<Integer> visited = new HashSet<>();
+        Queue<Integer> queue = new LinkedList<>();
+
+        for (int key: map.keySet()) {
+            if (!visited.contains(key)) {
+                queue.add(key);
+                visited.add(key);
+                groups++;
+                
+                while (!queue.isEmpty()) {
+                    int node = queue.poll();
+
+                    for (int nei: map.get(node)) {
+                        if (!visited.contains(nei)) {
+                            visited.add(nei);
+                            queue.add(nei);
+                        }
+                    }
+                }
+            }
+
         }
 
-        return unique.size();
-    }
-
-    public void connect(int node1, int node2) {
-        int p1 = findRoot(node1);
-        int p2 = findRoot(node2);
-
-        if (p1 == p2) return;
-
-        if (rank[p1] >= rank[p2]) {
-            parent[p2] = p1;
-            rank[p1] += rank[p2];
-        } else {
-            parent[p1] = p2;
-            rank[p2] += rank[p1];
-        }
-    }
-
-    public int findRoot(int node) {
-        int p = parent[node];
-
-        if (p != parent[p]) {
-            parent[p] = findRoot(p); 
-        }
-
-        return parent[p];
+        return groups;
     }
 }
