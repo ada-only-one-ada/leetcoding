@@ -16,9 +16,9 @@ class Solution {
         }
 
         Set<Integer> unique = new HashSet<>();
-        for (int p: parent) {
-            parent[p] = findRoot(p); 
-            unique.add(parent[p]);
+        for (int node: parent) {
+            parent[node] = findRoot(node); 
+            unique.add(parent[node]);
         }
 
         return unique.size();
