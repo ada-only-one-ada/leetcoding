@@ -10,7 +10,6 @@ class Solution {
             return true;
         }
        
-
         visited.add(currRoom);
         for (int nextRoom: rooms.get(currRoom)) {
             if (!visited.contains(nextRoom) && dfs(rooms, nextRoom, visited)) {
