@@ -1,12 +1,17 @@
 class Solution {
-    long count = 0;
     int[][] directions = {{-1,0},{1,0},{0,-1},{0,1}};
     int[][][] memo;
     int MOD = 1_000_000_007;
 
     public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
         memo = new int[m][n][maxMove + 1];
-         for (int i = 0; i < m; i++) {
+
+        // In Java, the int array is initialized with zeros. 
+        // This means that if the computed number of paths for a particular state is actually 0 
+        // (which is a valid result), your check will mistakenly treat it as "not computed" 
+        // and recompute it. 
+        //This leads to redundant calculations and can potentially cause performance issues.
+        for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 Arrays.fill(memo[i][j], -1);
             }
