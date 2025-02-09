@@ -10,27 +10,27 @@ class Solution {
     
     public double knightProbability(int n, int k, int row, int column) {
         memo = new Double[k + 1][n][n];
-        return dp(n, k, row, column);
+        return dp(n, k, row, column, 0);
     }
     
-    private double dp(int n, int k, int row, int col) {
+    private double dp(int n, int k, int row, int col, int moves) {
         // If out of bounds, the knight is off the board.
         if (row < 0 || col < 0 || row >= n || col >= n) return 0.0;
         
         // If no moves left, the knight is on the board.
-        if (k == 0) return 1.0;
+        if (moves == k) return 1.0;
         
         // Return the cached result if already computed.
-        if (memo[k][row][col] != null) return memo[k][row][col];
+        if (memo[moves][row][col] != null) return memo[moves][row][col];
         
         double probability = 0.0;
         // Explore all possible knight moves.
         for (int[] dir : directions) {
-            probability += dp(n, k - 1, row + dir[0], col + dir[1]) / 8.0;
+            probability += dp(n, k, row + dir[0], col + dir[1], moves + 1) / 8.0;
         }
         
         // Cache the computed probability for current state.
-        memo[k][row][col] = probability;
+        memo[moves][row][col] = probability;
         return probability;
     }
 }
