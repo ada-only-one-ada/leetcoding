@@ -1043,6 +1043,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0650-2-keys-keyboard](https://github.com/Adagggggg/leetcoding/tree/master/0650-2-keys-keyboard) |
+| [0688-knight-probability-in-chessboard](https://github.com/Adagggggg/leetcoding/tree/master/0688-knight-probability-in-chessboard) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0855-count-unique-characters-of-all-substrings-of-a-given-string](https://github.com/Adagggggg/leetcoding/tree/master/0855-count-unique-characters-of-all-substrings-of-a-given-string) |
