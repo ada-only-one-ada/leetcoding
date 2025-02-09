@@ -1041,6 +1041,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0472-concatenated-words](https://github.com/Adagggggg/leetcoding/tree/master/0472-concatenated-words) |
 | [0516-longest-palindromic-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0542-01-matrix) |
+| [0576-out-of-boundary-paths](https://github.com/Adagggggg/leetcoding/tree/master/0576-out-of-boundary-paths) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Adagggggg/leetcoding/tree/master/0646-maximum-length-of-pair-chain) |
 | [0650-2-keys-keyboard](https://github.com/Adagggggg/leetcoding/tree/master/0650-2-keys-keyboard) |
 | [0688-knight-probability-in-chessboard](https://github.com/Adagggggg/leetcoding/tree/master/0688-knight-probability-in-chessboard) |
