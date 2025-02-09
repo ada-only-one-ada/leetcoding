@@ -1,5 +1,5 @@
 class Solution {
-    int[][] directions = {{-1,0},{1,0},{0,-1},{0,1}};
+    int[][] directions = {{-1,0}, {1,0}, {0,-1}, {0,1}};
     int[][][] memo;
     int MOD = 1_000_000_007;
 
@@ -26,14 +26,12 @@ class Solution {
             
         }
         if (moves == maxMove) return 0;
-
         if (memo[row][col][moves] != -1) return memo[row][col][moves];
 
         long total = 0;
         for (int[] dir: directions) {
             int nextRow = dir[0] + row;
             int nextCol = dir[1] + col;
-
             total = (total + count(m, n, maxMove, nextRow, nextCol, moves + 1)) % MOD;
         }
 
