@@ -1,15 +1,14 @@
 class Solution {
-    // All 8 possible knight moves.
     int[][] directions = {
         {-2, -1}, {-2, 1}, {2, -1}, {2, 1},
         {-1, -2}, {1, -2}, {-1, 2}, {1, 2}
     };
     
     // 3D array for memoization: memo[movesLeft][row][col]
-    Double[][][] memo;
+    double[][][] memo;
     
     public double knightProbability(int n, int k, int row, int column) {
-        memo = new Double[k + 1][n][n];
+        memo = new double[k + 1][n][n];
         return dp(n, k, row, column, 0);
     }
     
@@ -21,7 +20,7 @@ class Solution {
         if (moves == k) return 1.0;
         
         // Return the cached result if already computed.
-        if (memo[moves][row][col] != null) return memo[moves][row][col];
+        if (memo[moves][row][col] != 0) return memo[moves][row][col];
         
         double probability = 0.0;
         // Explore all possible knight moves.
