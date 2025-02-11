@@ -1,19 +1,12 @@
 class Solution {
-    int sum = 0;
-
     public int sumOfLeftLeaves(TreeNode root) {
-        dfs(root);
-        return sum;            
-    }
+        if (root == null) return 0;
 
-    public void dfs(TreeNode root) {
-        if (root == null) return;
-
+        int sum = 0;
         if (root.left != null && root.left.left == null && root.left.right == null) {
             sum += root.left.val;
         }
 
-        dfs(root.left);
-        dfs(root.right);
+        return sum + sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
     }
 }
