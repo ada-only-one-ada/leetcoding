@@ -18,7 +18,7 @@ class Solution {
             if (num == target && map.containsKey(target)) {
                 map.put(num, map.get(target));
             } else {
-                map.put(num, 2);
+                map.put(num, 1);
             }
         }
 
