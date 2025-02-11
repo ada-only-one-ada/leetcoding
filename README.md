@@ -523,6 +523,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
@@ -607,6 +608,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0776-n-ary-tree-postorder-traversal) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0871-keys-and-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0871-keys-and-rooms) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
@@ -649,6 +651,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Adagggggg/leetcoding/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0975-range-sum-of-bst](https://github.com/Adagggggg/leetcoding/tree/master/0975-range-sum-of-bst) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/Adagggggg/leetcoding/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1285-balance-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/1285-balance-a-binary-search-tree) |
@@ -699,6 +702,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0662-maximum-width-of-binary-tree) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/Adagggggg/leetcoding/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/Adagggggg/leetcoding/tree/master/0784-insert-into-a-binary-search-tree) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0904-leaf-similar-trees](https://github.com/Adagggggg/leetcoding/tree/master/0904-leaf-similar-trees) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0930-all-possible-full-binary-trees](https://github.com/Adagggggg/leetcoding/tree/master/0930-all-possible-full-binary-trees) |
@@ -1529,6 +1533,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/Adagggggg/leetcoding/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/Adagggggg/leetcoding/tree/master/0733-flood-fill) |
 | [0753-open-the-lock](https://github.com/Adagggggg/leetcoding/tree/master/0753-open-the-lock) |
+| [0799-minimum-distance-between-bst-nodes](https://github.com/Adagggggg/leetcoding/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Adagggggg/leetcoding/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0871-keys-and-rooms](https://github.com/Adagggggg/leetcoding/tree/master/0871-keys-and-rooms) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0998-check-completeness-of-a-binary-tree) |
