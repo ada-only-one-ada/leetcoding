@@ -6,12 +6,12 @@ class Solution {
 
         int maxFreq = 0;
         for (int sum: map.keySet()) {
-            if (map.get(sum) >= maxFreq) {
-                if (map.get(sum) > maxFreq) {
-                    maxFreq = map.get(sum);
-                    list.clear();
-                }
-                list.add(sum);   
+            if (map.get(sum) > maxFreq) {
+                maxFreq = map.get(sum);
+                list.clear();
+                list.add(sum);
+            } else if (map.get(sum) == maxFreq) {
+                list.add(sum);
             }
         }
 
@@ -21,12 +21,11 @@ class Solution {
         }
 
         return res;
+
     }
 
     public int dfs(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }   
+        if (root == null) return 0;
 
         int sum = root.val + dfs(root.left) + dfs(root.right);
         map.put(sum, map.getOrDefault(sum, 0) + 1);
