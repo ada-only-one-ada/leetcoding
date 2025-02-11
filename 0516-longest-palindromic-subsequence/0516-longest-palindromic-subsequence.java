@@ -17,8 +17,8 @@ class Solution {
         }
 
         for (int len = 2; len <= s.length(); len++) {
-            for (int left = 0; left <= s.length() - len - 1; left++) {
-                int right = left + len;
+            for (int left = 0; left <= s.length() - len; left++) {
+                int right = left + len - 1;
 
                 if (s.charAt(left) == s.charAt(right)) {
                     dp[left][right] = dp[left+1][right-1] + 2;
