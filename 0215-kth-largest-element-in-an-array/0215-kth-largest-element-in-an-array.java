@@ -1,20 +1,39 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        // 10000
-        int[] freq = new int[20001];
-        for (int i = 0; i < nums.length; i++) {
-            int number = nums[i] + 10000;
-
-            freq[number]++;
+        List<Integer> list = new ArrayList<>();
+        for (int num: nums) {
+            list.add(num);
         }
-
-        for (int i = freq.length - 1; i >= 0; i--) {
-            if (freq[i] == 0) continue;
-            k -= freq[i];
-
-            if (k <= 0) return i - 10000;
+        
+        return quickSelect(list, k);
+    }
+    
+    public int quickSelect(List<Integer> nums, int k) {
+        int pivotIndex = new Random().nextInt(nums.size());
+        int pivot = nums.get(pivotIndex);
+        
+        List<Integer> left = new ArrayList<>();
+        List<Integer> mid = new ArrayList<>();
+        List<Integer> right = new ArrayList<>();
+        
+        for (int num: nums) {
+            if (num > pivot) {
+                left.add(num);
+            } else if (num < pivot) {
+                right.add(num);
+            } else {
+                mid.add(num);
+            }
         }
-
-        return -1;
+        
+        if (k <= left.size()) {
+            return quickSelect(left, k);
+        }
+        
+        if (left.size() + mid.size() < k) {
+            return quickSelect(right, k - left.size() - mid.size());
+        }
+        
+        return pivot;
     }
 }
