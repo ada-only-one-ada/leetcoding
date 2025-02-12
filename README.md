@@ -272,6 +272,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1036-rotting-oranges](https://github.com/Adagggggg/leetcoding/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/Adagggggg/leetcoding/tree/master/1046-max-consecutive-ones-iii) |
 | [1095-two-city-scheduling](https://github.com/Adagggggg/leetcoding/tree/master/1095-two-city-scheduling) |
+| [1107-minimum-swaps-to-group-all-1s-together](https://github.com/Adagggggg/leetcoding/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/Adagggggg/leetcoding/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/Adagggggg/leetcoding/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1121-partition-array-for-maximum-sum](https://github.com/Adagggggg/leetcoding/tree/master/1121-partition-array-for-maximum-sum) |
@@ -1475,6 +1476,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0718-maximum-length-of-repeated-subarray](https://github.com/Adagggggg/leetcoding/tree/master/0718-maximum-length-of-repeated-subarray) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Adagggggg/leetcoding/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1046-max-consecutive-ones-iii](https://github.com/Adagggggg/leetcoding/tree/master/1046-max-consecutive-ones-iii) |
+| [1107-minimum-swaps-to-group-all-1s-together](https://github.com/Adagggggg/leetcoding/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/Adagggggg/leetcoding/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Adagggggg/leetcoding/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Adagggggg/leetcoding/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
