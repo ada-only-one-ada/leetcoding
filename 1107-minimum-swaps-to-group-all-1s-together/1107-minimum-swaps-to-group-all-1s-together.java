@@ -16,9 +16,8 @@ class Solution {
                 res = Math.min(res, zeros);
 
                 if (data[left] == 0) zeros--; 
-               left ++;
+                left++;
             }
-             
         }        
 
         return res == Integer.MAX_VALUE? 0 : res;
