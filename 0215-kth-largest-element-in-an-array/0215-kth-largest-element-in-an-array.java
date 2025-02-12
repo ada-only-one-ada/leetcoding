@@ -1,39 +1,32 @@
 class Solution {
     public int findKthLargest(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
-        for (int num: nums) {
-            list.add(num);
-        }
-        
-        return quickSelect(list, k);
+        return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
-    
-    public int quickSelect(List<Integer> nums, int k) {
-        int pivotIndex = 0;
-        int pivot = nums.get(pivotIndex);
-        
-        List<Integer> left = new ArrayList<>();
-        List<Integer> mid = new ArrayList<>();
-        List<Integer> right = new ArrayList<>();
-        
-        for (int num: nums) {
-            if (num > pivot) {
-                left.add(num);
-            } else if (num < pivot) {
-                right.add(num);
-            } else {
-                mid.add(num);
-            }
+
+    // [1,2,6,100,  200   ,300,400], k = 3, 7 - 3 = 4
+
+    public int quickSelect(int[] nums, int left, int right, int kSmallest) {
+        int i = left;
+        int j = right;
+        int pivot = nums[left];
+
+        while (i <= j) {
+            while (i <= j && nums[i] < pivot) i++;  // 这里不能是<=
+            // 比如【3，3，3，3】在上面这个loop里，i会到数组长度，j不变，在上面这行就退出整个 whileloop了
+            while (i <= j && nums[j] > pivot) j--;
+
+            if (i <= j) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp; 
+                i++;
+                j--;
+            }  
         }
-        
-        if (k <= left.size()) {
-            return quickSelect(left, k);
-        }
-        
-        if (left.size() + mid.size() < k) {
-            return quickSelect(right, k - left.size() - mid.size());
-        }
-        
-        return pivot;
+
+        // 在这里的时候，left没变，j也没变，造成stack overflow了
+        if (kSmallest <= j) return quickSelect(nums, left, j, kSmallest);
+        if (kSmallest >= i) return quickSelect(nums, i, right, kSmallest);
+        return nums[kSmallest];
     }
 }
