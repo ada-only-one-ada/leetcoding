@@ -9,7 +9,7 @@ class Solution {
     }
     
     public int quickSelect(List<Integer> nums, int k) {
-        int pivotIndex = new Random().nextInt(nums.size());
+        int pivotIndex = 0;
         int pivot = nums.get(pivotIndex);
         
         List<Integer> left = new ArrayList<>();
