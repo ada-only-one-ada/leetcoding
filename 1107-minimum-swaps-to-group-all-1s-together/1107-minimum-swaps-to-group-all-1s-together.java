@@ -6,7 +6,6 @@ class Solution {
         for (int d: data) {
             len += d;
         }
-        if (len <= 1) return 0;
 
         int zeros = 0;
         int left = 0;
@@ -24,6 +23,6 @@ class Solution {
             
         }        
 
-        return res;
+        return res == Integer.MAX_VALUE? 0 :res;
     }
 }
