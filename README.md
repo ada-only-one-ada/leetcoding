@@ -204,6 +204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/Adagggggg/leetcoding/tree/master/0303-range-sum-query-immutable) |
 | [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
+| [0322-coin-change](https://github.com/Adagggggg/leetcoding/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/Adagggggg/leetcoding/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/Adagggggg/leetcoding/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Adagggggg/leetcoding/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -1044,6 +1045,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0264-ugly-number-ii](https://github.com/Adagggggg/leetcoding/tree/master/0264-ugly-number-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0300-longest-increasing-subsequence) |
 | [0313-super-ugly-number](https://github.com/Adagggggg/leetcoding/tree/master/0313-super-ugly-number) |
+| [0322-coin-change](https://github.com/Adagggggg/leetcoding/tree/master/0322-coin-change) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Adagggggg/leetcoding/tree/master/0357-count-numbers-with-unique-digits) |
 | [0392-is-subsequence](https://github.com/Adagggggg/leetcoding/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/Adagggggg/leetcoding/tree/master/0435-non-overlapping-intervals) |
@@ -1526,6 +1528,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/Adagggggg/leetcoding/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/Adagggggg/leetcoding/tree/master/0261-graph-valid-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Adagggggg/leetcoding/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0322-coin-change](https://github.com/Adagggggg/leetcoding/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Adagggggg/leetcoding/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0399-evaluate-division](https://github.com/Adagggggg/leetcoding/tree/master/0399-evaluate-division) |
 | [0404-sum-of-left-leaves](https://github.com/Adagggggg/leetcoding/tree/master/0404-sum-of-left-leaves) |
