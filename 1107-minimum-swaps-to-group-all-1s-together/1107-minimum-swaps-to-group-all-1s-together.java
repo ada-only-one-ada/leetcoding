@@ -15,14 +15,12 @@ class Solution {
             if (right - left + 1 == len) {
                 res = Math.min(res, zeros);
 
-                if (data[left] == 0) {
-                zeros--;
+                if (data[left] == 0) zeros--; 
+               left ++;
             }
-            left ++;
-            }
-            
+             
         }        
 
-        return res == Integer.MAX_VALUE? 0 :res;
+        return res == Integer.MAX_VALUE? 0 : res;
     }
 }
