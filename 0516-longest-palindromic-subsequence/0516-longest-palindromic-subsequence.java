@@ -12,7 +12,7 @@ class Solution {
         for (int i = 0; i + 1 < s.length(); i++) {
             if (s.charAt(i) == s.charAt(i + 1)) {
                 dp[i][i + 1] = 2;
-                res = Math.max(res, dp[i][i+1]);
+                res = 2;
             }
         }
 
